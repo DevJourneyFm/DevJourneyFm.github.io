@@ -6,24 +6,5 @@ comments: true
 <p>Kapunahele talked about her going back and forth between technical studies and non-technical activities, between dancing, grammar of the roman languages, tech support and hardware repairs. She spoke about her love for esthetics and how she enjoys mathematical mental models of the world around her. We finally spoke about her work for the Angular.JS community and how she strives to make the open source community a more including, welcoming and kind place to be.</p><p>Kapunahele is a developer and Angular.JS fan who works on the Angular docs writing guides and developing example apps. She also enjoys Native Hawaiian practices, textile arts, and marveling at little, inconspicuous plants growing in forgotten places outdoors.<br><br><b>Here are the links of the show:</b></p><ul><li><a href="https://www.twitter.com/kapunahele">https://www.twitter.com/kapunahele</a></li><li><a href="https://github.com/kapunahelewong/git-playground">https://github.com/kapunahelewong/git-playground</a></li><li>Kara Erickson <a href="https://twitter.com/karaforthewin">https://twitter.com/karaforthewin</a></li></ul><p><b>Credits</b></p><ul><li>Music <a href="http://freemusicarchive.org/music/Yung_Kartz/August_2018/Aye">Aye</a> by <a href="http://freemusicarchive.org/music/Yung_Kartz/">Yung Kartz</a> is licensed under a <a href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 License</a>.</li></ul><p><b>Your host</b><br><br>Software Developer‘s Journey is hosted and produced by Timothée (Tim) Bourguignon, a crazy frenchman living in Germany who dedicated his life to helping others learn &amp; grow. More about him at <a href="http://timbourguignon.fr">timbourguignon.fr</a>.</p><p><b>Want to be next?<br></b><br>Do you know anyone who should be on the podcast? Do you want to be next? Drop me a line: <a href="mailto:info@devjourney.info">info@devjourney.info</a> or via Twitter <a href="https://twitter.com/timothep">@timothep</a>.<br><br><b>Gift the podcast a rating</b><br><br>Please do me and your fellow listeners a favor by spreading the good word about this podcast. And please leave a rating (excellent of course) on the major podcasting platforms, this is the best way to increase the visibility of the podcast:</p><ul><li><a href="https://itunes.apple.com/us/podcast/developers-journey/id1079113167?mt=2">Apple Podcasts</a></li><li><a href="https://www.stitcher.com/podcast/developers-journey">Stitcher</a></li><li><a href="https://play.google.com/music/m/Idxrfw6ga4aanu574oe56fin4m4?t=Developers_Journey">Google Play</a></li></ul><p>Thanks!</p><br><br><p><a rel="payment" href="http://bit.ly/2yBfySB">Support the show</a></p>
 
 {% if page.comments %}
-<div id="disqus_thread"></div>
-<script>
-
-/**
-*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-/*
-var disqus_config = function () {
-this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-};
-*/
-(function() { // DON'T EDIT BELOW THIS LINE
-var d = document, s = d.createElement('script');
-s.src = 'https://devjourney-1.disqus.com/embed.js';
-s.setAttribute('data-timestamp', +new Date());
-(d.head || d.body).appendChild(s);
-})();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+{% include disqus.html %}
 {% endif %}
