@@ -20,8 +20,12 @@
           <a href="https://www.devjourney.info"><img src="{{site.logo | relative_url}}" alt="Logo" /></a>
         {% endif %}
 
-        <p>{{ site.description | default: site.github.project_tagline }}</p>
-        <p><a href="subscribe.html">Subscribe</a> to the podcast now!</p>
+        <p style="text-align: justify; text-justify: inter-word;">
+          {{ site.description | default: site.github.project_tagline }}
+        </p>
+        <p>
+          <a href="subscribe.html">Subscribe</a> to the podcast now!
+        </p>
       </header>
       <section>
 
