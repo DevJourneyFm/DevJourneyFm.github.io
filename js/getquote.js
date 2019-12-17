@@ -49,7 +49,9 @@ function populateArrayOfShowsLinks(response, guest){
         var m;
         var regex1 = "Guests\/\d{1,2}_";
         var regex2 = ".html";
-        var regex = regex1.concat(guest.replace(' ', ''), regex2)
+        guestWOSpaces = guest.replace(/\s/g,'');
+        var regexString = regex1.concat(guestWOSpaces, regex2)
+        regex = new RegExp(regexString);
         return regex.exec(response);
     }
 
