@@ -47,12 +47,13 @@ function populateArrayOfShowsLinks(response, guest){
     if(response != '')
     {
         var m;
-        var regex1 = "Guests\/\d{1,2}_";
-        var regex2 = ".html";
-        guestWOSpaces = guest.replace(/\s/g,'');
+        var regex1 = "(Guests\\/\\d{1,2}_";
+        var regex2 = "\\.html)";
+        var guestWOSpaces = guest.replace(/\s/g,'');
         var regexString = regex1.concat(guestWOSpaces, regex2)
-        regex = new RegExp(regexString);
-        return regex.exec(response);
+        var regex = new RegExp(regexString);
+        var extractedLink = regex.exec(response);
+        return extractedLink;
     }
 
     return "";
