@@ -1,4 +1,4 @@
-//getText();
+getText();
 
 function populateArray(response){
     var allRecords = [];
@@ -21,7 +21,7 @@ function populateArray(response){
         }
 
         document.getElementById("tip").innerHTML = getCurrentTip(allRecords, i);
-        document.getElementById("author").innerHTML = createAuthorSnippet(getCurrentAuthorsHandle(allRecords, i), getCurrentAuthor(allRecords, i))
+        document.getElementById("author").innerHTML = createGuestLink(getCurrentGuestPage(allRecords, i), getGuest(allRecords, i))
     }
 }
 
@@ -29,15 +29,16 @@ function getCurrentTip(allRecords, index){
     return allRecords[i][0].toString();
 }
 
-function getCurrentAuthor(allRecords, index){
+function getGuest(allRecords, index){
     return allRecords[i][1].toString();
 }
 
-function getCurrentAuthorsHandle(allRecords, index){
+function getCurrentGuestPage(allRecords, index){
     return allRecords[i][2].toString().replace(/\s/g, '');
 }
 
-function createAuthorSnippet(currentAuthorsHandle, currentAuthor){
+function createGuestLink(currentAuthorsHandle, currentAuthor){
+    return;
     if(currentAuthorsHandle == ''){
         return currentAuthor;
     } else {
@@ -60,7 +61,7 @@ function getRandomIndex(allRecords){
 
 function getText(){
     var request = new XMLHttpRequest();
-    request.open('GET', 'https://raw.githubusercontent.com/Timothep/howtokillaproject/master/tips', true);
+    request.open('GET', 'https://raw.githubusercontent.com/DevJourneyFm/DevJourneyFm.github.io/master/tips.txt', true);
     request.send(null);
     request.onreadystatechange = function () {
         if (request.readyState === 4 && request.status === 200) {
