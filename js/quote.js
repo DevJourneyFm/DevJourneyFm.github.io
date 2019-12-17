@@ -20,12 +20,8 @@ function populateArrayOfTips(response){
             return;
         }
 
-        var guest = getGuest(allRecords, i);
-
-        var link = getGuestLink(guest);
-
         document.getElementById("tip").innerHTML = getCurrentTip(allRecords, i);
-        document.getElementById("author").innerHTML = link;
+        document.getElementById("author").innerHTML = "<a href=\"".concat(getCurrentGuestPage(allRecords, i), "\">", getGuest(allRecords, i), "</a>");
     }
 }
 
@@ -39,24 +35,6 @@ function getGuest(allRecords, index){
 
 function getCurrentGuestPage(allRecords, index){
     return allRecords[i][2].toString().replace(/\s/g, '');
-}
-
-function populateArrayOfShowsLinks(response, guest){
-    var links = [];
-    
-    if(response != '')
-    {
-        var m;
-        var regex1 = "(Guests\\/\\d{1,2}_";
-        var regex2 = "\\.html)";
-        var guestWOSpaces = guest.replace(/\s/g,'');
-        var regexString = regex1.concat(guestWOSpaces, regex2)
-        var regex = new RegExp(regexString);
-        var extractedLink = regex.exec(response);
-        return extractedLink;
-    }
-
-    return "";
 }
 
 function createGuestLink(currentAuthorsHandle, currentAuthor){
@@ -90,20 +68,6 @@ function getText(){
             var type = request.getResponseHeader('Content-Type');
             if (type.indexOf("text") !== 1) {
                 populateArrayOfTips(request.responseText);
-            }
-        }
-    }
-}
-
-function getGuestLink(guest){
-    var request = new XMLHttpRequest();
-    request.open('GET', 'https://raw.githubusercontent.com/DevJourneyFm/DevJourneyFm.github.io/master/index.html', true);
-    request.send(null);
-    request.onreadystatechange = function () {
-        if (request.readyState === 4 && request.status === 200) {
-            var type = request.getResponseHeader('Content-Type');
-            if (type.indexOf("text") !== 1) {
-                return populateArrayOfShowsLinks(request.responseText, guest);
             }
         }
     }
