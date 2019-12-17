@@ -1,6 +1,6 @@
 getText();
 
-function populateArray(response){
+function populateArrayOfTips(response){
     var allRecords = [];
 
     if(response != '')
@@ -20,8 +20,12 @@ function populateArray(response){
             return;
         }
 
+        var guest = getGuest(allRecords, i);
+
+        var link = getGuestLink(guest);
+
         document.getElementById("tip").innerHTML = getCurrentTip(allRecords, i);
-        document.getElementById("author").innerHTML = createGuestLink(getCurrentGuestPage(allRecords, i), getGuest(allRecords, i))
+        document.getElementById("author").innerHTML = link;
     }
 }
 
@@ -37,8 +41,23 @@ function getCurrentGuestPage(allRecords, index){
     return allRecords[i][2].toString().replace(/\s/g, '');
 }
 
+function populateArrayOfShowsLinks(response, guest){
+    var links = [];
+    
+    if(response != '')
+    {
+        var m;
+        var regex1 = "Guests\/\d{1,2}_";
+        var regex2 = ".html";
+        var regex = regex1.concat(guest.replace(' ', ''), regex2)
+        return regex.exec(response);
+    }
+
+    return "";
+}
+
 function createGuestLink(currentAuthorsHandle, currentAuthor){
-    return;
+    //find the page in the index.html page
     if(currentAuthorsHandle == ''){
         return currentAuthor;
     } else {
@@ -67,7 +86,21 @@ function getText(){
         if (request.readyState === 4 && request.status === 200) {
             var type = request.getResponseHeader('Content-Type');
             if (type.indexOf("text") !== 1) {
-                populateArray(request.responseText);
+                populateArrayOfTips(request.responseText);
+            }
+        }
+    }
+}
+
+function getGuestLink(guest){
+    var request = new XMLHttpRequest();
+    request.open('GET', 'https://raw.githubusercontent.com/DevJourneyFm/DevJourneyFm.github.io/master/index.html', true);
+    request.send(null);
+    request.onreadystatechange = function () {
+        if (request.readyState === 4 && request.status === 200) {
+            var type = request.getResponseHeader('Content-Type');
+            if (type.indexOf("text") !== 1) {
+                return populateArrayOfShowsLinks(request.responseText, guest);
             }
         }
     }
