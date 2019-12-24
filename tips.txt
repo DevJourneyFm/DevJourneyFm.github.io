@@ -24,7 +24,7 @@ Focus on the community                                                          
 Keep your skills sharp, do Katas regularly                                                                      | Magnus Stahre         | https://devjourney.info/Guests/56_MagnusStahre.html
 Be humble                                                                                                       | Adam Barr             | https://devjourney.info/Guests/57_AdamBarr.html
 Develop your communication skills                                                                               | Robby Russell         | https://devjourney.info/Guests/58_RobbyRussell.html
-Develop a „deeper T“                                                                                            | Robby Russell         | https://devjourney.info/Guests/58_RobbyRussell.html
+Develop a deeper T                                                                                              | Robby Russell         | https://devjourney.info/Guests/58_RobbyRussell.html
 Keep experimenting                                                                                              | Julie Moronuki        | https://devjourney.info/Guests/59_JulieMoronuki.html
 Ignore fanatics                                                                                                 | Julie Moronuki        | https://devjourney.info/Guests/59_JulieMoronuki.html
 Don‘t burn up your bridges                                                                                      | Trisha Gee            | https://devjourney.info/Guests/60_TrishaGee.html
@@ -32,10 +32,10 @@ Mentors pull you along                                                          
 Pair, always!                                                                                                   | Llewellyn Falco       | https://devjourney.info/Guests/62_LlewellynFalco.html
 Be active in Networking                                                                                         | Stephanie Hurlburt    | https://devjourney.info/Guests/63_StephanieHurlburt.html
 Don‘t become a one trick poney                                                                                  | Guillermo Rauch       | https://devjourney.info/Guests/64_GuillermoRauch.html
-Learn to say „I don‘t know“                                                                                     | Woody Zuill           | https://devjourney.info/Guests/65_WoodyZuill.html
+Learn to say I don‘t know                                                                                       | Woody Zuill           | https://devjourney.info/Guests/65_WoodyZuill.html
 Look for opportunities                                                                                          | Rob Kendal            | https://devjourney.info/Guests/66_RobKendal.html
 Don‘t be intimidated by the OSS world                                                                           | Kapunahele Wong       | https://devjourney.info/Guests/67_KapunaheleWong.html
-„You become a combination of the 5 persons you spend the most time with“                                        | Greg Koberger         | https://devjourney.info/Guests/68_GregKoberger.html
+You become a combination of the 5 persons you spend the most time with                                          | Greg Koberger         | https://devjourney.info/Guests/68_GregKoberger.html
 Find & Develop your passion                                                                                     | Irwin Williams        | https://devjourney.info/Guests/71_IrwinWilliams.html
 Enjoy the babysteps                                                                                             | Katrina Owen          | https://devjourney.info/Guests/72_KatrinaOwen.html
 Learn the big picture                                                                                           | Katrina Owen          | https://devjourney.info/Guests/72_KatrinaOwen.html
@@ -45,3 +45,4 @@ Start working in public                                                         
 Write to your future self to explain your decisions, it is way too easy to be hard on yourself retrospectively  | Bubunyo Nyabor        | https://devjourney.info/Guests/78_BubunyoNyabor.html
 Develop your curiosity                                                                                          | Ted M Young           | https://devjourney.info/Guests/79_TedYoung.html
 First, find your passion                                                                                        | Joseph Young          | https://devjourney.info/Guests/80_JosephYoung.html
+Know how your company makes money                                                                               | Richard Campbell      | https://devjourney.info/Guests/81_RichardCampbell.html
