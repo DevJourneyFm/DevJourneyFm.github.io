@@ -8,3 +8,10 @@ show_downloads: false
 twitter:
   username: devjourneyfm
   card: summary
+social:
+  name: Tim Bourguignon
+  links:
+    - https://twitter.com/timothep
+    - https://twitter.com/devjourneyfm
+    - https://www.linkedin.com/in/timbourguignon
+    - https://github.com/timothep
