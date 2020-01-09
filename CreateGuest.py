@@ -18,7 +18,7 @@ def overwriteFile(path, content):
     htmlFile.write(content)
     htmlFile.close()
 
-if(len(sys.argv) != 5):
+if(len(sys.argv) != 6):
     print("CreateGuest.py 74 Kemdi Ebi 'Nov 04' 'title_without_#'")
     exit()
 
@@ -40,7 +40,7 @@ description: TITLE_WITHOUT_HASH
 GUEST_PAGE = GUEST_PAGE.replace("NUMBER", sys.argv[1])
 GUEST_PAGE = GUEST_PAGE.replace("FIRSTNAME", sys.argv[2])
 GUEST_PAGE = GUEST_PAGE.replace("LASTNAME", sys.argv[3])
-GUEST_PAGE = GUEST_PAGE.replace("TITLE_WITHOUT_HASH", sys.argv[4])
+GUEST_PAGE = GUEST_PAGE.replace("TITLE_WITHOUT_HASH", sys.argv[5])
 
 CreateFile(GUEST_PAGE, sys.argv)
 
