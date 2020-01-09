@@ -5,3 +5,6 @@ logo: /Img/logo.png
 image: /Img/logo.png
 author: Tim Bourguignon @timothep
 show_downloads: false
+twitter:
+  username: devjourneyfm
+  card: summary
