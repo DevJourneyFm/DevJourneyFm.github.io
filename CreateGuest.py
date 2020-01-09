@@ -19,7 +19,7 @@ def overwriteFile(path, content):
     htmlFile.close()
 
 if(len(sys.argv) != 5):
-    print("CreateGuest.py 74 Kemdi Ebi 'Nov 04'")
+    print("CreateGuest.py 74 Kemdi Ebi 'Nov 04' 'title_without_#'")
     exit()
 
 print("Creating pages for Guest: " + sys.argv[2] + " " + sys.argv[3])
@@ -27,16 +27,20 @@ print("Creating pages for Guest: " + sys.argv[2] + " " + sys.argv[3])
 GUEST_PAGE = """---
 layout: default
 comments: true
-# other options
+title: NUMBER FIRSTNAME LASTNAME
+description: TITLE_WITHOUT_HASH
 ---
+<h1>#TITLE_WITHOUT_HASH</h1>
 <script type='text/javascript' charset='utf-8' src='https://www.buzzsprout.com/190346.js?player=small&artist=Timoth%C3%A9e%20Bourguignon,%20FIRSTNAME%20LASTNAME'></script>
 
 {% if page.comments %}  
 {% include disqus.html %}
 {% endif %}"""
 
+GUEST_PAGE = GUEST_PAGE.replace("NUMBER", sys.argv[1])
 GUEST_PAGE = GUEST_PAGE.replace("FIRSTNAME", sys.argv[2])
 GUEST_PAGE = GUEST_PAGE.replace("LASTNAME", sys.argv[3])
+GUEST_PAGE = GUEST_PAGE.replace("TITLE_WITHOUT_HASH", sys.argv[4])
 
 CreateFile(GUEST_PAGE, sys.argv)
 
