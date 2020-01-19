@@ -1,2 +1,4 @@
 Learn the idiomatic way of the language you are coding into (pythonic way)                                      | Reuven Lerner         | https://devjourney.info/Guests/83_ReuvenLerner.html
 Pair Programming!!!                                                                                             | Reuven Lerner         | https://devjourney.info/Guests/83_ReuvenLerner.html
+When you start a new job, take it all in, don't put any expectations on yourself                                | Molly Struve          | https://devjourney.info/Guests/84_MollyStruve.html
+Get involved with OpenSource, find an issue on a repo and fix it                                                | Shedrack Akintayo     | https://devjourney.info/Guests/85_ShedrackAkintayo.html
