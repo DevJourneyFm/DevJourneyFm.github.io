@@ -47,3 +47,14 @@ Develop your curiosity                                                          
 First, find your passion                                                                                        | Joseph Young          | https://devjourney.info/Guests/80_JosephYoung.html
 Know how your company makes money                                                                               | Richard Campbell      | https://devjourney.info/Guests/81_RichardCampbell.html
 Do not compare yourself to others                                                                               | Pariss Chandler       | https://devjourney.info/Guests/82_ParissChandler.html
+Learn the idiomatic way of the language you are coding into (pythonic way)                                      | Reuven Lerner         | https://devjourney.info/Guests/83_ReuvenLerner.html
+Pair Programming!!!                                                                                             | Reuven Lerner         | https://devjourney.info/Guests/83_ReuvenLerner.html
+When you start a new job, take it all in, don't put any expectations on yourself                                | Molly Struve          | https://devjourney.info/Guests/84_MollyStruve.html
+Get involved with OpenSource, find an issue on a repo and fix it                                                | Shedrack Akintayo     | https://devjourney.info/Guests/85_ShedrackAkintayo.html
+Reverse Engineer how people around you got their jobs & do not cold apply                                       | Jamisson Dance        | https://devjourney.info/Guests/86_JamisonDance.html
+Trust yourself, and if you don't know what that looks like right now, figure that out                           | Denise Gosnell        | https://devjourney.info/Guests/87_DeniseGosnell.html
+Learn JavaScript thoroughly, you will need it                                                                   | Lydia Hallie          | https://devjourney.info/Guests/88_LydiaHallie.html
+Trust yourself, work hard, work smart, identify your purpose                                                    | Hadelin de Ponteves   | https://devjourney.info/Guests/89_HadelinDePonteves.html
+stay humble, it's ok not to know everything. If you know everything, you are in the wrong place!                | Khaled Souf           | https://devjourney.info/Guests/90_KhaledSouf.html
+It's by talking to people that you can plan adventures like a coding tour                                       | Harald Reingruber     | https://devjourney.info/Guests/91_HaraldReingruber.html
+Don't do something just to do it, do it because you are passionate about it                                     | Tracy Lee             | https://devjourney.info/Guests/92_TracyLee.html
