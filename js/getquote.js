@@ -20,17 +20,17 @@ function populateArrayOfTips(response){
             return;
         }
 
-        document.getElementById("tip").innerHTML = getCurrentTip(allRecords, i);
+        document.getElementById("tip").innerHTML = "<i>".concat(getCurrentTip(allRecords, i), "</i>");
         document.getElementById("author").innerHTML = "<a href=\"".concat(getCurrentGuestPage(allRecords, i), "\">", getGuest(allRecords, i), "</a>");
     }
 }
 
 function getCurrentTip(allRecords, index){
-    return allRecords[i][0].toString();
+    return allRecords[i][0].toString().trim();
 }
 
 function getGuest(allRecords, index){
-    return allRecords[i][1].toString();
+    return allRecords[i][1].toString().trim();
 }
 
 function getCurrentGuestPage(allRecords, index){
