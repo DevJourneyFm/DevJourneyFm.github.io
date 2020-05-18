@@ -8,9 +8,10 @@ show_downloads: false
 twitter:
   username: devjourneyfm
   card: summary
-  creator: timothep
+  creator: Timothée Bourguignon
+  title: DevJourney Podcast
 social:
-  name: Tim Bourguignon
+  name: timothep
   links:
     - https://twitter.com/timothep
     - https://twitter.com/devjourneyfm
