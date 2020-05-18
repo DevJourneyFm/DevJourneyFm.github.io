@@ -16,3 +16,5 @@ social:
     - https://twitter.com/devjourneyfm
     - https://www.linkedin.com/in/timbourguignon
     - https://github.com/timothep
+plugins:
+  - jekyll-sitemap
