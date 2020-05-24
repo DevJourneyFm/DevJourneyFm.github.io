@@ -1,56 +1,59 @@
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "en-US" }}">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/png" sizes="32x32" href="https://devjourney.info/Img/favicon-32x32.png">
-    <link rel="apple-touch-icon" href="https://devjourney.info/Img/favicon-32x32.png" />
-    <meta property="og:type" content="website" />
 
-    {% seo %}
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://devjourney.info/Img/favicon-32x32.png">
+  <link rel="apple-touch-icon" href="https://devjourney.info/Img/favicon-32x32.png" />
+  <meta property="og:type" content="website" />
 
-    <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
+  {% seo %}
 
-    <!--[if lt IE 9]>
+  <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
+
+  <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
     <![endif]-->
 
-    <meta property="og:image" content="https://devjourney.info/Img/logo.png" />
+  <meta property="og:image" content="https://devjourney.info/Img/logo.png" />
 
-    {% include google_analytics.html %}
-  </head>
-  <body style="font-family: 'Inconsolata', monospace;">
-    <div class="wrapper">
-      <header>
-        <link href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap" rel="stylesheet">
+  {% include google_analytics.html %}
+</head>
 
-        {% if site.logo %}
-          <a href="https://www.devjourney.info"><img src="{{site.logo | relative_url}}" alt="Logo" /></a>
-        {% endif %}
+<body style="font-family: 'Inconsolata', monospace;">
+  <div class="wrapper">
+    <header>
+      <link href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap" rel="stylesheet">
 
-        <p style="font-size:28px">DevJourney Podcast</p>
+      {% if site.logo %}
+      <a href="https://www.devjourney.info"><img src="{{site.logo | relative_url}}" alt="Logo" /></a>
+      {% endif %}
 
-        <p style="text-align: justify; text-justify: inter-word;">
-          {{ site.description | default: site.github.project_tagline }}
-        </p>
-        <p>📖 Browse the amazing <a href="https://devjourney.info/Books.html">books</a> recommended on the podcast.</p>
-        <p>📢 <a href="https://devjourney.info/subscribe.html">Subscribe</a> to the podcast now!</p>
-        <p>
-          Random advice from one of our guests: "<span id="tip"></span>" by <span id="author"></span>
-        </p>
-      </header>
-      <section>
+      <p style="font-size:28px">DevJourney Podcast</p>
+
+      <p style="text-align: justify; text-justify: inter-word;">
+        {{ site.description | default: site.github.project_tagline }}
+      </p>
+      <p>📖 Browse the amazing <a href="https://devjourney.info/Books.html">books</a> recommended on the podcast.</p>
+      <p>📢 <a href="https://devjourney.info/subscribe.html">Subscribe</a> to the podcast now!</p>
+      <p>
+        Random advice from one of our guests: "<span id="tip"></span>" by <span id="author"></span>
+      </p>
+    </header>
+    <section>
 
       {{ content }}
 
-      </section>
-      <footer>
-        <p>Copyright: <a href="https://www.timbourguignon.fr">Tim Bourguignon</a></p>
-      </footer>
-    </div>
-    <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
-    <script type="text/javascript" src="https://devjourney.info/js/getquote.js"></script>
+    </section>
+    <footer>
+      <p>Copyright: <a href="https://www.timbourguignon.fr">Tim Bourguignon</a></p>
+    </footer>
+  </div>
+  <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
+  <script type="text/javascript" src="https://devjourney.info/js/getquote.js"></script>
 
-  </body>
+</body>
+
 </html>
