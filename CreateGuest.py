@@ -43,7 +43,7 @@ description: TITLE_WITHOUT_HASH
         <p><i>
                 ⚠ The following transcript was automatically generated. </br>
                 ❤ Help us out, <a
-                    href="https://github.com/DevJourneyFm/DevJourneyFm.github.io/tree/master/Guests/Transcripts/NUMBER_FIRSTNAMELASTNAMETx.html">Submit
+                    href="https://github.com/DevJourneyFm/DevJourneyFm.github.io/tree/master/Guests/Transcripts/NUMBER_FIRSTNAMELASTNAMETx.html">submit
                     a pull-request</a> to correct potential mistakes
             </i></p>
 
