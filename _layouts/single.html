@@ -19,24 +19,16 @@
     <meta property="og:image" content="https://devjourney.info/Img/logo.png" />
 
     {% include google_analytics.html %}
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap" rel="stylesheet">
   </head>
   <body style="font-family: 'Inconsolata', monospace;">
-    <div class="wrapper">
-      <header style="visibility: hidden">       
-        <link href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap" rel="stylesheet">
-      </header>
-      <section>
-
+      
       {{ content }}
 
       <p>📖 Browse the amazing <a href="https://devjourney.info/Books.html">books</a> recommended on the podcast.</p>
         <p>📢 <a href="https://devjourney.info/subscribe.html">Subscribe</a> to the podcast now!</p>
-
-      </section>
-      <footer>
         <p>Copyright: <a href="https://www.timbourguignon.fr">Tim Bourguignon</a></p>
-      </footer>
-    </div>
+
     <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
     <script type="text/javascript" src="https://devjourney.info/js/getquote.js"></script>
 
