@@ -15,7 +15,7 @@ def CreateFile(pagecontent, args):
 
     pathTx = dir_path + "\\Guests\\Transcript\\" + args[1] + "-" + args[2] + args[3] + "Tx.html"
     htmlTxFile = open(pathTx, 'w')
-    htmlTxFile.write("")
+    htmlTxFile.write("<span></span>")
     htmlTxFile.close()
 
 def overwriteFile(path, content):
