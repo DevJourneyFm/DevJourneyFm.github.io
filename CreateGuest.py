@@ -47,7 +47,7 @@ description: #TITLE_WITHOUT_HASH
                     a pull-request</a> to correct potential mistakes
             </i></p>
 
-        {% include_relative Transcripts/NUMBER_FIRSTNAMELASTNAMETx.html %}
+        {% include_relative Transcripts/NUMBER-FIRSTNAMELASTNAMETx.html %}
     </div>
 
 {% if page.comments %}  
