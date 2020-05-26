@@ -13,7 +13,7 @@ def CreateFile(pagecontent, args):
     htmlFile.write(pagecontent)
     htmlFile.close()
 
-    pathTx = dir_path + "\\Guests\\Transcript" + args[1] + "-" + args[2] + args[3] + "Tx.html"
+    pathTx = dir_path + "\\Guests\\Transcript\\" + args[1] + "-" + args[2] + args[3] + "Tx.html"
     htmlTxFile = open(pathTx, 'w')
     htmlTxFile.write("")
     htmlTxFile.close()
@@ -32,8 +32,8 @@ print("Creating pages for Guest: " + sys.argv[2] + " " + sys.argv[3])
 GUEST_PAGE = """---
 layout: default
 comments: true
-title: NUMBER FIRSTNAME LASTNAME
-description: TITLE_WITHOUT_HASH
+title: #NUMBER FIRSTNAME LASTNAME
+description: #TITLE_WITHOUT_HASH
 ---
 <h1>#TITLE_WITHOUT_HASH</h1>
 <script type='text/javascript' charset='utf-8' src='https://www.buzzsprout.com/190346.js?player=small&artist=Timoth%C3%A9e%20Bourguignon,%20FIRSTNAME%20LASTNAME'></script>
@@ -41,9 +41,9 @@ description: TITLE_WITHOUT_HASH
 <div>
         <h2>Transcript</h2>
         <p><i>
-                ⚠ The following transcript was automatically generated. </br>
-                ❤ Help us out, <a
-                    href="https://github.com/DevJourneyFm/DevJourneyFm.github.io/tree/master/Guests/Transcripts/NUMBER_FIRSTNAMELASTNAMETx.html">Submit
+                The following transcript was automatically generated. </br>
+                Help us out, <a
+                    href="https://github.com/DevJourneyFm/DevJourneyFm.github.io/tree/master/Guests/Transcripts/NUMBER-FIRSTNAMELASTNAMETx.html">Submit
                     a pull-request</a> to correct potential mistakes
             </i></p>
 
