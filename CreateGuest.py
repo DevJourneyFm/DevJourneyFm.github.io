@@ -70,6 +70,7 @@ SLUG_TO_REPLACE = SLUG_TO_REPLACE.replace("NUMBER", sys.argv[1])
 SLUG_TO_REPLACE = SLUG_TO_REPLACE.replace("FIRSTNAME", sys.argv[2])
 SLUG_TO_REPLACE = SLUG_TO_REPLACE.replace("LASTNAME", sys.argv[3])
 SLUG_TO_REPLACE = SLUG_TO_REPLACE.replace("DATE", sys.argv[4])
+SLUG_TO_REPLACE = SLUG_TO_REPLACE.replace("TITLE_WITHOUT_HASH", sys.argv[5])
 
 content = loadIndex("index.html")
 content = content.replace(SLUG_TO_FIND, SLUG_TO_REPLACE)
