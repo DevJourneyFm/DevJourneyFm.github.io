@@ -86,7 +86,7 @@ SLUG_TO_REPLACE = SLUG_TO_REPLACE.replace("FIRSTNAME", firstname)
 SLUG_TO_REPLACE = SLUG_TO_REPLACE.replace("LASTNAME", lastname)
 SLUG_TO_REPLACE = SLUG_TO_REPLACE.replace("DATE", date)
 
-emboldenedTitle = title.replace(guestname, "<b>" + guestname + "</b>")
+emboldenedTitle = title.replace(guestname, "</br><b>" + guestname + "</b>")
 
 SLUG_TO_REPLACE = SLUG_TO_REPLACE.replace("TITLE_WITHOUT_HASH", number + " " + emboldenedTitle)
 
