@@ -1,9 +1,11 @@
+_config.yml
+
 ### Jekyll ###
 _site
 .sass-cache
 .jekyll-metadata
 Gemfile.lock
-
+Gemfile
 
 ### Gulp ###
 package.json
