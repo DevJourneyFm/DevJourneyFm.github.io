@@ -16,7 +16,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
     <![endif]-->
 
-    <meta property="og:image" content="https://devjourney.info/Img/logo.png" />
+    <meta property="og:image" content="https://devjourney.info/Img/logo_small.png" />
 
     {% include google_analytics.html %}
     
@@ -26,21 +26,24 @@
     <div class="wrapper">
       <header>
         <link href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap" rel="stylesheet">
+        <link href="http://localhost:4000/css/add.css" rel="stylesheet">
 
         {% if site.logo %}
-          <a href="https://www.devjourney.info"><img src="{{site.logo | relative_url}}" alt="Logo" /></a>
+          <a href="https://www.devjourney.info"><img src="http://localhost:4000/Img/LogoSmallText_Dunkel_Small.png" alt="Logo" style="border: none;" /></a>
         {% endif %}
 
         <p style="font-size:28px">DevJourney Podcast</p>
 
         <p style="text-align: justify; text-justify: inter-word;">
-          {{ site.description | default: site.github.project_tagline }}
         </p>
-        <p>📖 Browse the amazing <a href="https://devjourney.info/Books.html">books</a> recommended on the podcast.</p>
-        <p>📢 <a href="https://devjourney.info/subscribe.html">Subscribe</a> to the podcast now!</p>
-        <p>
-          Random advice from one of our guests: "<span id="tip"></span>" by <span id="author"></span>
-        </p>
+
+        <ul>
+            <li><a class="buttons" href="https://devjourney.info/subscribe.html">📢 Subscribe</a></li>
+            <li><a class="buttons" href="https://devjourney.info/news.html">📰 Newsletter</a></li>
+            <li><a class="buttons" href="https://devjourney.info/Books.html">📖 Books</a></li>
+            <li><a class="buttons" href="https://devjourney.info/swag.html">👕 Swag</a></li>
+        </ul>
+
       </header>
       <section>
 
@@ -48,7 +51,8 @@
 
       </section>
       <footer>
-        <p>Copyright: <a href="https://www.timbourguignon.fr">Tim Bourguignon</a></p>
+        <p>Copyright 2020</br>
+        <a href="https://www.timbourguignon.fr">Tim Bourguignon</a></p>
       </footer>
     </div>
     <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>

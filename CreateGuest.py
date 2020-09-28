@@ -38,7 +38,7 @@ if(len(sys.argv) != 5):
 print("Creating pages for Guest: " + sys.argv[2])
 
 GUEST_PAGE = """---
-layout: single
+layout: default
 comments: true
 title: #NUMBER FIRSTNAME LASTNAME
 description: #TITLE_WITHOUT_HASH
