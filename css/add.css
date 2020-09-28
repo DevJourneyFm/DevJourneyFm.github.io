@@ -1,4 +1,9 @@
+a {
+    color: #267CB9 !important;
+}
+
 a.buttons { 
     background: none !important;
     padding: 2px !important;
+    color: white !important;
 }
