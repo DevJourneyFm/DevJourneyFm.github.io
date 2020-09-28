@@ -1,3 +1,7 @@
+body{
+    background-color: white !important;
+}
+
 a {
     color: #267CB9 !important;
 }
@@ -6,4 +10,12 @@ a.buttons {
     background: none !important;
     padding: 2px !important;
     color: white !important;
+}
+
+img.directory{
+    border:none !important;
+    padding: 0px !important;
+    margin: 0px !important;
+    width: 20px !important;
+    height: 20px !important;
 }
