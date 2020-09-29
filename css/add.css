@@ -24,6 +24,10 @@ img.directory {
     width: 20px !important;
     height: 20px !important;
 }
+img.swag{
+    max-width: 250px;
+    max-height: 187px;
+}
 
 p.title {
     font-size: 28px;
