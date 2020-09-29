@@ -21,3 +21,4 @@ social:
 plugins:
   - jekyll-sitemap
 theme: jekyll-theme-dinky
+repository: DevJourneyFm/DevJourneyFm.github.io
