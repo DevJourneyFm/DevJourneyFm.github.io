@@ -55,6 +55,6 @@ Reverse Engineer how people around you got their jobs & do not cold apply       
 Trust yourself, and if you don't know what that looks like right now, figure that out                           | Denise Gosnell        | https://devjourney.info/Guests/87_DeniseGosnell.html
 Learn JavaScript thoroughly, you will need it                                                                   | Lydia Hallie          | https://devjourney.info/Guests/88_LydiaHallie.html
 Trust yourself, work hard, work smart, identify your purpose                                                    | Hadelin de Ponteves   | https://devjourney.info/Guests/89_HadelinDePonteves.html
-stay humble, it's ok not to know everything. If you know everything, you are in the wrong place!                | Khaled Souf           | https://devjourney.info/Guests/90_KhaledSouf.html
-It's by talking to people that you can plan adventures like a coding tour                                       | Harald Reingruber     | https://devjourney.info/Guests/91_HaraldReingruber.html
-Don't do something just to do it, do it because you are passionate about it                                     | Tracy Lee             | https://devjourney.info/Guests/92_TracyLee.html
+stay humble, it's ok not to know everything. If you know everything, you are in the wrong place!                | Khaled Souf           | https://devjourney.info/Guests/90-KhaledSouf.html
+It's by talking to people that you can plan adventures like a coding tour                                       | Harald Reingruber     | https://devjourney.info/Guests/91-HaraldReingruber.html
+Don't do something just to do it, do it because you are passionate about it                                     | Tracy Lee             | https://devjourney.info/Guests/92-TracyLee.html
