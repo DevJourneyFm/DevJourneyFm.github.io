@@ -1,60 +1,60 @@
-Work on combining skills                                                                                        | Steven Schwenke       | https://devjourney.info/Guests/29_StevenSchwenke.html
-There is more than just programming                                                                             | Adrian Bolboaca       | https://devjourney.info/Guests/30_AdrianBolboaca.html
-Absorbe as much as you can                                                                                      | Mario Rogic           | https://devjourney.info/Guests/31_MarioRogic.html
-Communicate as much as you can                                                                                  | Mario Rogic           | https://devjourney.info/Guests/31_MarioRogic.html
-Be driven and focused on what you do                                                                            | Katharine Jarmul      | https://devjourney.info/Guests/32_KatharineJarmul.html
-Be consious of the mental models you chose                                                                      | Richard Rodger        | https://devjourney.info/Guests/34_RichardRodger.html
-Good communication is paramount: write and talk, often!                                                         | Emily Bache           | https://devjourney.info/Guests/35_EmilyBache.html
-Learn the fundamentals                                                                                          | Harry Roberts         | https://devjourney.info/Guests/39_HarryRoberts.html
-Invest in learning                                                                                              | Ignacio Anaya         | https://devjourney.info/Guests/40_IgnacioAnaya.html
-Have strong opinions, but hold them losely                                                                      | Simon Harrer          | https://devjourney.info/Guests/41_SimonHarrer.html
-You are not supposed to know everything                                                                         | Charlie Gerard        | https://devjourney.info/Guests/42_CharlieGerard.html
-Build a support network that you can rely on                                                                    | Patrick Kua           | https://devjourney.info/Guests/43_PatrickKua.html
-Stop being afraid, go out                                                                                       | Jeremy Likness        | https://devjourney.info/Guests/44_JeremyLikness.html
-Get in touch with your values                                                                                   | April Wensel          | https://devjourney.info/Guests/45_AprilWensel.html
-It's OK to be wrong. It's not OK to remain wrong                                                                | Barry Dorrans         | https://devjourney.info/Guests/46_BarryDorrans.html
-Knowledge is like a graph, focus on connecting the dots                                                         | Erik St Martin        | https://devjourney.info/Guests/47_ErikStMartin.html
-Be humble, always                                                                                               | Shawn Wildermouth     | https://devjourney.info/Guests/48_ShawnWildermouth.html
-Get involved earlier with communities                                                                           | Ali Spittel           | https://devjourney.info/Guests/49_AliSpittel.html
-Believe in yourself                                                                                             | Ali Spittel           | https://devjourney.info/Guests/49_AliSpittel.html
-One goal at a time                                                                                              | Saron Yitbarek        | https://devjourney.info/Guests/50_SaronYitbarek.html
-Don't worry (too much)                                                                                          | Ben Orenstein         | https://devjourney.info/Guests/51_BenOrenstein.html
-Believe in yourself, be an entrepreneur                                                                         | Charity Majors        | https://devjourney.info/Guests/52_CharityMajors.html
-Focus on the community                                                                                          | Yehuda Katz           | https://devjourney.info/Guests/55_YehudaKatz.html
-Keep your skills sharp, do Katas regularly                                                                      | Magnus Stahre         | https://devjourney.info/Guests/56_MagnusStahre.html
-Be humble                                                                                                       | Adam Barr             | https://devjourney.info/Guests/57_AdamBarr.html
-Develop your communication skills                                                                               | Robby Russell         | https://devjourney.info/Guests/58_RobbyRussell.html
-Develop a deeper T                                                                                              | Robby Russell         | https://devjourney.info/Guests/58_RobbyRussell.html
-Keep experimenting                                                                                              | Julie Moronuki        | https://devjourney.info/Guests/59_JulieMoronuki.html
-Ignore fanatics                                                                                                 | Julie Moronuki        | https://devjourney.info/Guests/59_JulieMoronuki.html
-Don‘t burn up your bridges                                                                                      | Trisha Gee            | https://devjourney.info/Guests/60_TrishaGee.html
-Mentors pull you along                                                                                          | Elissa Shevinsky      | https://devjourney.info/Guests/61_ElissaShevinsky.html
-Pair, always!                                                                                                   | Llewellyn Falco       | https://devjourney.info/Guests/62_LlewellynFalco.html
-Be active in Networking                                                                                         | Stephanie Hurlburt    | https://devjourney.info/Guests/63_StephanieHurlburt.html
-Don‘t become a one trick pony                                                                                  | Guillermo Rauch       | https://devjourney.info/Guests/64_GuillermoRauch.html
-Learn to say I don‘t know                                                                                       | Woody Zuill           | https://devjourney.info/Guests/65_WoodyZuill.html
-Look for opportunities                                                                                          | Rob Kendal            | https://devjourney.info/Guests/66_RobKendal.html
-Don‘t be intimidated by the OSS world                                                                           | Kapunahele Wong       | https://devjourney.info/Guests/67_KapunaheleWong.html
-You become a combination of the 5 persons you spend the most time with                                          | Greg Koberger         | https://devjourney.info/Guests/68_GregKoberger.html
-Find & Develop your passion                                                                                     | Irwin Williams        | https://devjourney.info/Guests/71_IrwinWilliams.html
-Enjoy the babysteps                                                                                             | Katrina Owen          | https://devjourney.info/Guests/72_KatrinaOwen.html
-Learn the big picture                                                                                           | Katrina Owen          | https://devjourney.info/Guests/72_KatrinaOwen.html
-Value simplicity                                                                                                | Kai könig             | https://devjourney.info/Guests/73_KaiKönig.html
-Don‘t seek perfection                                                                                           | Kemdi Ebi             | https://devjourney.info/Guests/74_KemdiEbi.html
-Start working in public                                                                                         | Wes Bos               | https://devjourney.info/Guests/76_WesBos.html
-Write to your future self to explain your decisions, it is way too easy to be hard on yourself retrospectively  | Bubunyo Nyabor        | https://devjourney.info/Guests/78_BubunyoNyabor.html
-Develop your curiosity                                                                                          | Ted M Young           | https://devjourney.info/Guests/79_TedYoung.html
-First, find your passion                                                                                        | Joseph Young          | https://devjourney.info/Guests/80_JosephYoung.html
-Know how your company makes money                                                                               | Richard Campbell      | https://devjourney.info/Guests/81_RichardCampbell.html
-Do not compare yourself to others                                                                               | Pariss Chandler       | https://devjourney.info/Guests/82_ParissChandler.html
-Learn the idiomatic way of the language you are coding into (pythonic way)                                      | Reuven Lerner         | https://devjourney.info/Guests/83_ReuvenLerner.html
-Pair Programming!!!                                                                                             | Reuven Lerner         | https://devjourney.info/Guests/83_ReuvenLerner.html
-When you start a new job, take it all in, don't put any expectations on yourself                                | Molly Struve          | https://devjourney.info/Guests/84_MollyStruve.html
-Get involved with OpenSource, find an issue on a repo and fix it                                                | Shedrack Akintayo     | https://devjourney.info/Guests/85_ShedrackAkintayo.html
-Reverse Engineer how people around you got their jobs & do not cold apply                                       | Jamisson Dance        | https://devjourney.info/Guests/86_JamisonDance.html
-Trust yourself, and if you don't know what that looks like right now, figure that out                           | Denise Gosnell        | https://devjourney.info/Guests/87_DeniseGosnell.html
-Learn JavaScript thoroughly, you will need it                                                                   | Lydia Hallie          | https://devjourney.info/Guests/88_LydiaHallie.html
-Trust yourself, work hard, work smart, identify your purpose                                                    | Hadelin de Ponteves   | https://devjourney.info/Guests/89_HadelinDePonteves.html
+Work on combining skills                                                                                        | Steven Schwenke       | https://devjourney.info/Guests/29-StevenSchwenke.html
+There is more than just programming                                                                             | Adrian Bolboaca       | https://devjourney.info/Guests/30-AdrianBolboaca.html
+Absorbe as much as you can                                                                                      | Mario Rogic           | https://devjourney.info/Guests/31-MarioRogic.html
+Communicate as much as you can                                                                                  | Mario Rogic           | https://devjourney.info/Guests/31-MarioRogic.html
+Be driven and focused on what you do                                                                            | Katharine Jarmul      | https://devjourney.info/Guests/32-KatharineJarmul.html
+Be consious of the mental models you chose                                                                      | Richard Rodger        | https://devjourney.info/Guests/34-RichardRodger.html
+Good communication is paramount: write and talk, often!                                                         | Emily Bache           | https://devjourney.info/Guests/35-EmilyBache.html
+Learn the fundamentals                                                                                          | Harry Roberts         | https://devjourney.info/Guests/39-HarryRoberts.html
+Invest in learning                                                                                              | Ignacio Anaya         | https://devjourney.info/Guests/40-IgnacioAnaya.html
+Have strong opinions, but hold them losely                                                                      | Simon Harrer          | https://devjourney.info/Guests/41-SimonHarrer.html
+You are not supposed to know everything                                                                         | Charlie Gerard        | https://devjourney.info/Guests/42-CharlieGerard.html
+Build a support network that you can rely on                                                                    | Patrick Kua           | https://devjourney.info/Guests/43-PatrickKua.html
+Stop being afraid, go out                                                                                       | Jeremy Likness        | https://devjourney.info/Guests/44-JeremyLikness.html
+Get in touch with your values                                                                                   | April Wensel          | https://devjourney.info/Guests/45-AprilWensel.html
+It's OK to be wrong. It's not OK to remain wrong                                                                | Barry Dorrans         | https://devjourney.info/Guests/46-BarryDorrans.html
+Knowledge is like a graph, focus on connecting the dots                                                         | Erik St Martin        | https://devjourney.info/Guests/47-ErikStMartin.html
+Be humble, always                                                                                               | Shawn Wildermouth     | https://devjourney.info/Guests/48-ShawnWildermouth.html
+Get involved earlier with communities                                                                           | Ali Spittel           | https://devjourney.info/Guests/49-AliSpittel.html
+Believe in yourself                                                                                             | Ali Spittel           | https://devjourney.info/Guests/49-AliSpittel.html
+One goal at a time                                                                                              | Saron Yitbarek        | https://devjourney.info/Guests/50-SaronYitbarek.html
+Don't worry (too much)                                                                                          | Ben Orenstein         | https://devjourney.info/Guests/51-BenOrenstein.html
+Believe in yourself, be an entrepreneur                                                                         | Charity Majors        | https://devjourney.info/Guests/52-CharityMajors.html
+Focus on the community                                                                                          | Yehuda Katz           | https://devjourney.info/Guests/55-YehudaKatz.html
+Keep your skills sharp, do Katas regularly                                                                      | Magnus Stahre         | https://devjourney.info/Guests/56-MagnusStahre.html
+Be humble                                                                                                       | Adam Barr             | https://devjourney.info/Guests/57-AdamBarr.html
+Develop your communication skills                                                                               | Robby Russell         | https://devjourney.info/Guests/58-RobbyRussell.html
+Develop a deeper T                                                                                              | Robby Russell         | https://devjourney.info/Guests/58-RobbyRussell.html
+Keep experimenting                                                                                              | Julie Moronuki        | https://devjourney.info/Guests/59-JulieMoronuki.html
+Ignore fanatics                                                                                                 | Julie Moronuki        | https://devjourney.info/Guests/59-JulieMoronuki.html
+Don‘t burn up your bridges                                                                                      | Trisha Gee            | https://devjourney.info/Guests/60-TrishaGee.html
+Mentors pull you along                                                                                          | Elissa Shevinsky      | https://devjourney.info/Guests/61-ElissaShevinsky.html
+Pair, always!                                                                                                   | Llewellyn Falco       | https://devjourney.info/Guests/62-LlewellynFalco.html
+Be active in Networking                                                                                         | Stephanie Hurlburt    | https://devjourney.info/Guests/63-StephanieHurlburt.html
+Don‘t become a one trick pony                                                                                   | Guillermo Rauch       | https://devjourney.info/Guests/64-GuillermoRauch.html
+Learn to say I don‘t know                                                                                       | Woody Zuill           | https://devjourney.info/Guests/65-WoodyZuill.html
+Look for opportunities                                                                                          | Rob Kendal            | https://devjourney.info/Guests/66-RobKendal.html
+Don‘t be intimidated by the OSS world                                                                           | Kapunahele Wong       | https://devjourney.info/Guests/67-KapunaheleWong.html
+You become a combination of the 5 persons you spend the most time with                                          | Greg Koberger         | https://devjourney.info/Guests/68-GregKoberger.html
+Find & Develop your passion                                                                                     | Irwin Williams        | https://devjourney.info/Guests/71-IrwinWilliams.html
+Enjoy the babysteps                                                                                             | Katrina Owen          | https://devjourney.info/Guests/72-KatrinaOwen.html
+Learn the big picture                                                                                           | Katrina Owen          | https://devjourney.info/Guests/72-KatrinaOwen.html
+Value simplicity                                                                                                | Kai könig             | https://devjourney.info/Guests/73-KaiKönig.html
+Don‘t seek perfection                                                                                           | Kemdi Ebi             | https://devjourney.info/Guests/74-KemdiEbi.html
+Start working in public                                                                                         | Wes Bos               | https://devjourney.info/Guests/76-WesBos.html
+Write to your future self to explain your decisions, it is way too easy to be hard on yourself retrospectively  | Bubunyo Nyabor        | https://devjourney.info/Guests/78-BubunyoNyabor.html
+Develop your curiosity                                                                                          | Ted M Young           | https://devjourney.info/Guests/79-TedYoung.html
+First, find your passion                                                                                        | Joseph Young          | https://devjourney.info/Guests/80-JosephYoung.html
+Know how your company makes money                                                                               | Richard Campbell      | https://devjourney.info/Guests/81-RichardCampbell.html
+Do not compare yourself to others                                                                               | Pariss Chandler       | https://devjourney.info/Guests/82-ParissChandler.html
+Learn the idiomatic way of the language you are coding into (pythonic way)                                      | Reuven Lerner         | https://devjourney.info/Guests/83-ReuvenLerner.html
+Pair Programming!!!                                                                                             | Reuven Lerner         | https://devjourney.info/Guests/83-ReuvenLerner.html
+When you start a new job, take it all in, don't put any expectations on yourself                                | Molly Struve          | https://devjourney.info/Guests/84-MollyStruve.html
+Get involved with OpenSource, find an issue on a repo and fix it                                                | Shedrack Akintayo     | https://devjourney.info/Guests/85-ShedrackAkintayo.html
+Reverse Engineer how people around you got their jobs & do not cold apply                                       | Jamisson Dance        | https://devjourney.info/Guests/86-JamisonDance.html
+Trust yourself, and if you don't know what that looks like right now, figure that out                           | Denise Gosnell        | https://devjourney.info/Guests/87-DeniseGosnell.html
+Learn JavaScript thoroughly, you will need it                                                                   | Lydia Hallie          | https://devjourney.info/Guests/88-LydiaHallie.html
+Trust yourself, work hard, work smart, identify your purpose                                                    | Hadelin de Ponteves   | https://devjourney.info/Guests/89-HadelinDePonteves.html
 stay humble, it's ok not to know everything. If you know everything, you are in the wrong place!                | Khaled Souf           | https://devjourney.info/Guests/90-KhaledSouf.html
 It's by talking to people that you can plan adventures like a coding tour                                       | Harald Reingruber     | https://devjourney.info/Guests/91-HaraldReingruber.html
 Don't do something just to do it, do it because you are passionate about it                                     | Tracy Lee             | https://devjourney.info/Guests/92-TracyLee.html

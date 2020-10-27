@@ -50,8 +50,8 @@ description: #TITLE_WITHOUT_HASH
 <div>
         <h2>Transcript</h2>
         <p><i>
-                The following transcript was automatically generated. </br>
-                Help us out, <a
+                ⚠ The following transcript was automatically generated. </br>
+                ❤ Help us out, <a
                     href="https://github.com/DevJourneyFm/DevJourneyFm.github.io/tree/master/Guests/Transcripts/NUMBER-FIRSTNAMELASTNAMETx.html">Submit
                     a pull-request</a> to correct potential mistakes
             </i></p>
