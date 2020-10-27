@@ -63,3 +63,7 @@ header li.buttons:hover {
     background: -ms-linear-gradient(top, white 0%, white 100%);
     background: linear-gradient(to top, white 0%, white 100%);
 }
+
+td {
+    background: #fff !important;
+}
