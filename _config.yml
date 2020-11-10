@@ -11,7 +11,6 @@ plugins:
   - jekyll-seo-tag
 twitter:
   username: devjourneyfm
-  card: summary
   author: timothep
 social:
   name: timothep
