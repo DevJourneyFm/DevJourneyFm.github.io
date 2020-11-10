@@ -6,7 +6,7 @@ import os
 # CreateGuest.py '114' 'Kemdi Ebi' 'Nov 04' 'title_without_number'
 
 def loadIndex(path):
-    indexFile = open(os.path.dirname(os.path.realpath(__file__)) + "\\" + path,'r')
+    indexFile = open(os.path.dirname(os.path.realpath(__file__)) + "\\" + path,'r', encoding='utf-8')
     return indexFile.read()
     
 def CreateFile(pagecontent, args):
@@ -16,18 +16,18 @@ def CreateFile(pagecontent, args):
     nameWOSpaces = args[2].replace(" ", "")
 
     path = dir_path + "\\Guests\\" + number + "-" + nameWOSpaces + ".html"
-    htmlFile = open(path, 'w')
+    htmlFile = open(path, 'w', encoding='utf-8')
     htmlFile.write(pagecontent)
     htmlFile.close()
 
     # FileFormat Number_FirstNameLastNameTx.html"
     pathTx = dir_path + "\\Guests\\Transcripts\\" + number + "-" + nameWOSpaces + "Tx.html"
-    htmlTxFile = open(pathTx, 'w')
+    htmlTxFile = open(pathTx, 'w', encoding='utf-8')
     htmlTxFile.write("<span></span>")
     htmlTxFile.close()
 
 def overwriteFile(path, content):
-    htmlFile = open(os.path.dirname(os.path.realpath(__file__)) + "\\" + path, 'w')
+    htmlFile = open(os.path.dirname(os.path.realpath(__file__)) + "\\" + path, 'w', encoding='utf-8')
     htmlFile.write(content)
     htmlFile.close()
 
