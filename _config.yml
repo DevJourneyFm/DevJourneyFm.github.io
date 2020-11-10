@@ -21,5 +21,6 @@ social:
     - https://github.com/timothep
 plugins:
   - jekyll-sitemap
+  - jekyll-seo-tag
 theme: jekyll-theme-dinky
 repository: DevJourneyFm/DevJourneyFm.github.io
