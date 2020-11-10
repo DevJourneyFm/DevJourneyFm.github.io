@@ -6,12 +6,13 @@ logo: /Img/logo.png
 image: /Img/logo.png
 author: Tim Bourguignon
 show_downloads: false
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
 twitter:
   username: devjourneyfm
   card: summary
   author: timothep
-  title: DevJourney Podcast
-  image: /Img/logo.png
 social:
   name: timothep
   links:
@@ -19,8 +20,5 @@ social:
     - https://twitter.com/devjourneyfm
     - https://www.linkedin.com/in/timbourguignon
     - https://github.com/timothep
-plugins:
-  - jekyll-sitemap
-  - jekyll-seo-tag
 theme: jekyll-theme-dinky
 repository: DevJourneyFm/DevJourneyFm.github.io
