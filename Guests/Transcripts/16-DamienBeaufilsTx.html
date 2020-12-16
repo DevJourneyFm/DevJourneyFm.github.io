@@ -1,0 +1,208 @@
+<p><b>Tim Bourguignon  0:00</b></br>  
+This is developer's journey. My name is Tim Bourguignon. Thanks for joining.
+
+Hey, hello, everyone. Tonight I have a fellow Frenchman on the line, who is Hi, domina Hi, Jim. Hi. Um, welcome to the podcast.
+
+</p><p><b>Tim Bourguignon  0:19</b></br>  
+Thank you.
+
+</p><p><b>Tim Bourguignon  0:20</b></br>  
+Um, you and I met a few weeks ago at the end crafts conference. Yeah. That was in Paris, which is your hometown? Right? Yeah. Right. And we talked at the at the booth of the company you work for about many things, among others about testing and about craftsmanship, which are the two topics that we'd like to, to jump on with you today. But before we do that, maybe do you want to present yourself give a bit more information about yourself?
+
+</p><p><b>Damien Beaufils  0:53</b></br>  
+Okay. So well, I'm a software developer at a French company called octo technology. And we, we have some teams we call the tribes. And we have a tribe, which is called the software, which is for software craftsmanship. And we, we are on maybe 15 peoples around this subject this topic, because we think there is bad code everywhere. And we want to make better places with better code and some coaching tech leading the development, teaching, whatever. So my job at octo technologies, kind of those topics. So gotcha. I'm a software correct craftsmanship coach, I'm kind of a teacher. And most of it. I'm a tech leader and a software developer. So and I'm currently working for the French government a big with a big website of the French government since the last four months.
+
+</p><p><b>Tim Bourguignon  2:02</b></br>  
+Okay, so you've understood, right, you're your consultant for this company, ATO technology. And you're now consulting for the for the government. Yep. Those tribes are some kind of internal teams inside of octo to, to organize yourself and learn and progress on your on your journey. Right. Exactly. That's right. Okay, cool. Cool. Um, do you want to tell us more about this? geek you're in right now?
+
+</p><p><b>Damien Beaufils  2:29</b></br>  
+Yep, sure. So Well, um,
+
+since the last four months, I'm the tech lead of a big software development team, a big software development team, because we are 11 people. So as a double digit team, we are still at the same team with just one single team. And when when I arrived, the software odd had already one year. And my main job I had to explain. The Delivery Manager called me from months ago and told me Hey, Damien, do you search for mission? Oh, yeah, why not? Okay. And because we we want the current tech lead one to leave because he wants to change his mind changes the subject, because it's for one year is working on the same mission. And I think there is some kind of issue with the tests with the continuous integration with the with the guy. I don't know what exactly, but, but I think there is some kind of issues and each iteration, iteration after iteration, we have more bugs, after all, so it's not quite, it's not quite fun, just after one year, okay. When a manager when a manager tells
+
+</p><p><b>Tim Bourguignon  4:00</b></br>  
+you that you have to be very brave.
+
+</p><p><b>Damien Beaufils  4:05</b></br>  
+First, I thought it was a trap. Okay.
+
+I didn't know if it was a,
+
+I don't know could say a real project on
+
+a smart project, or it was a scam or something. But I went, I went to this project and I, I sold the paint. Because there there was many difficulties about continuous integration, red builds random tests. And when I ran the first two weeks, I heard a lot of people saying Oh, is the build is red. Okay, try to relaunch it. And it should be okay. Maybe are easy to read three times in a row. Okay. You should there is maybe a problem. We should look at it but you know, it's always raised Then we received too much may from Jenkins. So I try it all, it's kind of complicated. So I arrived on this team. And I know there was something wrong about the tests about, about something I didn't know exactly, because most of the team was there since for the last year, and I just arrived for two weeks, I couldn't go and and tell them, hey, you do not do this, or don't do that. Because I just don't know, their context, I don't just don't know their pains or stress on many, many things. So my first action with this team was to, to create some kind of workshop for two hours, about the test in about the pains and the pride about the test. I mean, I didn't want to speak, technique, or the software, but just things and what kind of pains they have today. So it was four, four months ago. And that was kind of like, the randomness of tests. The build, which is very long, too long. The none the people who are not none confident about it. But when the test was okay, it was green and was right. It's, they were primed to do some refactorings they were confident, they were happy. And they can they could speak with the product owner to do tell, okay, this part is okay, we can guarantee because of the test, but this part, we can guarantee nothing.
+
+</p><p><b>Tim Bourguignon  7:04</b></br>  
+And I am
+
+</p><p><b>Damien Beaufils  7:09</b></br>  
+after this workshop about pains and pride, we've done just in the same auction, we've talked about the the test and the vocabulary, vocabulary, as well as the different kinds of tests. Because after all the discussions I saw, I heard that many, many, many types of tests, many kinds of tests, were not common between people in the team, I explained to myself, for example, for for a guy, your unit test was just a test with a Java mockito and so on. And for another guy unit test was or could be a GUI test. But just to check one behavior that we see lynnium and so on. So we had some kind of an issue about vocabulary in the, in the workshop, we, we put it down and we all the team, we was like a brainstorm It was like, okay, which kind of test to do we have in the code? And how can I? How can I classify them in the code? together, I was always just like, a coach on any Mater because I have my, I didn't want to put my advices for the team right now. I just want the team to think just to, to let let the keyboard and let the software just for two hours and think think about our software, think about the code, see, think about the tests. And so we split three, three main categories of tests. So unit tests, integration tests and greet tests. And we we extract some code to mandate those tests and explain Okay, how can I find unit tests in my code or can I How can I How can I find integration tests okay. Or can I classify those tests in my code and after that, we I introduce them the the concept of the test period. And the test pyramid is a is a model wrote by Mike Cohn in 2009. And the main purpose of this model of this pyramid is to have more unit test done more than integration tests, then the greatest done menu of this, why
+
+</p><p><b>Tim Bourguignon  10:14</b></br>  
+your unit test at the bottom? And then the middle and the GUI test?
+
+</p><p><b>Damien Beaufils  10:20</b></br>  
+Yep, that's right. And
+
+we want to have in the best world, we want to have between 70 and 80% of unit tests, and between 10 and 30% of integration tests, and below 10% of greatest and just a few manual tests, because you still have some manual tests of security, sometimes performance, sometimes about business cases, which are very specific, and we could could not be automatically,
+
+programmatically wrote written.
+
+So I introduced then the pyramid model. And after that, after, classify the classifying the different kinds of tests and how to find it in the code. I wrote a little script in bash, with some cat with some fine grep said, whatever, which is in my GitHub account, and which allows me to calculate the pyramid. This is, so it's the number of tests and the pyramid. In my entire project without any Sona or whatever, it just scripting, it took me just one hour, and it permits me to see to have facts about the test on the code, and just enough just feelings. So four months ago, we had about 20% of unit tests 50% of integration tests and 30% of retest. So the Korean was not really a pyramid meant more than more like a spaceship. That's really the ice cream cone. Not really the inverted pyramid. But yeah, like a UFO. Not a quite good pyramid. And the painter, the painter, the team as shared of shared one
+
+Huh, we we could
+
+we could see the painter with the pyramid wizard the spaceship because the build was too long to run them. And there was so not so much unit tests in in the project. It was it was just percentage, to have more factual values we we had. So after one year of software development, we we had only to 250 unit tests, and about 700 integration tests and 400 we just so was kind of difficult to have new to add new features and do update a previous feature without breaking anything or breaking multiple tests. Because if you change one behavior in the code, if you have if you have a good unit test coverage, if you change one behavior in the code, you should have one unit test which failed just one but if your coverage is only about to retest or integration test, if you change just one behavior in the code, there are multiple tests multiple tests there which will be failing because integration testing we test are like a scam or just an illusion of safety. But we can ask ourselves the equation it's why why your software development team put so much energy so much effort in, in GUI testing, integration testing, not in unit tests because they all share the fact that okay, unit tests are so great are so, so quick, so reliable, efficient, that why why we Why you didn't do that when you didn't To work, any unit test, but just integration test, or
+
+have we test?
+
+</p><p><b>Tim Bourguignon  15:06</b></br>  
+Indeed, I hope you have an answer. Yeah, sure.
+
+</p><p><b>Damien Beaufils  15:13</b></br>  
+Because it's the most of the time. And you should write, the people write GUI test or integration tests. It could be for two main reasons, I think, because you're working on a legacy code. So you sometimes don't have the, the power The, the, you could not have easily unit tests, because because of the poor code because of static things, or poor dependency, or none, none dependency injection, just legacy code. So you have to characterize your code to begin with, with an upper test, so we test or an introduction test. And then you can add a few unit tests after just fixing your behavior or just adding new features. But in my case, it was not so legacy code, because it was new project just one year ago. And they wrote greatest lot, because it was easily because your code don't have to be well designed, he don't have to be testable solely that it's easy to write a retest, you just write your feature, you just check. Okay, it's kind of good. Oh, yeah, I should refactor it. But now it's, I don't want to refactor it. Because I don't have any feedback. I don't know if I could break anything. So I just put it there and just don't touch. And we'll put some tests, which one test, we which will use all the layers. So all the modal view layer says Model View control layer, the service layer, the database layer, and so on. It's kind of an illusion of safety. Because Yeah, your test is green, but you just check maybe one behavior, or maybe two behaviors, but it's not enough. And started when the project started was really quick. I think you had you add the one, one greatest, okay. It's just 570. Yeah, it's quite quick. And a few months later, oh, the build is no five minutes. And the human say, Oh, the bill is no 20 minutes. Our nice. And, and then oh, with some tests are our break, always there is timeout why. But when we test or an integration test failed, you don't know where to find the, the regression in the code, you know, what behavior is broken. For example, you have a test which readers our integration tests, which test the login, also subscription of an user on your website. And if this test is broken, you know, there is a problem with the user's subscription. But you know, if the issue is with the details with some kinds of business rules, all of you, you don't know the location of the regulation. We test our, with our unit tests, you will, you will have a feedback about the localization, you have the line of code or the block of code, which is which is in the issue, but you don't know really well with unit test, you don't know really, what the big, big feature which will be impacted by the regression.
+
+So
+
+it was not so great. There was some kind of issues with the test. But we've took some actions. We to transform the spaceship into a real pyramid, real Egyptian pyramid. So we took some actions. With the whole team, even we predict honor. I mean, in the workshop about tests and pains and prides and the test vocabulary, test vocabulary. I invited the product owner of the project because he wanted to I wanted him to To share his pain to end his pain was important, but different from the software development team. Because the product owner was explaining that he takes too much time to check each feature and each previous feature to be sure nothing is broken. And it was
+
+a PDF it's
+
+guy to, to spend all of it all of his time to just check if the search our development team and did not broke anything was not good.
+
+</p><p><b>Tim Bourguignon  20:43</b></br>  
+You mean check for regressions?
+
+</p><p><b>Damien Beaufils  20:45</b></br>  
+Yeah, that's right. So we took some actions, not per sprint action, but more like my written actions. I mean, I didn't want to stop the project. I, it was not, it was not an option, we wanted to add new features, Sprint after sprint, we don't want to stub the project for one sprint or two and say, Okay, let's take our technical depth and, and let's write tests for one month. It's not good for the class or for the customer, or product development team, because it's, it's not fun to just write test, it's fun to have a teacher and this but just, it's not really fun. If you do that for a week or two weeks on more stone, we had a few actions like for example, we decided to, to delete the next, the next GUI test, which fails because of randomness. And not just delete it, delete it, but to replace the test and get down get below in the pyramid. So to replace her, for example, a one week test with multiple unit tests. So we had to check, we had to check which part of the code is biased BIOS test which which is which is random. And we had to check if they are they was unit tests and integration tests to cover it and then to delight it. And one, when another action was to just ask ourselves question with when we develop when we develop and when we do some code reviews. Like when I add the new greatest, the question I had to I have to ask myself is can I test another way with another tool? A bad bad ID produced by he was to use witness to testify if he was to, to use GUI tests to test JavaScript, instead of doing JavaScript unit testing with jasmine or whatever, what front rock and it was kind of an issue about that too. Another action we took was to rename unit renamed test classes. So, when we find the sum test, which runs without any from our code, which run just with mockito we until we under Java we add a suffix. So, instead of my service test, it was my service you test for for the integration test the same way if if we see that the test class loaders spring context or was not unit because because the code was not evil lated we had the INT suffix so we had the my service int test for integration test. And it helps to to see in which
+
+in which tests you are working on.
+
+Because
+
+Because most of the time
+
+there was just one plus one Test class. And we put we some different kinds of tests was put in, in the same class. So we had the unit test mixed with the integration test. So when you look at the test, you don't really know if, okay, this is unit, but do we? Do we really need spring or not? Or can this a test to work with our result this the subject, so it was not really clear, really, really clear. So we access actions. And the it was like, we've done those actions for the last four months with the kind of voice control. So we've done that, when just when we work on a feature on or when, when we saw it, and code reviews. So we didn't want to spend one week to put test to add tests or something, but just just spent one hour more maximum on your user story to add tests just to fix it things. So just by could voice controls all along for the four months. And we we trained the whole team at practicing TDD. So the whole team had the training one month ago, I was being
+
+</p><p><b>Tim Bourguignon  26:32</b></br>  
+test driven development, right?
+
+</p><p><b>Damien Beaufils  26:34</b></br>  
+Yep. Right? test driven development, three, three days training, to, to share a practice because in 11, in the 11 people, the team, we were three, maybe four to do TDD. And the six other one not
+
+it was not fluent.
+
+pair programming was
+
+was kind of a solution from that. Because you can share your practice, you can you can train people, you can explain the practice and, and show them. How is it important and and why is it important? And what what is the result of a practice like TDD? And what is what are the difference between test after and TDD. So TDD is that just as before, so test after test, and TDD. So we we've trained the whole team for three days, and now maybe 80% of the team is doing TDD each day. So I'm quite happy about that. Because the suspension spaceship, the brand new spaceship is now on. Not a real pyramid. Hi, I have some I have some facts right now. Um, so
+
+for a month
+
+unit tests, we four months ago, we we have we had the 20% of unit tests. Now we have about 50% of unit tests.
+
+</p><p><b>Tim Bourguignon  28:31</b></br>  
+Okay, great.
+
+</p><p><b>Damien Beaufils  28:32</b></br>  
+Now, for integration tests, we, we went from 50% to 40%. And the greatest was the main part. We went from 30% to 10%. But it's just percentage. If we look at the number of unit tests, which is very important we we are now are at 1300 unit tests. And before four months ago, we we were at 200. So Wow, you wasn't it seems like it's amazing or something, but it's not. It's just the little actions day after day. Boys control every time can review every time different programming, extreme programming, all the Extreme Programming practices we've done in that team and there is a result just not fuming about that. It's just not if we ask our developers if there are more happy about the code more confident more. Just just more heartbeat. It's just fine. I'll answer yes, but for my job for your customer. It's very important. To, to prove them that those actions those boats could roll our really interest. And we've reduced we reduce the number of bugs on the application. And we we had we add them each time the same on each sprint, sorry is the same number of features. And six months, four months ago, six months ago is well, it was like a year or sprint, we are the five new feature, then another one new feature then another 10 new features, it's what it was not stable. So we stabilized the product, about business and features. And we we can share that with with our customer. All those facts about the tests about pyramids. I print it, I do charts, I make charts about it, every sprint, at the end of the sprint, I print it and I do it on our Kanban. So the whole team, see the whole team see xo there walk about those boys good roles, and our customer and our project now can see it too. And they can see the improvement about the software and and about also about the continuous integration, we went from two hours or build and two now we are 20 minutes. So we divided by five, maybe six. So we tried it. It's kind of a big and long battle. That
+
+</p><p><b>Tim Bourguignon  32:05</b></br>  
+Well,
+
+</p><p><b>Damien Beaufils  32:06</b></br>  
+it was it. I don't
+
+when I arrived on this project.
+
+When I wrote on this projector away it will I feel it like challenging. Now I think I'm It was quite a change. But now it's I mean, I could exit this team, I could change the mission. I could. I couldn't. Some other guy could be the tech lead on. I could just not be here. It will be fine in to do that.
+
+</p><p><b>Tim Bourguignon  32:45</b></br>  
+So on the right tracks.
+
+</p><p><b>Damien Beaufils  32:47</b></br>  
+Yeah. That's right, though. for newbies, for example. A takeaway for newbies would like to focus on unit test focus on the TDD practice. I think and focus on the code review practice, I think it's more important things when you want to be pride about your code and want to do better code. And when we you want to be a good software developer?
+
+</p><p><b>Tim Bourguignon  33:22</b></br>  
+Yeah, it sounds really interesting how this focusing on this kind of produced effects. And in many of the different areas, it's kind of was just one one crystallization of the problems. And by focusing on this one, you you get all the rest sorted out. That's kind of amazing.
+
+</p><p><b>Damien Beaufils  33:39</b></br>  
+Yep. It's not just technical stuff. It's it's also a business stuff,
+
+</p><p><b>Tim Bourguignon  33:44</b></br>  
+in fact, and like the CPU you gave me gave us if I if I can summarize this, first starting with about speaking about the pains, and then getting common vocabulary, what are we actually talking about? Then? How do I identify those items with discussing the vocabulary? So in your case, it's a unit test, integration test, and you test and then each time you start thinking or handling a test, you have to think Can I do it differently? Can I test this differently? Meaning Can I test this one layer below maybe. And then slowly move things around creating safe harbor with this suffix so integration or into or you for you test and slowly moving things around while you're actually producing value for your customer. And going forward with XP practices
+
+</p><p><b>Tim Bourguignon  34:44</b></br>  
+and doing
+
+</p><p><b>Tim Bourguignon  34:47</b></br>  
+high quality work from now on I that's amazing. That's a really great way of of tackling. I would say Brownfield project or legacy code or Well, that's great. Cool, cool. Cool. Um, and you you held the talk about this, right?
+
+</p><p><b>Damien Beaufils  35:03</b></br>  
+Yep. Last week in the software, craftsmanship, meetup. Okay.
+
+</p><p><b>Tim Bourguignon  35:10</b></br>  
+And how was the reception of that in the audience?
+
+</p><p><b>Damien Beaufils  35:14</b></br>  
+I had a few feedbacks,
+
+good feedbacks, because it was the first time the people, so about measuring your test pyramid, and in the number of tests, I don't give a shit about code coverage on air, for example. I mean, courageous, for me, it's, it's a non quality indicator. That means, for example, if you have 60%, of courage, you this, the single thing you can say is just that 40% of your code is not tested, isn't that correct, but you don't know about the 60%, you don't know if there is just one test, which cross all of those layers of, if it's a good unit test, just the practices can tell you that and the pyramid, the German measurement, and just creating of this measurement was kind of a factors. It's kind of a smell of your, your project as your software, it's much more interesting for me to have this, this pyramid, this number of tests than just a code coverage I I can do nothing about with coverage.
+
+</p><p><b>Tim Bourguignon  36:45</b></br>  
+Okay, I'll be sure to add the link to your project to your GitHub project in the shownotes. So people can have a look at the the script you wrote to generate this parameter.
+
+</p><p><b>Damien Beaufils  36:54</b></br>  
+quite simple. Just bash a few lines.
+
+</p><p><b>Tim Bourguignon  36:57</b></br>  
+Great, great. Great. And we're kind of at the end of our time. timebox. But I wouldn't have I wouldn't want to leave it there without speaking about octo in the work you've been doing. And the book, we received that in craft. Yeah, made a lot of work in there. You want to talk about the bullet a little bit? Yep, sure, one minute.
+
+</p><p><b>Damien Beaufils  37:19</b></br>  
+So like I said, Before, we have a trailer, software craftsmanship tribe. And for the last few years, we wrote a book, which is called the culture code in French only for right
+
+</p><p><b>Tim Bourguignon  37:37</b></br>  
+now.
+
+</p><p><b>Damien Beaufils  37:39</b></br>  
+It's kind of a, we, it's kind of a book about all suffered craftsmanship practices. And it's the I think it's the first book about those things in French. For example, I really love the suffer craftsmen from Sandra manku are the pragmatic programmer, and, but those kind of books doesn't really exist in French. So we've, we've mashed it up. And we we've put a lot of experience at you years of experience. In our project, we have things which worked and things which didn't worked. So two years of project software development projects at open technology, and we've put it in this book to spread our feelings are our passions and, and we are pride of what we are doing with our customer and we want to we wanted to share it and the whole we do it with other people. So that's why we we gave it we gave this book at the M crafts conference three weeks ago. So
+
+</p><p><b>Tim Bourguignon  39:04</b></br>  
+yeah, no, I'm
+
+</p><p><b>Tim Bourguignon  39:06</b></br>  
+beside the the French book which only French people will will enjoy. Unfortunately, I find it really interesting that you guys have been working on the side in in your company a while being on customer projects, kind of brainstorming and and continuously improving yourself as a group or as a tribe, as you call that. And that's such a book came out of it. This is a wonderful expression of, of developer's journey, I think is working all together towards this goal that some that's great. Congratulations for that. It's a really good book. If you do speak French. Get in touch with octo you won't regret it.
+
+</p><p><b>Tim Bourguignon  39:49</b></br>  
+Thank you. Um,
+
+</p><p><b>Tim Bourguignon  39:51</b></br>  
+well, did we miss anything? Do you want to say something else did we forget one topic?
+
+</p><p><b>Tim Bourguignon  39:58</b></br>  
+I'm I don't think so.
+
+</p><p><b>Tim Bourguignon  40:00</b></br>  
+Don't think so. Great, very great. A lot of great gems are this recipe and I have to, to print it out and give it to some of my colleagues, actual colleagues. That's gonna be really helpful here. Thank you very much.
+
+</p><p><b>Tim Bourguignon  40:15</b></br>  
+Um, well, great, then
+
+</p><p><b>Tim Bourguignon  40:19</b></br>  
+I guess we will have to speak in a few in a few months or a few years. See where this October tribes are now going to? And maybe for your next book. Do you have any other planned?
+
+</p><p><b>Damien Beaufils  40:33</b></br>  
+Just a plan in Paris? We I'll be speaking in the pub. A Weber, Paris, Weber 2000. This year, so contracts in September or October about? So software craftsmanship and software development.
+
+</p><p><b>Tim Bourguignon  40:53</b></br>  
+So okay. Okay. Cool. So if anyone is coming into Paris, they should drop by? Yeah. Great. I mean, then thank you very much for your time. That was really enjoyable. Thank you. I hope we can we can do that someday again.
+
+</p><p><b>Tim Bourguignon  41:10</b></br>  
+Yeah, sure. We
+
+</p><p><b>Tim Bourguignon  41:13</b></br>  
+thank you very much. And then have a good evening.
+
+</p><p><b>Tim Bourguignon  41:15</b></br>  
+Yeah. Thank you. Bye.
+
+</p>

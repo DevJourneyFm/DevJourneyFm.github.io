@@ -1,0 +1,181 @@
+<p><b>Tim Bourguignon  0:05</b></br>  
+What is a good software developer? What do excellent developers do? There are probably as many answers to these questions as developers in the world. So let's ask veterans and newcomers what their story look like. Let's learn directly from them. Welcome to developer's journey.
+
+Hello, and welcome to developer's journey, the podcast shining a light on Developers Live from all over the world. My name is Tim Bourguignon, and today, I received Rob Allen. Rob, thank you for joining me. Hi, thank you. We're here in Estonia, Intel in beautiful city of Tallinn, for the top con conference. Yeah, Yes, we are. And I just saw your talk today. You are a web developer. And you were talking about serverless? Yes, that was quite interesting. Maybe it will be the topic of this discussion. But first things first, we would like to know how you came to be here. What were the big roadblocks that forks the interesting path that led you to becoming a developer and then becoming someone that is able to give a talk on several lists at
+
+</p><p><b>Rob Allen  1:20</b></br>  
+such a conference? Wow, why did you start right at the very beginning, I suppose.
+
+</p><p><b>Tim Bourguignon  1:25</b></br>  
+Probably you weren't.
+
+</p><p><b>Rob Allen  1:27</b></br>  
+I've been in this for a long while now.
+
+And
+
+I wasn't a developer, before I got to university. So a lot of people go get into programming as a kid that was not till I had a computer, I used it for playing games. I'm old enough that my computer was an eight bit computer. But I really wanted to be electronic engineer, I wanted to do electronics. So I took a degree in electronics, and discovered I can't do electronics. Not good at it whatsoever. However, I was really good at the software section of the electronics course. And so I went away, I enjoyed it, I wanted to do more electronics, and I did summer jobs. So more computing. So I think more summer jobs with programming. Weird languages. First time I got paid to program was in Fortran. The second time I got paid with writing embedded software into my controller. And then I got a job in c++ writing Windows applications, straight out of uni. And then I moved from doing desktop applications into the web. about the time that the browser was slapped, probably wasn't the best time to become web developer, the front end, but the back end grows really interesting. So I really liked being able to distribute my application onto my server. And it working on everyone else's computers file a web browser, without me having to recompile and release software. I really liked the centralized server. For the back end, both development just made the whole deployment things so much easier. So I definitely the future from my point of view based and web applications, back then php file are the main languages. So I did mostly PHP when I went into web, still doing PHP, the languages got so much better since I started. It's no longer the PHP that people remember, in lots of ways. It's good. Then 10 years ago, I got invited to talk on a panel at a conference in London UK. quite liked it. Quite lights, getting a free ticket conference that was good. discovered, I quite like sharing my knowledge. So I applied to more conferences, got a little bit of help from people suggesting what I should talk about and encouraging me to submit conferences to share what I know, wrote blog posts from that became sort of slightly well known in PHP, can you just post this to some small degree and look where we are with web today, and monolithic applications, then you look away want to be in the future, things that serve let's just start looking really interesting. So that's where I'm focusing some of my energy. I think serverless has got a really big future. I think you can't go wrong with this basic cost model. The whole idea of not paying unless your code is working. I think it's a wonderful one. And the old enough to remember the last time we did it that way because punch cards were before my time fortunately, I've people I know who use punch cards, but that wasn't me. In our service, we do the same basic idea of timeshare computers. But in a far more robust and better way than we've ever done before. Containers are awesome. I think, tech, so good now, it's really interesting world to be in.
+
+</p><p><b>Tim Bourguignon  5:14</b></br>  
+It's interesting how we recreate the same patterns again. And again,
+
+</p><p><b>Rob Allen  5:19</b></br>  
+you see that all the time, as we give them different names. But over the years, you start seeing the same problems been solved. in similar ways, maybe a slightly different basis, each new generation comes up. The classic example being built tools. So when I started Louise make, and then Java came along, we used and, and now we all use grunt, or Bower or something dope, or whatever it might be that you start by typing NPM. But it's the same basic problem. There's been reinvented multiple times for different communities, I still think making fun of better solutions in that sphere. But they will solve the same basic problem, but slightly more focused towards the community needs to us. And certainly the job community benefited a lot from Ant and that way of building applications in Java, the load community and the front end community for building from lesson sass into CSS, and what they did with JavaScript and minified. JavaScript has benefited a lot from grunt and gulp. So yay, the technology reinvents itself to a certain extent, I think is quite exciting. I felt like
+
+</p><p><b>Tim Bourguignon  6:35</b></br>  
+it was, but still serverless is not growing as fast that was expected.
+
+</p><p><b>Tim Bourguignon  6:43</b></br>  
+That's an interesting question. I stopped
+
+</p><p><b>Rob Allen  6:46</b></br>  
+investing, think about, and I don't know what people expected, because it's quite different to the way you normally think about working. So it's only three years old. It's not very old at all. Now, lambda was announced in November 2014. So we're only three years in? I think, I think it is being used more than people think, Well, maybe not as much as the venture capitalists would like us to use it, maybe. Because it doesn't solve a problem. And we have to rethink the way we build. And we can do that quickly. As a community, relatively slow for all our fast engine technology, we're relatively slow to adopt brand new ideas. If I think we are.
+
+I'm not totally surprised. The first few years.
+
+I serverless was mostly or completely JavaScript totally, as quite limited in terms of the pool of vertical developers. Suddenly, recently that you've got go there, you've got Python, open with Scott, PHP now, Ruby's around, and we need all those languages. If you're going to become a fully fledged developer ecosystem, we're not going to start writing JavaScript, let's face it. All of us can write some JavaScript, but not all of us spend our lives right in JavaScript. So the other languages have to be there, the whole idea of decomposing application into small blocks, not having an always on server. That's a different paradigm. I think it'll take some time. I'm not surprised.
+
+</p><p><b>Tim Bourguignon  8:23</b></br>  
+How do you go about and I wouldn't say convince, but try to ease people in into this serverless idea when they have used monolith for their whole life and hosted it themselves and, and had everything on premise, since
+
+</p><p><b>Rob Allen  8:41</b></br>  
+ever, with extreme difficulty.
+
+The way I see it, and the way I'm seeing serverless turn up is mostly by stealth. What's happening is, there's a new requirement that's slightly separate from the main application that needs to be done. And you start seeing that being done in service. Okay, we need to process something we need to start doing, create a whole load of thumbnail images from this s3 folder, something like that, you discover people have dropped a serverless function in to do that little bit of work. So the big monolith still exists, nobody's gonna throw away all that code quickly. If it works, and it's making money you're not throw away, that'd be silly. But the additional work that bits and pieces, the cron jobs, you start seeing those become surplus over time, because it's an easy way to add additional functionality without risking the stability of your main codebase because you can just pull it off to the side, particularly if it's not on the critical path. Because then it comes free. It's probably low enough volume that it's in the free tier for lambda. So your first use case doesn't cost you any money either. That's quite motivating. For developers. It's interesting. So you starting to see little bits of service come in. And then someone hooks into Dynamo dB. If they're on lambda, or if they're on Google, they've dropped in a Firebase DB or something like that, because they need it to connect to something that's mobile. And all of a sudden, you've got a bit more services turned up. And I don't think you got your way to replace your monolith with a serverless application, any more than you take a monolith and turn it into micro services. Most people are not doing that. Most people are extracting a bit of that monolith that needs change, and making that a micro service, also leaving the rest of the monolith alone. And I think serverless is going the same way. We have our main application, we have these additional functionality, we start building those and serverless, we discovered that we can roll those out five times quicker that we can get approval for a new release of the monolith. So we do a bit more service or a bit more microservices. And suddenly, half the application is now in this serverless, microservices, serverless or micro service world. Then the new app comes along and that's built over here now rather than over there, because we know how quickly I think it goes that way. I could be wrong. But that feels like the way people are doing it. It makes sense. The VC people are different. You got VC money you can do like because she fact have a boss, your boss, but in for acqui hire or you're going for big payout later. Lucy you've got lots of money and a lot and not a lot of time to come up with something that's got scale. serverless is good for that service is really good for going to scale cheaply. Because until you've got scale, you're not paying any money. And VC bad people like that. They don't spend the money on stuff they don't need they'd rather spend on developers building the stuff that's going to turn into the next big thing.
+
+</p><p><b>Tim Bourguignon  11:56</b></br>  
+And makes a lot of sense. When you have this monolith just to build around and just a big moment, be in work around it. But how do you go and change your mindset? Because I used to talk about what I did. Half a year ago, I built a small service. There's zero line of code, yes made using Zapier or IFTTT flow and services like this if you've built a serverless application,
+
+</p><p><b>Rob Allen  12:25</b></br>  
+exactly.
+
+</p><p><b>Tim Bourguignon  12:27</b></br>  
+And when it presented this to people in my company, the first reaction was, ooh, this is not programming. Yes. And the second application reaction was, but there is not even Java there. There's no application server. And so I was I was kind of doing it on purpose, because I know this reaction would be coming. How do you go about this mindset of saying, well, several, this is something new, and we don't need this. And we've been doing for years differently. And it worked.
+
+</p><p><b>Rob Allen  12:56</b></br>  
+dependencies by she tried to change them Why? Like, take your little example, their management didn't care at all, that there was a Java application service customer couldn't care less. And I think most developers are not as set in their ways. Maybe as you think now, they get the impression they are because people are comfortable with the tech they know that people also like tinkering. As a developer, you like messing around with things cheaply. If they are low risk. We like copying outside of the server comfort zone, but outside of something critical. So I don't think it's as hard to change people's mindsets. Maybe the perception is certainly amongst more flexible minds. Maybe I was gonna say younger people, but that's not necessarily true. age doesn't actually affect how flexible you are towards technology. There are definitely groups of people who once found their hammer, everything starts looking like a nail. But there are other people that are always looking at the next thing. That's what Kubernetes comes from, for instance, Docker comes from with looking for better or call away or a more flexible way to do something. And if you are used to it I did in more than one way of doing something. I did a new tool isn't that hard?
+
+I think it makes a lot of people from
+
+provides
+
+</p><p><b>Tim Bourguignon  14:31</b></br>  
+what makes we'll see how do you go about adding new tools to your toolbox
+
+</p><p><b>Rob Allen  14:37</b></br>  
+in a very expensive way because I'm self employed so I make money by clients purchasing things off me but me producing work for them. And that tends to be in relatively conservative industries. Enterprise e corporate type work which tends to be fairly
+
+behind the times,
+
+</p><p><b>Tim Bourguignon  15:04</b></br>  
+well, but
+
+</p><p><b>Rob Allen  15:06</b></br>  
+not necessarily at the bleeding edge. But I don't want to be a COBOL programmer in my old age, you don't know, I don't understand. In 50 years time, I'm not going to be doing what I'm doing today. Because I don't want to be. So I need to ensure that I keep my skill set up. So me personally, open source projects on the way I do this. So I contribute to open source projects that enable me to experiment with new ideas and new ways of doing things or things I don't do in my day job. On the PHP side, I lead a open source project called sin framework, which is a micro framework, which is pretty awesome, if I do say so myself. I didn't write it called Josh wrote it. But I'm currently the lead developer. And we're working towards the next major version. And that's got some quite exciting ideas in it. I'm also involved in a Python project around converting restructured text markup into PDF called rst to PDF. And that's really different type of work, which is quite interesting, I think, which makes a change documentation as document markdown documents into a markdown but marked up documentation into PDF. It's a completely different type of thing. serverless I'm involved in the open whisk project. gayness open source one, let's see full interest on it. Yes, and learning and Scala behind the scenes. I've never written Scala before. So that was exciting. Still, it's exciting. Scary. I'm not gonna be a single person, single trick person, because he can't as a programmer, and others.
+
+</p><p><b>Tim Bourguignon  16:51</b></br>  
+When when you sleep, I said,
+
+</p><p><b>Rob Allen  16:56</b></br>  
+Yeah, this is why I said it's expensive, because I do it gym time that I could normally be working. So conceptually, I get my company gives me 20% time to do open source stuff. I choose not to work every billable hour to my clients in order to ensure that I am learning new things. So there are X number of working days in a month. Some days I do open source work on because it's interesting. And is doesn't make me any money. It builds your reputation in your toolbox. They build reputation, it builds toolbox, it builds knowledge. It builds connections with people. I think that's one of the biggest benefits of open source contributing to open source coming to conferences, is mostly about the people than about the technology. I think it's people like you meeting all the other people I've met at top con, there's enough people that I can talk to. I know your Twitter handle, I can talk to you after the conference. I've met Ian, who spoke this morning on fn, another serverless platform. If I need to know anything more about fn for some reason, I've now got contact, I will talk to you and he knows who I am. Because we've chatted at this conference. conference last week, I met someone called Alex Ellis, who runs another open source project around serverless. So if I end up doing anything with one of my clients, whether using something that's in his sphere, I can ping Alex and say Hi, Alex. I'm Rob, we talked last week in London. Can Can we discuss this problem I've now got or whatever. People come to me in the same way I get people pinging me saying, Hi, Rob, we met at x conference. I've now got this problem. Can you give me some pointers, and I'll give them pointers and we'll build a network of people and become more than just me. I don't really trust me. There's certainly other people out there that we can talk to and learn from. I love this.
+
+</p><p><b>Tim Bourguignon  18:59</b></br>  
+I love this. This hallway track yes conferences. It's um, don't people don't know that this is one of the dedicated terms, right? There's people hanging out in the in the Al and just talking to each other and sometimes even missing on a talk and because they were absorbed in one discussion,
+
+</p><p><b>Rob Allen  19:20</b></br>  
+yeah, I've done it many times where I've skipped to talk slot, not what I'm given, obviously. But someone else's is now in the track and I'm talking to people we're having a really good discussion. We're learning things carry on the conversation. The talk, I can probably catch up later, nearly always by can't catch up that conversation ever again. Those both relationships are so valuable. I think over time, even in your career, the chances that you get your next job from people that you now know through your community of people you've met or conferences, or you've met fire Open source software contributions tend to get you jobs that are more likely to be what you're good at and what you want to do. And it's for battling every recruitment agency. If you can avoid recruitment agency, that's normally a good move. And who you know is definitely still nothing is perfect programmers like everyone else. Network. We just don't call it that. Because that's to corporate and businessy. We don't network we hallway track. Yeah. It's the same basic idea. We meet people, make connections, make friends, share our skills, mentor each other, become mentors, and fro.
+
+</p><p><b>Tim Bourguignon  20:41</b></br>  
+Do you have any trick that you could reveal? How to break the ice or how you, you get
+
+</p><p><b>Rob Allen  20:50</b></br>  
+into discussion with people? Not really, I cheat because I speak at conferences. So you're more than likely that people are going to come up to you and say hello, and ask you a question or something like that. I've got over my Basma to forgetting people's names, is took many years, but I can get someone to say hi, who are you and then two minutes later, I forgotten their name. But I get embarrassed saying I'm sorry, I've got your name a little bit too gay. But you've got to a group, there's once you join a group, it's a fairly good idea to try to make sure there's always a gap in the group. So people standing tend to form circles, you'll notice this, you get a group of about five people that circle, try to make sure there's a gap in your circle so that other someone else can join in anything but less than me. And sooner or later, your circle will get too big, and it will magically split into two circles anyway. Yeah, I do the normal boring things. Hi, I'm Rob. I come from the UK. I'm interested in serverless, or I'm interested in PHP or wherever I am. What are you interested in? What are you talking about? What excites you? And conversation goes from there. So I really enjoyed the last talk. I really hated the last talk was that?
+
+Oh, yeah, that's this really cool trick. What did you think of it?
+
+It's not easy just to wander off to a stranger in total? Is he harder? For me, at least in non English speaking countries are not illegal in any sense. So if you take care, we're in Estonia. Most of the conversations are not in English. So you walk up to people and they are talking English to someone who's maybe English is not their native language. And that's slightly harder to get the conversation going. But then you end up in interesting conversations anyway. And you learn some things.
+
+</p><p><b>Tim Bourguignon  22:43</b></br>  
+Yeah. The the circle you described, I know this as the Pac Man printed.
+
+</p><p><b>Rob Allen  22:47</b></br>  
+Yes, exactly. The path opens for always having Pac Man with the open mouth. Yes. But unfortunately, most people are too young to remember who Pac Man is now. Oh, no, come on. We remember Pac Man, there's a whole generation people have got no idea who that is. Boy.
+
+</p><p><b>Tim Bourguignon  23:05</b></br>  
+Yeah, I was I was given a trick A few years ago, is to go to someone and ask for a referral. So not not try to get information from this person directly. But say, Hey, I don't know anyone here. Do you know maybe people I'm interested in for instance, serverless, you know, someone who I should talk to? It's a good idea. Because this way, this way, you are not. You're not cornering this person. They don't have to remain with you and talk to you. They can just redirect you to somebody else and just get rid of you if they want to. or talk to you, there's still these options. But no, it is worth wonder with me. And I do that every
+
+</p><p><b>Tim Bourguignon  23:45</b></br>  
+day. So
+
+</p><p><b>Tim Bourguignon  23:46</b></br>  
+just go straight to the to the organizer, we usually know the most people are there and introduce myself and say, Well, I don't want to take too much of your time just pointing at somebody I should talk to for this topic. It works wonders.
+
+</p><p><b>Rob Allen  23:59</b></br>  
+Yeah, that would do if you pick the right person. Yes. And if not, well pick the next one. Right? Yeah, that would also work. That's a benefit of say, of being the speaker at the conference, you're fairly likely to get people to come to you. Or more likely, I think, generally, once once I've spoken, there's a now a group of people at the conference who recognize your face, definitely. And you're no longer an unknown, because if I just speak, and if the speech resonated with them in any way, there's a slight bit of connection there. Now, I tend to up my talks with some sort of personal thing, so that you know, something that's slightly more personal about me, like if you're a myself, let's talk earlier today, for instance, you know, I've got two children, because I've mentioned my children in the talk. So there's something that's slightly more personal. If you don't want to wade in with something technical. You can ask me about my teenagers and what they think of me being out here for This just helps a little bit makes me feel more, look more approachable, because I don't want to be that remote experts that you can't talk to. I don't think many speakers are like that. But it would be quite easy for someone to think they don't know enough to talk to the speakers, which is absolute nonsense. And most of us don't know, everything. For JavaScript programming, you know, so much more about your field than I'll ever know, for instance. So there's always things that you know, better than I know, your filters, but I don't know anything about what you do. That's definitely not my area of expertise.
+
+</p><p><b>Tim Bourguignon  25:37</b></br>  
+Yeah, that's what I experienced as well. people not wanting to bother you, as a speaker. And I spent actually, more time alone at conferences and less interested in than, I think, should be.
+
+</p><p><b>Rob Allen  25:52</b></br>  
+Yeah, maybe I'm aging, but you can always go off to someone as a speaker and say, Hi,
+
+</p><p><b>Tim Bourguignon  25:57</b></br>  
+that's what I ended up doing. But no more this way than the other ones interesting. Or maybe I'm just giving shear talks and people don't care. That's also an
+
+</p><p><b>Rob Allen  26:07</b></br>  
+IT WAS I suppose it depends on the communities in the conversation Rector certain extent, this one is slightly more reserved than, say, some of the American conferences I've been to, but then I'm generalizing to a certain extent, on my opinion of the American people, which I will keep to myself.
+
+</p><p><b>Tim Bourguignon  26:24</b></br>  
+As an Englishman, yes. Let's go back to the teenagers. What do you what what advice would you give to the next generation of software developers? What would you want to imprint in their minds
+
+</p><p><b>Rob Allen  26:38</b></br>  
+understand that communication? The key thing about being a developer is that you communicate. And there's been a meme going around for a while now that philippus can't communicate. And it's absolute rubbish, completely attitash II, to be a good developer, you have to be able to communicate, you have to connect, communicate your ideas, you have to communicate with people, whether they be your peers, or whether they are bosses, or whether they're your users. You need to communicate with people understand how to communicate, learn empathy, in order to be a better developer, I think that will take you further in your career than just about anything else you could possibly do. Certainly, the technical side, comparatively, is trivial. It genuinely doesn't matter what technology learn, it doesn't matter which language you learn, you can't learn the wrong language equivalent the right language, because how long is your career gonna be 40 years, you're not the chances using the same language 40 years later, is relatively slim. Unless you're gonna be a COBOL. programmer, I you're going to end up as a legacy programmer, get a language that is no longer relevant. naviance do that, or some people do, but most people don't do that. So you're going to change tech over your career. I started off writing windows 16 bit applications essentially. And windows 3.1. There is no windows 3.1. Now, I could still Brighton with this progress. But I'm not I then move on to PHP websites. Now. I'm an API developer. I focus on your tech will change. The Tech is easy to pick up. Knowing how to communicate means you can talk to more people and parlay into other tech and other technology so much easier. Communication, that's where it's at, you got to be able to talk to people, you've got to be able to write down what you're thinking. You got to be able to read Ral so you can understand other people's ideas. It's all about communication. So about understanding what people are naturally the empathy side comes in helping others get better being helped yourself. That whole side of things is what makes the best developers.
+
+</p><p><b>Tim Bourguignon  28:45</b></br>  
+Now how do you train his skills?
+
+</p><p><b>Rob Allen  28:50</b></br>  
+with extreme difficulty?
+
+Like everything you practice?
+
+How do you become a better pianist, you practice? How do you get better at communicating your practice, you write documentation, you improve your comments, you do comment, you write better commit messages, you review other people's codes in open source projects. And by doing that, you're forced to communicate what you would like them to change about their PR or what you think could be made better in this PR. And, again, it comes back to open sources a really good way to do this stuff. Because if you review someone's pull request, you don't have authority to change their pull request. So your words have to be persuasive, to persuade someone that what you think is wrong with their code and could be improved is motivated enough for them to make that change to that pull request. So this is practice is just practice, practice, practice. As with everything else, we just have to practice we don't get better at unit testing without practicing. I was gonna talk before our conversation today on code cutters, which is entirely about practicing in order to get better at testing better and better. Across software craftsmanship, by repeating very small examples over and over and over again, we do the same thing for communication. And one of the easier ways is to code review, or be code reviewed or pair program. That's another good way to be the one who stands up and is prepared to hold the whiteboard pen in meetings. That's another good way. I don't do much corporate works. I'm aware of whiteboards, and therefore things happen to me very often. And I have to write reports to my clients fairly frequently.
+
+best advice I've got?
+
+</p><p><b>Tim Bourguignon  30:33</b></br>  
+Okay. If you were to hire someone, today, what would you be looking for
+
+</p><p><b>Rob Allen  30:38</b></br>  
+someone who could communicate
+
+</p><p><b>Tim Bourguignon  30:40</b></br>  
+now and how would you go back and judge this judge is another word?
+
+</p><p><b>Rob Allen  30:45</b></br>  
+Probably the same way. As Lawson. AKA to write down how to architect something, maybe here's a problem, describe the solution you would use? I don't know, particularly the code. It's really easy to train someone up in code if their key see their portfolio, you've done the technical side, that's easy. I'd want to know that they could communicate their ideas to me, I want them to, I'll probably give them a PR to review. So here's a PR on this on agnostics PDF, can you review it for me, please? Or even better tell them pick it up a source project that you're interested in review one of the appeals for me, you don't have to put it on the website, you could write it down just for me, that is trying to persuade me How does that change? Things like that, I think would be how I blew a tire. I can't imagine hiring someone that because they're not have HR. And then I'd have to do payroll. There's a whole lot of bureaucracy that I personally don't want to do. But those would be the ways I would approach it. When I worked as a technical director for my previous company, I was always looking for someone's ability to talk to me and communicate with the team more than their actual ability to code. There. We did do some basic tests, and a fundamental base level of technical skills you needed for the job. But that's trivial to absolutely trivial to test it so much harder to to find out if someone can work as a team. Had they got them. They have they got the communication skills, so much harder to go about it.
+
+If it's easier for me to of course, we all struggle to hire.
+
+</p><p><b>Tim Bourguignon  32:32</b></br>  
+We're reaching the end of the 10 books already. Wow. Yeah. Is there something we miss? We should talk about? Do you have something on your plate coming in the next week months?
+
+</p><p><b>Rob Allen  32:42</b></br>  
+Not particularly. We come to the end of the year, which is nice. Next year. I'm going to be focusing on getting rst to PDF snaps version out. So that'll be 0.9 for that project has languished for a long while so a new release of that will be really good. And by the focus is slim framework. We'll be pushing out a version for next year, which will be a major release of the framework and will be quite exciting. Exciting stuff coming up.
+
+</p><p><b>Tim Bourguignon  33:14</b></br>  
+Now it's been it's been
+
+</p><p><b>Tim Bourguignon  33:16</b></br>  
+a delight talking to
+
+</p><p><b>Tim Bourguignon  33:18</b></br>  
+you. Okay, and I wish you the best for the rest of the conference.
+
+</p><p><b>Rob Allen  33:21</b></br>  
+Thank you very much enjoys to.
+
+</p><p><b>Tim Bourguignon  33:24</b></br>  
+And this has been a new because of developer's journey, and we talk to each other in two weeks by a small announcement before I sign off. 2018 is not yet over. But I am already well preparing 2019 and I need your feedback, please head over to survey duck dev journey dot info and answer the few questions I prepared for you. Please help me understand how to produce even better content for you in 2019 and help even more developers grow on their journeys. Thanks. Dear listener, if you haven't subscribed yet, you can find this podcast on iTunes, Stitcher, Google music and much more. And if you like what we do, please help your fellow developers discover the podcast by writing it and writing a comment on those platforms. Thanks again. And it's been two weeks
+
+</p>

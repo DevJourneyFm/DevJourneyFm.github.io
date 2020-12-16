@@ -1,0 +1,292 @@
+<p><b>Tim Bourguignon  0:00</b></br>  
+This is developer's journey. My name is Tim Bourguignon. Thanks for joining. Hi. We're here at the at the material conference in London. Yes. Yes, yes.
+
+</p><p><b>Nicole Rauch  0:20</b></br>  
+About my talk is about domain driven design, domain driven design.
+
+</p><p><b>Tim Bourguignon  0:23</b></br>  
+So you're prepared. Ready? I hope so. Great. Great. Um, I wanted to present you, but maybe you can do it. We've seen each other already, for quite a while, but you're the best to describe yourself.
+
+</p><p><b>Nicole Rauch  0:39</b></br>  
+Okay, so my name is Nicola, like you said, I'm a software developer and development code. I'm working as a contractor currently. And yeah, I've also co founded the Socrates conference, which is by now being run in several European continent. countries. I actually lost track of how many, maybe seven or so by now. Yeah, it really exploded over the last two years, I think. countries like France, Belgium, Canary Islands. It's only a Britain was one of the first was the first adopter and Belgium and I don't know, maybe some other countries as well.
+
+</p><p><b>Tim Bourguignon  1:29</b></br>  
+And have you been to all them? nothing can ever be Oh,
+
+</p><p><b>Nicole Rauch  1:33</b></br>  
+yeah, I've been in the Canary Islands.
+
+</p><p><b>Nicole Rauch  1:36</b></br>  
+I needed to try that. You have to bring the spirit there.
+
+</p><p><b>Nicole Rauch  1:40</b></br>  
+Definitely, definitely.
+
+</p><p><b>Tim Bourguignon  1:46</b></br>  
+changes and most of it
+
+</p><p><b>Nicole Rauch  1:49</b></br>  
+was failing. I enjoyed it. Because in February, and so okay. It's called climate change
+
+</p><p><b>Tim Bourguignon  1:54</b></br>  
+as well. Cool. I haven't been destroyed again.
+
+</p><p><b>Nicole Rauch  1:58</b></br>  
+Yeah, it's happened again, but I can make it. So
+
+</p><p><b>Tim Bourguignon  2:01</b></br>  
+when is the next one coming up? Roughly.
+
+</p><p><b>Nicole Rauch  2:05</b></br>  
+There are some coming up. There's one Oh, there's a Socrates day in Switzerland in June. And I think the Italian one is also in June. But by now there are so many that I lost track of the dates are missed. I'll check on the
+
+</p><p><b>Tim Bourguignon  2:20</b></br>  
+website and see if I can put some links.
+
+</p><p><b>Nicole Rauch  2:23</b></br>  
+Yeah, yeah, we have the links at the bottom of the main website. So if you link to the main one, then everybody can
+
+</p><p><b>Tim Bourguignon  2:31</b></br>  
+find this out of that. Okay, so you're based in London right
+
+</p><p><b>Nicole Rauch  2:36</b></br>  
+now. Um, well, I'm based in Casper, but I have a client in London.
+
+</p><p><b>Tim Bourguignon  2:41</b></br>  
+And I'm going back and forth.
+
+</p><p><b>Nicole Rauch  2:43</b></br>  
+So I'm working, like one month per a one week, per month, or per six weeks. I'm in London, I'm working there in the office. And the rest of the time I'm working from home.
+
+</p><p><b>Tim Bourguignon  2:56</b></br>  
+So remote with a team, or remote alone,
+
+</p><p><b>Nicole Rauch  2:59</b></br>  
+no remote with a team with team. And we also do pairing. So I work together with somebody all day every day on WebEx when Skype was with Google Hangout, Google Hangouts, and we used to use VNC. But now we discovered something new and very exciting, which is fluid. Okay. So the company used to use sorrows quite a bit. I don't know if you know that. This is a technique for Eclipse to connect to eclipse workspaces, basically, that are on two different machines. And so whenever one person typed something in, it will magically show up at the other end as well. Because this, this only works for Eclipse, there are some, some ongoing works to make this work with IntelliJ as well. But now that the company switch to IntelliJ, and the sorrows plugin is not ready yet. Everybody was stuck with VNC which is at times quite painful, especially you not only have that lag, but you're also working on a different machine. And so switching like I work on a Mac, usually, and some of my colleagues work on a Linux box. And so I have different different configurations. He bought different figurations everything this is really, really crazy and frustrating. Okay. That's interesting. And flu bits is a way of connecting some people together as well, and it works with IntelliJ and also a number of other editors, which sounds very promising. Like also VI of course and Emacs. Vi next atom and sublime I think
+
+</p><p><b>Tim Bourguignon  4:42</b></br>  
+this is very easy. It's basically like changing the code in the background. Yes. Okay. Cool.
+
+</p><p><b>Nicole Rauch  4:51</b></br>  
+Yeah, that's a really interesting technique for working together
+
+</p><p><b>Tim Bourguignon  4:54</b></br>  
+remotely. Cool, cool. Cool. Um, one thing I really wanted to talk to you about is A couple years ago, you told me you were going on the Craftsman journey or preference? Yes. How do you call that?
+
+</p><p><b>Nicole Rauch  5:07</b></br>  
+I call it a tournament tour. There are lots of words for it, as Paul says,
+
+</p><p><b>Tim Bourguignon  5:12</b></br>  
+Can you tell me again what that is, though? You were maybe probably the best word to describe what it should be when the definition of it is, and then we'll go into the, how you lived it and everything. I want to share everything about that.
+
+</p><p><b>Nicole Rauch  5:27</b></br>  
+Okay. Yeah, so I'm in the software, craftsmanship, movement, many pictures, or Yeah, words are drawn from the medieval craftsmen and people who worked in a way. Of course, this totally doesn't match. But anyways, it's nice picture and in. And so the idea of this gentleman tour in the medieval sense, or in the craftsmanship, real Craftsman sense is that somebody who, who has learned for a while and who has become more prolific in his art should go away from his master and should go and visit other masters to learn from them and also to bring them some of what he learned. And so to have some some cross pollination, and also some some more learning going on. And so in Germany, this is called whites. And some people still do this. And and move from, from Craftsman shop to Craftsman shop, and learn, and then bring them knowledge. And so yeah, the software craftsman, people thought we could do that as well. And you know, go and visit other places and learn from them and experience how they are working and bring back some, some interesting bits pieces in them. Okay to to your own workplace. And yeah, this is the basic idea to do like sort of an exchange fine.
+
+</p><p><b>Tim Bourguignon  7:03</b></br>  
+So how is your journey? Like? What was your customer journey drink.
+
+</p><p><b>Nicole Rauch  7:08</b></br>  
+So you can do this in different fashions, you can either do a real swap. So one person from one company goes to visit another company, and then some person from the other company comes to the first company. What I did was just unidirectional. Actually, it was more of an accident, because I wanted to attend three conferences in London, which were a week apart each. And so I figured, like, going back and forth, totally doesn't make any sense. It's just the week being one conference was just for one day. And so I thought, yeah, I would never go there, you know, just for one day, but what if I just stayed there? And yeah, spent the time working in some companies and having a look at them? how they work? And yeah, I found this especially interesting, because being from Germany, I knew how, you know, I would, how I would relate to like, or how I would be in the German market, or how my quality is compared to like, other German software developers I knew. But what about the London people? Where are they? And how would I relate to them? And I found it quite interesting to, to, yeah, learn about that, and how they were working, you know, like, on the pulse of new technology, and finance and everything, very modern, very sophisticated.
+
+</p><p><b>Tim Bourguignon  8:39</b></br>  
+We're also in finance and go to this, that that kind of, of companies Well, yes. To get in there.
+
+</p><p><b>Nicole Rauch  8:46</b></br>  
+No, it wasn't a problem. Actually, I got in touch with some people I knew already. Also from the Socrates conference, we are always trying to bring in people from other countries and to have some some exchange not only inside Germany, but also across borders. And so I already knew a couple of people in London, and I got in touch with them. And I said, Hey, I'd like to that. Cool. And so yeah, it was Yeah, it all sorted itself out quite magically.
+
+</p><p><b>Tim Bourguignon  9:22</b></br>  
+Cool. And what did you expect exactly? coming out of this, or going into this on this? This journey? Do you have any idea what to expect what you wanted to take out of it? was very something something special you wanted to beside experimenting, the journey itself? something really special you wanted to see?
+
+</p><p><b>Nicole Rauch  9:47</b></br>  
+not really that much. So I mean, that's quite interesting to see to see different companies and different technologies. What I what I found really interesting was that all of the companies I visited hosted their own software. And where I worked at that time, we delivered our software to the customer who would then run it in house with them. And so okay, and the German company I worked with, we would generally have one release per year. And in all of those companies who hosted their own software, they might even have several releases per day, okay, because suppose the service and yes, because it was all hosted by them, and so they were in control of the deployment. And if something went wrong, they could roll back, okay. And one of the companies, they showed me their red green system, so they could roll back within a minute, or, or even less than a minute, if they discovered any serious bugs or something like that. And this is, of course, totally different from what I what I experienced in Germany, I also found it very interesting how relaxed those people were about changing things, and maybe even breaking things because, you know, they had such a strong safety net, and in the German comm company, you know, if we would introduce a serious bug, and then the customer would request the patch. And this was a very, very political thing. And really, like, CEOs of companies shouting at each other and stuff like that, you know, and so, we were so scared shitless of changing stuff. Yeah, this was a very, very different mentality.
+
+</p><p><b>Tim Bourguignon  11:34</b></br>  
+I laugh because I know that I would like very much to see this software as a service hosting. Instead, rollback that would be so different. Were you able in this, in this, you stay in week, right? Something like that?
+
+</p><p><b>Nicole Rauch  11:52</b></br>  
+I stayed for two weeks, two weeks, one company, I know, I have visited four companies. Okay, so I say two to three days in each company?
+
+</p><p><b>Tim Bourguignon  12:01</b></br>  
+Are you able to do something, they're always usually an observer place, or you will really work in pairing with somebody and helping producing stuff? How do you go on a date day to day basis?
+
+</p><p><b>Nicole Rauch  12:12</b></br>  
+Yeah, I paired with people. And
+
+that was really quite interesting. So I'm in one of those companies. I just got together with my parent partner. And of course, they had to explain roughly what they were doing. And then we started pairing. And it felt like, okay, I had been like, on holiday for three weeks or so. And I just had just returned to my workplace. Okay, I didn't know exactly where we were and what this new feature was about, you know, but it was like, you know, slipping into it, like, nom. And that was so amazing. I really love that. And I worked there for two days with two different people in two different teams. And I have the same experience on both days. And that was very, very amazing.
+
+</p><p><b>Tim Bourguignon  13:03</b></br>  
+Was it one company in particular? Or you experienced kind of the same
+
+</p><p><b>Nicole Rauch  13:06</b></br>  
+thing for? Oh, no, this was, this was very special for this one company. I didn't have that in the other three companies. Okay.
+
+</p><p><b>Tim Bourguignon  13:14</b></br>  
+Do you know why? Have you been able to pinpoint what happened in this company that this could work this way?
+
+</p><p><b>Nicole Rauch  13:21</b></br>  
+I think maybe we were more of like, at the same level. So and the other companies and one company that people were too fast for me. So they were, I don't know, like jumping around too much. And, you know, I couldn't keep up the speed of their navigating around the codebase and changing things. And maybe this was because I didn't know that much about the codebase or something. But but it didn't work out. together. I didn't know. And then two other companies, it was more like, yeah, maybe this was a bit too slow. Or in one company. Something was always happening. So we decided we should work on something, and then something else happened. And so so my parent partner had to do something else instead. And I mean, of course, that can happen. So I don't blame them for that. But it didn't give me a very good experience. And so yeah, this one company, it was just like, perfect. I don't know why it was excellent.
+
+</p><p><b>Tim Bourguignon  14:26</b></br>  
+I used to connect.
+
+</p><p><b>Nicole Rauch  14:27</b></br>  
+They had like,
+
+</p><p><b>Tim Bourguignon  14:29</b></br>  
+the six legs
+
+</p><p><b>Nicole Rauch  14:35</b></br>  
+was really cool.
+
+</p><p><b>Tim Bourguignon  14:36</b></br>  
+And when you then look back onto it, did you get something out of there that you didn't expect? You didn't think that would be something that wouldn't be a same or? And now you realize that wasn't expected? I was either in the bathroom?
+
+</p><p><b>Nicole Rauch  14:56</b></br>  
+Yeah, so
+
+I think I didn't realize how much of a difference it makes to host the software yourself to be able to deploy quickly. Instead of having a release, send it out to the clients out to the customers. And yeah, and then I also didn't really expect to, you know, switch jobs or become self employed.
+
+</p><p><b>Tim Bourguignon  15:26</b></br>  
+And you went latson seven point.
+
+</p><p><b>Nicole Rauch  15:29</b></br>  
+No, I was I was an employee. Okay. And I was already like, sort of looking around, you know, but I on the
+
+</p><p><b>Tim Bourguignon  15:39</b></br>  
+plane already?
+
+</p><p><b>Nicole Rauch  15:40</b></br>  
+Yeah, yeah, sort of Damocles. But, okay, I had considered becoming self employed earlier already. But I was always thinking, Oh, how could I get customers? And would that work out? And would anybody want me at all, you know, all these questions and that you have in your mind? I have in my mind? And so yeah, I would have never expected that. Okay, and then turned out
+
+</p><p><b>Tim Bourguignon  16:11</b></br>  
+to overcome this is thoughts on your soul thinking this way? Never gonna find a customer and know how, I mean, when I think about that kind of drink, that's the first thing that will come to my mind is, first, how would I find someone to do that with? And then how can I help? When only two days there? I don't know, they could babies probably know, half of the technology? And can it be productive in two days and help them do something? And then how can I tell my employer that I want to take some time off to help another company, this thing's completely out of my mind right now.
+
+</p><p><b>Nicole Rauch  16:55</b></br>  
+So
+
+</p><p><b>Nicole Rauch  16:57</b></br>  
+for the company I was working with at that time, for my journey, I took a holiday. So it was just a normal time off. And but in this company, I've also tried to establish this a little bit. Because, you know, especially for those employees that don't really go, I don't know, to come to conferences, who are who don't have much experience with different workplaces, it's very interesting and very helpful to see different settings and different companies and to learn from them what they are doing. Or maybe even if somebody is, like a bit frustrated in their job, to see how much worse it can be, for example, if you happen to see something bad in a different company. And so I tried to establish this a little bit with with that company, and a colleague of mine actually did this. So he did an exchange, he went to another company for five days, and then they had somebody come to our to our company for five days again. Okay. And yeah, this was quite good. And it was supported by management. And that's what I really liked about this company.
+
+</p><p><b>Tim Bourguignon  18:18</b></br>  
+Okay, did you? Did you implement something new? that came out of this? Five days, five days? exchange? Do you have some an example of something that happened? afterwards?
+
+</p><p><b>Nicole Rauch  18:33</b></br>  
+No, I don't know. Really.
+
+</p><p><b>Tim Bourguignon  18:37</b></br>  
+Internal journey for the people?
+
+</p><p><b>Nicole Rauch  18:39</b></br>  
+Yeah. So I wasn't that much, much in touch with that colleague. Maybe, maybe something came out of it. I just, I'm not aware of it.
+
+</p><p><b>Tim Bourguignon  18:48</b></br>  
+Okay. So um, and finding those people you said there was the quietus. Network, more or less? Do you have any idea how to do that if you're not part of the sequence moment? Could anybody try that?
+
+</p><p><b>Nicole Rauch  19:09</b></br>  
+Huh?
+
+</p><p><b>Nicole Rauch  19:11</b></br>  
+Yeah, that's a good question.
+
+I think it's helpful if you know somebody at some other company, maybe through conference also. I think also in Germany, and Austria and Switzerland, we have the softbox comm which is a network of software craftsmanship people. And by now there are, I think, one and a half, one and a half thousand registered people in there. And so you could try to get in touch with people in other companies who want to bring you in on want to go to your company. And then in general, yeah, maybe ask around, maybe ask on Twitter or something. Try to Find one or two other people who might also be interested in running this. I think it's easier to connect to somebody who's actually interested in in also doing this interested in hosting you or interested in doing an exchange. And so you can work this, like bottom up in your companies. Um, yeah, I don't think addressing a company by HR also would be too successful in most cases. Probably Yeah. be
+
+</p><p><b>Tim Bourguignon  20:33</b></br>  
+transferred to the to the rights lawyers. department. Yeah. Saying?
+
+No, you cannot do that.
+
+</p><p><b>Nicole Rauch  20:41</b></br>  
+Yeah, that's an interesting thing. In the German company, I also had one person visit me for a week, and he had to sign an NDA. Okay. But in all of the four companies that I went to in London, I didn't have to sign anything at all. Okay. Oh, maybe I shouldn't put that. But
+
+</p><p><b>Tim Bourguignon  21:04</b></br>  
+I guess that's okay. I know that that's experiencing it as well. Six, seven years ago, I worked quite closely with a competitor is in the US. We're doing interface between software. And they were growing pains down in the description. Yeah, you get everything you want. We're just kind of beat you up at the end. Because we're faster with we're better. But whatever you need a need so that our software can communicate properly. You tell us we'll give you Yes, no problem. And the company I work for at that time was completely opposite. Yeah. Yes. And you have to be, you have to be sure who you are, etc. Anyways, it's whatever. When that's just what matters. So maybe it's the the English way?
+
+</p><p><b>Nicole Rauch  21:53</b></br>  
+Yeah, maybe? Yeah.
+
+</p><p><b>Tim Bourguignon  21:59</b></br>  
+Cool. Yeah. Um, do you have any plans to do that again?
+
+</p><p><b>Nicole Rauch  22:04</b></br>  
+So currently, I'm a contractor. So I basically do it.
+
+</p><p><b>Tim Bourguignon  22:08</b></br>  
+Okay. That's a good way to see it. I observe contracting this way. Oh,
+
+</p><p><b>Nicole Rauch  22:17</b></br>  
+no. So you can go to different companies see what they do. And if you don't like it, just go somewhere else? And if you like it, stay with them for a while.
+
+</p><p><b>Tim Bourguignon  22:26</b></br>  
+Although you will not pay at that
+
+</p><p><b>Nicole Rauch  22:27</b></br>  
+time. No, I wasn't paid? No.
+
+I asked them to be hosted so that I wouldn't have to pay hotel costs. And that worked out well. So usually a person he'll sit me, and also one of the companies, they had a company flat. And so they gave it to me for a week. That was really generous.
+
+So I could, I could stay in that flat.
+
+</p><p><b>Tim Bourguignon  22:59</b></br>  
+That's cool. I've always toyed with the idea. I mean, now it's more in the on the coaching. Coaching side, it's all going somewhere. That's no problem right now. And more or less, seeing very little clients, because then more and bigger projects. Okay. And so the tempo and the pace is high in the project. There's very slow on the outside. Yes, I'm seeing only one project a year. And that's very slow for coach. Yeah. So that's why I'm telling you this idea of doing something like this, like somewhere observing for a couple days game tips and making kind of the community of practice.
+
+</p><p><b>Nicole Rauch  23:32</b></br>  
+And so
+
+</p><p><b>Nicole Rauch  23:35</b></br>  
+yeah, I think for coaches this year,
+
+</p><p><b>Tim Bourguignon  23:38</b></br>  
+I thought it would be cool. That'd be cool. Yeah. Nice. crater, um, anything out of your mind, we should speak about about this journey or about the craftsmanship movements Socrates suffered.
+
+</p><p><b>Nicole Rauch  23:58</b></br>  
+Yeah, so I think I could stick in some commercials,
+
+</p><p><b>Tim Bourguignon  24:03</b></br>  
+please, please do and whatever you are, is coming up for you next, we
+
+</p><p><b>Nicole Rauch  24:07</b></br>  
+are not really commercials. Now. I just wanted to say that. I think it's really important for software developers to to improve their their skills and abilities and that there are always like, evening meetups or whatever, where you can also close by to most cities where you can you can meet like minded people, and you can practice and can learn from them. And yeah, I think it's really worthwhile to check this out and to, to go there. Either look on meetup or look at softbox comm on.org or even attend to Socrates conference. This is like the explosion.
+
+</p><p><b>Tim Bourguignon  24:55</b></br>  
+It's a very special conference. Yes.
+
+</p><p><b>Nicole Rauch  24:59</b></br>  
+Yes. So we start out on a Thursday evening with a get together. And then we run a, a world cafe, to start people get people thinking about what they actually want out of the conference and how they see themselves and everything and to get in touch with each other, of course, also, to get to know the others. And then on Friday morning, we start out with an open space. So that means we don't have any agenda at all, prepare in advance, you get there. And then there is marketplace, and everybody can announce their subjects. This doesn't only mean I want to give this other talk, but or I want to work on this other project. But it could also mean, I have this question. And as anybody here who knows something about this, oh, could help me look into this and help me find an answer. And that's what it makes really, really what makes it really, really powerful. Because you get out of it exactly what you want. And it's not like, you know, I attended so many conferences, I went to talks, titled sounded great speakers sounded great. And either they were too high level to low level or just beside my interest. And so it was just a waste of time. And from Socrates conference, you can just, you know, if you're a bit active and look out for, for also asking questions, and not just sitting there and consuming, then, yeah, it can be really, really great. And I personally, I
+
+</p><p><b>Tim Bourguignon  26:39</b></br>  
+particularly like the role of two feets. Yes. In the open space. Oh, yes. Oh, if you don't like it, just go somewhere else. Yeah, the most of us.
+
+</p><p><b>Nicole Rauch  26:47</b></br>  
+Yeah, if you cannot, if you cannot take anything for you, and you cannot give anything to others, and see that you change your, your location and go somewhere else where you can. And actually, this is so addictive. Nowadays, I also do this at conferences, because, you know, it's, it's my time, and it's my energy that I'm bringing there. And I don't gain anything from sitting in a talk that I find boring. And I don't think the speaker gets anything out of me sitting there being bored. And so yeah, I just get up and leave a room. And sometimes I'm the only person like I did it today. And, yeah, I went into there. And after five minutes, I thought this is the wrong session. And then I gave him another five minutes. And it didn't get better for me. So I don't want to say it was a bad talk or anything. It was just not my subject. And so I left the room and went somewhere else that was
+
+</p><p><b>Tim Bourguignon  27:48</b></br>  
+I find it remarkable to be consistent enough to do that. And quite often sitting in the talk and say, Well, okay, I think I'm getting a bit something out of it. It could be more, maybe it could go somewhere. And then most of the time you just stay where you are in this fight. But you are really consistent. And you know what you want? I find this really remarkable. What great I've in no any other talk coming up next months?
+
+</p><p><b>Nicole Rauch  28:16</b></br>  
+Yeah, I have to talk tomorrow, tomorrow here at the campus. And then I will have a talk at Jack's. Okay, in April. And another talk at Andrey klotok. In caspo.
+
+</p><p><b>Tim Bourguignon  28:33</b></br>  
+About domain driven design,
+
+</p><p><b>Nicole Rauch  28:36</b></br>  
+I know the ducks talk will be something very new about I called it a grand unified theory of software development. Let's see how this works out.
+
+</p><p><b>Tim Bourguignon  28:47</b></br>  
+They have to interview again. Yes.
+
+</p><p><b>Nicole Rauch  28:50</b></br>  
+And the target at an attack will be about react and Redux, which is my current main development topic. And so yeah, cool. I'm looking forward to developing a task.
+
+</p><p><b>Tim Bourguignon  29:08</b></br>  
+A talk for you. So you submitted it? Yes. I saw all the waves you submitted in you had nothing? Yes. And you're still working on it? Yeah, so that's something people that never submitted at all probably don't know. It just submitted and then you work on it if it's accepted or not. Yes. Yeah. That's good. Well, great. Thank you very much. Thank you all the best for your talk tomorrow.
+
+</p><p><b>Nicole Rauch  29:35</b></br>  
+Yeah. Thanks very much.
+
+</p><p><b>Tim Bourguignon  29:37</b></br>  
+Want to hear all about this new years? It will. We'll have to talk about it. Thanks very much.
+
+</p><p><b>Nicole Rauch  29:46</b></br>  
+Thank you. Bye bye.
+
+</p>

@@ -1,0 +1,267 @@
+<p><b>Tim Bourguignon  0:00</b></br>  
+This is developer's journey. My name is Tim Bourguignon. Thanks for joining.
+
+Hi, Benjamin. Hi, Sam.
+
+Welcome on the podcast.
+
+Okay, so you're currently the CTO of ama. And among other things, your BIOS is quite is way longer than that. But among those in the organizer of the,
+
+</p><p><b>Benjamin Reitzammer  0:27</b></br>  
+the 2014, and 15 socratis conference for this, which is well known here in Germany, I think in England, as well, right? Yeah, actually, they're already including the German one, six additions all over Europe. So yes, I think he can tell you the gun on conference format by now.
+
+</p><p><b>Tim Bourguignon  0:48</b></br>  
+Okay, so so far, this is software craftsmanship and testing, right?
+
+</p><p><b>Benjamin Reitzammer  0:52</b></br>  
+Yes, that's the original words. Yes. But But now it's, like almost a brand name on its own.
+
+</p><p><b>Tim Bourguignon  0:59</b></br>  
+Okay. Will there be a 2016? edition?
+
+</p><p><b>Benjamin Reitzammer  1:02</b></br>  
+Yes, yes. Definitely. Um, the team is already heavily in the planning process, onboarding and sponsors and all that. Hold on. Wait, retired, mainly from the organizing process? Which are your? Yes. Which was intended that it's taken over by the community. I also was, didn't organize the first editions and was one of the first community organizers so to say,
+
+</p><p><b>Tim Bourguignon  1:33</b></br>  
+okay, cool, cool. Cool. So so we met last week, at the top con conference in Linz in Austria, where you had a talk I had as well. So your talk was called, you're doing it wrong, your technology stack doesn't matter for your product success, which is a very interesting topic, which is just to hear, it kind of rings a bell, and what I'm doing right now is my developer's journey. And I thought that would be a very good idea to have you there to, to discuss a bit about that. So um, could you give us some elevator pitch, also the introduction to your talk and how this came to you? And what's, what's it all about?
+
+</p><p><b>Benjamin Reitzammer  2:16</b></br>  
+The title, you're doing it wrong, I was kind of meant to provoke and it's not 100% true in a way. But But still, it's the torque in out of my annoyance. But in our industry, software development, GC that's that we only focus on or that I do it often is that we only focus on technology and how technology is so important, and that the only thing you need to do is like choose the right stack. And then everything falls into place, and everything else is totally easy. And yeah, in my opinion, and also, in my experience is totally not true. You need to do a lot for other things. And only technology. In order to be successful. I just from my experience as a as a CTO as a software development manager. It's also how you treat people. And that's one important effect then the other one being that's yet that it's important how you work together as a team, how you conduct your work, that's the term I use in the talk. And yeah, and so in the talk, I'm kind of laying down that story of how I came to that conclusion in a way or how I tried to tie these theories. That's those two things, how you treat each each other at work and how you conduct your work. As a team. Yeah, how I came to test those theories at my current job as a CTO, well, fellow, small, smallish startup here in Germany.
+
+</p><p><b>Tim Bourguignon  4:06</b></br>  
+And is there is your
+
+you got yourself burned story behind it? Or is it is more your personal and personal interest?
+
+</p><p><b>Benjamin Reitzammer  4:18</b></br>  
+Um, it's more and more of personal interests. And of course, I think everybody who has worked in that in industry for some time has got their stories to tell about how Yeah, this death march project didn't work out as well as people hoped up to or Yeah, they had their shares of bosses who were only interest that the number first Oh, hold that fails, usually. But I wouldn't use the term I get burned by that. It's, it was unpleasant at times, sometimes very unpleasant, but Yeah, it's I'm not, I'm not the only one, having experienced that, but I always felt I always felt that there should be a different way of doing it. And yeah, and so I, we came up with those theories, which are not super original and totally not the first person to have those theory theories. But yeah, I wanted to try them out and have being in the position, or getting into the position of a CTO of a startup is quite nice position to test them out.
+
+</p><p><b>Tim Bourguignon  5:39</b></br>  
+It is it is.
+
+And so
+
+you mentioned how you treat each other in a team. So respect, trust and caring, for instance, and how you can do your work on a daily basis. So I assume, to come back to the technology stack, it doesn't matter which one you take, as long as you master it, and that it doesn't get in your way, then what you do with it is the most important is it's the message you want to give.
+
+</p><p><b>Benjamin Reitzammer  6:15</b></br>  
+Yes, certainly, that's, that's one message, it's important that you master it to a certain degree, to a certain degree that really matters to your product and to your circumstances and to your people. Like at that vamo we use some Scala as a programming language. And that's like, one of those languages people are very
+
+passionate about. And the one hand like
+
+yes, some people say it's a better Java and the other one saying it's a worse Haskell essential nerds on the one side, they, they say like, okay, you should go all the functional all the way and stuff like that. And the other one, say, okay, it's nice that I have some syntactic sugar and can do some things more succinctly Express programming, I mean, more succinctly. So the way in how you master it is very dependent on your needs and on your team actually. So, some teams, they prefer to get to, to carve out all the possibilities of the type system of Scala, for example, to use all the functional tool sets that which Scala provides, while others simply say, okay, it's, it's nice to still work somehow object oriented in an object oriented way. And it's nice to have functional tools like flat maps, higher order functions, and whatnot. So and so I wouldn't say it's necessary to really master your tools like all the way it's, it's more important that you and that's one of the themes of the talk or Yeah, that it's more important that you make up your mind what you really need what you want as a team and find your principles as a team. Like if you as a team want one to be because you deem it necessary the functional programming experts then Soviet that's cool. That's wherever it team to decide for itself. But usually, that's like my my annoyance is usually we just follows people or some advice that pops up in some StackOverflow search or in some programming gurus blog. And so we simply try to follow that blindly. Yeah, that's nice the shit out of me Sorry.
+
+</p><p><b>Tim Bourguignon  9:05</b></br>  
+I can't understand that. I can really do that. Um,
+
+if I can bike you still in this in this direction. And this is one critic I've been have been I've been receiving in the past in the past month, is, since I'm pushing exactly in the same direction as you are in the teamwork in the soft skills in the together more than on the technical side. But I get really hard pushed back saying, if you don't master the technical side, well,
+
+the rest is not going to help you.
+
+</p><p><b>Tim Bourguignon  9:43</b></br>  
+How would you react to that?
+
+</p><p><b>Benjamin Reitzammer  9:48</b></br>  
+You've watched too many Uncle Bob videos.
+
+</p><p><b>Tim Bourguignon  9:53</b></br>  
+That's a very good one.
+
+</p><p><b>Benjamin Reitzammer  9:54</b></br>  
+That's the first one. That's one of my other pet peeves is that I think the whole clean code movement is actually kind of harmful. But that leads us down another path. So I'm first going to answer the other one is yes, people, people have a very different notion to what mastering means. And from my point of view, mastering is very context specific. So what I just said about, yeah, a team has to decide for itself how far, quote, what mattering a certain tool means, actually for itself. So with if someone cannot give me an answer to that question, what mastering actually mean to them? And if that is actually relevant to the, to the project or product needs or to the team's needs? Then it's, yeah, it's simple, totally meaningless. Then your mastering is simply just some academic. Yeah, academic notion like, of course, you can good at whatever you do. But if you can put it to, to a significant use or to a meaning, for us toward some some goal, then it's simply meaningless.
+
+Yes, that's,
+
+</p><p><b>Tim Bourguignon  11:16</b></br>  
+yeah, that's it. That's great. That's great. Um,
+
+there's still there's still some value in the whole clean code movement. I mean, that has been in my experience, kind of a differentiator between people that care and people that don't, would you agree with it?
+
+</p><p><b>Benjamin Reitzammer  11:38</b></br>  
+I think to some some time, which, which is not that far into the past, like maybe a year ago, so I would have agreed with you wholeheartedly and would have said like, yeah, totally true.
+
+But
+
+today, my my opinion, has changed quite quite a bit in that, I think, of course, the whole concept of clean code itself is as meaningful it can be, it can be very helpful. It can be very meaningful in certain contexts. But I've seen it abused too many times. In the past, and that, people who think there is something better than others, wield that clean codes, weapon, like, yeah, they use that concept, like a weapon, like saying, I'm better than you, I write cleaner code than you do. And I am a better developer, you don't care about your work. You don't sit until 12 o'clock in the night and read uncle Bob's sermons, but you only care about leaving work at five o'clock. Like that. And I yeah, as I as simply don't buy it anymore. It's, and I think it's harmful. Because I think it starts even with the word like clean, what does cleaning mean? Does it mean if you're not clean, you're dirty, like your code is automatically dirty if you don't follow the king core principles. Actually, I think that's kind of that's, that's kind of sick to a certain degree. Because it really paints the world in a very binary kind of way. And it really separates those in a bad way. Is separates you from from everyone else, like everyone else who doesn't follow clean code principles as dirty. Of course, I'm exaggerating, accelerating to a certain point, but I think we all learn that the language matters. And so if you start to use those words, you have to be aware of the effect they can have.
+
+And so
+
+yeah, it's, it's very, it can be very harmful like, like I said, I want to take like a level those concepts are of course useful. Like sensible naming method, or class length or the amount of code, how coach to reveal its intention, and all that those are very useful concepts. But I've seen them abused over time. And I think we should be more more nuanced in a way and should also acknowledge that Yeah, like I said before, even if you master your tools, and if you if you're super clean code, if you don't do it two words, a meaningful goal and meaningful kind, of course, already be delivering commercially, somehow success. product, then, then it's simply useless if your call is clean or not.
+
+</p><p><b>Tim Bourguignon  15:06</b></br>  
+That's very true. That's very true.
+
+Okay, so let's let's leave it
+
+as is for the, for the technical part, I think have to review the the beginning of my presentation,
+
+maybe a bit less dogmatic.
+
+Okay, so now that we have the the technology sides
+
+kind of pinned down.
+
+And this is now what what your presentation was all about, we have the teamwork and the being together, that is actually the most important part. When you go that far, and saying that, that's a team that's, that really works as a team is, is will be, whatever, not whatever, but will be way, way stronger than than any other team even if and a little bit weaker. on the technical side, we can achieve way better results. Is it Jesus your experience?
+
+</p><p><b>Benjamin Reitzammer  16:07</b></br>  
+Yes.
+
+</p><p><b>Tim Bourguignon  16:10</b></br>  
+You're gonna have to say no.
+
+</p><p><b>Benjamin Reitzammer  16:14</b></br>  
+I think my experience is limited. So that's where that hesitation came from.
+
+In my experience, yes, it's been true. But
+
+then again, my experience is, of course them with the demons five, of course, in the industry, like for 15 years almost. So yeah, it's true, from my point of view, and I based that also on the observation that while it can be important to work, yet to deliver work that's on a high technical level. That what makes products successful and project successful is that they can be adapted that they're adaptable to whatever comes around, totally pivoting the the product or the needs of the product or accommodating late requirement, changes or whatever. So what makes projects successful in the end is that they are adaptable. and adaptability not only comes from
+
+delivering technology,
+
+or delivering a software product that's adaptable on a technical level, but also the people's mindset needs to be adaptable, they need to be able to, to criticize each other, they need to be able to accommodate different points of views to actually see and to actually hear what what a change might mean, and how that change might impact their, their product or how yet to actually, listen, I like listening is a very important skill or my one of the most important skills to actually listen and to actually understand and when, when a requirement change comes around and what it actually means and to, to know what what it means for the technology some my experience, it's been very often that we hear some some change and some requirement change, and we only hear it superficially. And so we still can accommodate that smaller requirement change with our technology. But if we listened more closely in the beginning, then we would have realized earlier that excellent, we should have changed the product in a more profound way, way earlier, and to the actual comment that that change on a more in a more profound way. And so, yeah, teams that really work together that care about each other, they're more resilient, they're more they're better able to accommodate change, and that's what actually makes products projects, teams, whatever Mark successful
+
+</p><p><b>Tim Bourguignon  19:16</b></br>  
+and how do you go about hiring for the those people or grooming? I mean, how do you create such and such teams?
+
+</p><p><b>Benjamin Reitzammer  19:28</b></br>  
+There again, of course, they have very limited experience, or maybe not limited but I I can only speak for what report for me and that is that Yeah, but like, like I say my talk is from the very beginning, if it's like the very basis to cannot ever fail on that one thing that to actually care about people.
+
+Once you do that, you get
+
+so many things to fall out of that, like you actually try to work together with them and try to understand what they really need and what they really want and where they're really going. And
+
+that then again,
+
+yes, shows people, or when you show people that you really care for them, they, they get really interested in you, like, because that's, which is kind of sick, but it's nevertheless work is that
+
+people are so
+
+they're going out of their way, if they see a place to work, where they feel valued, and where they feel respected, and where they feel somebody takes care of them. Or maybe that takes care of them, which sounds so pet rakic. But there there are other people who are interested in like, really in their person, their personality and their, how they work and how true they are as a person. And so so that's one thing to really add to show that to, to relate, let that show through in your work. And I found when we did that with with our technology blog, where we write about stuff, and also write about these topics like how, how we work together as a team and how we share the responsibilities of a tech lead role in a team, like we don't have tech seats, as a role, but rather we share those responsibilities such person usually in has another team's we share that as a team. And he thought very, very hard about that, these things, and we share that on the blog, and we really take time to write down what it means to work for us and how we work as a team, what did what is our workflow, our what is what are our rituals, and and all that. And that's usually doesn't yield the super fast resolve, but it kills some long lasting results. And that team's really where people really recognize us recognize our brand, if you will. And recognize like, okay, I can identify with that. I can imagine really working with that. And people really Yeah, when they contact me for because they're interested in working with us, they really take a lot of time and thought to write down what they really want and to really think about how they open that conversation with with me with us.
+
+</p><p><b>Tim Bourguignon  22:57</b></br>  
+Okay, is it something that you're asking or something that you really managed to, to?
+
+To put out that people
+
+</p><p><b>Benjamin Reitzammer  23:07</b></br>  
+applying for your company now know that from the very beginning on? Um, I'd say half have some, open the conversation in with a very short email, like, three sentences maybe. And then I asked them questions, which Yeah, which can be answered, with very long landing paragraphs, or other people, they already opened the conversation very, in a very thoughtful way and provide very, very much detail, a very detailed look into their thinking and how they think about themselves and their work. And so it's, yeah, it's it's both some, some people have to ask explicitly for that kind of thing. Others Come come up with it. themselves.
+
+</p><p><b>Tim Bourguignon  24:03</b></br>  
+And have you seen an influence on the on the turnover of the the employees in the company, compared to the companies you work for? before?
+
+</p><p><b>Benjamin Reitzammer  24:15</b></br>  
+Yes, but I think you I have to mention that before I worked in mainly in the marketing agency fields, not only but over the last years before I joined Vamos, and that is, like one of those places or industries where there's a lot of turnover. Mr. zoladex kind of hard to compare. Yeah. And out. Now, most of the people who work with us, stayed with us. Only one, one person left left on their own and another one left. Because we found out to get there that it would work out But the other 10 until now, they, of course know. And now I'm cheating a little bit sorry. Two people just joined recently. And the other eight they stayed with us for. Yeah. All the time they haven't left yet.
+
+</p><p><b>Tim Bourguignon  25:16</b></br>  
+Okay. Well, that's that's true, I hope, hope did it continue this way? This is pretty much what we're doing as well and the company, I work for very, very deep connections altogether, even though we are mostly consultants running around, but still meeting every month and having regular discussions altogether. And this really brings something and we have noticed that the people that get involved in those discussions are the people that that stay czar, the ones that really get this this teamwork and this this, this mutual trust, and those people are the ones that's that's remaining the company. That's, that's very true.
+
+</p><p><b>Benjamin Reitzammer  26:00</b></br>  
+Yeah. When it comes to how you find those people, you're also asked the question kind of is, then if there is a very recent trend, at least I experienced it that way. Or I perceive it that ways that people really think about how to do interviews differently than how they were done, like, all the time, like those whiteboard interviews, coding interview, I think most of the people who run around within some open mind nowadays know that that's a bad idea. But there's so and really know how to what to do differently. And there's, yeah, there is very large, are a lot of material around on how to do it differently. One, one of the keywords being behavioral questions instead of
+
+I think skill based questions and the other one.
+
+That's an important thing. Kate, Kate Euston. Chief, she wrote a very, very excellent blog post some time ago on how I think it's just called on interviewing. She also gave a very, very excellent talk about that very topic, also, at last year's, the lead developer, the developer conference, and much much was in London, I think the videos are also up somewhere. Okay. Have a look at that one. That's, yeah, based on that, plus, the whole body of knowledge around behavioral questions is, is like, also very much so to to find the right people for whatever your definition of greatness. And that's also what I like about these approaches that they make you think first that they have, you really have to think about your, for yourself and about yourself or your team, what you actually want, and what what your what you need and how you can check for that, instead of just checking for Oh, did you do five plus years of Java?
+
+</p><p><b>Tim Bourguignon  28:16</b></br>  
+Yeah, hire for potential note for those skills. That's, that's what I read. Not so long ago,
+
+</p><p><b>Benjamin Reitzammer  28:23</b></br>  
+was Yeah, yeah, that's, yeah. I also try to use that sentence, but I find it very hard to actually make something out of it. Because how do you go about testing for potential? That's, that's exactly the hard question.
+
+</p><p><b>Tim Bourguignon  28:41</b></br>  
+That is, my definition for that has been in the past, to find, to find excellence in one, one area, and to find the willingness to to improve some for the project that we're currently it's a Java project. And we just hired a no GS expert. The guy really has a very, very deep experience in Node JS, and was able to, to, to show us the tree, he really cares about this, and then told us well, I want to try it in Java now. And he was so passionate about it said that it kind of sounded natural that he's going to make it
+
+</p><p><b>Tim Bourguignon  29:24</b></br>  
+this is
+
+</p><p><b>Tim Bourguignon  29:25</b></br>  
+this really related to, to what we were searching for. So this is continuous improvement and showing Well, I can do it. And I've shown in one area that it can do it. So Believe me, I can do it. Another one.
+
+</p><p><b>Benjamin Reitzammer  29:37</b></br>  
+Yeah. And that reminds me of this growth mindsets, concept. I always forget the lady who coined the term. Yeah, that's that's also what what I'm very sure scientific to look for is that people don't yet have a growth mindset. That's a limited fixed mindset.
+
+</p><p><b>Tim Bourguignon  30:04</b></br>  
+Okay, if I can pivot just a little bit, um, do you have a definition for craftsmanship? Would that be?
+
+</p><p><b>Benjamin Reitzammer  30:15</b></br>  
+That's That's a good one.
+
+</p><p><b>Tim Bourguignon  30:18</b></br>  
+a hard one, right?
+
+</p><p><b>Benjamin Reitzammer  30:19</b></br>  
+Yeah, actually, that that's one of the things I like about that whole craftsmanship movement is that there is no one definition. But you ask 10 people, and you get 10 different definitions.
+
+My own definition,
+
+actually, like stopped caring. After a while.
+
+I've been very active in the software craftsmanship community. But
+
+yeah, I don't care about the condition any so much anymore. Does my head right now I'd say it's about caring, caring about your work, your product and your users and your colleagues. That's Yeah, you don't necessarily have to be passionate about it. That's, again, one term that gets gets misused, I think, quite some time, but you have to care about it, it has to be important to you. To some degree, it shouldn't be the most important, but to some degree, it should be important.
+
+</p><p><b>Tim Bourguignon  31:27</b></br>  
+Those kind of what do you call it? In Germany? Hong Kong? trick questions. a trick question. That's true. Thank you. I wanted to see how much or how far, far further you go from this. From this respect, trust and caring idea of yours, but that's exactly coming directly back to it. So I'm
+
+</p><p><b>Benjamin Reitzammer  31:47</b></br>  
+sorry, for disappointing. Yes.
+
+</p><p><b>Tim Bourguignon  31:49</b></br>  
+No, that's great. That's great.
+
+I'm having my fun, as well.
+
+No, but that's, that's, that's very true. It's all about caring. And that's, that's the things and getting it with this whole project. That is great. That's great. Are you still involved in the in the user groups or in the, in the, in the communities or conference around Frankfurt?
+
+</p><p><b>Benjamin Reitzammer  32:18</b></br>  
+In a way, yes. Just beginning of this year, I kind of where I was looking for a successor. First to take over the DevOps group, he was a mentor, was successful in finding other people to take over the work. So right now, I'm not actively organizing any any other group, but rather than I'm looking for some other projects to get involved in whichever more helping aspects, in terms of like, helping other people like get into technology and make them
+
+some somehow meaningful way of,
+
+of having a job or health having a profession. And so kind of looking for four ways to technically do that kind of hard.
+
+</p><p><b>Tim Bourguignon  33:16</b></br>  
+ggsn things in minority.
+
+</p><p><b>Benjamin Reitzammer  33:20</b></br>  
+Yeah, to two things. One project is called Cote d'Or, they've launched launched a group in Berlin already in Frankfurt is Second City, they, they're organized, like learning groups, where refugees Can, can learn to program. They offer support and mentoring to those people. And so they can they can complete I think nanodegrees is one of those goals Nanodegree at Udacity or other online universities, online programming courses. So they can Yeah, complete their, their education in some way. That's one one thing and another one was there's a project in Portland which is called Hector hood. which gives the youth youth of color the ability or the possibility to work on a on a website project for local businesses, so they kind of connect local businesses with people who want to learn the business of developing software, developing websites, doing market online marketing and all that. So they provide both sides with with a win win situation so the local businesses get it can get a free way to work at least that low cost some
+
+people people a few
+
+they get the ability to work on a somehow meaningful project and or in the skills combined with that, so, and my idea was, though I haven't actually put any meaningful amount of work in it yet to to launch something like that in Frankfurt. So yeah, more projects and that kind of area I'm looking for this year.
+
+</p><p><b>Tim Bourguignon  35:22</b></br>  
+Wow. That's, that's great. It's a very, very noble ideas for new ideas. I hope it works out for you. Um, well, we're kind of at the end of the interview already. Um, where could we find you online or at upcoming conferences? Do you have anything plenary
+
+</p><p><b>Benjamin Reitzammer  35:42</b></br>  
+upcoming conferences, at least the ones where I plan to talk is only one in the next month, it's on the, I think 10th and 11th of March and in Frankfurt, it's called an attack. Which, which is kind of nice. It's one of them Lancer, or in the nicest local conferences here in the area. They're very good. They're very similar talk actually, like the predecessor to the Euro during the farm talk. And it's But otherwise, like visiting conference, and I think we'll be Socrates, like, all the last five years I've been to. But apart from that, I haven't planned that much. I think it's going to be some something and in awesome, definitely some one or two more conferences. Yeah, but online, I think the easiest way to find me is and I'm Benjamin on Twitter.
+
+</p><p><b>Tim Bourguignon  36:46</b></br>  
+And our cool Twitter handle
+
+</p><p><b>Benjamin Reitzammer  36:49</b></br>  
+was kind of lucky. When trade ever relaunched I had a job.
+
+Very much free time.
+
+And so that was kind of useful,
+
+</p><p><b>Tim Bourguignon  37:01</b></br>  
+is easy to remember.
+
+</p><p><b>Benjamin Reitzammer  37:02</b></br>  
+Yeah, exactly. So and going from there. There's way when a website links or was my blog and the talks and all that. So whoever wants to take a look at the slides, whether you're doing it route talk, is there a link there?
+
+</p><p><b>Tim Bourguignon  37:19</b></br>  
+Okay, great. Well, thank you very much for for chatting with me. That was really great. A lot of insightful
+
+information there.
+
+And I have to to ponder all this and work back my, my ideas and some of the chapters already. Thank you very, very much.
+
+</p><p><b>Benjamin Reitzammer  37:37</b></br>  
+Thank you for having me. It was fun.
+
+</p><p><b>Tim Bourguignon  37:40</b></br>  
+Yeah, thank you.
+
+</p>

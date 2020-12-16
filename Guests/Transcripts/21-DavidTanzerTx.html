@@ -1,0 +1,275 @@
+<p><b>Tim Bourguignon  0:00</b></br>  
+This is developer's journey. My name is Tim Bourguignon. Thanks for joining.
+
+</p><p><b>Tim Bourguignon  0:09</b></br>  
+Hello everyone, dear listeners. Today we have a guest that has been on the podcast already, but that you have never heard. might wonder how that is possible? Well, I did a few interviews before starting the podcast to, to get in the mood and try to understand how I should interview people. And David tenza, who is here with me today, hello, was one of them. He was generous with this time, I think we spoke for over one and a half hour or something. It was a giant discussion. It was very interesting. But it was not really suited for the podcast as it ended up being. So I thought, well, now's the time to get David on my on the air again, and pull some information from his nose and get to know him a bit better. And there's an other news about this podcast, we actually face to face, we're not over Skype, I have a new setup with microphones hanging in from our shirts. And we can actually release each other,
+
+</p><p><b>David Tanzer  1:13</b></br>  
+which is, which is awesome.
+
+</p><p><b>Tim Bourguignon  1:15</b></br>  
+It's awesome. So I hope the quality will be at least as good and even better.
+
+</p><p><b>Tim Bourguignon  1:21</b></br>  
+Hi, David.
+
+</p><p><b>Tim Bourguignon  1:22</b></br>  
+Hello, Tim. And we're here at the conference. It's called by teleconference. It's in Germany. It's actually organized by the company I work for. And you've been a speaker here.
+
+</p><p><b>David Tanzer  1:32</b></br>  
+Yeah. I've been a speaker here in every year since 10 years. This was basically I think the first conference I spoke it wasn't Yeah, cool. I didn't know that. Yeah, I worked for motema here in Erlang. And in Germany, in 2007 2008. And when you work at motema, you have to do talks.
+
+</p><p><b>Tim Bourguignon  1:58</b></br>  
+Yes.
+
+</p><p><b>David Tanzer  1:59</b></br>  
+Yeah. And that's how I got into public speaking. I think I wouldn't be a conference speaker. If I wouldn't have worked at motema. back then.
+
+</p><p><b>Tim Bourguignon  2:09</b></br>  
+Oh, cool. And you're a frequent speaker. You're speaking all over the place, though.
+
+</p><p><b>David Tanzer  2:13</b></br>  
+Yeah, I actually speak too much at conferences, at least my wife says.
+
+</p><p><b>Tim Bourguignon  2:19</b></br>  
+Okay, one problem we have in common. Okay, so you have actually two talks, which, again, says that you're speaking too much, actually one workshop and one talk. And if I remember, well, the talk was the four rules of simple design. Yes. And the workshop was more about the code in code in general, with a very esoteric name, was it?
+
+</p><p><b>David Tanzer  2:40</b></br>  
+Yeah, the name of the workshop was interface, foo extends bar. Okay, or something like that. And the workshop was about the solid principles. So it's basically two two ways of achieving better design. The one is the four rules of simple design, which are very high level and just guide you to better questions about your code. So like the four one of the four rules says, simply sign maximizes clarity. And you can ask yourself, Is my design clear enough right now? or How? What could I do to clear it up? And the solid principles are some very well defined principle, like the liskov substitution principle, every subtype should should not break the contract, its base type defined. So those are more concrete things you can look for in your code. And you can look at your code and check if it violates the liskov substitution principle. And I think, so I was very glad that the conference accepted both the workshop and the talk, because I think they go well with each other.
+
+</p><p><b>Tim Bourguignon  4:03</b></br>  
+No, that's true. That's true. And why is it important to have a clear design?
+
+</p><p><b>David Tanzer  4:10</b></br>  
+Can I quote jB rheinsberg.
+
+A simple design
+
+minimizes the the volatility in the cost of new features. So the more simply our design is now the more constant is the cost of adding new features. Like you know that when you have worked on the same system for five or 10 years, or when you come into a new project, where they have a legacy system they were working on for 10 years, then you see that adding new features now is much, much slower and much, much more complicated than it was five years ago. And the more simply you keep your design.
+
+</p><p><b>Tim Bourguignon  4:54</b></br>  
+The
+
+</p><p><b>David Tanzer  4:57</b></br>  
+the less extreme is this curve. So If your design is simple, maybe you're now at twice the cost that it was five years ago, and you have a complicated time design, you are probably at the factor of 100 or so.
+
+</p><p><b>Tim Bourguignon  5:11</b></br>  
+Why is that? Is it? Is it just the complexity we put in the system? So it's difficult to extend, or it's hidden? Does it have some really readability problems? Is there? Is there an answer to it?
+
+</p><p><b>David Tanzer  5:26</b></br>  
+Um, yeah, I think it's, um, everything you said. Plus, side effects are a big problem, when you have code that is very tightly coupled to each other, then you change something in one place. And you don't know if you broke anything anywhere else in the system. So you want to protect parts of your system from changes that are not inside this part. And this is a very difficult thing. And something that I'm trying to learn. I've been trying to learn that for four or five for six years now, and I'm still most of the time fail, but I try to fail earlier and not as hard.
+
+</p><p><b>Tim Bourguignon  6:14</b></br>  
+Not just trying to learn it, you're teaching it.
+
+</p><p><b>David Tanzer  6:16</b></br>  
+Yeah, I'm also teaching it. But that's,
+
+that also helps me learn it. Because when I give a talk, like the four rules of simple design talk yesterday, then afterwards, in the discussion, I probably learned more than the people have from listening to me, and I hope they also learned something during the discussion. So I really I mostly, what I really love about giving conference talks is that you that you get to know new people and can discuss with them afterwards. That's also why some of my conference talks are very provocative, like, the one that's called your company will never be a child, where I tell the audience in the basic beginning, your company will never be a challenge, then I tell them a couple of reasons. And then at the end, I said, I told you so your company will never be agile. So that's why I do this to start a conversation.
+
+</p><p><b>Tim Bourguignon  7:24</b></br>  
+I really love those stocks are very provocative and start with something, how to destroy your company, or how to destroy your design. Oh, yeah, you talk about the God is really, really good way of captivating the attention of the of the public and get them thinking into one direction is really good, good way of doing.
+
+</p><p><b>David Tanzer  7:45</b></br>  
+I mean, also, the solid talk was a little bit I showed some code. And it's basically three lines of Python code. And I tell their audience, three different to be a problem as I seen those three lines and why we should split this class into two classes. And this is really, really nitpicky and nobody would do this on a real project. But this is something that I want to show them. Look, you can take these things to extremes. And we can even improve the design of those three lines of code.
+
+</p><p><b>Tim Bourguignon  8:20</b></br>  
+And it's still very enjoyable. It's not just nitpicking. It's really, really insightful information. Thanks. That's good. Um, but we didn't speak about your day job. Are you doing this in your day job as well?
+
+</p><p><b>David Tanzer  8:37</b></br>  
+Mostly, mostly, coop. So I basically do three things right now I mainly do. Okay, I should mention, I'm a freelancer and independent consultant, so you can hire me to do things for you. And right now, I mainly write code for money. So I have a client, they want me to implement the prototype for a new system. And over time, more and more programmers should join me from the client, I, at least I hope they will do that at some point. Because there's only so much you can do on your own. I mean, I can make the prototype and I can try to make a design. At one point, we have to get into a discussion. And then the other two things I do is I, I teach, like I teach test driven development workshops, I now created a react and Redux training course, because I work with JavaScript and react and Redux a lot right now. So a little bit of teaching, test driven development, clean code, and also really programming.
+
+And the third thing I do is
+
+you could say, coaching or consulting so working with teams to improve their code. Like I will probably Do some five days of refactoring coaching at a company in the next couple of months, where they want to do a refactoring. And they want me to come like for one day, every week or so to discuss what they could try next. But where this will not be a training course, we will really be working on their production code. So that's the three things I do consulting or coaching, training and
+
+software development. Okay.
+
+</p><p><b>Tim Bourguignon  10:33</b></br>  
+And on the side, you still have some other things you do. I know you from the Socrates as well. Yeah.
+
+</p><p><b>Tim Bourguignon  10:42</b></br>  
+We should say we should explain what's in Socrates.
+
+</p><p><b>David Tanzer  10:45</b></br>  
+Socrates is the software craftsmanship and testing conference. It started here in Germany, like seven years ago, so I don't know I. And I, five or six years ago, I was at this Socrates conference. And I thought, that's awesome. I want to have something like that in Austria, too. And then I forgot about it again. But I really liked it was the second unconference I attended. I once was at a bar camp in London. This was like, Yeah, man. It was a key. But at socratis, they had a really great facilitator, and a great setup and everything worked. And I, before that, I couldn't imagine that this format would work where you have no program and it's just people, they come and they decide on the program, and then it's a great conference program. But it worked. And yeah. Last year, I found two other people who were willing to try this with me, in Austria. So we started sokratis, Austria. Last year.
+
+</p><p><b>Tim Bourguignon  11:56</b></br>  
+We had one already and the second one is coming. Oh, yeah.
+
+</p><p><b>David Tanzer  12:00</b></br>  
+Yeah. We started last year. Last year, we were
+
+60 people.
+
+And this year, last year was one day, and this year, we will do one and a half days. So it will be in October, I think on the 21st or 22nd. But you will put the link and they will.
+
+</p><p><b>Tim Bourguignon  12:24</b></br>  
+Why? Why is it so important? It's kind of a rhetoric rhetorical question for me as well. But let's ask Is It Anyway? And why is it so important to not just speak at conferences, but organize them and make them live and organize this? Or wait, wait, what is motivating you doing this?
+
+</p><p><b>David Tanzer  12:47</b></br>  
+What is motivating me to do this in particular is I wanted to organize a proper conference some years ago, and this didn't work out. But that's actually a bit of a different story. And then we we had some very cool meetups in the city where I live in Linz. But no, I don't know of any big tech conferences in probably all of Austria, there was the gsf days, which later became the confess conference in Vienna. But I think this is not happening anymore. And otherwise, at least in Linz, we didn't have any conference. And then Chris fryer came and started to organize top con conferences in Linz, and he asked me to be on the program committee. And the first top conference and also the second top conference were great events with a great program, but they were proper conferences, like with a call for papers, and you have to buy tickets and stuff like that. So things that I don't want to organize. But during my work in this program committee, I found two other people who wanted to try this unconference unconference thing with me, and I told them, in theory, it should be easy. We just need a venue, we need the facilitator. And then we have to sell tickets. And that's it. We don't need a call for papers. We don't need too many sponsors. And it's much easier to organize. And we said, Yeah, let's do it. We do it as a community event. We don't earn any money with it. But we just wanted to have events like this. And so that's also why I worked on the top comms program committee, because I wanted to have events like that in my area. So that for once, I don't have to take a four hour train ride to get to speak at a conference.
+
+</p><p><b>Tim Bourguignon  14:41</b></br>  
+Did it work out this way? It was easy. It was
+
+</p><p><b>David Tanzer  14:45</b></br>  
+pretty easy. I mean, it was work and we ensure we had to find sponsor sponsors. We had to find a caterer but it was easy to organize. We are three people we are dividing the work pretty well. So
+
+</p><p><b>Tim Bourguignon  15:01</b></br>  
+Cool. You've been also at meetups in Munich and winner here, I think with another workshop, or was it a full workshop?
+
+</p><p><b>David Tanzer  15:11</b></br>  
+Yeah, it was a, let's say, a short workshop. So at at the first Socrates, Austria, there were some people from the software craftsmanship meetup in Munich. So the software is complementary. And they asked me to whenever I have time and some ideas, I could come and present at their meetup. And I said, Yeah, actually, I have a refactoring cutter that I designed for TDD training, and then I never did it with anyone. And I actually want to try that with actual people.
+
+</p><p><b>Tim Bourguignon  15:46</b></br>  
+So why do we have to define cutter? Oh, yeah.
+
+</p><p><b>David Tanzer  15:51</b></br>  
+I actually don't even like that word. So I, I have a refactoring exercise. Okay, a very small exercise where you can do half an hour or one and up one hour, or even one and a half hours and practice different kinds of refactoring. So it's a piece of very bad code. And I have three ideas that you could try on this code. And trying one of the ideas takes between 30 and 45 minutes. So in, in Munich, we had like, I think we had two hours time. So we tried all three ideas. So a cutter is an exercise that you can do again, and again and again, to practice some aspect
+
+</p><p><b>Tim Bourguignon  16:40</b></br>  
+of your job. It comes from the martial arts, those those gestures, you repeat, and repeat and repeat to get them burnt in your brain. Yeah, you do that. And the idea was, I think, to to do exactly the same in software, and have those things that you do again, and again, and again and again, to get.
+
+</p><p><b>David Tanzer  17:00</b></br>  
+But that's also why I don't like the word cutter because I don't do it again, I don't do it. Every day, I did this refactoring exercise, I think I personally did it three or four times. So far, we are really try to refactor this code. And I found out that this code I wrote is really, really, really hard to refactor.
+
+</p><p><b>Tim Bourguignon  17:20</b></br>  
+You wrote the bad code as well, yeah.
+
+</p><p><b>Tim Bourguignon  17:26</b></br>  
+Was it writing bytecode? intentionally?
+
+</p><p><b>David Tanzer  17:30</b></br>  
+It was not that hard.
+
+</p><p><b>Tim Bourguignon  17:33</b></br>  
+What did you do?
+
+</p><p><b>Tim Bourguignon  17:37</b></br>  
+So I,
+
+</p><p><b>David Tanzer  17:40</b></br>  
+I wanted to, you know, the baby steps, taking baby steps, steps exercise, maybe I should explain it. It's a test driven development exercise where you try to solve a problem in a test driven way. But you have to get to a green test in under two minutes. So if the tests are green, after two minutes, you are allowed to commit. And otherwise you have to revert all your work. So that's a really hard exercise. And so, yeah, I want to write a timer for that. But with the intention of writing bad code, so I just needed some
+
+</p><p><b>Tim Bourguignon  18:20</b></br>  
+use case.
+
+</p><p><b>David Tanzer  18:23</b></br>  
+And I wanted this timer to play a sound when the time is up to display the current time. So I hacked together or a copy, I guess I copied from Stack Overflow, some code for playing sound with threads and and whatever Java sound API. And I did a pretty hacky user interface where I had a Java spring application that actually displays HTML. So I have this to argue pieces of code. And then those were obviously not working. And then I added workaround after workaround of the workaround until this thing work. And now I have something like it's really small, it has 150 lines of code or so. So it's not big, it's, you can understand it. It's not even so the people in Munich told me and it doesn't even look at the variables are named reasonably. And the methods are named reasonably. And still, it's such a bad piece of code. Yeah, and I did it with them, and they really liked it. And then I asked the people from softmax comm Levine, if they are interested in something like that, and they said, Yeah, come to Vienna, do it with us. So I did it in Vienna again. Okay.
+
+</p><p><b>Tim Bourguignon  19:43</b></br>  
+Is it something that the listeners do on their own at home?
+
+</p><p><b>David Tanzer  19:47</b></br>  
+Yeah, of course.
+
+After I did it in Vienna, some person said it would be nice to have something like that in C sharp and I said yes to a pull request, and Now we also have an NC sharp, okay. And then I met someone who said, Can we do this in JavaScript? And I said, Yeah, let's, let's implement the JavaScript version together. And then next day in the morning, he told me, I already implemented it. And so you can download those three things from GitHub. And if you want a new programming language, just take the original code and
+
+</p><p><b>Tim Bourguignon  20:21</b></br>  
+fork it and this go, yeah.
+
+</p><p><b>Tim Bourguignon  20:24</b></br>  
+Okay. And the one piece that would be missing, though, is the kind of retrospective on it, discussing with older people.
+
+</p><p><b>David Tanzer  20:31</b></br>  
+Yeah. But I have a blog post where I explained what kinds of exercises I I tend to do with this code. So the basically, the first exercise is, just assume that this code is too complicated to test. And try to refactor without tests to a point where you can test it. This second exercise is just assume that refactoring without tests is too risky, and try to write some tests without changing the code. This is really hard, but it's possible. You have to you just have to change one private field to public and then you can access data and can write tests. And the third exercise is try to do golden master testing with it. That's more like a fringe topic.
+
+</p><p><b>Tim Bourguignon  21:24</b></br>  
+But that's where the, I mean, the point too, too risky, and you don't change code. That's exactly where this legacy or refactoring legacy code really comes into place.
+
+</p><p><b>David Tanzer  21:34</b></br>  
+Yeah, but both strategies are actually valid for refactoring legacy code, you could try to refactor with your ID tools, to a point where adding the test is easier. And take the risk of breaking something, or you can go to create length, lengths to add tests first, and it's not always clear which strategy is better. And I think this code is a very nice illustration that both strategies have some pros and cons.
+
+</p><p><b>Tim Bourguignon  22:06</b></br>  
+Okay. And in your blog post, you have some some some explanation of why and not just
+
+</p><p><b>David Tanzer  22:12</b></br>  
+about, you know, just what I did with the group in Munich, basically, okay. So people will have to find the
+
+</p><p><b>Tim Bourguignon  22:19</b></br>  
+advantages and disadvantages, pros and cons on their own,
+
+</p><p><b>David Tanzer  22:23</b></br>  
+or invite me to their user group.
+
+</p><p><b>Tim Bourguignon  22:27</b></br>  
+Okay, um, one thing you said the beginning of you code for money, you do some some teaching, and you do some coaching. But I know you from the agility side as well. So bit Scrum, mastery, metal, metallic stuff. Yeah. We didn't speak at all about this. Is it something I wrongly knew about?
+
+</p><p><b>David Tanzer  22:49</b></br>  
+No, no, not really, I
+
+am very interested in
+
+child methodologies. And I tried to learn about it a lot. In the past, I even worked as a full time agile coach for almost one and a half years. And I do a lot of talks about this, I will also give a keynote at an agile conference in in September in Zurich. So this is also something I'm really interested about. But when I was this full time Scrum Master without doing any coding, I recognized that this pure agile coaching, or Yeah, pure, just agile coaching is not something I really want to do, I want to help teams to become more agile. But more from the inside more as a technical coach or as a player, coach, maybe as a developer or architect on the team also does some technical coaching. And I had a call with get the kid card from an agile coach from Denmark last week, where we were actually talking about just that, that we all think that when companies try to become more agile, they hire me end coaches the introduce new processes, they add training, maybe even for their middle and upper management. But what many don't do is technical coaching. So they are using the new process with their old technical skills. And we were talking about how we could work better together better as technical coaches and agile coaches to deliver the whole experience to companies who want to become more agile, so maybe we can do something like that in the future. That's to convince companies that they need both the the origin of this idea actually comes from Adrian wovoka from Romania. You should actually interview both on your podcast. Okay, I think I will introduce you.
+
+</p><p><b>Tim Bourguignon  25:06</b></br>  
+Okay, cool, cool. And it's interesting. I'm a colleague of mine, Donna ebeling did a talk yesterday exactly about this, really well, these, his his, his position in a project as kind of architects but not named architect. So kind of in a scrum team not being an architect, let's continue, he is basically nobody. That's not in the scrum team. And he's not really management. So this benefit in between two chairs position. And what I took out of it is actually we need in every team, somebody that is doing technical coaching, that is taking over this this kind of, of, I don't want to say architectural role, but but overlapping role over the whole project that goes in all the all the teams and, and has a look at the missing language, and the overarching architecture, but also helping really every people in the team getting up their skills and teaching them and coaching them and getting up to speed. And for that you need time, you cannot do that end, do full time coding at the same time.
+
+</p><p><b>David Tanzer  26:18</b></br>  
+Yeah, there's another interesting aspect about this, I was talking to a company like half a year ago, unfortunately, it didn't work out. But we were talking about how if I would do pair programming coaching for them. So basically just come for two days a week and pick a pair program with someone everyday someone else, then I would not only teach them or work with them on their pair programming skills and TDD skills and stuff like that, I would probably also get a very good overview of their code and could assist them in software architecture, discussions and stuff like that. And the one person I was talking to was very enthusiastic about this idea, but I think he couldn't convince management to hire to actually hire me for this.
+
+</p><p><b>Tim Bourguignon  27:10</b></br>  
+That was exactly the point yesterday, we said, well, that's a fantastic idea. But it's going to cost a lot of money if this person's coaching lot. And it's not clear from the get go, how to how to explain this, that we need this. And it's mostly we can explain it after the project is, has been a success, but cost a lot more money than we expected. Then we can say, Well, if we had it coaches, then we would have been better from the beginning is hard to to explain and validates idea. But it's interesting. It's the first time I hear this. I think I heard it from from amortize I Oh, you know, it's a core is a culture in the US. And he really intentionally when you read the agenda Manifesto. Manifesto, he reads the first sentence. So the tribute before the values we've been, we've, we've uncovered new ways of of writing software by doing it and helping people do it. And he really says, Well, we cannot forget this doing it. Yeah, helping people do it is good, but we have to do it as well on your own. And that's why he says which coaches there is need for them, but you have to be hands on, but it should be him then.
+
+</p><p><b>David Tanzer  28:31</b></br>  
+That's a nice idea.
+
+</p><p><b>Tim Bourguignon  28:32</b></br>  
+I really like this, this this way of things. Okay.
+
+</p><p><b>Tim Bourguignon  28:38</b></br>  
+We're almost at the end of our time box, we went over what you say the different talks went over four rules of simple design solid principles spoken about coaching about the Socratic the limits on miss something.
+
+</p><p><b>David Tanzer  28:56</b></br>  
+I don't think so.
+
+</p><p><b>Tim Bourguignon  28:57</b></br>  
+You don't think so? Okay. Um, do you like anything? Where are you going to be next? Where What are you going to do? Where are you going to be speaking or what do you have on your plate right now?
+
+</p><p><b>David Tanzer  29:06</b></br>  
+Next, so I will be at a couple of conferences this year.
+
+Next in mindset checks conference.
+
+Then in Turkish two times
+
+the most important ones are obviously the Socrates Austria in October and they will probably also be at the Socrates the Switzerland, which is in on September 15. I think so in mid of September in Zurich, so I hope I can be there too. Yeah, and otherwise. The best way of getting in touch with me is probably on Twitter. I'm D tensor there. And yeah, I also have blogs but if you follow me on Twitter, and you will also get get notified when I upload something.
+
+</p><p><b>Tim Bourguignon  29:55</b></br>  
+That's true. That's true. And something you try to push the your your blogs on next. can use, right?
+
+</p><p><b>Tim Bourguignon  30:01</b></br>  
+Yeah, I had.
+
+</p><p><b>David Tanzer  30:04</b></br>  
+I was successful for two or three times. And there were really interesting discussions there.
+
+</p><p><b>Tim Bourguignon  30:11</b></br>  
+I forget that a bit. But it scared the hell out of me. It can be it can become really productive. And you were lucky to get that and have really deep conversations about this. I've seen discussions go down the drain.
+
+</p><p><b>David Tanzer  30:26</b></br>  
+Yeah. But I think the the general atmosphere and attitude at tech news became a lot better in the last two or three years. I did it again. Yeah, it was pretty good. When I first started reading Hacker News, this was a long time ago. And then it went downwards. And I think they are doing a lot right now to to get it up again, like to reward good behavior and stuff like that. Okay. I think that's going that's there's things going on behind the scenes, or it it was just like that I had the good discussions.
+
+</p><p><b>Tim Bourguignon  31:03</b></br>  
+So it didn't just get an audience boost, but also also some good insights. And
+
+</p><p><b>Tim Bourguignon  31:09</b></br>  
+yeah, absolutely. Absolutely.
+
+</p><p><b>Tim Bourguignon  31:11</b></br>  
+That's good. Well, I think we have it. Thank you. Thank you very much. Thank
+
+</p><p><b>Tim Bourguignon  31:17</b></br>  
+you for having me here. Thanks for taking the time.
+
+</p><p><b>Tim Bourguignon  31:19</b></br>  
+And we'll see each other
+
+</p><p><b>Tim Bourguignon  31:22</b></br>  
+if not before at the top comes in.
+
+</p><p><b>Tim Bourguignon  31:25</b></br>  
+Yeah, see you there. Bye bye.
+
+</p>

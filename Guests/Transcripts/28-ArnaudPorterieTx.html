@@ -1,0 +1,208 @@
+<p><b>Tim Bourguignon  0:05</b></br>  
+What is a good software developer? What do excellent developers do? There are probably as many answers to these questions as developers in the world. So let's ask veterans and newcomers what their story look like. Let's learn directly from them. Welcome to developer's journey.
+
+Good evening, everyone, and welcome to developer's journey, the podcast shining the light on Developers Live from all over the world. Literally, today, my name is Tim Bourguignon, and today I receive honor poetry. I know he's the VP of engineering Advent von prevea. It's hard to switch from French to English. Gosh. Previously, he managed the open source group at Docker. I'm sure we're gonna speak about that, which kind of radically changed his views on managing software development at scale. I know. Well, thanks for joining.
+
+</p><p><b>Arnaud Porterie  1:04</b></br>  
+Hi, Tim. Thanks. You're in Portugal right now. Right. I'm in Portugal right now. Yes. A mix of work and holidays.
+
+</p><p><b>Tim Bourguignon  1:13</b></br>  
+That's cool. That's cool. So it's really International, all from all over the world. So French guy working, working remote from Portugal. Cool, cool, cool. And you and I met in Paris in March for the in crafts conference, where you held the talk. That was called something like teaching lessons from open source, and was basically bringing the lessons of open source into not really open source companies. It was very exciting. I hope we're gonna hear more about that today. But first things first, um, tell us your story. How did you end up at Docker working on the open source world or this open source group at Docker? There must be a story there, right?
+
+</p><p><b>Arnaud Porterie  1:59</b></br>  
+Sure, yeah. So. So where to start. So before joining Docker, I was working in France, in a big bank. So not exactly the sexiest job in the world. But something where I actually learned a lot about software engineering and about management too, because this is where I started my role as an engineering manager, I was lucky enough that I wasn't cool. We can do founder of Docker, who was hiring at the end of 2014, when the company was really starting to take off and when the project was really started going to have a huge adoption in the in the open source ecosystem. So he contacted me because he was looking for engineering managers for the company. Back then, the company was 3040 people only if I'm correct. And to be fully transparent, my first answer was well, thanks. But no, thanks. I have no intention of relocating to San Francisco. And to be honest, I don't I don't understand much about Docker. Because that back then, when I started looking at Docker, it was very unclear what exactly it was solving whether it was a developer tool or not tool. I wasn't sure. So I told him, you know, like, I give me some time, but honestly, I don't think this is going to be of interest for me. And I started playing around with with the project during my, during my first contributions playing around with it, and it clicked. It clicked at some point, I realized how much of this was going to was going to have an impact. And I think what made a difference for me is understanding that it was not enough stool or a diff tool. It was a bit of both. And that was something that was badly needed at the time. So they're accepting the offer relocating to San Francisco. And I worked there for four years.
+
+</p><p><b>Tim Bourguignon  3:42</b></br>  
+Oh, yeah.
+
+</p><p><b>Tim Bourguignon  3:44</b></br>  
+Mass, how did you end up knowing this founder in the first place?
+
+</p><p><b>Arnaud Porterie  3:50</b></br>  
+We were at school together. So that's that, sure luck? There's no there's no cure. It's pure luck. It happens that there was a lot of French people in Ducker at that time. The founder comes from is called the cold epitech in Paris, which, where I studied to, and I think originally on Well, when I joined Docker on the 30 employees, they were probably 10 or 15 French people. It was it was really it was a huge French presence back then in the company.
+
+</p><p><b>Tim Bourguignon  4:22</b></br>  
+Okay, okay. Um, but at that point, you were not in open source or active in open source,
+
+</p><p><b>Arnaud Porterie  4:29</b></br>  
+or were you got to be nuts? Absolutely not. I was I was an engineering manager in a bank Societe Generale for those who know in France, so no, no very, very, very different that the thing is that I was at the beginning of my experience as an engineering manager. And I was starting to realize that although I was having a lot of fun as a software engineering this industry, because there's a lot of there's a lot of good technical challenges in banking. There is a there's of course a huge How can I say this? There's a huge focus on performance and stability in finance that you don't find everywhere else. And that I think make up for really interesting challenges. The problem is culturally, it's companies that are quite old school very top down very much about karaoke. And when I started going into engineering management, I realized how unfit I was for this environment. So I wanted, I knew I wanted to continue in the engineering management pass, but it was very clear that this kind of companies was not going to work for me. And that this is a point where I started looking around for for something which was possibly closer to tech, looking at Paris in Europe at first, when ultimately Solomon called to offer me a position on Docker.
+
+</p><p><b>Tim Bourguignon  5:44</b></br>  
+Okay, um, how did you realize you were kind of pulled into this management role?
+
+</p><p><b>Arnaud Porterie  5:54</b></br>  
+I don't really know, to be honest, it happened quite naturally. I think I've, I've always been passionate about software engineering, and, and it's really what I loved the most that hurt. But at some point, I kind of realized that I was maybe not the best developer in the world, I'm definitely not the best manager in the world. But I could have an impact for developers, by by moving to management. Basically, I had the feeling that I was maybe better than average at this, and I could create an engineering culture that I would enjoy working at. That is the point where I figured that although I loved I loved coding more than anything else, it was made better, maybe more useful for others for me to go into these kind of positions, where I could create an environment where coders would be happy to evolve.
+
+</p><p><b>Tim Bourguignon  6:51</b></br>  
+That's interesting. That's interesting. I think I've lived through kind of the same story. But I fought against it for a very long time. I was very unhappy with though giving him and doing this. So I kind of quit my job and went back to an engineering role and then quit again and went back to an engineering world. And this time lending on some kind of first step of management is a no, no, no, it's not for me. And it's only recently well
+
+</p><p><b>Arnaud Porterie  7:20</b></br>  
+accepted that. At first, I find I found a balance in that. I had good feedback from the team about about managing teams. People were appreciating having somebody in this role that understood engineering and understand what it's like to be a software engineer. And I found a balance at first by dedicating my time coding times strictly to things that were helping the teams in some way. So one thing that I that I tried to forbin myself is to contribute to the product itself, as much as I could, because you don't want to be a bottleneck on these kind of things when you are the engineering manager. But but trying to you know, like trying to satisfy your your desire to code and to contribute, nevertheless, through tooling through infrastructure things through basically all the all the setup that could help the teams if if you go through with this, and if it doesn't work out, it's it's all right, nobody's going to lose it, nobody's going to waste it on you. So that's why for example, but Docker, I spent a lot of my time working on tooling for like open source dashboards, like metrics, trying to trying to track our activity, understanding of our activity and this kind of stuff that would give transparency to the team and to also the broader community, without necessarily, you know, like being a bottleneck on the product development.
+
+</p><p><b>Tim Bourguignon  8:39</b></br>  
+I'm not sure if it's possible, but is there is there some kind of standard day as a manager with with what would it be like to be manager a doctor?
+
+</p><p><b>Arnaud Porterie  8:51</b></br>  
+Well, being an IT being an open source project, and being the manager of an open source facing team was extremely specific, because ultimately, the the team at Docker was was quite small. And there were if you think about it, they were way much more engineers outside the company than inside the company contributing on the project. We're talking about a 10, or 20 ratio, I guess. At some point, they were probably like 20 people in a team while we had 150 pull requests every month. So that that gives you a sense of scale. So no, there's no there's no typical day, although what's interesting in a company like Docker, which is basically in between open source community and commercial products, is that you have to juggle permanency with both. So a lot of my job was trying to figure out how to find a proper balance, where you would have a healthy open source community and a healthy open source project where people could be involved and where people from the outside understood that the leadership and and the authority of the project was fair, and at the same time delivering for Docker, the company What mattered to ship the commercial products and to make a difference in the market. So a lot of it was about this, I think, for me, the the major peak of success was the point where we reached the same number of maintainers from Docker employees and outside employees. At some point in the project, there were probably have around 40, maintainers, 20, being Docker employees, and 20 being employed by Microsoft, Red Hat, IBM, independent people, etc, etc.
+
+</p><p><b>Tim Bourguignon  10:29</b></br>  
+That's interesting. And you say you said before, creating some kind of environment in which engineers can can flourish, I would like would like to work into? What would this mean for you? What, what is? What ideas do you have behind this?
+
+</p><p><b>Arnaud Porterie  10:52</b></br>  
+There's so many things, but it's complicated to really, really list out but I think it's, I think if you worked as a software engineer, I think you do know what I'm talking about. It's it's avoiding things like top down decisions about architecture should be disorder that way, it's about it's about also using the hearing everybody's voice and, and considering organizational aspects, not like a sacred thing that you can touch him. But as musically as code. For me, organization is just like anything else. It's, it's good for some time it needs, it needs feedback, and it needs to evolve. Pretty much like like code, which is why I also really like storing everything, including the organization into git, because I think that it's important for everybody to be able to give an opinion and to just trace changes over time. So I think, and this is why I particularly enjoy Docker. And this is why it informs so much how I do my job today, it's I think the same thing that engineers like, in a corporate environment are really what we found in the open source communities. It's a lot about giving everyone a voice, making sure that all opinions are heard, even though it's not necessarily consensus based, because there is a clear decision making process process. But it it, it's really, it's really about finding what's right for the group and finding what's right for everyone, rather than putting individual objectives before anything else, or corporate politics or whatever in the mix.
+
+</p><p><b>Tim Bourguignon  12:21</b></br>  
+And they are going to stand where the the yoke past at the bank and associated must have come in handy of not reproducing this.
+
+</p><p><b>Arnaud Porterie  12:33</b></br>  
+Absolutely, yeah.
+
+And there's a lot of good thing, there's a lot of good things in this kind of environment still, because you know, like, I don't want to spit on banking, because it's, it's a very particular environment in that it's extremely top down and extremely made up to avoid any risk. And any surprise in the role of a bank is to minimize risk in the first place. So when you think about it, it's not super surprising that the IT world in banking works this way. But the truth is, the unexpected and the risk is not something that is necessarily bad, especially in tech, especially in a time where most companies are looking for the magic ways to to innovate. But the truth is the magic way to innovate is just to give engineers some time to work on things and to get out of their way.
+
+</p><p><b>Tim Bourguignon  13:20</b></br>  
+Amen to that.
+
+</p><p><b>Tim Bourguignon  13:22</b></br>  
+It's easier said than done.
+
+</p><p><b>Arnaud Porterie  13:24</b></br>  
+Yeah, totally. It's I mean, it's like everything that deals with culture, it's extremely hard to to get right and extremely, extremely hard to get the the support from the leadership. But but that's what it is about.
+
+</p><p><b>Tim Bourguignon  13:37</b></br>  
+But if I'm really interesting in the last five minutes, is that you described the role of a manager, but being very technical about it, being very human said you were coding yourself. You were handling things as if it was code. This is a very different kind of description, then I would expect when someone would be describing a manager role. Is it? Is this something you've seen, done done more than one time? Or
+
+</p><p><b>Arnaud Porterie  14:08</b></br>  
+is it is the particular to you? Is it? No, I think it's, well, well, the coding thing it happened when I was at Docker, because my team was not so big than it is now. I don't have the luxury today to code. But the thing about managing organization like code, do things like do things like taking inspiration from the way that open source works to manage essentially your team like you would manage a community? I think this is not very different from what you expect from a manager because the truth is, it's about setting up the culture of your team. So of course there is all the things you'd expect traditionally from a manager about conducting one on ones giving feedback, giving a vision, giving a giving direction to the team, etc, etc. And of course, this is part of my role today. But I tend to think that I'm not going to say they come second, but I think I tend to put culture above everything else. Maybe Maybe I'm wrong on this. But I maybe it's naive. But I tend to think that with the right people and the right culture, the right thing will happen. It's You don't have to be selective about about what you want. Sometimes the best way to get what you want is not to ask
+
+</p><p><b>Tim Bourguignon  15:15</b></br>  
+an interesting way to learn to go in and actually, have you met a situation where this didn't work?
+
+</p><p><b>Arnaud Porterie  15:25</b></br>  
+So far, I wouldn't say so. But it's also hard. From my perspective, it's also hard to say how much it is working, you better ask my team to see if it's working. Right now, in my position, in my role, as a VP of learning at one preview, I can see that this thing is catching up, I can see that the cultural changes happening, I can see that there is good feedback from the engineers. Whether we ship as much as we would like to, not at this point, but this is the thing that takes time. It's a lot of things. And it's it's a lot of education to make, not only for, but also for the people around. So
+
+</p><p><b>Tim Bourguignon  16:03</b></br>  
+let's go let's go to go to one piggy. Why did you leave? Your doctor seems to be in every mouth now. Nowadays. Yeah. Why? Why was it the right time for you to either?
+
+</p><p><b>Arnaud Porterie  16:17</b></br>  
+Well, I guess free years, in this kind of environment is already a lot to take it to be honest. It was you don't when when when there's a project that is rocketing, like it was and, and as you say, in every mouth, and everybody's using it, etc, you are we used to call this when we were at Docker being at the in the eye of the tornado. And it's extremely exhausting. Like, there's so much things happening in a single day. There were some times that the colonel I could remember, like five times a day thinking, Okay, we're gonna, we're gonna, we're gonna make it, we're gonna die, we're gonna make it we're gonna die. It was just impossible to describe, but it was extremely intense. So, so I think for years we're already allowed to take. And then there was also a, it's a company, which was changing a lot timing, I joined in 2012, when we were 40. I left it when we were 300. It was a different company. And and the focus was, was changing from innovation and building the product to monetizing into growing enterprise, which is something that I was not necessarily not interested about. But it's just not the reason that I drawn Docker initially. And I think it was the right time to go check some something else. I also joined Docker, from the bottom of the ladder, I joined as a as a software engineer, before making it to engineering manager. And I wanted to try out something different. I wanted to see experiment what it would be like to have a significant size team and see if the recipes that I had in mind about creating culture and organizing work for an engineering group on a team that scale, because right now I am my team is a little more than 200 people. So it's something extremely different from non Docker, it's closed source, it's not open source. So it's, for me, it's a it's a huge opportunity to be able to, you know, like to play around with the thing that I have in mind and see if it actually works in practice.
+
+</p><p><b>Tim Bourguignon  18:17</b></br>  
+No, I can relate to that. I can relate to that the project I'm working on right now, stuff like this. There was a project that I had, yeah, actually seen before, in my mind, but never in this in this geometry saying, Well, I would have never done this this way. So let's go there and see why they did it this way. No, I know. I wouldn't still do it this way anyway, but it was interesting.
+
+</p><p><b>Arnaud Porterie  18:46</b></br>  
+Um, I mean, there's no, there's no bad experience anyway.
+
+</p><p><b>Tim Bourguignon  18:49</b></br>  
+So no, no, no, it's all that you made. what you make of it. If you manage to, to put some coins on the side every day and and still find some things to learn then then it's never Time, time lost.
+
+</p><p><b>Tim Bourguignon  19:04</b></br>  
+Exactly.
+
+</p><p><b>Tim Bourguignon  19:05</b></br>  
+One thing that may be interesting is now that you've switched to a very managerial role, not just a small team, but but more a bigger department or a whole division. I am not sure how you call that a bump up. Are you are you involved in in hiring process? I suppose you're right.
+
+</p><p><b>Arnaud Porterie  19:25</b></br>  
+I gotta say that at this point. Hiring is maybe one of the biggest part of my role. Mostly because mostly because on TV is is entirely transforming its information system and putting back tech at the center. So from the day I joined, there was about 200 positions. So that's a lot of time. Yeah, I spend a lot of time on hiring, on communication about what we're doing on on academic interviews, of course. So yes, it is it is a lot of my work.
+
+</p><p><b>Tim Bourguignon  20:00</b></br>  
+That go.
+
+</p><p><b>Arnaud Porterie  20:02</b></br>  
+It's going well, because the truth is there's not so many tech companies in France who are extremely attractive to engineer. So, I tend I have the impression that people in France see when something is happening somewhere and all turn at the same company at a given time. You know, when I was when I was leaving Societe Generale, and I was starting to look around. Back then the company that everybody was looking at, in tech and in Paris was retail. And he ended up interviewing to retail like everybody else would. And, and I think right now, the people know that there's things happening in Vancouver, it's a huge challenge, because we come up from a lot of legacy. And we were really trying to reinvent everything and, and I'm totally changing the culture and changing our approach to tech. And we need we need people for that. There's, there's a lot lot to do. And so far, it's working great. I mean, I don't have the number in the numbers in mind, but we probably hired 100 last year, and it was chill was growing strong. We open outside of Paris, because of course, you cannot grow this fast if you only look at Paris. And to be honest, it doesn't make sense at this point to only look at Paris. So we opened up offices and in other places in France, which has not such as a new, we opened an office in Warsaw, and we are also more and more open to remote work, which is something that was very different from the initial culture of the company. And it's interesting to see how this is working out.
+
+</p><p><b>Tim Bourguignon  21:32</b></br>  
+Okay, um, how do you do you screen for culture? Can you do that?
+
+</p><p><b>Arnaud Porterie  21:40</b></br>  
+No, it's extremely hard. It's honestly at this point.
+
+I would say that it's, it's a really good thing to say. But honestly, as an interviewer, I don't think that I'm using much more than a gut feeling. It's about the question I asked her a lot about what is what are the times that you really enjoyed the most in your past experiences? What are the times that you really that were not good? And you can tell from this question. And usually when when it's really about the people, or it's really about the tech, when it's really about, you know, like, what are what are the things that are in the values that are important for the candidate? from there? Usually, you can tell a bit, but there's no, there's no good answer. The one thing that I that I really appreciate, and I honestly, I cannot explain it, I think there's a lot of magic to it, and a lot of alchemy, that you cannot really put words on. One thing when I joined it, it really struck me as a company where people were extremely welcoming, and extremely open to any kind of discussions. I rarely seen that in my in my in my past experiences. And it's really impressive how much the new joiners really get into this kind of mood very fast. It's it's not really written on the walls, it's not something that we you know, like, dictate or anything else. But there's, there's definitely a culture of DNA that was there from the beginning. And that, that did the people who have been with the company for a while, have managed to maintain, despite the fact that we are hiring a lot of new cars.
+
+</p><p><b>Tim Bourguignon  23:14</b></br>  
+Yeah, I would, I would, uh, if I was in a company like this, I would fear that the the culture was what kind of deal you'd in the ucommerce mass coming in? That's interesting. Yeah,
+
+</p><p><b>Arnaud Porterie  23:27</b></br>  
+I think we've been we've been lucky that, you know, that when I joined the company, there were 50% of the IT team that was with the company for more than five years. So a lot of people have really joined on pivot A while back and have stuck with the company. Which is, which is really good, because they know that they know everything about about this company, they build it. And although we are hiring a lot, it's true that we haven't diluted the culture that much. I'm not gonna say it goes without challenges. There's, of course, places where it's not as easy and some some tensions Of course, but overall, there's something that we managed to maintain. I honestly, I cannot explain how this is working. It's definitely some fun it's not something that I'm that I can take for granted. It's, it's just happening
+
+</p><p><b>Tim Bourguignon  24:14</b></br>  
+Well, there's some stuff like that we don't know where exactly where they're coming from. And yet, he sees it interesting. So you're, you're searching for, for openness to discussion, you're searching for passion for values, and for some kind of alchemy. how can listeners get there? I mean, some of them are just coming out of university or coming out of their studies, which were there is some of them are in the industry already. And, um, how'd you get to to such a place or state of mind where you, you get this kind of, of culture? And it's a very metaphysical question to them asking kind of
+
+</p><p><b>Tim Bourguignon  24:58</b></br>  
+Yeah,
+
+</p><p><b>Arnaud Porterie  25:01</b></br>  
+It's hard to say I think, I think for for people who are mostly Junior, like going out of school or in their first job, I think it probably takes time to know in which kind of environment you want to evolve. It's, I see a lot of I see a lot of people freshly out of school, who maybe go too fast in trying to aim for the, for that company without knowing yet, what is it they're looking for? There's not all cultures will work, whatever with anybody. And that's fine. We're everybody's different. It's important that you also understand what you what works for you. For people who are already in the industry, I think a lot of it. I think you can tell a lot of it also, when interviewing yourself, like asking questions to the interviewer about, about the culture of the company, especially about how much what is the decision making process? is it happening from the top down? is it happening from the bottom up? Is anything? Is there any way to ask open questions on a weekly or bi weekly basis to anyone in the company? You know, like, us, us based companies are very well known for having this kind of all hands meeting on a weekly basis, or bi weekly basis where anybody can ask a question to anyone you can, you can basically ask a question to the CEO. And in life, that's something that is very unusual in European companies, which I think are more old school about the R key and the fact that you don't get to talk to the top level management. So often, I think this is the kind of things that are really crucial to ask for when you're interviewing. Again, if this is something that you're looking into, especially looking for it, it doesn't have to be the one answer for this single answer for everything. There's no one size fits all anyway. So
+
+</p><p><b>Tim Bourguignon  26:47</b></br>  
+yeah, sure. Um, one thing I would like to come back to, is, in on the on the on the open source, we spoke a lot about the open source from your management point of view. So building a company like an open source project, open source community, but I would be interested in your other side of things, the open source mindset that you know, the mindsets, you need to have to be able to participate in open source as a as an engineer. How do you how do you see that and maybe in, in, not in comparison, but in parallel to, to the culture we just talked about? Talk about?
+
+</p><p><b>Arnaud Porterie  27:30</b></br>  
+Well, definitely, it's, it's all about collaboration, it's all about people, it's the most important thing in open source. And it's anybody can contribute to open source, you don't have to be an extrovert or an introvert or anything else, you don't have to, there's no particular traits that will work for you in open source, the one important thing is being able to collaborate, that comes with a lot of different things, it's about the, it's a well, the most daunting thing for most people who start up schools to start contributing to open source is actually showing their work in the open and being open to criticism. This is extremely hard for anyone at first. But it also comes from it also comes with the idea that you can trust the other or the other people that you have to trust that there are well intended, they're not going to criticize for free, they're gonna they're going to actually try to give you something which feedback and try to improve the product or to get better. So this is this is the approach that that I think is most important. And that's sometime can be very different from what you see from traditional enterprise, where we saw a lot of us versus them. It's a lot of, you know, like tin boundaries, and and almost tribes, rather than having something more open where everyone's work is, is open to see for all the others open to discussion about the criticism also.
+
+</p><p><b>Tim Bourguignon  28:52</b></br>  
+Yeah, and have you read the book remote from DHH. And, and Jason freed, the creators of Basecamp, the company is completely fully remote all over the world. And they wrote a book about their their remoteness and why they advocate for remoteness. And one of the comments struck me really hard back then was that a good remote worker is is very good worker. But the opposite is not necessarily true. And I wonder if this applies as well, in this case, that's aiming for for the OSS, on the open source software mindset, you know, that people are going to be able to communicate are going to have the the accent on this collaboration you talk about on people and working together. But the opposite is not necessarily true. So you can still find people that are excellent workers, still not participating in open source, but somebody who is striving in open source is very, very likely to be this mindset that wishes that you are searching for.
+
+</p><p><b>Arnaud Porterie  29:56</b></br>  
+Probably I think the analogy would open I think there's something interesting with both Open Source and remote work in that the things that make it to work are beneficial for everyone else. You know, like the having remote people on the team, everybody knows that. But it's it's, you have you have to change your way of working in such such that decisions are documented such as communication happens synchronously as much as possible, etc, etc. And this is all good things. So basically, it's about focusing on the outcome that the remote people are willing to grated that there's a lot of good things that come with it. I think the same is true with open source. When you're when you're focusing on open communication and open work and the ability to have cross team communication, etc. A lot of good things go with it. One example I can give you is, I've seen in the past, companies struggling to get best practices of pavement, getting to the culture, other teams, things like testing, documentations, API, Doc's, whatever, whatever discussions, but when you look at it, when you start breaking down the wall between teams, and when you start adopting an open source culture, you end up in a situation where the teams contribute to each other. And it is becoming extremely hard on those teams if they don't have documentation on tests. And I mean, on the teams themselves, you don't want somebody contributing to your code. If you don't have tests, you don't even know if this code works. You have to you have to switch away from trusting your neighbors to trusting anyone because your code is good. And because your project is in is healthy. And I think again, it's about focusing on the outcome of putting it putting in place this kind of cultural, there's a lot of good things that come with it. And the same is true with remote work.
+
+</p><p><b>Tim Bourguignon  31:37</b></br>  
+I see. That's a nice way nice way to put it nicely to put it. Um, we're slowly reaching the the end of the tie box. Um, there's one question I usually ask is, what advice would you give to listeners to to advance on their journey? If you had one advice to spare?
+
+</p><p><b>Arnaud Porterie  31:58</b></br>  
+My my biggest advice, I think, for anyone in tech at this point would be to take a chance. There is we are in the extremely, extremely, extremely lucky position that our industry is thriving, there's a lot of opportunities. There's good companies, there's less good companies, there's cultures that we can feed you, there's cultural cultures that will not be adapted for you.
+
+It's okay to try things out. Most of
+
+us don't have a lot to lose. There's always other other opportunities and always ways to to rebound. So honestly, at this point, I would say really need to take take a chance.
+
+</p><p><b>Tim Bourguignon  32:39</b></br>  
+Amen.
+
+</p><p><b>Tim Bourguignon  32:40</b></br>  
+Amen. Cool club. I thank you. Um, do you have something coming up something on your plate in the next month that you would like to, to own to mark to advertise?
+
+</p><p><b>Arnaud Porterie  32:56</b></br>  
+And not really, I mean, I don't I don't have as much public work as I would like to. Unfortunately, I'm really busy with my job. And I and I want this to succeed before anything else. So I don't really give a lot of talks or a lot of I don't write a lot of blogs or anything like this. So no, unfortunately, there's nothing really in my, in my calendar right now that is worth advertising for.
+
+</p><p><b>Tim Bourguignon  33:19</b></br>  
+Okay, but you're still looking for engineers, for one. Absolutely.
+
+</p><p><b>Arnaud Porterie  33:23</b></br>  
+I'm absolutely hiring. So if if there's people interested in that, we're looking for a lot of different things. We're looking for people who are we'd be interested at such as software engineers, lead developers, architects salaries, in terms of in terms of tech, we have a very diverse stack with the from dotnet to Python to go to Haskell to really node and JavaScript and react. And so yes, I'm very open to discussing with anyone about how we do things that won't be vain if they would be interested to join us. that relates to my previous comment, you know, like, there's no nothing wrong wrong and taking a chance. So,
+
+</p><p><b>Tim Bourguignon  34:02</b></br>  
+to go for it, listeners Go for it. Exactly. Okay. Where can listeners find you?
+
+</p><p><b>Arnaud Porterie  34:09</b></br>  
+Best way to reach me is on Twitter, at ice cream. I'm extremely bad at email and extremely bad at anything else. Really. So yeah, Twitter was good.
+
+</p><p><b>Tim Bourguignon  34:21</b></br>  
+I think I caught you the very first time on the best streak of emails ever. Your your response time was something like seconds.
+
+</p><p><b>Arnaud Porterie  34:31</b></br>  
+Yeah, that's very on email on Twitter. No,
+
+</p><p><b>Tim Bourguignon  34:33</b></br>  
+that wasn't right. Was it a feeder? Okay. It might be it might have been.
+
+</p><p><b>Arnaud Porterie  34:38</b></br>  
+But I think honestly, my response time on email is more like seven months.
+
+</p><p><b>Tim Bourguignon  34:44</b></br>  
+Okay, I'm terrible at this. So it must have been on Twitter. I just shot you have a tweet and say, well, he'll probably response responded tomorrow. Yeah, look at it. Two minutes later what I have three messages already. And again, 30 seconds later what
+
+</p><p><b>Arnaud Porterie  34:58</b></br>  
+okay. My Mighty emza my DMS are always open. So I'm always happy to help anyone, even including giving, you know, a career advice, management advice. Or even helping people, you know, like connect to other people either interested to join some company or whatever, I do this a lot, and I'm happy to do so. So,
+
+</p><p><b>Tim Bourguignon  35:19</b></br>  
+okay, so as ice cream ice car, I mean, is there a story behind the the this
+
+</p><p><b>Arnaud Porterie  35:28</b></br>  
+is just a pen that works in French and doesn't export well, but I'm stuck with it. Okay.
+
+</p><p><b>Tim Bourguignon  35:34</b></br>  
+stuck with it. Great. Um, did we forget to speak about something? I don't think so. Cool. So I guess we're going crazy. I know. Thank you very much. It was great talking to you. And thank you for all the advice. Thank you very much. Thank you for having me. That was a pleasure. And we'll talk to you soon on developer's journey. Bye. Thank you, goodbye.
+
+listener. If you haven't subscribed yet, you can find this podcast on iTunes, Stitcher, Google music and much more. If you like what we do, please help your fellow developers discovered the podcast by writing it and writing a comment on those platforms. Thanks again. And it's been two weeks
+
+</p>
