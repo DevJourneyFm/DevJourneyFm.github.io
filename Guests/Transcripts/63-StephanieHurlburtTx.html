@@ -1,0 +1,306 @@
+<p><b>Tim Bourguignon  0:06</b></br>  
+Hello, and welcome to developer's journey, the podcast shining a light on developers lives from all over the world. My name is Tim Bourguignon, and today I receive Stephanie holbert. Stephanie is a graphics engineer and co founder of binomial, a software company based in Seattle that makes basis popular imaging and texture compression product. Among other things, She previously worked on graphics engineering, and in gene programming at Oculus and unity. Stephanie, welcome to dev journey.
+
+</p><p><b>Stefanie Hurlburt  0:42</b></br>  
+Thank you, I'm happy to be here.
+
+</p><p><b>Tim Bourguignon  0:44</b></br>  
+It's our pleasure. Um, we might first defining what a graphics engineer does,
+
+</p><p><b>Stefanie Hurlburt  0:51</b></br>  
+right? So graphics engineer can mean a lot of different things. What I have focused on is low level graphics. That means things closer to the hardware, particularly surrounding the graphics processing unit or GPU on your computer. So normally, artists can try to paint pictures or use artists tools to make animations or make, you know, beautiful effects that you see in movies and in games for everybody to enjoy. But there are certain effects that require more technical knowledge to create. And that's where graphics engineers come in to make it possible for artists to really push the boundaries to make artists better tools, and sometimes to program art themselves.
+
+</p><p><b>Tim Bourguignon  1:42</b></br>  
+Can I picture this as the the interface between how the GPU works and the tools that we provide to Atlas to, to to really use this GPU? Is that what you do?
+
+</p><p><b>Stefanie Hurlburt  1:55</b></br>  
+Exactly. And discovering graphics programming was kind of the first time I really started to love programming was because I always been passionate about art. And I always have loved math. And it's this wonderful way to like use my knowledge of mathematics and use my love of optimization to help artists and to create beautiful art.
+
+</p><p><b>Tim Bourguignon  2:18</b></br>  
+Why did you always want to go into computer sciences? Or were you attracted to math and art? before that?
+
+</p><p><b>Stefanie Hurlburt  2:25</b></br>  
+I did not want to go into computer science, even as I enrolled in school for I wanted to do mathematics. And I wanted to do art, I was kind of torn in a lot of different directions. I even looked into politics and nonprofit work. But at the end of the day, I had dropped out of school. And I was very disillusioned, and I was working minimum wage jobs. And my partner at the time was like, Listen, you know, math, you, why don't you do computers. He was like, Listen, like you can graduate soon you can get high paying jobs, it just seems to make sense. And then you don't have to be starving every week you can, you can actually make money. So I went into it for purely practical reasons, and then kind of grew a love for it as
+
+</p><p><b>Tim Bourguignon  3:12</b></br>  
+I went along. That was a very sound advice. can eat something instead of starving? It's a sound advice. I agree. But how did you how did you do this? How did you go from, from almost starving to becoming such a successful engineer.
+
+</p><p><b>Stefanie Hurlburt  3:28</b></br>  
+So I had three years of college under my belt at that point, I had not graduated, and I didn't really have a strong focus. But I had taken enough mathematics courses, and I had enough knowledge of math to be able to finish my degree in two years in computer science. So that was fortunate. And I was able to go back and enroll in the school that I had already been accepted at, and, and basically finish up the degree in computer science.
+
+</p><p><b>Tim Bourguignon  3:59</b></br>  
+And how did you decide in the first direction you wanted to go after, after your graduation,
+
+</p><p><b>Stefanie Hurlburt  4:07</b></br>  
+I was willing to take any job where they were willing to pay me. And so I interviewed I interviewed at a government job doing C sharp work, even though I didn't really learn C sharp in school. And it was this whiteboard interview where 10 people were sitting around a table staring at me while I did whiteboard problems. And it was it was so like, it was just it was bad. I really messed up. I was horrifying. And I started questioning all my career choices. And the second interview Professor messaged a student that she had known and apparently they were hiring junior developers down in a city a little bit south of me. So I went there and that interview was a polar opposite Were they just talked to me, I'm like a human and, and I got to know the team. And he asked for some of my school projects to see things I've done. And then I was hired. And so thankfully, um, I got to start out on a nice team like that.
+
+</p><p><b>Tim Bourguignon  5:15</b></br>  
+And what were you supposed to do back then on this company?
+
+</p><p><b>Stefanie Hurlburt  5:20</b></br>  
+I was supposed to do c++ and graphics work. I my whole career. I've only done c++ and low level graphics. I haven't done anything else. And I basically had done a little bit of it in college, but I could have gone in any number of directions. So it was a little bit lucky that I just landed here. And it turned out to be
+
+</p><p><b>Tim Bourguignon  5:40</b></br>  
+a good fit. Oh, that's I'm pretty lucky shot and lava for at first sight. I'm obviously
+
+</p><p><b>Stefanie Hurlburt  5:45</b></br>  
+Yes. Yeah. That's cool. And
+
+</p><p><b>Tim Bourguignon  5:48</b></br>  
+how did you? Did you learn this new field or get into this, this new field?
+
+</p><p><b>Stefanie Hurlburt  5:55</b></br>  
+Well, basically, graphics, low level graphics, in particular, is a really interesting field because GPUs change constantly. It's actually really exciting. We live in these times where the central piece of hardware on our computer is constantly changing. And so there's not really a book you can read that would fully get you up to date on what you need to know. And I imagine a lot of fields in technology can be like that. Um, but a lot of the latest learnings are just at conferences like GDC, and SIGGRAPH. So I did take a little bit of, you know, knowledge, like some basic c++ and older graphics API's, but I learned a lot on the job.
+
+</p><p><b>Tim Bourguignon  6:39</b></br>  
+Did you have a mentor or some kind of knowledgeable colleagues around you that could help you find out the the dead ends? early?
+
+</p><p><b>Stefanie Hurlburt  6:50</b></br>  
+Yes, I was so fortunate, I had kind of a sort of it not an official mentor, but someone at the company who was paired with me on a lot of projects, and who was very experienced in graphics, and he was able to really like take me under his wing and help me out and my first job after that I was more on my own. But I was lucky that I was able to at least have someone in the beginning. And I'm that kind of experience of having someone and then being left without mentors, and having a really hard time finding mentors, has led to like, why I'm very passionate now about how there should be more mentorship and more helping others in the field.
+
+</p><p><b>Tim Bourguignon  7:36</b></br>  
+Because before we go into this direction, Cole will definitely go there. Do you remember how this person took you under his wing how what kind of method of process he used to, to teach you and get you to learn the ropes.
+
+</p><p><b>Stefanie Hurlburt  7:52</b></br>  
+Gosh, that was a that was a long time ago. But he, I'm trying to think it was also a very stressful time that I kind of don't want to remember. Because even though even though I love my coworkers, and I am genuinely thankful for that experience, I was working a lot. And my personal life was on fire and just all kinds of things were going on. So it's one of those things where I always hesitate to recommend learning everything on the job, but I'm also very thankful that I got that opportunity. Um, and and yeah, he he basically, like, I was thrown into the fire with projects, but he would really kind of look over my code helped me make it better, he would sometimes give me little exercises to work on or little things, projects that could help me. And I think most of all, the biggest help was just him trying to give me manageable chunks of work, which can sometimes be challenging and C plus plus, especially when you're working with very large code bases. Hmm.
+
+</p><p><b>Tim Bourguignon  8:57</b></br>  
+Okay. Yeah, that makes sense. Um, do you think he was sorry, it stopped me if I if I, if I take too much if you don't want to talk about it? Do you think he was mindful in increasing the complexity of what he was giving you? And then really testing your limits and pushing you in this direction?
+
+</p><p><b>Stefanie Hurlburt  9:15</b></br>  
+Yes, absolutely. He was a and by the way, his name is Eric hack born. Hi, Eric. If you're listening to this, we still keep in touch. But yeah, he was very he was very mindful. Very good about like knowing I surprisingly, because now as someone with more experience and someone who is farther away from being Junior, I often forget what people can handle or or where people are at earlier in his journey in their journey. So I really admire how he was able to give me bite sized chunks of work that were just at the right level of what I needed.
+
+</p><p><b>Tim Bourguignon  9:52</b></br>  
+So so well, so let's turn the story around now. Now that you have more experience and you might be in this mentor position. How do you deal with, with newcomers that you take under your wing,
+
+</p><p><b>Stefanie Hurlburt  10:06</b></br>  
+that approach has changed over the years. And it's changed. Also, because I focus more on business these days, I'm still very close to graphics, I'm still very close to the code. But I focus more on business. And one thing that has really struck me about focusing on business is that it's a completely different culture than coding. Newcomers are approached in a very different way, where they kind of recognize that there's a lot of different ways to do business. And you can learn from someone with a lot less experienced than you if they just take a different approach. So Lately, I've been trying to bring that attitude to coding, where I used to have a tendency of I'm older and wiser, I'll teach you how to do it. And lately, I've been working on approaching mentorship with more curiosity and more of an open mind to learning things myself, even if they're more junior than
+
+</p><p><b>Tim Bourguignon  11:02</b></br>  
+me, do you mean by doing some kind of reverse mentoring? So learning from your mentees or doing something else?
+
+</p><p><b>Stefanie Hurlburt  11:10</b></br>  
+Yeah, exactly. And just being curious and, and kind of not making the power dynamic. As much as like, I'm a teacher, you're the student and trying to even it out a little bit to be like, we're peers, and I'm happy to teach you this. But I'm being mindful of like, do you even want my advice on this? And just be mindful of that power dynamic?
+
+</p><p><b>Tim Bourguignon  11:35</b></br>  
+Have you have some, some mentoring relationships evolve from, from a relationship with a power dynamic? Because in my opinion, always start this way, there's always at the beginning, a mentor and a mentee, and then evolve into more more aspiring partnership, if I may say that. Have you had this experience before?
+
+</p><p><b>Stefanie Hurlburt  11:54</b></br>  
+Yes. And I've had that change quite quickly as well, you know, I've had it because it's amazing how fast people can grow in our industry. And also, I think it's also because I have such a niche knowledge, like low level graphics and c++, that it's really not hard for people to learn a lot more than I know about another field, like, let's say networking, and c++, you know, or web development. And so they can quickly surpass my knowledge in other areas of coding, to the point where I can learn different things from them.
+
+</p><p><b>Tim Bourguignon  12:30</b></br>  
+Hmm, that makes sense. Exactly. It sounds. Um, I would like to, to, to quote one tweet from you, which is the first tweet I saw from you a few, a few months, maybe years back. And I've seen this widow again. And again, you probably know which which one is coming. It's tweet essays for people who are in a position to give help post your timeline every now and then that you're open to questions. That makes a difference. I would like to know the story behind this tweet, what I'm encourage you to write this,
+
+</p><p><b>Stefanie Hurlburt  13:04</b></br>  
+yeah, that it's, it's it was a really simple sentiment at the time. But it kind of snowballed into this huge mentoring organization effort, which really took me aback. But the reason why I kept pursuing this efforts and made the tweet in the first place was because I felt like low level graphics, in particular suffered from a lack of mentorship, a lack of people being open. Um, and particularly in the game industry, which is where I focused, it was very, like, people were very stressed very in their own bubbles, and not really helping Junior people and not really seen how much they could be of help. And so I put out that tweet, and when it started getting an interest I curated a list on that's still on my website today, of people who I knew were really nice in the low level graphics and gaming industry. And it's just something that I wish I had years ago, and I can't get it back for myself, but I can at least do this for other people.
+
+</p><p><b>Tim Bourguignon  14:11</b></br>  
+And I've heard it in this around this conversation. The term lending privilege, um, would you mind defining us it for us?
+
+</p><p><b>Stefanie Hurlburt  14:22</b></br>  
+I mean, I'm no sociology expert, but the way I interpret that term is just, if you if you, I think another way to say it is put the ladder down for someone else once you climb up, even if you did not have a ladder to get up to the next step. So just you know, I see this a lot, even in mentoring relationships that kind of go bad is if we had to go through a lot of struggle to get to where we are today. It's really sad to accept that maybe other people maybe we could have had an easier or maybe We didn't have to struggle. It's easier to be like, no, I had to go through all that struggle, and it made me a better person. But if we can let go of that and help others and make their lives easier, and be sad about what we had to go through, I think that would make the world a better place.
+
+</p><p><b>Tim Bourguignon  15:17</b></br>  
+Mm hmm. I'm still I think we shouldn't be sad about what we live through. Because this is what made us who we were today, don't you think?
+
+</p><p><b>Stefanie Hurlburt  15:27</b></br>  
+I guess that's true. It's just a very fine line between it made me who I am. And do I want that for other people.
+
+</p><p><b>Tim Bourguignon  15:35</b></br>  
+You say you just say the mentoring relationship that goes bad? Um, have you had this? Have you experienced this before?
+
+</p><p><b>Stefanie Hurlburt  15:43</b></br>  
+A lot. And I and I see a lot go bad. Yeah.
+
+</p><p><b>Tim Bourguignon  15:48</b></br>  
+Can you give us some some example of what happens for a man mentoring relationship to go bad, I have an example
+
+</p><p><b>Stefanie Hurlburt  15:54</b></br>  
+of one that happened to me recently, which is probably what I can speak to best is that I'm in a really good place right now, right, I have a successful business, I tend to focus more on business these days. And I went to a more experienced entrepreneur, or at least he, he seemed more experienced. And we seem to have a good coffee and a good chat. But I just got a bad feeling from it from the beginning. And as the months went on, I just sensed a lot of resentment, and a lot of like, I don't know how to describe it, but a lot of for instance, you're not ready or, or trying to hold me back or make sure that I did not surpass his level of success. And whenever I did get a success, a lot of kind of resentment about that. And I think he was a really good mentor, so long as you weren't, um, surpassing where he was at at that stage in his career, he, he got very kind of resentful, once you started advancing at too quick a pace. So that's something that I kind of learned to watch out for.
+
+</p><p><b>Tim Bourguignon  17:08</b></br>  
+Ooh, interesting. Thank you for that. I've, as a mentor, myself, I've, I guess, dealt with this position a few times, and not not exactly in resentment, but more in in, in not really liking the mirror that was that was held in front of my eyes. So taking care of a very young or younger developer, and really helping them grow. And realizing after a few, a few months, that they caught up with my my coaching skills, very, very fast, and are able to corner me in my indecision and in my contradictions, and show me exactly this during the discussions. And I've caught myself a few times being being on a defensive during those discussions, and then wondering why and having to really work on myself to, to accept that, yes, this is how this person has grown. They, they caught up with my skills, and they're able to, to show me that, that no, I'm not as perfect as I like to think I am. So I kind of understand this. It can be painful, but But still, we should do it.
+
+</p><p><b>Stefanie Hurlburt  18:30</b></br>  
+Absolutely. And I think
+
+</p><p><b>Stefanie Hurlburt  18:33</b></br>  
+as long as
+
+</p><p><b>Stefanie Hurlburt  18:34</b></br>  
+exactly and as long as we're mindful of, of this. And I think that's that's the key is, is recognizing that maybe we can get defensive at first, but standing back and really being self reflective about our own insecurity.
+
+</p><p><b>Tim Bourguignon  18:51</b></br>  
+Yeah, for sure. Um, before we go back to the business, I would like to come back to your to your software development past. He worked for Oculus and unity. How was so do the very well known companies nowadays? How did you come to work there?
+
+</p><p><b>Stefanie Hurlburt  19:10</b></br>  
+Right. So I started at a company called downstream, which was my first job, and that was more in the advertising space. But it was still focused on low level graphics. And I I wanted to go away from that space, because I think this was partially because it was a smaller company, but I was interacting a lot with customers, which, ironically, is all I do now. But at the time, I found it very stressful and it kind of I wanted to step away from just constantly interacting with customers. And I think part of the thing is, it's very different when you own your own business, as opposed to being part of a larger organization and interacting with customers. I have less control over the projects and, and the bad news I was delivering sometimes. So I wanted to go lower in the stack and farther away from customers. And I looked at unity in one of my job searches and realized, like, hey, that's still the same low level graphics work. But it's, it's powering all these game studios and not interacting with any customers directly. But basically building the tools for artists in the background, I thought it was a great, a great step in a better direction.
+
+</p><p><b>Tim Bourguignon  20:33</b></br>  
+And how was the the interview process getting there?
+
+</p><p><b>Stefanie Hurlburt  20:39</b></br>  
+I was pretty lucky and that I got there when they were not as big as they are today. The graphics team was only eight people. It was a lot of the original founding members, were still there. And so I got to kind of go in there when they still had a very casual interview process. My interview was just chatting with a team with a lot of team members. But still it was it was very casual. It wasn't like a whiteboarding thing, it wasn't coding exercises, it was it was very laid back and the way I like interviews to be, um, since then, I'm sure they've changed their process. But it was very, it was very nice to get in there. And then at Oculus, it was obviously a more fully formed company. By the time I joined, and
+
+</p><p><b>Tim Bourguignon  21:26</b></br>  
+it wasn't as laid back during the interview, then,
+
+</p><p><b>Stefanie Hurlburt  21:29</b></br>  
+I thought this was a really interesting one in which I worked full time there. But I was technically a contractor. So in other words, there's this loophole in a lot of big companies where full time employees have to go through this lengthy whiteboard procedure with lots of processes. But contractors can often skip that, because they're lower risk, they only work for shorter amounts of time. And so I got to just chat with the team. And they gave me kind of an optional mini whiteboarding session, that I don't know how good I was. But the only real interview part was just talking with the team. So I got very lucky in bypassing like the big corporate procedure.
+
+</p><p><b>Tim Bourguignon  22:11</b></br>  
+How did you model your own interview process? Now that you're a business owner? How do you process without revealing any, any details of the process itself that you wouldn't like to reveal favourably? But how did you did you did you model this this interview process for your own company?
+
+</p><p><b>Stefanie Hurlburt  22:33</b></br>  
+We don't hire anyone. Um, so it's just me and my, my co founder on the tech end of things, it's just the two of us. And then what we do is we hire contractors to help us with legal and accounting and, you know, things like that. And I am very mindful that that's a critical part of our team as well. And so when I look for people, I look, I look at making sure I'm checking myself on bringing in diverse talent of not only bringing in senior talent of giving people with less experience a chance, and there really isn't much of an interview process other than just looking at the people having a conversation, making sure we can work together effectively, and then going from there. And I think that's fairly common with contractors.
+
+</p><p><b>Tim Bourguignon  23:26</b></br>  
+Hmm. Okay, that's interesting. Um, and this has worked out for every contractor you hired so far.
+
+</p><p><b>Stefanie Hurlburt  23:35</b></br>  
+Absolutely. It's worked out really well. And I think, you know, the reason why there's not a in depth interview process with contractors is because there's no huge penalty for not working with that person, you know, there's not their con, there's not the same kind of like, like process, like, it's not as big of a deal to quote unquote, fire them, you can take on a contractor for a short project, and if it doesn't work out, move on, you know,
+
+</p><p><b>Tim Bourguignon  24:05</b></br>  
+that's me, that makes sense. It makes sense. Um, when did you decide that you wanted to create your own company,
+
+</p><p><b>Stefanie Hurlburt  24:12</b></br>  
+I had just left Oculus, and I was really burnt out at that point in my career for lots of reasons. But I like stuff going on in my personal life. And then I was also working like hundred hour weeks, I wasn't sleeping. I was I was a mess. And I got to the point where I was so burnt out that I could not code anymore. I couldn't even opening a text editor was it was like, someone was trying to hurt me, I would freak out. And I realized that I could not code full time, I was still trying to look for full time jobs because I didn't know how else I was going to pay the bills. But I eventually realized maybe I could do freelance work and that way I can at least get periods of rest in between like forcing myself to try to work I ended up doing freelance work, I ended up having a friend of mine join me. And then eventually we transition to building a product and launching that.
+
+</p><p><b>Tim Bourguignon  25:10</b></br>  
+Hmm, okay. Okay. When you were first starting to explain in detail about being burned out, I was kind of matching was my, in my mind well being burned out and trading company does. Does that match up on the due to exactly polar opposites? But okay, it makes sense. So you started doing some freelance work and, and somehow found an idea along the way, and started building it.
+
+</p><p><b>Stefanie Hurlburt  25:36</b></br>  
+Yeah, it basically my my vision was like, I guess I could quit the tech industry entirely and go work in retail or something like that, which, which was minimum wage, back to struggling to buy food, or I could try to make the tech industry work. And I figured, you know, freelancing, the stressful part of freelancing is the social side of it. But Funny enough, I wasn't burnt out on talking to people, because I didn't really talk to people, much as a programmer. I mean, I did, but not like, not in the same way. And so I had no problem with talking to a lot of people every day to try to find gigs, it was more than limiting the programming work that I needed to help with that burnout.
+
+</p><p><b>Tim Bourguignon  26:22</b></br>  
+Makes sense, makes sense. I'm having an idea for a new product rarely happens in your bathtub, saying, hey, Eureka, I have an idea. Now, how did your idea come to fruition? How did you did you come up with this, this product, basics that you are basis sorry, that you that you created now?
+
+</p><p><b>Stefanie Hurlburt  26:43</b></br>  
+Well, we were freelancing, and we were looking for gigs. And we kind of had this idea that when we started freelancing, and we saw it as this magical thing, of like, Oh, we can take so much vacation, and it's not even going to be that much work, we had this very starry eyed view to freelancing. And we quickly realized that if you don't have a strong network in place, it can be pretty stressful to find jobs, and people pay late. Anyway, we thought that a product could be less stress, once we can start selling it, it's now this passive background income that can kind of keep us more stable. And then one of our freelance clients reached out to us and said, Hey, we want you to build this image compressor. We were like, wait, that's should be a product. Why are we doing this for an hourly wage, and then we built a little prototype that didn't take very long to build, got some interest and got someone to preorder it.
+
+</p><p><b>Tim Bourguignon  27:40</b></br>  
+Oh, so you were able to, to postpone this on this client work and build it for for yourself and then sell it as a product?
+
+</p><p><b>Stefanie Hurlburt  27:49</b></br>  
+Yeah. So basically, we were on this freelance schedule of like, we would work for a month, take a month off, right? Because that's typical of freelancing, it's unless you have one big client, it's really hard to get like consistent work, you're going to have breaks and work. And so when we weren't doing freelance work, we would kind of Tinker on this little product, which would do a lot of the tinkering, my business partner, and I would go off and do talks and stuff to try to sell it and spread the word. It really didn't take much, maybe a few weeks of work at most. But we focused really hard on spreading the word and networking and getting, getting that sales and marketing work done.
+
+</p><p><b>Tim Bourguignon  28:35</b></br>  
+That makes sense. Make sense? And you said before that you are now more focusing on the on the business side? How do you manage the the kind of pendulum going between tech and business? what's what's your recipe for that?
+
+</p><p><b>Stefanie Hurlburt  28:50</b></br>  
+It's very tricky. And for me, I think what factors and is the fact that I still have burnout around coding, it's still very stressful for me, which is such a pity because it's something that I enjoy, but it's challenging. And so right now, my business partner takes the big part of the coding work and a big part of that weight. And I focus mostly on the sales and the business end of things. And when I do code, it's not something that is critical or like very stress oriented, it's something that is not so high risk to the business that is just for my personal development, because I want to and I wonder as things shift and as business becomes less necessary to focus on, maybe I can kind of keep on taking more of those projects.
+
+</p><p><b>Tim Bourguignon  29:47</b></br>  
+Um, and this this, this burnout that that you have on the coding side. Do you fear that it transfers to the business side at some point
+
+</p><p><b>Stefanie Hurlburt  30:00</b></br>  
+Think that you can be burnt out in any area of your work. And obviously, I'm not a psychologist or anything. But I have found that my burnout is definitely specific to coding and a little bit to technology. But it has not transferred to business, I can talk to people all day, I'm not burnt out on talking to people. And so I'm fortunate in that sense, but I have gotten a little bit of burnout in business. Like, for instance, I used to reach out to four new people a day and have at least four coffees with people every week, that was kind of my schedule to build sales for the product. And I, I just got burnt out on that I got I got burnt out on constantly socializing. And there have been times where I've needed to take a break from the business thing side of things, too.
+
+</p><p><b>Tim Bourguignon  30:54</b></br>  
+Did you? Did you establish rules or safeguards for yourself or to to to have a system enable pace for the future,
+
+</p><p><b>Stefanie Hurlburt  31:04</b></br>  
+if changed over time, I'm at one point, it was only do one task a day. And the funny part about that is that if I finished that task, I often wanted to do more. But if I didn't have but even if I was having a really bad day, I could probably still do one thing. And that that was like kind of a really nice structure for a while. Um, also I would adjust and really check in on myself on how many meetings I could handle each day. Like, I still, usually don't do more than two meetings a day just to kind of manage my energy. So just really being aware and checking in and having no shame in. In cutting back, I think especially in the business world, and also encoding. There's a lot of like people saying how much stuff they got done that day, or like how productive they are. And I really had to take a step back from that dialogue. Do you mind
+
+</p><p><b>Tim Bourguignon  32:03</b></br>  
+if I continue pushing in this direction? Sure. I'm, I'm really fascinated with everything you're saying? How does this manifest itself when you feel this burnout? coming up?
+
+</p><p><b>Stefanie Hurlburt  32:18</b></br>  
+Right, so I start to dread working, I mean, and it's all the classic symptoms of burnout, um, but it's I start to dread working, I start to get really afraid, I start to ironically, feel like a lot of things are way more urgent, and really needs to get done, which I used to listen to. And now I look at more skeptically when I feel that way. Um, and just this sense of like fear and anxiety, and dread around work, which is so strange to say that now because for the longest time, I thought that was just how everybody viewed work as, um, you know, obviously, there are fun parts of work, but I kind of assumed everyone kind of felt this way and recently I've been learning that, you know, you can look forward to to the tasks you have to do and and you don't have to do certain things if you don't want to,
+
+</p><p><b>Tim Bourguignon  33:18</b></br>  
+did you get some help some outside help in this in this process?
+
+</p><p><b>Stefanie Hurlburt  33:22</b></br>  
+Yes, therapy is great. I highly I highly recommend that everyone go to a therapist, as I went to therapy for other reasons, like I have PTSD and other other mental health issues to work on. But therapists were also able to kind of talk through burnout with me and help me get a plan to get back on track.
+
+</p><p><b>Tim Bourguignon  33:44</b></br>  
+Hmm, makes sense. Makes sense. That's, that's really fantastic. Thank you for being so so open about this. So that's I think really helpful for for everyone that might go or might feel the first time the first steps of this unfortunate journey. Because I feel that in our industry we have the tendency to to have no downtime. We work during the day 810 12 hours a day, sometimes more. God forbid we shouldn't do that. But sometimes we do. And we work on things that interest us some some have the chance to work on what they absolutely love which sounds like some part of your career was was like this really working exactly on what you love this at this low level graphics programming. But sometimes you don't and you have to scratch your own itch during the evenings and then you pull out long hours and do that in the evening as well and sleep even less and I feel like your days are becoming just work and work and work and work and work and it's it's easy to slip into this, this burnout pattern and and realize that your life is is running away from you. So I find it really, really interesting that you're able to, to, to explain so much about it. thank thank you for that.
+
+</p><p><b>Stefanie Hurlburt  35:09</b></br>  
+Yeah, it makes me really reflect on a lot of toxic ideas that I got starting from studying mathematics, of, just like in, in the math community that I was in, there was a lot of beliefs of like people who sleep four to six hours a day, you know, you need to do that to be a genius mathematician, you know, all the genius mathematicians drink coffee at 2am. And, and never stop thinking about math. And I I so badly wanted to be a genius mathematician and do cool stuff and make good discoveries. And I, for me, for probably over a decade, like a long time, I subsisted off of four to six hours of sleep, because I thought that's what I had to do to succeed. And now I always get at least eight hours of sleep unless I'm sick or something. And I don't even know how I function. There's 10 years. So yeah, a lot of there's a lot of really toxic attitudes about work out there.
+
+</p><p><b>Tim Bourguignon  36:11</b></br>  
+Hmm. As a side note, I'm preparing a talk about all these two side factors that actually matters a lot to our, our success as developers, and one of the first ones is sleep, getting enough sleep is getting you way more boost than then the right ID. And, and when I hear those, those battles between between NetBeans and IntelliJ, and Eclipse, on the on the Java, on the Java in the Java world, I say, Well, this is nothing compared to if you have three hours, to few, three hours to two less per night, then you have burned this, this bonus that you got from the right idea already. And this is as well, the case for four particles per per millions in the air when you have too much co2 concentration. And the same with a inebriate tea if you drink too much, etc, etc. and sugar maybe probably as well. So I really agree with this, the sleep is is very important.
+
+</p><p><b>Stefanie Hurlburt  37:20</b></br>  
+So much. And I remember, I remember when I was a when I was a student, I would always say well, I need to study for my test tomorrow, or I need to do this. And now if I'm not prepared for a meeting or something, I'm realizing it's a lot better to just sleep and go in unprepared, then, and that sounds so strange to people who you know, are confident that getting that knowledge in is more important. But I have found that it's not, it's better to just go in unprepared to that meeting, if you're not prepared by the night before.
+
+</p><p><b>Tim Bourguignon  37:58</b></br>  
+Have you tried going to bed early and then waking up in the morning and doing some kind of a short refresh on the meeting before going there?
+
+</p><p><b>Stefanie Hurlburt  38:09</b></br>  
+Of course, you could do something like that. But I think that, um, I usually try to prioritize getting a full night's sleep. So I'm not I I'm sometimes a morning person, sometimes not I but I don't try to pressure that I don't try to set an alarm for five or 6am. I recognize that because of life and lots of other factors going to bed at 11 or 12. Or midnight is it's just better for me. And that means that I should wake up at seven or eight not five in the morning.
+
+</p><p><b>Tim Bourguignon  38:42</b></br>  
+Make sense? Make sense? Um, do you have a morning routine?
+
+</p><p><b>Stefanie Hurlburt  38:47</b></br>  
+Yeah. And my morning routine has changed over the years. I found that routine is so important to mental health and a lot of therapists have told me that and I'm finally listening to them. Um, but I I find, for me, a big part of my morning routine is just getting up and making myself a cup of coffee or a cup of tea, and just really listening to what I need that morning. So for instance, some mornings I deal with a lot of nightmares. And so sometimes I just need to spend the first two hours of that day, just relaxing, watching shows taking it easy. And I think the key is just really having that choice in the mornings of like, what do I need to do to start today, right. But I always make my cup of coffee or tea.
+
+</p><p><b>Tim Bourguignon  39:36</b></br>  
+Yeah, fluids are important. And somehow coffees are even more important in our industry. Speaking of which, it's almost a almost 11pm here. So we'll have to wrap up at some point. And I'm going to ask you when one I think is there a book that you have read? Many times Yes. Which one would that be?
+
+</p><p><b>Stefanie Hurlburt  40:00</b></br>  
+Well, lately I have focused more on psychology books. Um, just because I found that that is what is enhancing my life the most right now. There are three books that have kind of really been a focus most, most recently, I'm not sure if this would be applicable to all the listeners, but I know it'll be applicable to some of them. I've read boundaries by cloud and Townsend disclaimer that it does have some religious themes in it. So listeners that are not into that won't like it. But it's a book on how to set boundaries and relationships. And that's probably the one that I have come back to the most of just, you know, boundaries come up everywhere. They come up in negotiation from the business end of things, but also all kinds of relationships. And it's one of those things where you think like, oh, anyone, or at least I thought, well, this is a very basic concept. Obviously, we all need to set boundaries. But it gets very tricky when power dynamics are involved when you're at work, and you really need some money. When you really don't want someone to leave a relationship. It gets very tricky points. And this book kind of helps you navigate that.
+
+</p><p><b>Tim Bourguignon  41:15</b></br>  
+You mentioned two other books.
+
+</p><p><b>Stefanie Hurlburt  41:17</b></br>  
+Yes, the other ones are related to drama. But they're kind of very insightful and for life. One is why does he do that by Lindy Bancroft, which is about abusive people, which I know is a very deep topic for this podcast. But he profiles I think it's eight different types of abusive people. And it really opened my eyes, not just in relationships, but also workplaces. And just everywhere, there's a lot depending on how you grow up and what workplaces you're in, you can really normalize behavior that should not be normalized. And it really helped me open my eyes to that. And then the other one is the body keeps the score by vendor Cole, who it's probably the best book on healing from trauma that I know.
+
+</p><p><b>Tim Bourguignon  42:04</b></br>  
+Fantastic. Thank you flew three, three tips. Um, okay, we have to wrap up, otherwise, it's gonna be too long. If no, I need to ask my last question. Anyway. Um, if you were to give one advice to, to newcomers in the industry, just one, what would you like to say?
+
+</p><p><b>Stefanie Hurlburt  42:28</b></br>  
+I would like to say that networking is surprisingly important, and you should network and market and sell yourself, even if you're only planning on being a full time developer, because those skills are really important. Your skills don't just speak for themselves, you have to meet people and build relationships and communicate,
+
+</p><p><b>Tim Bourguignon  42:51</b></br>  
+do you have some tip for someone to to, I wouldn't say network better, but get over their, their resistance, internal resistance of networking,
+
+</p><p><b>Stefanie Hurlburt  43:00</b></br>  
+lots of tips. And I've written a lot about it in the past, but I think I think a lot of people resist the general concept of sales and marketing, because they're worried that it's fake. And I think you have to understand that it's a human. It's a part of being human to do sales and networking, and you do it even if you don't think you're doing it. Every time you introduce yourself to someone you are doing marketing, and marketing and sales. And networking is just about becoming aware about what you're already doing. And learning how to do it more intentionally. It doesn't mean that you have to do the standard advice, but it means being more aware of yourself.
+
+</p><p><b>Tim Bourguignon  43:47</b></br>  
+Fantastic. I guess we'll leave it to there. Thank you very much for this advice.
+
+</p><p><b>Stefanie Hurlburt  43:51</b></br>  
+No problem.
+
+</p><p><b>Tim Bourguignon  43:52</b></br>  
+So if, if the listeners wanted to continue this discussion with you, would Twitter be the right place to to go? Or would that be somewhere else?
+
+</p><p><b>Stefanie Hurlburt  44:04</b></br>  
+What is the main place that I'm on? I'm on Twitter at SEH URL? Bu RT? And then I also from there, you can find out my links. I've also got a personal website that has just everything. I yeah, so you can you can start with Twitter and find where I'm at from there.
+
+</p><p><b>Tim Bourguignon  44:23</b></br>  
+Um, I would like to highlight also this, this web page, which name completely blinks out right now something cat where you answer questions.
+
+</p><p><b>Stefanie Hurlburt  44:35</b></br>  
+Yes. I also have a curious cat. Sure. You can find the link to it on my personal Yeah.
+
+</p><p><b>Tim Bourguignon  44:42</b></br>  
+Yeah. I was blanking on the on the name. So for listeners who don't know what a curious cat is, it's kind of a question and answer. social websites where people can ask questions and you answer on a actually very good regular basis.
+
+</p><p><b>Stefanie Hurlburt  44:56</b></br>  
+Yeah, I really enjoy that site. Because Twitter only You can only answer in so much detail on Twitter.
+
+</p><p><b>Tim Bourguignon  45:03</b></br>  
+So just listeners go over there and and have a look at all the answers Stephanie gave. They're very insightful and very, very broad range of, of topics. 70 Do you have anything coming up in the next week or a month that you would like to advertise your own show? Oh,
+
+</p><p><b>Stefanie Hurlburt  45:22</b></br>  
+not really. But you're welcome to check out my, my company. It's binomial dot info. If you're curious about image compression, we just went into a partnership with Google to try to improve image compression standard. So there's a lot of exciting stuff happening around that partnership, and then the business at large.
+
+</p><p><b>Tim Bourguignon  45:44</b></br>  
+Okay, fantastic. So let's go over there. Check it out. And give Stephanie some feedbacks if you have some. Stephanie, thank you so much for coming on the show and being so open with with all you live through and telling us your story. That was fantastic. Thank you very much.
+
+</p><p><b>Stefanie Hurlburt  46:02</b></br>  
+No problem. It was nice to me. And this
+
+</p><p><b>Tim Bourguignon  46:04</b></br>  
+has been another episode of developer's journey. And we'll see each other next week. Bye bye.
+
+Dear listener, if you haven't subscribed yet, you can find this podcast in iTunes, Google music, Stitcher, Spotify, and much more, head over to www dot journey dot info. To read the show notes find all the links mentioned during the episode. And of course, links to the podcast on all these platforms. Don't miss the next developer's journey story by subscribing to the podcast with the app of your choice right now. And if you like what we do, please rate the podcast, write a comment on those platforms, and promote the podcast and social media. This really helps fellow developers discover the podcast and do fantastic journeys. Thank you
+
+</p>
