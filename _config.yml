@@ -4,6 +4,7 @@ title: DevJourney Podcast
 logo: https://devjourney.info/Img/logo.png
 image: https://devjourney.info/Img/logo.png
 author: Tim Bourguignon
+url: https://devjourney.info
 show_downloads: false
 plugins:
   - jekyll-sitemap
