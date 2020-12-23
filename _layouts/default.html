@@ -30,14 +30,24 @@
             <p style="text-align: justify; text-justify: inter-word;">
             </p>
 
-            <ul>
-                <li class="buttons"><a class="buttons" href="/subscribe.html">📢 Subscribe</a></li>
-                <li class="buttons"><a class="buttons" href="/subscribe-to-newsletter.html">📰 Newsletter</a></li>
-                <li class="buttons"><a class="buttons" href="/suggested-books.html">📖 Books</a></li>
-                <li class="buttons"><a class="buttons" href="/buy-devjourney-swag.html">👕 Swag</a></li>
-                <li class="buttons"><a class="buttons" href="/sponsor-the-show.html">💸 Sponsor</a></li>
-                <li class="buttons"><a class="buttons" href="/search-devjourney.html">🔎 Search</a></li>
-            </ul>
+            <div class="row">
+                <div class="hamburg">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </div>
+            </div>
+
+            <div class="hamburger_menu">
+                <ul>
+                    <li class="buttons"><a class="buttons" href="/subscribe.html">📢 Subscribe</a></li>
+                    <li class="buttons"><a class="buttons" href="/subscribe-to-newsletter.html">📰 Newsletter</a></li>
+                    <li class="buttons"><a class="buttons" href="/suggested-books.html">📖 Books</a></li>
+                    <li class="buttons"><a class="buttons" href="/buy-devjourney-swag.html">👕 Swag</a></li>
+                    <li class="buttons"><a class="buttons" href="/sponsor-the-show.html">💸 Sponsor</a></li>
+                    <li class="buttons"><a class="buttons" href="/search-devjourney.html">🔎 Search</a></li>
+                </ul>
+            </div>
 
         </header>
         <section>
@@ -51,7 +61,14 @@
         </footer>
     </div>
     <script src="{{ "/assets/js/scale.fix.js " | relative_url }}"></script>
-
+    <script>
+        var hamburger = document.querySelector(".hamburg");
+        var hamburger_menu = document.querySelector(".hamburger_menu");
+        hamburger.onclick = function () {
+           this.classList.toggle ("checked");
+           hamburger_menu.classList.toggle("checked");
+        }
+     </script>
 </body>
 
 </html>
