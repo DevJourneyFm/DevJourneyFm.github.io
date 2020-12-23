@@ -36,18 +36,18 @@
             </span>
 
             <div class="hamburger_menu">
-                <ul>
-                    <li class="buttons"><a class="buttons" href="/subscribe.html">📢 Subscribe</a></li>
-                    <li class="buttons"><a class="buttons" href="/subscribe-to-newsletter.html">📰 Newsletter</a></li>
-                    <li class="buttons"><a class="buttons" href="/suggested-books.html">📖 Books</a></li>
-                    <li class="buttons"><a class="buttons" href="/buy-devjourney-swag.html">👕 Swag</a></li>
-                    <li class="buttons"><a class="buttons" href="/sponsor-the-show.html">💸 Sponsor</a></li>
-                    <li class="buttons"><a class="buttons" href="/search-devjourney.html">🔎 Search</a></li>
+                <ul class="hamburger_list">
+                    <li class="btn"><a class="btn" href="/subscribe.html">📢 Subscribe</a></li>
+                    <li class="btn"><a class="btn" href="/subscribe-to-newsletter.html">📰 Newsletter</a></li>
+                    <li class="btn"><a class="btn" href="/suggested-books.html">📖 Books</a></li>
+                    <li class="btn"><a class="btn" href="/buy-devjourney-swag.html">👕 Swag</a></li>
+                    <li class="btn"><a class="btn" href="/sponsor-the-show.html">💸 Sponsor</a></li>
+                    <li class="btn"><a class="btn" href="/search-devjourney.html">🔎 Search</a></li>
                 </ul>
             </div>
 
         </header>
-        <section>
+        <section class="content">
 
             {{ content }}
 
@@ -65,6 +65,12 @@
            this.classList.toggle ("checked");
            hamburger_menu.classList.toggle("checked");
         }
+    </script>
+    <script>
+        window.onload = function() {
+            if (document.documentElement.clientWidth >= 960) {
+                hamburger_menu.classList.toggle("checked");
+        }}
      </script>
 </body>
 

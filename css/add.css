@@ -6,6 +6,7 @@ header {
     background-color: white !important;
     border: none !important;
     text-align: center;
+    padding-right:0% !important;
 }
 
 a {
@@ -33,6 +34,11 @@ img.swag{
 p.title {
     font-size: 25px;
     color: black;
+}
+
+header li.btn{
+    all: initial;
+    font-family: Arvo, Monaco, serif !important;
 }
 
 header li.buttons {
@@ -74,6 +80,10 @@ h1 {
 }
 h2 {
     font-size: 20px;
+}
+
+ul.hamburger_list{
+    position: inherit !important;
 }
 
 .hamburg { 
