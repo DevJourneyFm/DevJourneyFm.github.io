@@ -160,3 +160,8 @@ blockquote {
   blockquote p {
     display: inline;
   }
+
+  i.tip{
+    font-style: italic;
+    font-weight: bold;
+  }
