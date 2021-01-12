@@ -37,20 +37,6 @@ function getCurrentGuestPage(allRecords, index){
     return allRecords[i][2].toString().replace(/\s/g, '');
 }
 
-function createGuestLink(currentAuthorsHandle, currentAuthor){
-    //find the page in the index.html page
-    if(currentAuthorsHandle == ''){
-        return currentAuthor;
-    } else {
-        return ''.concat(
-            "<a href=\"https://www.twitter.com/", 
-            currentAuthorsHandle,
-            "\">",
-            currentAuthorsHandle,
-            "</a>");
-    }
-}
-
 function recordsFormatIsIncorrect(allRecords){
     return allRecords[i] == undefined || allRecords[i].length != 3;
 }
