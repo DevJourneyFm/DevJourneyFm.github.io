@@ -1,5 +1,3 @@
-getSingleQuote();
-
 function populateArrayOfTips(response){
     var allRecords = [];
 
@@ -14,6 +12,7 @@ function populateArrayOfTips(response){
     return allRecords;
 }
 
+/// Used to display one random quote on the homepage
 function pickOneTipInTheListAndDisplayIt(response){
     var allRecords = populateArrayOfTips(response);
     if(allRecords != undefined){
@@ -25,21 +24,33 @@ function pickOneTipInTheListAndDisplayIt(response){
             return;
         }
 
-        document.getElementById("tip").innerHTML = "<i>".concat(getCurrentTip(allRecords, i), "</i>");
-        document.getElementById("author").innerHTML = "<a href=\"".concat(getCurrentGuestPage(allRecords, i), "\">", getGuest(allRecords, i), "</a>");
+        document.getElementById("tip").innerHTML = "<i>".concat(getCurrentTip(allRecords[i][0]), "</i>");
+        document.getElementById("author").innerHTML = "<a href=\"".concat(getCurrentGuestPage(allRecords[i][2]), "\">", getGuest(allRecords[i][1]), "</a>");
     }
 }
 
-function getCurrentTip(allRecords, index){
-    return allRecords[i][0].toString().trim();
+/// Used to display all the quotes in the advice page
+function displayAllQuotes(response){
+    var allRecords = populateArrayOfTips(response);
+    if(allRecords != undefined){
+        allRecords.forEach(function(record){
+            var author = " by <a href=\"".concat(getCurrentGuestPage(record[2]), "\">", getGuest(record[1]), "</a>");
+            var quote = "<li><i class=\"tip\">\"".concat(getCurrentTip(record[0]), "\"</i>", author, "</li>");
+            document.getElementById("tip").innerHTML += quote;
+        });
+    }
 }
 
-function getGuest(allRecords, index){
-    return allRecords[i][1].toString().trim();
+function getCurrentTip(record){
+    return record.toString().trim();
 }
 
-function getCurrentGuestPage(allRecords, index){
-    return allRecords[i][2].toString().replace(/\s/g, '');
+function getGuest(record){
+    return record.toString().trim();
+}
+
+function getCurrentGuestPage(record){
+    return record.toString().replace(/\s/g, '');
 }
 
 function recordsFormatIsIncorrect(allRecords){
@@ -50,7 +61,7 @@ function getRandomIndex(allRecords){
     return Math.floor((Math.random() * allRecords.length)); 
 }
 
-function getSingleQuote(){
+function getGuestQuotes(multiple){
     var request = new XMLHttpRequest();
     request.open('GET', 'https://raw.githubusercontent.com/DevJourneyFm/DevJourneyFm.github.io/master/tips.txt', true);
     request.send(null);
@@ -58,7 +69,10 @@ function getSingleQuote(){
         if (request.readyState === 4 && request.status === 200) {
             var type = request.getResponseHeader('Content-Type');
             if (type.indexOf("text") !== 1) {
-                pickOneTipInTheListAndDisplayIt(request.responseText);
+                if(multiple)
+                    displayAllQuotes(request.responseText)
+                else
+                    pickOneTipInTheListAndDisplayIt(request.responseText);
             }
         }
     }
