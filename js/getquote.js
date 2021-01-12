@@ -1,4 +1,4 @@
-getText();
+getSingleQuote();
 
 function populateArrayOfTips(response){
     var allRecords = [];
@@ -11,6 +11,11 @@ function populateArrayOfTips(response){
         })
     }
 
+    return allRecords;
+}
+
+function pickOneTipInTheListAndDisplayIt(response){
+    var allRecords = populateArrayOfTips(response);
     if(allRecords != undefined){
         i = getRandomIndex(allRecords);
         
@@ -45,7 +50,7 @@ function getRandomIndex(allRecords){
     return Math.floor((Math.random() * allRecords.length)); 
 }
 
-function getText(){
+function getSingleQuote(){
     var request = new XMLHttpRequest();
     request.open('GET', 'https://raw.githubusercontent.com/DevJourneyFm/DevJourneyFm.github.io/master/tips.txt', true);
     request.send(null);
@@ -53,7 +58,7 @@ function getText(){
         if (request.readyState === 4 && request.status === 200) {
             var type = request.getResponseHeader('Content-Type');
             if (type.indexOf("text") !== 1) {
-                populateArrayOfTips(request.responseText);
+                pickOneTipInTheListAndDisplayIt(request.responseText);
             }
         }
     }
