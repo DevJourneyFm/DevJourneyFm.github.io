@@ -165,3 +165,14 @@ blockquote {
     font-style: italic;
     font-weight: bold;
   }
+
+  img.subscribe{
+    border-radius: 50%;
+    border-color: #425075;
+    border-width: 3px;
+    width: 30px;
+  }
+
+  img.small{
+    width: 30px;
+  }
