@@ -80,7 +80,7 @@ CreateFile(GUEST_PAGE, sys.argv)
 
 SLUG_TO_FIND = "<!-- insert here -->"
 SLUG_TO_REPLACE = """<!-- insert here -->
-        <li><a href="/Guests/NUMBER-FIRSTNAMELASTNAME.html">#TITLE_WITHOUT_HASH</a> - DATE, 2022</li>"""
+        <li><a href="/Guests/NUMBER-FIRSTNAMELASTNAME.html">#TITLE_WITHOUT_HASH</a> - DATE, 2023</li>"""
 SLUG_TO_REPLACE = SLUG_TO_REPLACE.replace("NUMBER", number)
 SLUG_TO_REPLACE = SLUG_TO_REPLACE.replace("FIRSTNAME", firstname)
 SLUG_TO_REPLACE = SLUG_TO_REPLACE.replace("LASTNAME", lastname)
