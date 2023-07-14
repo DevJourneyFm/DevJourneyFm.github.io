@@ -1,202 +1,202 @@
-<p><b>Tim Bourguignon  0:06</b></br>
+<p><b>Tim Bourguignon  0:06</b><br/>
     Hello, and welcome to developers journey. The podcast shining a light on developers lives from all over the world. My name is Tim Bourguignon, and today I received Charity Majors. Charity is an Ops-Engineer and the accidental CEO at Honeycomb.io. Before this, she worked at Parse, Facebook and Linden Lab on operations and developer tools. And she always seems to wind up running the database, co author of O'Reilly's database Reliability Engineering book, she loves free speech, free software, and single malt Scotch, Charity, welcome to dev journey.
 
-    </p><p><b>Charity Majors  0:50</b></br>  
+    </p><p><b>Charity Majors  0:50</b><br/>  
     Thanks so much for having me. Really nice to be here.
 
-    </p><p><b>Tim Bourguignon  0:53</b></br>
+    </p><p><b>Tim Bourguignon  0:53</b><br/>
     I'm thrilled. I'm thrilled. So let's start with this. How does one become the accidental CEO of a company?
 
-    </p><p><b>Charity Majors  1:02</b></br>  
+    </p><p><b>Charity Majors  1:02</b><br/>  
     That is a great question.
 
     And I'll tell you, but I will also note that by the time this goes live, it will be public that I'm not CEO anymore. So I can tell you about that, too. So we started honeycomb, it was three of us three engineers. And a few months into it. I had to let the person who was going to be CEO go, and there was no one else to do it. And I was very unhappy about it. I kept having nightmares about how no one would ever hire me again, for any engineering role. I would just have to be a PM or something. It was, it was pretty traumatic, actually. But it needed to be done and there was nobody else to do it. So I've done it for three, almost three and a half years now. But I'm a big fan of leaning into pain and like pushing through hard things. I've kind of built my career around that. Right. But this was not a thing that I ever grew to love. You know, there are lots of hard things that I push through I got to the other side, I found something I loved about it, and being CEO. It it never happened for me. Because when you're a CEO, like your job is never to do the things that are working well. It's always to pay attention to the things that aren't working well. And for startups, you know, usually that means sales and marketing. And there are things in marketing that I figured out how to enjoy how to love but I would just dread going to work every day and having to deal with, you know, sales stuff, and it was killing my soul. So my co founder and I are switching places. I'm going to be CTO and she is going to be she was the Chief Product officer and she is going to take over a CEO. I think it's actually announced today so I knew
 
-    </p><p><b>Tim Bourguignon  2:57</b></br>  
+    </p><p><b>Tim Bourguignon  2:57</b><br/>  
     How did you manage to make the decision? Was it a long time in the in the making?
 
-    </p><p><b>Charity Majors  3:04</b></br>  
+    </p><p><b>Charity Majors  3:04</b><br/>  
     Oh, it was it was three years in the making. I mean, I've never wanted, I've never wanted it. I just didn't think there was any alternative. And so as soon as we found an alternative, it seemed pretty clear that but you know, it's so weird like we, when we started this company, I thought that I was going to get to go heads down and just build things for two years, right, because that's what I was craving. Because I had been a manager for for a few years now, at this point. It's been almost six years, since I really did a lot of hands on work. And mine is like that three months, in early 2015 when when I was doing hands on work at honeycomb. But things don't really turn out the way you plan I guess.
 
-    </p><p><b>Tim Bourguignon  3:48</b></br>  
+    </p><p><b>Tim Bourguignon  3:48</b><br/>  
     It never does.
 
-    </p><p><b>Charity Majors  3:50</b></br>  
+    </p><p><b>Charity Majors  3:50</b><br/>  
     Problems of success, right? They're good problems to have bad problems to have or when you don't have the option or when when you're not growing and nothing is needed from you.
 
-    </p><p><b>Tim Bourguignon  3:57</b></br>  
+    </p><p><b>Tim Bourguignon  3:57</b><br/>  
     Absolutely. Absolutely. Would you mind telling us about honeycomb just a bit so that the listeners know what, with what you're doing.
 
-    </p><p><b>Charity Majors  4:06</b></br>  
+    </p><p><b>Charity Majors  4:06</b><br/>  
     As you mentioned before, like I come from a very operational DBA type background, which to me, like when people say Ops, I, I've always thought of ops as just reality, like ops is like the practice of shipping software to users. And I love that that point where like, beautiful theory of computing meets like dirty, messy, grubby reality, That, to me is interesting engineering. And I've kind of made it my history as an engineer has been, my niche has been that where I like to come in as the first infrastructure hire, you know, when it's few software engineers, they have a product starting get some traction, and now it's time for them to really make it grow up and make it reliable and build a team that can support it. So I was doing that parse mobile backend, like Heroku for mobile. I was doing that at Parse A few years ago, and around the time that we got a question by Facebook, which was, you know, year or two after I was there, around the time we got acquired by Facebook, we had 60,000 mobile apps. And I was reaching the horrified conclusion that we had built something that was basically on debuggable by like, some of the best engineers in the world doing all the quote, unquote, write things. We had built this, this platform where, as a mobile app developer, you could build anything, you could write your own queries and upload them. And we just had to make it work. You could write your own JavaScript, and I put it we make it work. And so I've got the 60,000 mobile apps, and all their shitty code. I'm just trying to make it work and it was falling over constantly. And I tried everything like every tool out there. And the thing that finally helped dig us out of a hole was after we got acquired by Facebook, and there's a school that this tool called scuba, it, it's ugly, it's hostile to users, but it lets you do one thing really well which is slice and dice in real time, on demand Have arbitrarily high cardinality. And when I say cardinality, I mean imagine like the other, you have a group of 100 million users. And the highest cardinality dimensions will be any unique ID, right? Like social security number, request ID, low cardinality dimensions or like gender, and lowest of balls like species equals human right. So all the monitoring tools out there are oriented towards low cardinality dimensions, you'll blow out the key space if you try and aggregate by hostname or anything else as lots of different unique IDs. So that's why like, trying to debug a platform with low cardinality stuff, it was like, like, a few times a day, someone would come to me like parses down, I'd be like, no, it's not like build my wall full of dashboards. They're all green, everything's fine. But like, that's not reflecting their experience. You know, maybe it's Disney, maybe they're doing four requests per second, and most of them are failing. It's never going to show up in my grasp and 100,000 requests per second. So we got some datasets into scuba. And like the time that it took to debug these problems just dropped like a rock, like, from hours or days, to seconds or minutes. And like repeatedly, like it was wasn't even an engineering problem anymore. It was a support problem. And this has been a huge impact on me. When I was leaving Facebook, I suddenly went, Oh, shit, I don't know how to engineer anymore without this. Like, it's not just a an emergency tool or a thing that we use when something's broken. It's become so embedded into how I, it's my eyes and ears. It's my five senses for my software. It's how I know what's actually happening when my code hits production, and users are interacting with it. Like it's how I decide what I'm going to build. We rolled out a compression feature the other week where it's like, we didn't just set out to build it. We first added some instrumentation, let it run for a while. So we gathered statistics and we could figure out how much space we would reclaim how it would be distributed, who is going to be impacted how much Who's going to save money who was going to pay more, you know, and then we built it. And as we're building it, as we're rolling it out, you know, we're just keeping an eye on it, making sure that what we shipped is what we think we shipped is behaving as we expected it to, like the idea of not having that it's just, it's like the idea of going back to driving without your glasses, right, if you're blind as I am. So, my co founder Cassini, and I decided to build it because at the time, we were thinking, this is just a platform problem, because platforms all have this, this property where, like, if you're building mobile app, the app is everything to you. It's your world, right? But it's one of 60,000 or a million to me. And that mismatch is what makes so many people unhappy with their platform experiences. So like, the way that that like this tool is so transformative is that you can first break down by that one in a million user IDs, and then break down by endpoint latency percentiles breakdown by query brief breakdown of any combination of anything that you might want.
 
     And, and we knew the platform's had this issue. But it was only over the course of the first year or two that I slowly started to realize that this this is an everyone problem. This is a function of pure complexity, the number of possible outcomes or things that can go wrong or root causes. As that goes up, like we just can't cognitively deal with it anymore. We can't fit the entire system into our head and reason about it anymore. It has to be in a tool that we can all interact with. That's up to date, that's not relying on the out of date cache in my head. And it needs to have this interactive properties where you can just ask any question, without having to ship new code, ask that question, right, because that's the holy grail of joint ability. I will not pause for breath. That was a very long answer.
 
-    </p><p><b>Tim Bourguignon  9:50</b></br>  
+    </p><p><b>Tim Bourguignon  9:50</b><br/>  
     Yeah, I'm trying to piece that completely together. That's really not my domain. But I think I understood pretty much
 
-    </p><p><b>Charity Majors  9:59</b></br>  
+    </p><p><b>Charity Majors  9:59</b><br/>  
     if you write stuff, you need to understand what's happening, right when your users are interacting with it. And that that right there is what honeycomb does. It lets you watch your software and debug it as it's running as users are using it.
 
-    </p><p><b>Tim Bourguignon  10:14</b></br>  
+    </p><p><b>Tim Bourguignon  10:14</b><br/>  
     This facility is for a specific platform or a specific kind of implementation.
 
-    </p><p><b>Charity Majors  10:20</b></br>  
+    </p><p><b>Charity Majors  10:20</b><br/>  
     No, I mean, any length, we just accept structured data at the ingestion point. Now, obviously, you know, getting the structured data for us and the formatting everything. We have New Relic style libraries that you can install. In your code, that's how we prefer people use it. But if you have a love that you can structure that works to like, they don't care. Just get the data in and then you can start looking at it.
 
-    </p><p><b>Tim Bourguignon  10:48</b></br>  
+    </p><p><b>Tim Bourguignon  10:48</b><br/>  
     Fantastic. Cool. I'll have a look at it.
 
-    </p><p><b>Charity Majors  10:52</b></br>  
+    </p><p><b>Charity Majors  10:52</b><br/>  
     There's a sandbox where you can play with it.
 
-    </p><p><b>Tim Bourguignon  10:55</b></br>  
+    </p><p><b>Tim Bourguignon  10:55</b><br/>  
     I'll link that in the show notes as well. But I wanted to rewind a bit. How did you come up in the tech world in the first place?
 
-    </p><p><b>Charity Majors  11:04</b></br>  
+    </p><p><b>Charity Majors  11:04</b><br/>  
     Um, let's see. Well, I went to school for classical piano performance. And when I got to school, I realized that all the music majors were broke. I grew up poor, I didn't want to be broke, I didn't want to be poor as an adult. And I had a crush on a boy who was a computer science student. And I spent some time in the computer science lab. And I really loved the command line. I never really liked the point in clicking interfaces, but I really looked like writing on the command line using commands in shell scripting. And so I, I became the sysadmin for the math department and then for the CS department, and then the entire university. And then I got a job. After four years of schooling, where I was paying more and more attention to my work and less and less attention to my schooling. I just dropped out and came to San Francisco and I've been here ever since.
 
-    </p><p><b>Tim Bourguignon  12:00</b></br>  
+    </p><p><b>Tim Bourguignon  12:00</b><br/>  
     Okay, so you just jumped in like this as a as dropping your major and going to take. That's interesting. Yep. That's cool, actually. And you didn't have really a background in STEMs before?
 
-    </p><p><b>Charity Majors  12:16</b></br>  
+    </p><p><b>Charity Majors  12:16</b><br/>  
     No, no, I was homeschooled.
 
-    </p><p><b>Tim Bourguignon  12:18</b></br>  
+    </p><p><b>Tim Bourguignon  12:18</b><br/>  
     Didn't have a guest that had done that before. Cool.
 
-    </p><p><b>Charity Majors  12:22</b></br>  
+    </p><p><b>Charity Majors  12:22</b><br/>  
     Yeah, I grew up in a very remote, isolated separatist farm in Idaho. very religious. And none of us went to school or sub doctors or immunized or any of the normal modern things that I left home when I was 15. I went to college, basically to get away.
 
-    </p><p><b>Tim Bourguignon  12:42</b></br>  
+    </p><p><b>Tim Bourguignon  12:42</b><br/>  
     And from what you described in three and a half sentences, so that might be wrong, but I'm going to say but I'll say it anyways. Trigger you. It sounds like you. You did very much of of self teaching. Is this, uh yeah, the way you learn?
 
-    </p><p><b>Charity Majors  13:01</b></br>  
+    </p><p><b>Charity Majors  13:01</b><br/>  
     Yeah, I guess so I definitely learned by doing not by listening. And by reading I can't even really sit through conference talks because I don't process and learn new information that way. And I'm not scared of you know, not knowing something it's something that I've always found kind of odd is is how people seem to wait for permission or wait for schooling or wait wait for a class or something. Like you can learn almost anything if you if you put your mind to it and if you want to,
 
-    </p><p><b>Tim Bourguignon  13:33</b></br>  
+    </p><p><b>Tim Bourguignon  13:33</b><br/>  
     And how do you go about learning something with what is your strategy?
 
-    </p><p><b>Charity Majors  13:38</b></br>  
+    </p><p><b>Charity Majors  13:38</b><br/>  
     Just do it, you know, I I just I look for so I extremely motivated by what needs to be done what must be done, if something is necessary and it must be done. I will find a way to do it. I'm not motivated by you know tinkering or fun projects are like, you know, proof of concepts or you know, I'm very much motivated by if it's business critical if it must be done if it is needed, and then I will find a way one way or another and I enjoy it. I really enjoy being dropped into the deep end and just, you know, sink or swim, figure it out if like, the weight of the world rests on your shoulders, like if you don't figure it out, no one will and the company will go out of business. I really enjoy that level of pressure.
 
-    </p><p><b>Tim Bourguignon  14:23</b></br>  
+    </p><p><b>Tim Bourguignon  14:23</b><br/>  
     But it's awesome. There's really just a lot of weight, isn't it? Yeah, that's cool. But how do you how do you keep an eye on what's being developed in the industry and learn what's what's not on your plate from from a business perspective, but could be interesting for the future.
 
-    </p><p><b>Charity Majors  14:43</b></br>  
+    </p><p><b>Charity Majors  14:43</b><br/>  
     I mean, I read Twitter, and the tech press and, and I like to go out drinking with friends whose opinion I respect and I hear a lot from them. Like I love to hear what other people are excited about. There's nothing more fun than talking to somebody genuinely excited about what they do.
 
-    </p><p><b>Tim Bourguignon  15:02</b></br>  
+    </p><p><b>Tim Bourguignon  15:02</b><br/>  
     That is true about you. That is true. I love to do the same. But I'm very I'm very social person. So I tend to have mentors and mentees. Yeah, yes, absolutely. I'm a mentor myself, I have two mentors, as well. And I really like to what mentorship mentorship for me is, is spending time to focus on another person. So is forgetting about yourself and just trying to help was really this person in mind. There's a small difference between mentorship and coaching, being that that I think mentorship is less restrictive. You really are helping with whatever you have. You can be a teacher, you can be a coach, you can be a parent, you can be a gardener. You can be anything as long as you're genuinely trying to help. That's, that's my definition.
 
-    </p><p><b>Charity Majors  16:08</b></br>  
+    </p><p><b>Charity Majors  16:08</b><br/>  
     Interesting. I've always been had a little bit of an aversion to mentorship. I don't like hierarchy. I don't like relationships with implied or overt hierarchy, they tend to set me off in unhelpful ways. I really like peers though. And I find that I have learned the most things in my career from especially when I became a manager, like the peer relationships that I had with people who are more experienced managers in me, like I learned so much just from hearing their stories of, of, you know, times when they have had problems like the one that I'm in front of right. hearing someone else's story is like getting to borrow their experiences. But I always think of them as like peer relationships because I really like the giving as well as taking and taking as well as giving because that Just works better for me if I formulate it that way mentally, I guess.
 
-    </p><p><b>Tim Bourguignon  17:05</b></br>  
+    </p><p><b>Tim Bourguignon  17:05</b><br/>  
     It totally makes sense. Um, I've, I've had the same experience actually, all my relationships with my mentors. Well, I've talked to correct that. So when one of my mentors is actually a cool mentor, so depending on the topic we are discussing, one will be the more knowledgeable and the other one will be, the less enjoyable and this will flip around during the two hour discussion that will have many times and so this is really a discussion. Like, like a sparring partner, I would say more than the mentor. That said, I've often seen that starting a mentoring relationship with with junior developers takes a bit of your hierarchy just to kickstart the process. So I had to to be the mentors really endorsed this, this stands to be the mentor for a while in order to, to show him because there were two, at least two mentees, I have in mind and two male developers to show them that, that there is something to it. And after a while, now we have a relationship that is kind of becoming at at the same height and going back and forth as well. But it took a while to be initiated.
 
-    </p><p><b>Charity Majors  18:27</b></br>  
+    </p><p><b>Charity Majors  18:27</b><br/>  
     Yeah, interesting.
 
-    </p><p><b>Tim Bourguignon  18:29</b></br>  
+    </p><p><b>Tim Bourguignon  18:29</b><br/>  
     That's cool. So, but this is really a part of my my learning as well. Getting to learn through somebody else and see what they are excited about and how they learn and how they go about doing their stuff. And this is, this is very important. And you're right, and this is exactly what I'm doing through this, this podcast.
 
-    </p><p><b>Charity Majors  18:48</b></br>  
+    </p><p><b>Charity Majors  18:48</b><br/>  
     Yeah. Yeah, that's really cool. I also find it teaching other people or sharing my stories with other people helps them really stick for me. Like, I'll often forget stories or anecdotes. They'll drift out of my mind if I do Don't tell them or share them. They if I repeat them a couple times, then I, then I hold on to them better over time.
 
-    </p><p><b>Tim Bourguignon  19:07</b></br>  
+    </p><p><b>Tim Bourguignon  19:07</b><br/>  
     That is true. That is true. Do you share a lot of stories with you do present a lot of talks.
 
-    </p><p><b>Charity Majors  19:14</b></br>  
+    </p><p><b>Charity Majors  19:14</b><br/>  
     I do give a lot of talks, which is, um, it's, I used to be pathologically afraid of public speaking. So I kind of forced brute force my way through it. I I enjoy it now. But I probably give 20 or 30 talks a year. And that that was really helpful for me. Like, I don't think I could have started a company if I hadn't learned to do public speaking. I used to be one of those people who would own I could write but I couldn't talk. I couldn't really think well, I talked. So I couldn't change my mind or really, like have a discussion. I would have to go away I would have to present my opinion. And then if it was countered, I'd have to go away and I could only think when I was alone, you know, I'm very much an introvert. In over the past five, seven years, I've really pushed myself to tolerate people better for longer stretches of time. And and it's been good for me, like, because public public speaking is, you know, when you're when you're in any position of leadership or authority, people are looking at you a lot. And they're listening to you a lot. And having the ability to read the room. And react demonstrates that you're present, and it makes people trust you. And it's just a much more efficient and effective way of thinking existing in the team, if that makes sense. When you're an introvert, you can't, you know, talk out loud. It holds you back, I think, or it did me.
 
-    </p><p><b>Tim Bourguignon  20:50</b></br>  
+    </p><p><b>Tim Bourguignon  20:50</b><br/>  
     Yes, it does. Yes, it does. I'm coaching a client right now. And most of the teams or most of the team members are Absolutely not used to public speaking. And you can see it the all the meetings lack energy all the the the information sharing is kind of of boredom pure. And you see it reflected in everything. It's, it's it's really holding you back. And so
 
-    </p><p><b>Charity Majors  21:26</b></br>  
+    </p><p><b>Charity Majors  21:26</b><br/>  
     being able to run a meeting and just like, run the room is a very underrated skill set. People don't talk about it much, but it's incredibly important for everyone. It is
 
-    </p><p><b>Tim Bourguignon  21:36</b></br>  
+    </p><p><b>Tim Bourguignon  21:36</b><br/>  
     it is this a reason why you started?
 
-    </p><p><b>Charity Majors  21:39</b></br>  
+    </p><p><b>Charity Majors  21:39</b><br/>  
     No, I started just because I felt felt personally offended by how bad I was. I just don't like to fail things.
 
-    </p><p><b>Tim Bourguignon  21:48</b></br>  
+    </p><p><b>Tim Bourguignon  21:48</b><br/>  
     Okay, how did you realize this?
 
-    </p><p><b>Charity Majors  21:51</b></br>  
+    </p><p><b>Charity Majors  21:51</b><br/>  
     Because I, I was asked to give like a customer testimonial at AWS reinvent, like six years ago, and I bombed and I just hated how As I did, and so I decided to get better at it. Yeah, so I went in, so for two years, I gave talks everywhere that, you know, I submitted to every conference that I could. I gave a talk anywhere that would have me. I did like 17 that first year and and I got a prescription for propranolol, which is like a it's a medication that lowers your it blocks the brain's adrenaline receptors. So you don't get the physical manifestations of terror. You don't you don't get this clammy palms and the shaking, you're still scared, but you weren't physically just like impacted. So I got that. And I would take it before talks and I just spent it was basically a second job for for two years. And after about a year and a half. I remember the first time I was traveling to give a talk at a conference and I forgot to pack my prescription. And I was like, ah, I must be better now. I guess I don't need the drugs anymore.
 
-    </p><p><b>Tim Bourguignon  23:02</b></br>  
+    </p><p><b>Tim Bourguignon  23:02</b><br/>  
     Good regulation, but that's consistent to, to your way of learning. Just getting in there and just making the best out of it.
 
-    </p><p><b>Charity Majors  23:11</b></br>  
+    </p><p><b>Charity Majors  23:11</b><br/>  
     Yep. Yep. doesn't always go great. But eventually it works out.
 
-    </p><p><b>Tim Bourguignon  23:15</b></br>  
+    </p><p><b>Tim Bourguignon  23:15</b><br/>  
     Yeah, we all will have our own stories of of war stories of talks that completely bombed. Yeah,
 
     for sure. But that's part of the job. Okay, um, is the community important for you?
 
-    </p><p><b>Charity Majors  23:30</b></br>  
+    </p><p><b>Charity Majors  23:30</b><br/>  
     Oh, yeah. Very.
 
     Yeah. I run a local underground ops and systems engineering group here locally. And it's, it's just neat to bond over technology sometimes, you know, but the thing is that like, I'm a big fan of ones that aren't publicly posted because it needs to be a safe space. You know, you have to be okay telling your worst stories of outages and you know, as managers, you know, you need you need to create a space where you can speak openly but privately about people on your team in order to share, you know, in order to share wisdom and and learn from each other. And and I really I work pretty hard to create a couple. I also run a small leadership group that meets every month where where it's closed invite. But, you know, it's, it's for this sort of skills, skill sharing, I guess I would call it I, yeah, these these groups are always you know, there'll be times in your life where you will need them desperately. And you will wish that you have them if you don't. And so I've learned to always have some of them in my life.
 
-    </p><p><b>Tim Bourguignon  24:43</b></br>  
+    </p><p><b>Tim Bourguignon  24:43</b><br/>  
     That's very interesting. I was just thinking that I've never heard this before, and why you were talking. So But no, that's not true. That's what I'm getting at with my mentoring. So I don't know any of those of those user groups or lose anonymous ops group. But that's true, I have a very deep relationship with my mentors and my mentees, and there's a safe place there to, to discuss about stuff.
 
-    </p><p><b>Charity Majors  25:13</b></br>  
+    </p><p><b>Charity Majors  25:13</b><br/>  
     And that's awesome. What I started to realize was that it doesn't scale. You know, I wanted to, there are so many people who I looked at, they're like, I want you to have the community that I have, I want you to have these relationships that I have, I want to help give you a leg up, you know, some of them earlier in their careers. And, and I couldn't like these one, one on one meetings just don't scale. You know, at some point, like, you know, I realized that I had to scale myself. And that's when I created the groups so that, you know, you kind of create a self sustaining community of people who can all learn from each other. I wrote a blog about this.
 
-    </p><p><b>Tim Bourguignon  25:49</b></br>  
+    </p><p><b>Tim Bourguignon  25:49</b><br/>  
     We did. I will link that too. Yeah.
 
-    </p><p><b>Charity Majors  25:52</b></br>  
+    </p><p><b>Charity Majors  25:52</b><br/>  
     Yeah. Yeah. about like how to build your own peer mentorship group. I there's a GitHub repo and everything.
 
-    </p><p><b>Tim Bourguignon  26:00</b></br>  
+    </p><p><b>Tim Bourguignon  26:00</b><br/>  
     And do you want to give us the very the pitch the elevator pitch for that?
 
-    </p><p><b>Charity Majors  26:06</b></br>  
+    </p><p><b>Charity Majors  26:06</b><br/>  
     Yeah, sure. It's, it's basically just kind of what we've been talking about, which is that there's only one, there's only one way that I know to, to learn leadership skills. And that's by doing it or hearing stories of other people doing it. Because like, when you're hearing stories, your your brain actually fires off the same mirror neurons is if you're actually experiencing it yourself. And we can't all learn everything from scratch. God, I hope not. Right. So it helps to get a to hear some of the experiences from people who have been through these things before. So like one of the things that we do is at the beginning of the week, we meet for 90 minutes once a month on Sunday in someone's home. And the first thing that we do is we come with some homework where we've sat down alone before forehand and we filled out a piece of paper that is, has written on the left it says, me, I family and my work. And on the top it says good and bad. And so this makes six little squares, right? And you fill out what is good and bad for me personally this week for my family this week, and for work this week. And then you just it's kind of a way of checking in with yourself and taking stock of how am I actually doing? And and then you go, we go around with a group and each of us shares one or two things that really jumps out at us about where our energy really is this week. And then we go around again and just talk about, you know, sometimes we'll have a theme for the week, like, you know, sometimes we'll it'll be pretty practical, like engineering ladders, or, you know, promotions and hiring. Sometimes it'll be much more personal. Like, you know, if there's a big thing that's in my life that, you know, I talked about last month, and we'll talk about it again, ask questions, and it's great because you know, Once you've talked through your problem, which is sometimes you talk through it in a supportive environment, and you're like, Ah, now it makes more sense. Now I can see it. And sometimes you're just stuck. Right? And so then you've got half a dozen people there who care about you, who know enough about you and your history and your team to offer really, sage will considered personalized advice or thoughts or, you know, even to hold you accountable. You know, sometimes we'll have buddies and we'll be like, okay, we're going to check it in each other over the next couple weeks, just to make sure that we're sticking to the thing that we said we were going to do or something like that. It's, it's really nice. It's a really nice source of support.
 
-    </p><p><b>Tim Bourguignon  28:40</b></br>  
+    </p><p><b>Tim Bourguignon  28:40</b><br/>  
     It is, it reminds me of the concept of a mastermind. Have you heard about that? It's it's very similar. It's more oriented on the on the shared accountability, but it's other than this is really, really the same. It's sharing what you've been doing sharing what you want to do in the in the next week or in the next cycle and have the other participants basically help you build on it. And then they will remember what they did what you talked about in the next meeting, and then escalated. And so you kind of have this, this built in accountability to always stay on the ball, or at least ask yourself why you didn't do things and and do this with a group.
 
-    </p><p><b>Charity Majors  29:31</b></br>  
+    </p><p><b>Charity Majors  29:31</b><br/>  
     That's a great escape. And you have to look that up.
 
-    </p><p><b>Tim Bourguignon  29:35</b></br>  
+    </p><p><b>Tim Bourguignon  29:35</b><br/>  
     Yeah, I can send you the link afterwards. To talk. That's very neat. That's pretty neat. Yeah. You. You said you have been a manager before. So I think there was when, when Parse was bought by Facebook, was it, back and forth a couple of times. And how do you handle this? going back and forth between a tech role and a manager role in your life?
 
-    </p><p><b>Charity Majors  30:06</b></br>  
+    </p><p><b>Charity Majors  30:06</b><br/>  
     So I've actually written a couple blog posts about this too. I really strongly advocate for seeing like, seeing it like a pendulum. I think the best technical leaders do go back and forth. I don't think that you should see management as a promotion. I don't think you should see being I see as a demotion, I think that you should see it as a parallel, parallel track, but it's like, it's like a different career, right? I think that it takes about two years to put down your engineering skills and learn the basics of management and commit to that much the first time. But then, like, you know, as a Senior Technical leader, you need to have the same skills of, you know, breaking down a project into, you know, smaller pieces into, you know, farming out studies, you know, if you have six engineers and this big amount of work that needs to be done, how do you You know, give everyone work that challenges them, but doesn't overwhelm them. How do you, you know, step in at the right moments to help unstick a project without, you know, without babysitting or looking over people shoulder and hovering, you know, how do you make a team succeed? Like these are the same skills like tech leads just their primary responsibilities to the to the code and the technical product and managers to primary responsibility should be to the peoples and the people in their career in their normal flourishing. But like, you can't have a very effective senior engineer who doesn't have these skills. I think everyone should spend some time in management. It gives you so much more empathy for, you know, that whole side of the house it it helps you understand much more viscerally how your actions are connected to the business impact. It helps you you know, it's it just helps you to walk a mile in those shoes and and, and see what it's like that said I don't think you can be a good technical leader, if you just stay a manager for too long, because your technical skills, they atrophy, you know, they rot, they decay. And you will lose that credibility that you have when you're a deeply technical person managing or leading other technical people, unless you periodically like go back to the well and refresh your skills and get up to date again. So I think that going back and forth is a great career goal in and of itself that more companies should support as an actual good, instead of like, discouraging people from from making the transition or making it seem like there's some, you know, greater authority and weight that that should accrue to managers because I don't think that that leads to a healthy organization.
 
-    </p><p><b>Tim Bourguignon  32:48</b></br>  
+    </p><p><b>Tim Bourguignon  32:48</b><br/>  
     Amen to that. Amen to that. There's a there's a great example I like, which is the the very beginning of the Agile Manifesto. There are these four those four values, but there is a sentence just before That says, through producing software and helping doing it and helping our customers do it. We have come to value blah, blah, blah. And I think we always forget the doing it, and not just helping us do it. Yeah. And this, this is what I would what what I understand from what you're saying is very true. Yeah. Um, and as a manager, you probably had to hire people. Um, what are some kind of mindsets that you are after when you hire someone?
 
-    </p><p><b>Charity Majors  33:33</b></br>  
+    </p><p><b>Charity Majors  33:33</b><br/>  
     It's a great question. First of all, I really there's a lot of interviews out there that seemed like they're, they're just trying to get people to trip up trying to make them fail. And I think that that's really backwards. Like, I'm not hiring people for their lack of weaknesses. I'm hiring them for their strengths, right. I want to know what they think they're good at. And then I want to see them do their best work. I don't want to make them feel Scared or nervous, I want to ease their fears. And so I will often actually ask candidates, what can we do to give you a chance to show us you at your best, right? If you've been through this process, we don't feel like you've had an opportunity to show what you do best or your best work, like, what can we do to support you so that you can show that to us? Right? Because then, you know, you can decide if you want, well, that and I always want to make sure that they understand that they are interviewing us as much as we are interviewing them, right? It should be equal. There should be parody here, there's this there's this power structure that is that grows out of like the one person who's like applying to work at a place and being screened to see if they're good enough. Like that's not healthy. Like you should be evaluating us just as much as we're evaluating you. Because there are so many amazing engineers are people who are very talented, very well skilled, who are just not the right person for this role at this time. And, you know, I want I want the people who we don't end up working with to walk away with their head held high, knowing that, you know, it just wasn't a good fit, it doesn't mean that we think less of them. And we possibly love to work with them in the future. I don't know, I think I'm always looking for people who, who have that sense of dignity, who who believe in themselves and you know, aren't just, you know, they want to be a co stakeholder right? They want at a company like honeycomb we want people who come with an ownership sort of mindset, they own their code, they take pride in its quality. They really believe in the product. And and, and, and yeah, I guess that's what I'm looking for is people who have the right skill sets, obviously, but we want to help co create a culture and a movement as well as, as well as right software behind. We have a if we want to change the world,
 
-    </p><p><b>Tim Bourguignon  36:07</b></br>  
+    </p><p><b>Tim Bourguignon  36:07</b><br/>  
     then I think we should leave it to there. If you want to change the world, that's great. That's a very, very fine interest. Thank you very much. Yeah. If the listeners wanted to get a catch on you and continue the discussion, where would be the best way? Or the best place to reach?
 
-    </p><p><b>Charity Majors  36:25</b></br>  
+    </p><p><b>Charity Majors  36:25</b><br/>  
     Twitter? My name is Mitzi tipsy. And I also have a blog, which is charity.wtf
 
-    </p><p><b>Tim Bourguignon  36:32</b></br>  
+    </p><p><b>Tim Bourguignon  36:32</b><br/>  
     Hmm. I'll add that to the show notes. And do you have anything coming up in the next month something you want to plug in?
 
-    </p><p><b>Charity Majors  36:40</b></br>  
+    </p><p><b>Charity Majors  36:40</b><br/>  
     Um, let's see. June. Well, velocity is coming up around then. And we're actually going to be doing a meetup around the engineer manager pendulum in San Jose, during velocity, so anyone who's Welcome to register at the links on my Twitter and if you're interested in honeycomb And check it out.
 
-    </p><p><b>Tim Bourguignon  37:02</b></br>  
+    </p><p><b>Tim Bourguignon  37:02</b><br/>  
     I'm sure people will do that. Fantastic. charity. Thank you very much. There's been a blast.
 
-    </p><p><b>Charity Majors  37:09</b></br>  
+    </p><p><b>Charity Majors  37:09</b><br/>  
     Yes, thank you.
 
-    </p><p><b>Tim Bourguignon  37:11</b></br>  
+    </p><p><b>Tim Bourguignon  37:11</b><br/>  
     And this has been another episode of Devil's journey. We'll see each other next week. Bye. Dear listener, if you haven't subscribed yet, you can find this podcast in iTunes, Google music, Stitcher, Spotify, and much more. Head over to www.devjourney.info to read the show notes, find all the links mentioned during the episode. And of course links to the podcast on all those platforms. Don't miss the next developers journey story by subscribing to the podcast with the app of your choice right now. And if you like what do, please rate the podcast, write a comment on those platforms and promote the podcast and social media. This really helps fellow developers discover the podcast and do fantastic journeys. Thank you.</p>

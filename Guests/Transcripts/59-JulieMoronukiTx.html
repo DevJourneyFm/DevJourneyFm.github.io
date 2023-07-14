@@ -1,17 +1,17 @@
-<p><b>Tim Bourguignon  0:06</b></br>  
+<p><b>Tim Bourguignon  0:06</b><br/>  
 Hello and welcome to developer's journey. The podcast shining a light on developers lives from all over the world. My name is Tim Bourguignon, and today I receive Julie Marunouchi. Julie went to college for philosophy and linguistics and once believe she would spend her adult life doing morphological analysis of Native American language and writing papers about generative syntax, of course, but instead, her real passion is teaching. And as such, she took on the challenge to learn Haskell, and co authored a book called The Haskell programming from first principles in order to teach the Haskell language to people with no prior programming experience. Julie is the co founder of the Haskell education side type classes. And her most recent book is called finding success and failure in Haskell. She lives in Montana, where she homeschools her two children, grows a big garden and keeps way too many pets. Julie, welcome to Dave journey. Hi, thanks for having me. Oh, it's our pleasure. Would you mind taking us back to the start of this challenge? You mentioned? How did you meet your your co author, Christopher Allen? And how did he convince you to start learning Haskell?
 
-</p><p><b>Julie Moronuki  1:29</b></br>  
+</p><p><b>Julie Moronuki  1:29</b><br/>  
 Well, it's funny, because I had been around, you know, people who were programmers and stuff before in college, and, and so forth. And I just never had any real interested in programming at all. And so I don't remember exactly how I met him on Twitter. But you know, we got engaged in some thread, you know, that people do on Twitter. And when he found out I had a linguistics background, he, at the time had some interest in doing natural language processing and Haskell. And so he wanted to ask me some questions about being a linguist. And he was really excited about, you know, meeting somebody with that background. And at the time, he was, he was really dissatisfied with this. The state, I guess, of the other books that were available for learning Haskell. And he thought that, you know, he had an idea for how a book maybe should be, you know, a different kind of books could be structured. That would be, you know, maybe better for some, for some people. And so, he had been trying to teach people Haskell whenever he could on through, you know, IRC and, and media like that. And when he met me, you know, he said, Well, since you don't have any, you know, programming background, you know, everybody says that Haskell is really hard to learn. And but he had this idea that it's part of the reason it's hard to learn is because people already have some background. I mean, almost everybody who learns Haskell, very few people learn it as their first language. And so he had this idea that Haskell part of the reason Haskell will be hard to learn would be because people already have this background in imperative programming or object oriented programming or, or something that's not Haskell and Haskell is very different from a lot of the kind of more mainstream languages. And, and that, that, that just making that transition was a lot of the difficulty of Haskell. So he had this idea that well, if you could try teaching it to somebody who never had any programming experience, maybe I would face that particular barrier. And and then it would be a good experiment for his, you know, ideas. So I wasn't, I wasn't too excited about it. I didn't really think I would stick with it. But I ended up listening to this talk. And I guess it's a common saying in the sort of functional programming, or at least the statically typed, functional programming world. And I'm not sure who first said it, but I heard it in a talk by Paul Snively. Yeah, that's what it is. It was a strange loop talk that I watched the recording of it. And he was there. Because I think he gave the talk with somebody. And anyhow, they were talking about what makes type systems good, or not very good. And I remember them saying, you know that the goal of a good type system is to be able to generate all the legal programs in your language and not generate any illegal programs in the language. And that is just so much like what I was doing with generative syntax when I was in graduate school, because the goal of generative syntax is to come up with a set of rules that could generate all the legal sentences of a language and not generate an illegal ones. And suddenly, I got very interested in, in learning Haskell for that reason to learn more about type systems and to start trying to explore maybe some connections between programming languages and natural languages. And that's really what led me to finally agree to it. Now, how the book came to be written was, like I said, he already sort of had this idea for how he might do a book differently. And he would send me, you know, portions that he had written. And I made a lot of comments and edits and asked a lot of questions that then my writing was increasingly getting incorporated into, you know, his book. And so, eventually I said, you know, well, if I'm going to keep doing this, then I should be your, your, your co author, right? Because like, I'm doing a lot of this work.
 
 And so that's how it came to be.
 
 And I think the book, the book then took on a very different dimension from what he had originally planned, because we came up with the golden of, well, why don't we have most of the other Haskell books that are out there are really geared towards people who do have some programming background. So they make a lot of reference to, they make a lot of reference to, you know, things like for and while loops, and they explain how recursion in Haskell is different from the four and wild loops that you're used to in your language. But I wasn't used to any foreign while loops, right? I don't know, I didn't know what a while loop was. And so those kinds of references for me just didn't make any sense. So we thought, so I said, you know, we could write this book. Because I have this perspective, we could write this book as being for people who've never programmed before. And we could maybe start to create, you know, more programmers, for whom Haskell is their first language, or one of their first languages, which led to them, you know, we have to explain a lot of things that people who aren't programmers before, don't really have experience with that. So one of the examples that I talk about sometimes is mod the mod function? I don't really know very many people outside of programming who have ever used that or understand why you would use it. And so most programming books don't really explain it. And certainly, Haskell books don't. But ours does. Because we thought, well, we'll just teach people about programming. And the programming will be in Haskell, but we'll teach people about programming more generally, as well. So that's how that that's how I got my start in high school, and it was really more, you knows, really much more interested in the language and then also the pedagogical issues around the language than in becoming a computer programmer. I suppose. If that makes
 
-</p><p><b>Tim Bourguignon  7:59</b></br>  
+</p><p><b>Tim Bourguignon  7:59</b><br/>  
 you sure. I think it does. I think it does, didn't string it. Right, that in the in the original idea of the book, it was tailored to a different approach to learning Haskell, but it was not yet This. This. I'm doing air quotes Haskell for non programmers concept that you you, you evolved it in afterwards. Right. Right. Um, how did you wrap your head around learning Haskell in this with this old concept?
 
-</p><p><b>Julie Moronuki  8:30</b></br>  
+</p><p><b>Julie Moronuki  8:30</b><br/>  
 Oh, um, I mean, it was really hard.
 
 Um, let's see,
@@ -22,10 +22,10 @@ were very helpful and kind and,
 
 and interested in, in watching this progression, I think, I think it was sort of a, an interesting thing for a lot of high schoolers to see, they hadn't really watched somebody tried to learn how school for so I mean, a bit, I guess, on IRC, but I think that, you know, Twitter's a little bit different from IRC. And so I think people felt like they were getting to know me a little bit better than they might have in another form, you know, getting to know my personal life and stuff, in addition to me learning Haskell, so it was this whole integrated story. Um, but then, yeah, I mean, you just have to, I did read a lot of I do like to read. I mean, I was a philosophy major. So I do like to read theoretical things. And so I've read a lot of theoretical papers and so forth about Haskell about how the Haskell language, why they made some of the choices that they did. And I was familiar with lambda calculus two, from a logic class that I took in college. And so I think, being having already been familiar with the lambda calculus, and its differences, but also then similarities to what Turing machines, um, I think that helped as well. So I don't know it was, it was hard. Fortunately, um, you know, I was, I was home with my kids at the time, my kids were still fairly young, and I was home with my kids. So I didn't have another job. Other than taking care of my kids, I do homeschool them. So it's fairly, you know, it's intensive parenting, parenting, but I didn't have another job, which meant a lot of my free time could be taken up by just trying to figure things out. So I'm not sure I could do it if I was also trying to trying to have a job. So
 
-</p><p><b>Tim Bourguignon  12:27</b></br>  
+</p><p><b>Tim Bourguignon  12:27</b><br/>  
 can you describe the the approach you took when when writing the book to to really make it available to non programmers? Do you have some some examples? Or things to make it a little bit more graspable?
 
-</p><p><b>Julie Moronuki  12:40</b></br>  
+</p><p><b>Julie Moronuki  12:40</b><br/>  
 See, one of the things that came up is, there's this idea in Haskell of lifted and unlimited types. And they're also these things called new types. And new types are from some underlying type. And let's say, you know, there's, there's a certain number of types that most programmers are familiar with are familiar with, you know, some kind of integer type and a bool. Type, and, let's say care of type breaking characters. So there's some sort of types like that, that that most programmers are familiar with. And even non programmers, right, can you can understand that like, Alright, Boolean values, and integers and characters, right, those are different types of things. So, so that makes a lot of sense. And then with new types, you can take some underlying type, and it doesn't have to be one of those. In Haskell, everything has a type. And, and you can make very fine grained distinctions between types in high school. So with new types, you take same underlying type, same sample, and you make some wrapper for it that has a different name. And by making a different name, you can use it in different ways than you do the wool type. So one of the things about new types that we had to cover was the fact that there is some, some sort of equality between the new type wrapper, wherever you've named it, say, for example, there's a new type wraparound rule that's called ne, and ne, is a new type wrapper, it is blue, it is cool underneath, but it's a wrapper that you use when you want to have a kind of if you're familiar with Boolean logic, where you have a kind of Boolean disjunction, so the only time something will come up false is if all the things are false, right, because in a Boolean truth table, for for the choice of any you have true and true is true, true and false is true, false and true is true. And so the only time you get a false is when everything is false. So there's this new type wrapper around cool, and it's in one sense Same as it's been, in another sense, it's not the same as. And so we started talking then about representational equality, what it means for tight representationally equal. And
 
 the discussion then got into
@@ -36,10 +36,10 @@ Yeah, so there were a lot of things in the book like that, that
 
 I think most Haskell books take for granted that you have learned probably something C, like, if not c itself. And so that you understand these kinds of things. And I certainly hadn't learned C and so I couldn't take that for granted. Even for myself, I couldn't take that for granted. Right? I needed those things explained just like somebody learning C for the first time needs them explained. But so we included a lot of that in the book to make sure that it was accessible to developers
 
-</p><p><b>Tim Bourguignon  17:48</b></br>  
+</p><p><b>Tim Bourguignon  17:48</b><br/>  
 who the approach reminds me the the Ruby, book wise pointment Guide to Ruby, have you read that one? I have not. It is a it is to be found online. It is I think it community book was, which approached learning Ruby through a kind of story, a novel involving monkey monkey and stars and, and completely completely weird, sorry, but try to approach it from a very, very nervous point of view. Who is somebody that that wouldn't know? What to do with Ruby in the first place? This is this is kind of the same approach. I really like it,
 
-</p><p><b>Julie Moronuki  18:29</b></br>  
+</p><p><b>Julie Moronuki  18:29</b><br/>  
 right? Oh, yeah, that was a big part of my problem with Haskell, like, not with Haskell. So with my learning process, is that because I've never been a programmer before. Another thing that came up repeatedly was people would tell me and we'll just use, we'll just build something, just build a, you know, build a web scraper. Of course, I didn't know what that really was, either. And they would tell me, you know, we'll just go look at this library. And it's got good documentation. And now that I know Haskell, I see that maybe it does have good documentation. But at the time, like, a lot of the documentation doesn't, I mean, they're telling you why you would want to write a shell scripts, right? Or why you want to write a web scraper, like what are some examples of shell scripts or web scrapers that I might want to try to write? I mean, I didn't have that kind of experience. And so coming up with sort of first project that I might be interested in trying to write in high school is really a challenge for me. I think that people who are you know, people get their starts in, you know, in different ways people become interested in programming in different ways. There's something but there's usually something that like, they want to write, whether it's a video game mod. So like my kids wanted to write Minecraft Mods, and I think that that's pretty common. A common waiting sort of get started, but they've already got this idea of something that they want to write. And so they want to write a computer program. And like, I wasn't coming from that background at all. There wasn't, it took me a long time before I thought, okay, yes, there's actually a computer program that I want to write now, for a long time, it was just learning Haskell really theoretically. And it wasn't really writing, writing, like, you know, programs to solve some kind of problem that I would actually want software install for myself, I mean, that that was a long time. Coming. In some sense. I knew Haskell before I became, you know, started writing programs. And I think that that's less common. I think a lot of people seems like, you know, they learn a language so that they can write whatever program they want to write. Um, but yeah, that was really hard. For me, it took a long time to figure out what libraries are for. That's another thing that actually that we explained. In Haskell book, Haskell programming from first principles, we explained what like a library is and what an API is, because I didn't know. Um, and programmers are not really great at explaining what an API. So
 
 explanation for myself.
@@ -48,28 +48,28 @@ And so
 
 yeah, so it took me a long time to, you know, people will tell me, we'll just go look at this library. There's a high schooler named Gabriel Gonzalez who writes these nice tutorials for the packages that he that he makes the lovely libraries that he makes, and he writes nice tutorials for them, but, and he's got one called turtle. That's for writing shell scripts in Haskell. And so that was the one that a lot of people recommended that I start with, oh, shit, the turtle tutorial is so great, and just start there. And I just thought, but what, what do I do with this? What kind of shell script could I possibly want to write? I may just had no ideas, because I wasn't already in that programmer mindset, if
 
-</p><p><b>Tim Bourguignon  21:54</b></br>  
+</p><p><b>Tim Bourguignon  21:54</b><br/>  
 you know what I mean. Absolutely, absolutely. I'm in a different in a different way. I experienced this many times. The first the very first time was when I was a young teenager, I was given a pamphlet, there wasn't a book, a reference reference pamphlet about C. And there was everything in there. Except how do you start the compiler? And so I was staring at this stuff and learning C Series ugly and learning Well, about about for loops about variables, etc. but but I couldn't do anything. I couldn't figure out how to use it. And now now that I know it, it's absurd, absolutely obvious. And it would be hard, I would have to force myself to sing about it, to put myself in, in the beginning shoes, and think, okay, I'm using my computer every day to go online, etc. Now, I want to program what what do I need to do differently? Now? What do I need to see? And this is very hard problem, right? It's why I'm asking so many questions in this direction, because it's really guessing.
 
-</p><p><b>Julie Moronuki  23:01</b></br>  
+</p><p><b>Julie Moronuki  23:01</b><br/>  
 Yeah, I think like I recently read, or I guess it wasn't that recently, I think it was last year, I read a book called how software works. I think it's from no starch press. Um, and that book was really, I think, that, like, that book, for me, helped me really understand, like, you know, I think when you would want to write software, um, like, it gave me It covers various fields of covers various types of software, and sort of how they work. And then by reading through, like, there's, I forget what all it covers now, but I know it covers some graphic stuff, and it covers Huffman encodings and a few other things and like, it gave me then some ideas for Oh, right, I bet I could write this kind of software and that and that, that seems kind of interesting. So that was a really, really good thing for me. But yeah, I think that there's not a great I don't know that there are a lot of great books for people who like are computer users but don't already just are sort of intrinsically motivated to become programmers like for how you make that transition, how to bridge that
 
-</p><p><b>Tim Bourguignon  24:15</b></br>  
+</p><p><b>Tim Bourguignon  24:15</b><br/>  
 gap isn't there in the in the functional space? And joke about this something like the mon ad problem that went once you finally understood was a moaner is you are not able to explain it anymore. Or something like this.
 
-</p><p><b>Julie Moronuki  24:33</b></br>  
+</p><p><b>Julie Moronuki  24:33</b><br/>  
 Yeah. Yeah. Yes.
 
-</p><p><b>Tim Bourguignon  24:36</b></br>  
+</p><p><b>Tim Bourguignon  24:36</b><br/>  
 Which is basically exactly this is once once you you've grown or outgrown the concept to to be able to really understand it. And it's really really hard to to sidestep and and see the progress you made. Again,
 
-</p><p><b>Julie Moronuki  24:51</b></br>  
+</p><p><b>Julie Moronuki  24:51</b><br/>  
 right? Yeah, you have to be really conscious of it. And, you know, really consciously think through and even try to remember steps. You went through, although, of course, some people will be different from you too. So, and that's one thing you learn when you're a teacher is that every student is going to be a little bit different. And if you can only teach to a certain kind of student, then you're going to lose a bunch of them, right? So you have to, you know, you have to modify things and approach things from all these different angles. But it's, you just really have to be conscious of what your process was, and then be conscious of what other people tell you is their process, and what works for them and just try to, you know, be very thoughtful and reflective about those things, or else you just can't, you can't reconstruct the process by which you learn something,
 
-</p><p><b>Tim Bourguignon  25:44</b></br>  
+</p><p><b>Tim Bourguignon  25:44</b><br/>  
 it's very difficult it is, I'm wondering about the the choice of Haskell, knowing what you know, now. And so you, you, you went at it from a very, very analytical standpoint, coming from linguistics and looking at the language from a linguistic point of view. Do you think it was it was, um, I don't want to say good choice, but it's so worth coming to my mind, a good choice to start to start this this new approach with Haskell? And why if it's the case?
 
-</p><p><b>Julie Moronuki  26:21</b></br>  
+</p><p><b>Julie Moronuki  26:21</b><br/>  
 Oh, well, so I think there are reasons why Haskell can be a really good first language for people. One of them is that Haskell being based on the lambda calculus, um, and sort of everything in the Haskell language. Yeah, everything in the Haskell language, you can understand. Through, you can sort of deconstruct down into its sort of underlying lambda calculus, which means that everything in the language can be sort of understood through the same simple rules, I'm going to say simple, because there's not a lot to the lambda calculus, right? There's not a lot of rules in the lambda calculus. And so everything in Haskell can be understood that way. And for some students, the ability to do that, to have everything in the language be comprehensible, very systematically, is going to be enormously helpful and appealing. Um, there are other people to whom that is not going to be so appealing, they're just they don't, they're going to be less interested in understanding things, as a as a whole system and more interested in how to, you know, immediately put it into use. I'm not doing the I don't want to do the, you know, there's two kinds of people in the world, I don't want to do that exactly. But but for some people like me, that's just enormously appealing when I've tried to more other computer programming languages that I've had some experience with, I think, make more ad hoc choices, to make building things like sort of immediately being useful and immediately building things more convenient and approachable. And I don't want to, you know, to denigrate those choices, but for me, that was very difficult. But it's been a very difficult thing for me. Learning Python, for example, there are a lot of things in the standard library, for example, that I don't understand why they are the way they are and why. Like, if I wanted to implement this thing for myself, like, how would I do it? Whereas in Haskell, that's very sort of immediately accessible. And so
 
 I think that if you're interested in
@@ -78,18 +78,18 @@ I think it's a good first language for people or at least a good. Second one, fo
 
 But that's my,
 
-</p><p><b>Tim Bourguignon  32:09</b></br>  
+</p><p><b>Tim Bourguignon  32:09</b><br/>  
 if you have you had the chance to, to, to chat with, with people in the in the education space. So are they interested in in the, the way you approach the problem and want to replicate this?
 
-</p><p><b>Julie Moronuki  32:22</b></br>  
+</p><p><b>Julie Moronuki  32:22</b><br/>  
 I have only a little bit.
 
 haven't really talked to a lot of college professors, at least not American ones about about the computer science education, I get the impression from what you know, what I have, the conversations I have had, that they feel fairly constrained in what they can teach in their, in their computer science departments by students expectations that this will, you know, sort of immediately lead to a very, you know, low paying job. And if that's the expectation, then, you know, Haskell probably isn't the right choice. And so if you're a bit constrained by by that concern, not that that's not a real concern. I mean, obviously, it's a legitimate concern,
 
-</p><p><b>Tim Bourguignon  33:08</b></br>  
+</p><p><b>Tim Bourguignon  33:08</b><br/>  
 but I you familiar with with Elm? Oh, yeah. Um, what are your thoughts on on elm? So Elm, Elm is a programming language from an programming language that is building on the Haskell virtual machine, if I can call it this way.
 
-</p><p><b>Julie Moronuki  33:23</b></br>  
+</p><p><b>Julie Moronuki  33:23</b><br/>  
 Yeah, it's close to Haskell. In my experience, the two biggest sort of gateways to Haskell end up being Scala on one hand, people coming from the JVM side and l for people coming from more of the front end side. Yeah, Elm is an interesting case, where, you know, it is based closely on Haskell. And so if you do know, Elm, then there's going to be a, you know, it's going to really make your learning of Haskell if should you go on to that? A lot, much gentler learning curve, because it's so closely related. But he did make some choices in the language design that
 
 for the purposes of making it easier to learn.
@@ -98,22 +98,22 @@ That, you know, I think there were I
 
 think there were reasonable choices, given his priorities. They're not choices, perhaps that I would have made in my language design, but that's because I'm very attached to type classes, as you can tell, because I started a business called type classes. But But yeah, lm is a is a good, it seems to be a very comfortable language for a lot of people. And a lot of people have been very successful using Elm to, you know, to get into functional programming and feel like they're getting into functional programming, and it's good and they're learning a lot of they're learning a new sort of way to think about programming. But you know, it is much more approachable and was designed to be more approachable than than Haskell, which was designed really to be a research language. So the concerns of the Haskell language tend to be the concerns of academic computer science researchers, and that doesn't always feel very friendly to, to your typical programmer. I'm being a little, little sarcastic, narrow, I mean, obviously, terms of academic computer science researchers, just not the same as, you know, your typical day to day industrial programmer. Right. So, um, so yeah, I think Elvis elmas great. I've also seen a lot of people having a lot of front end success with pure script, which is also really closely related to Haskell, and does have type classes. But I think is still has some improvements on Haskell. And for if you are writing, if you do need to do the work that essentially JavaScript does, but you want to do it in a functional language, then, you know, pure script is also a really great choice and has been designed, you know, after Haskell, so learned a lot from some of hospitals, mistakes, shall we say?
 
-</p><p><b>Tim Bourguignon  36:07</b></br>  
+</p><p><b>Tim Bourguignon  36:07</b><br/>  
 Definitely makes sense. Oh, I was wondering if, if going through kind of a hybrid approach using Elm, Elm or you write Scala or PSP, to, to get a balance between learning Haskell or very high school like language, and at the same time producing something, which seems to be to be a constant and do certification programs need to be ready for the industry? So kind of getting the best of both worlds and, and, but still put a foot in the Haskell world? quite early on?
 
-</p><p><b>Julie Moronuki  36:46</b></br>  
+</p><p><b>Julie Moronuki  36:46</b><br/>  
 Yeah, I think that, that either of those would be a good a good compromise for that. And you know, with Scala, then you get access to the whole, the whole JVM ecosystem, and, and that's really, you know, powerful thing for, for a lot of programming needs, so. So yeah, I think either one of those is a really a really reasonable approach. And for both of them, like, I've had students, like at my Meetup group, and workshops that have taught and stuff who have come from, you know, they started out writing Java, and then they transitioned to Scala. And then as they were writing Scala, they transition more and more to the functional side of Scala, and then, you know, that I find, in my experience, they just pick up passes. so easily. You know, Haskell is different from Scala in some really important ways. But there's enough, especially if you get more towards the functional end of Scala, there's enough similarity that they pick a password really easily. And so yeah, I think that that kind of hybrid approach will work well, I haven't really tried it, because I don't know, well enough, but, um, and I don't know, front end programming well enough, either, probably. But it'd be worth a shot. I think we do actually, on type classes, we started writing a series called the transition series, where we do a lot of direct comparisons between, you know, how you do x in some, you know, in JavaScript, or Python versus how you do x in Haskell. And most of it so far has been about Python. Um, but that's been good. And,
 
-</p><p><b>Julie Moronuki  38:29</b></br>  
+</p><p><b>Julie Moronuki  38:29</b><br/>  
 and
 
-</p><p><b>Julie Moronuki  38:31</b></br>  
+</p><p><b>Julie Moronuki  38:31</b><br/>  
 we've, I think we've both learned a lot from writing books, and really interesting, a lot of things that I think he thought, I think a lot of things that, that people don't necessarily immediately see the, how they would translate like decorators and Python into Haskell, like, how would you do this? And we've learned a lot from try and figure it out and writing those articles. Trying to help people, you know, make that transition?
 
-</p><p><b>Tim Bourguignon  39:02</b></br>  
+</p><p><b>Tim Bourguignon  39:02</b><br/>  
 Did you want to talk a little bit about type classes with what your your goal is? And then the philosophy of the design?
 
-</p><p><b>Julie Moronuki  39:09</b></br>  
+</p><p><b>Julie Moronuki  39:09</b><br/>  
 Yeah. So type classes started because, well, Chris Martin, my current business partner, Chris Martin, and I wanted to we were, we started writing a book called The joy of Haskell, which was meant to be an intermediate book to Haskell. And there aren't a lot of books in the Haskell community that are geared towards intermediates. There are a couple now. But at the time, when we started writing join Haskell, there weren't really any. And so but as we, like, joy of Haskell started growing and growing and growing in scope, and it was just getting to be this huge, overwhelming project. And I said, Well, you know, what we need is a website where the stuff that probably shouldn't be in the book, but we could put it online at least and that way, you know, still be out there.
 
 And then.
@@ -126,37 +126,37 @@ we started with that. And then, so we wrote this little program, that it's for p
 
 seems to be working out pretty well. We've gotten really good feedback about it.
 
-</p><p><b>Tim Bourguignon  44:36</b></br>  
+</p><p><b>Tim Bourguignon  44:36</b><br/>  
 Fantastic. About this beginners, um, if you could give yourself back in the days when you started learning Haskell and one advice, what would you tell yourself?
 
-</p><p><b>Julie Moronuki  44:49</b></br>  
+</p><p><b>Julie Moronuki  44:49</b><br/>  
 Oh,
 
-</p><p><b>Julie Moronuki  44:51</b></br>  
+</p><p><b>Julie Moronuki  44:51</b><br/>  
 that's a good question. I'm only one I only get one advice
 
-</p><p><b>Tim Bourguignon  44:54</b></br>  
+</p><p><b>Tim Bourguignon  44:54</b><br/>  
 you'll get to because it's you
 
-</p><p><b>Julie Moronuki  45:01</b></br>  
+</p><p><b>Julie Moronuki  45:01</b><br/>  
 So, um,
 
-</p><p><b>Julie Moronuki  45:04</b></br>  
+</p><p><b>Julie Moronuki  45:04</b><br/>  
 I think the one thing is to just keep experimenting, to understand that computer programming, there's often there's not just one right answer. And so keep experimenting, even if it seems boring, or at first, like you're not making very much progress, because you're just rewriting the same thing. But in a different way, you're still going to learn something from that. And so just kind of keep experimenting and pushing yourself to even take the most boring code like password validation code that you can think of, and just keep rewriting it and different styles and see how much you can learn from it. So that's one thing that's taught me a lot. Um, but I had to get over some trepidation with interacting with the repple. To do that. And I think the second thing is, um, in programming culture, there's a lot of people who will tell you that whatever is the right, the right language that you should be learning, this is the right way to learn this language. This is the right way to write this program. There's a lot of just sort of gatekeeper gatekeeping. And certainly something that high schoolers get accused of a lot, because high schoolers tend to learn Haskell and then decide that they really love it, and everybody should learn it. And but there's, I think it exists in all of the communities that I've been exposed to, and just you have to just not listen to them. I'm just a different person. And I came at programming in a different way than most people who are programmers, it seems. And that is fine. That's okay. I didn't learn Haskell to become a computer programmer. I learned Haskell because I liked Haskell. And that doesn't actually mean that I'm like, less of a computer programmer, but it took me a long time to come to acceptance of that.
 
-</p><p><b>Tim Bourguignon  47:03</b></br>  
+</p><p><b>Tim Bourguignon  47:03</b><br/>  
 Fantastic advice. Thank you very much for that. Um, unfortunately, we blew the time box already. Yes. Where? Where could the listener continue the discussion with you? Is type Lester the first point of entry or, anyway,
 
-</p><p><b>Julie Moronuki  47:20</b></br>  
+</p><p><b>Julie Moronuki  47:20</b><br/>  
 I also have a personal blog called argument tronics COMM And I'm on Twitter at argument tronic. I don't tweet a lot anymore, but I am there.
 
-</p><p><b>Julie Moronuki  47:32</b></br>  
+</p><p><b>Julie Moronuki  47:32</b><br/>  
 Or,
 
-</p><p><b>Julie Moronuki  47:35</b></br>  
+</p><p><b>Julie Moronuki  47:35</b><br/>  
 yeah, the type classes, a lot of our content, even though we are a subscription model, a lot of the content is free. And so that's a good place to come check out my writing all the Python stuff is free. So sounds good.
 
-</p><p><b>Tim Bourguignon  47:47</b></br>  
+</p><p><b>Tim Bourguignon  47:47</b><br/>  
 Sounds good. I will add all these links to the show notes. Thank you very much for for liking us. observe this writing process and and your learning process into this, this language that was very, very fascinating to our talk, sir. Thank you very much. Thank you. And this has been another episode of developer's journey. We'll see each other next week. Goodbye.
 
 dearly listener. If you haven't subscribed yet, you can find this podcast in iTunes, Google music, Stitcher, Spotify, and much more, head over to www dot journey dot info. To read the show notes, find all the links mentioned during the episode. And of course, links to the podcast on all these platforms. Don't miss the next developer's journey story by subscribing to the podcast with the app of your choice right now. And if you like what we do, please rate the podcast, write a comment on those platforms, and promote the podcast and social media. This really helps fellow developers discover the podcast and those fantastic journeys. Thank you.

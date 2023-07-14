@@ -1,16 +1,16 @@
-<p><b>Alice Goldfuss  0:00</b></br>  
+<p><b>Alice Goldfuss  0:00</b><br/>  
 I was like, oh man, I am the only person on this team in this entire company who doesn't know how kernels work, or how to analyze a kernel crash. I need to figure this out. So I was teaching myself like, Oh, yeah, okay, these bits are flipped, that maps to this user. And like, this is what this is what that register means. This is what a register is, like, I'm gonna figure out like, I learned all of that frantically, because I thought everyone else already knew. And I didn't know that it was something most people in programming don't encounter. And a lot of people don't know how to do. I came in as like, Oh, it's still crashing. And I was like, Yeah, I analyzed the kernel crash, and it led me to this hardware error. And then it's the PCI bus. I became known as the person who knew how to analyze kernel crashes. I actually had another engineering team asked me to teach them it was an indication I was like, Oh, wait, you don't know how to do that? Wasn't this a, like a freshman level class for you?
 
-</p><p><b>Tim Bourguignon  1:05</b></br>  
+</p><p><b>Tim Bourguignon  1:05</b><br/>  
 Hello, and welcome to developer's journey, the podcast, bringing you the making of stories of successful software developers. To help you on your upcoming journey. My name is Tim Bourguignon, and on this episode 125, I receive Alice Goldfuss. Alice is a systems punk with years of experience working on cutting-edge container platforms, building modern infrastructure at scale, and streaming Capture the Flag challenges on the weekends. Alice, welcome to dev journey. 
 
-</p><p><b>Alice Goldfuss  1:40</b></br>  
+</p><p><b>Alice Goldfuss  1:40</b><br/>  
 Hi, it's great to be here. Thanks for having me. 
 
-</p><p><b>Tim Bourguignon  1:42</b></br>  
+</p><p><b>Tim Bourguignon  1:42</b><br/>  
 So Alice the show exists to help the listeners understand what your story looked like, and imagine how to shape their own future. So let's go back to your beginnings, shall we? Where would you place the start of your developer's journey? 
 
-</p><p><b>Alice Goldfuss  1:58</b></br>  
+</p><p><b>Alice Goldfuss  1:58</b><br/>  
 So there's when I started trying to become a developer, and then there's all of the things that happened before then that laid the foundation. And when I talk to people about my path, they always ask me, how did you get into code? How did you get into computers, and they're asking that, usually, because they are earlier in their career earlier in their journey. And they want to see how I got in so they can compare to the steps that they're taking, and try to replicate them. And when you were talking about that kind of journey, and the kind of events that happened in someone's life and the steps they took, I feel you always have to put it in perspective and context of where that person was coming from the resources available to them the privileges they had, the experiences they had, and just sheer luck. And I think of that in a big web, like it is impossible for someone else to replicate my journey. But I can sort of give broad strokes. I want to start by saying that i i don't believe in the concept of like a sole job. Like I don't believe in soulmates and I believe in soul jobs. I think that people have a variety of different skills that can be applicable to a variety of different jobs. And when I think of the things that make me good at computers or being a good engineer, I think well, I'm disciplined, and I'm detail oriented, and I am a self starter when it comes to learning things. I am good at taking large amounts of information and drilling down into them. I can see the bigger picture I asked the right questions, I can talk to people and build a narrative. And those skills have been extremely useful to me in my developer journey. But they would also make me a very good epic fantasy novelist or a good murder detective. It just so happens that I'm doing computers. So if we want to talk about when I started my dev journey, like when I actually was like, I'm going to learn to code that would be 2013. But if we want to talk about all of the foundations that were in place before then there's a lot of stories there. I was always really good and interested in math.
 
 When I was really little, I was a, let's say precocious. And my mother would try to keep me engaged and off her back by having me do math problems with chalk like big thick sidewalk chalk would do math problems that way. I was always really good at math in school and doing the advanced programs. I really liked messing around with computer systems. I had some privilege there and that even though I grew up in a rural place in upstate New York, I did have access to a computer in my home and eventually the internet.
@@ -93,10 +93,10 @@ Well, we're taking our survey, she's like, You're, you're ending being our custo
 
 So that was great. I will carry that with me to the day I die. The look on that poor person's face. 
 
-</p><p><b>Tim Bourguignon  34:48</b></br>  
+</p><p><b>Tim Bourguignon  34:48</b><br/>  
 Well, at least you didn't feel bad about it beforehand. 
 
-</p><p><b>Alice Goldfuss  34:52</b></br>  
+</p><p><b>Alice Goldfuss  34:52</b><br/>  
 Yeah, not beforehand, because I thought everything was fine. Yeah, I definitely was. I wasn't in the murder elevator being like, yeah, I'm gonna get his name wrong. And then I'm gonna slap him in the face.
 
 It was in the moment. So we both got hurt.
@@ -129,42 +129,42 @@ where people are like flown in. And there's a group of people trying to protect 
 
 which is the game streaming platform. I'm going to say this, so people don't know what Twitch is. But you might not I didn't know. I was not into twitch before I started doing this. But it seemed like the best place to do it. And so I had people watching me do it. And it became sort of a team thing. Because ctfs are best done with a team because different people have different strengths and different weaknesses. I, for example, am terrible at browser attacks, which is kind of funny, because those are usually the entry level attacks that people do is they do cross site scripting or JavaScript or so they I'm terrible at JavaScript, I'm bad at it, to give me assembly in a binary any day, but JavaScript is terrible. But people will watch the streams and they'll be very helpful. And then we'll we'll get through it together. And that was really rewarding. Because not only am I playing a game with other people, but other people are seeing that CTS aren't that scary. And it's not just a bunch of people and hoodies being paid in suitcases of cash to break into your bank account. It's you know, it's a game you could play it's you're learning more things about computers and doing clever puzzles with computers. And I started doing that as well. And this is I guess, the point where I kind of trail off a bit because I feel like I feel like I lost, I lost the lead. That's that is sort of how I got in to development. I I guess the theme is just that I, I I got bored. So I did other things in the evening. And then those other things in the evening became my job. And it was very common for me to see something on the job and go, that is so cool. But I don't have a CS degree, I will never be able to do that. And but you know, since I know I'm never going to be able to do it professionally. It's fine if I try to figure out how to do it for fun, because I'm so stupid. And then that eventually ends up being my job. That is just something that has happened to me multiple times, where I I start to investigate something for fun, because I'll never actually be able to do it for real. And then suddenly, I'm employed doing that thing. So that that's the most I've had.
 
-</p><p><b>Tim Bourguignon  48:10</b></br>  
+</p><p><b>Tim Bourguignon  48:10</b><br/>  
 I have a giant smile on my face. It's been it's been a roller coaster listening to your story. It sounds very reflected upon, is it something you've told many times already?
 
-</p><p><b>Alice Goldfuss  48:23</b></br>  
+</p><p><b>Alice Goldfuss  48:23</b><br/>  
 I've told it somewhat frequently, not the entire story, not the the word garbage you just got there. I have not told that entire thing. But I've definitely had people ask me, how did you get into tech? How did you get started? What did you do? How did you get here? You're so young, how is that possible? What are you in the wrong conference room, whatever. And so I have gotten very, I have relayed various versions of this before but never like on a recording. I definitely have imposter syndrome. And part of that stems from the fact that I have never been the kind of person who was super interested in building things. I've never been I've never been a big side projects person because a I have an ops background. So I know if you build something, you have to maintain it. No, thank you. But also be I'm just kind of like that, that thing I want to build probably already exists. And I can just use what already exists. But what I do like to do is figure out how things work. Figure out down to the electron. Why that computer is doing what it did, because I really want to understand it. I want to say with absolute certainty. Yes, this is happening. For this reason, I can back it up. I know what's happening. And because I know how it works now I can predict how it will work in the future, which allows me to make better choices and not having a CS degree. And having that I need to know how this works. point of view has actually been kind of helpful for me. Not having a CS degree has definitely been bad for my imposter syndrome and has definitely
 
 You know, I got a bit of a later start than I might have had I had a CS degree. But it also meant that I didn't know when things were supposed to be hard. And kernel crashes, I think is a is a great illustration of this. Because I, we had these hosts that were crashing, and I technically on to the hardware for that team, I needed to figure out how they were crashing. And I just assumed that every other engineer I was working with knew exactly how the Linux kernel worked, and how to analyze a crash. And they could do this in their sleep, and they just weren't, because it was just an obvious thing that they had learned in like to see us one on one. And so I, I was like, Oh man, I am the only person on this team in this entire company who doesn't know how kernels work, or how to analyze a kernel crash, I need to figure this out. And I started it, we had an engineering off site, and a an engineering off site. And there was this one server that kept crashing, and I was up at like, 1am I couldn't sleep anyway, there was like parties happening. And I was on this website that was teaching me how to do a kernel crash analysis. And I was learning how to analyze kernel crashes from the server log, because the next day, I fully expect to have conversations with people where they were like, Oh, I noticed this server crashed. Why? And they would be able to figure it out. But I needed to be able to figure it out. So I was teaching myself like, Oh, yeah, okay, these, these bits are flipped that maps to this user. And like, this is what this is what that register means. This is what a register is like, I'm going to figure out like I, I learned all of that frantically, because I thought everyone else already knew. And I didn't know that it was something most people in programming don't encounter. And a lot of people don't know how to do. And what ended up happening is that within a week or so, because I had this, I came in as like, Oh, it's still crashing. And I was like yeah, I analyzed the kernel crash. And it led me to this hardware error. And then it's the PCI bus. And because I did that, I became known at New Relic as the person who knew how to analyze kernel crashes. I actually had another engineering team asked me to teach them how to analyze kernel crashes and core dumps. Which is he was it was an indication was like, Oh, wait, you, you don't know how to do that. Like, you're like the lead engineer on an agent team. How do you not know how to do that didn't wasn't this a, like a freshman level class for you. And that that has happened to me multiple times before is me just being in kind of this hole. And going everyone else knows this, but me I need to figure it out. And then it turns out that it's a difficult thing that other people don't know how to do. But it seems to work for you. It helps you dig deeper and not be bored anymore. And then get passionate about something else and learn even more. Yeah, basically, I just loads being bored.
 
-</p><p><b>Tim Bourguignon  53:05</b></br>  
+</p><p><b>Tim Bourguignon  53:05</b><br/>  
 Does a bit painful to hear that you had to go through all this, but really fun anyway, ah, as long as as long as my pain is entertaining, then it was all worth it. So any plans to apply at AMD or Intel to go further down the stack?
 
-</p><p><b>Alice Goldfuss  53:22</b></br>  
+</p><p><b>Alice Goldfuss  53:22</b><br/>  
 Um, I have considered it a bit I because I'm in Portland, I am actually near Intel. But you have to go in person. And I, I don't a I have a job now that I absolutely love. I'm very satisfied with it. And I don't want to leave it anytime soon. I'm not bored. But also be I actually don't think I would qualify for an Intel job. Because I don't have a CS degree. I don't have that formal education. I'm just a tinkerer. And so I don't think I would be up to their standards. But I would certainly love to like chat with people at Intel and learn more from them. I love learning lower level systems, things that are very cool. I have a habit of in Portland, it gets very dreary and dark during the winter. Like we don't get a lot of sunlight because of our latitude. And it's just like rainy all the time. So I have a tradition of doing a course during the winter just to pass the time. And one of the online classes I did a couple of years ago, I believe it was called the elements of computing or something like that, where you build a CPU from scratch logically starting with logic gates. So the first step is you're given a NAND gate and then you know, you have to make an Al u and then a CPU and come up with the peripherals and stuff which, again, is probably something people learn in their CS degrees, but it's something that I learned for fun on the side and I thought it was fantastic. Yes, I learned this during my CS degree, but I retained probably 10% of it, or 10% of what you retain. I did it because I wanted to do it. I was I was hungry for that knowledge.
 
-</p><p><b>Tim Bourguignon  55:00</b></br>  
+</p><p><b>Tim Bourguignon  55:00</b><br/>  
 That makes a giant difference. Oh, it was so cool listening to the story. Thank you very much. Um, you know what? It's evening for me. So it was a bedtime story? 
 
-</p><p><b>Alice Goldfuss  55:09</b></br>  
+</p><p><b>Alice Goldfuss  55:09</b><br/>  
 Oh, yes, it's a horrifying one. 
 
-</p><p><b>Tim Bourguignon  55:12</b></br>  
+</p><p><b>Tim Bourguignon  55:12</b><br/>  
 No, it was really cool. A really cool one. And let's end this on a on a funny note, you probably got many, many advice throughout your careers, what is the most stupid piece of advice you ever, ever got? 
 
-</p><p><b>Alice Goldfuss  55:25</b></br>  
+</p><p><b>Alice Goldfuss  55:25</b><br/>  
 I think it's not a specific piece of advice that I can trace to like one person. But I have repeatedly gotten different flavors of advice that's like, Hey, you know, you tweet too much. Or, you know, you shouldn't, you shouldn't speak at so many conferences. And I disagree with this extremely, because there is your job. And then there is your career. And there is your greater community and your greater network. And being on Twitter and going to conferences was fantastic for my career and my general mental health, because so much of my career has been quite lonely, being the only person who looks like me on a team or in a department. And the first place I met other women in Ops, sorry, systems engineering was at conferences and on Twitter. And if I didn't have those connections, I don't know if I would have continued for as long as I had. And also having those connections, got me jobs got me articles got me things like this podcast. And so if someone tells you to like lay off your public presence, I would take that with a grain of salt. Like you can certainly split up your time better. Like Don't, don't tweet all the time during the day when you should clearly be working, tweet at night, tweet on the weekends, but don't abandon that community because that community is going to be there for you long after your job is. So that that would be probably the worst advice I've gotten just sort of in general. 
 
-</p><p><b>Tim Bourguignon  56:54</b></br>  
+</p><p><b>Tim Bourguignon  56:54</b><br/>  
 Amen for communities. I totally agree. Thank you very much. So Alice, where would be the best place to continue this discussion with you or hear more about your stories?
 
-</p><p><b>Alice Goldfuss  57:09</b></br>  
+</p><p><b>Alice Goldfuss  57:09</b><br/>  
 Oh, well, first of all, I'm available underneath everyone's beds at night.
 
-</p><p><b>Tim Bourguignon  57:15</b></br>  
+</p><p><b>Tim Bourguignon  57:15</b><br/>  
 Don't say this! I'm going to bed in a minute...
 
-</p><p><b>Alice Goldfuss  57:19</b></br>  
+</p><p><b>Alice Goldfuss  57:19</b><br/>  
 Let me crawl out and talk to you about DevOps!
 
 I guess the best place to find me is Twitter. I will say though my Twitter account. I I do not have a like professional brand Twitter account, you'd think I would but I have been staunchly against a Twitter is my personal space. And yes, sometimes I talk about tech. But also I talk about things that are important to me. social causes. I don't know that shows I'm watching books I'm reading. But that that is the place where people can find all of this nonsense. So my Twitter handle is just my name Alice gold first. I currently have a Halloween name malas school plus, of course,
@@ -173,19 +173,19 @@ I adopt that every year without fail.
 
 So yeah, that's probably the best place to find me. I also have a blog, which is linked to on my Twitter account, which is Alice goldfish calm. Because in addition to being annoying, I have actually put out some long longer works on things that people seem to enjoy. I have a popular blog post called How to get into SRP that people have found very helpful. And it's, it's basically, if you didn't find this podcast, particularly helpful, you might find that blog post because I actually, I took all of the things and all of the advice I usually give people and I collated it into this one long blog post. And there's a section at the end with a bunch of free resources. Because again, when I started my journey, it was I didn't have money, I was doing everything I could with no money. And I think that everyone else should have that same opportunity. So there's a bunch of free resources available at the end of that blog post to help people get a leg up the way I had a leg up.
 
-</p><p><b>Tim Bourguignon  59:06</b></br>  
+</p><p><b>Tim Bourguignon  59:06</b><br/>  
 And not to forget the twitch channel.
 
-</p><p><b>Alice Goldfuss  59:08</b></br>  
+</p><p><b>Alice Goldfuss  59:08</b><br/>  
 Oh, yeah, the twitch channel. Sure. I my twitch handle is not my name. My twitch handle is "bletchleypunk", which is a play on Bletchley Park, which is an incredible place in England. The the home of the code, the code crackers of world war two and the Enigma machine were at Bletchley Park so my handle on twitch is actually punk because I was feeling extremely clever that day. I do not. I used to stream weekly. I have not been streaming weekly this year, because it's 2020 and I'm basically just trying to survive. But I do have all of my old streams on they're in archive, so you can watch them. I do see ETFs but I also drink a lot of tea and discuss tea. So if you like tea or you like computers or you like both, I would check them.
 
-</p><p><b>Tim Bourguignon  1:00</b></br>:01  
+</p><p><b>Tim Bourguignon  1:00</b><br/>:01  
 Alice, thank you very, very much. 
 
-</p><p><b>Alice Goldfuss  1:00</b></br>:03  
+</p><p><b>Alice Goldfuss  1:00</b><br/>:03  
 Thank you. 
 
-</p><p><b>Tim Bourguignon  1:00</b></br>:04  
+</p><p><b>Tim Bourguignon  1:00</b><br/>:04  
 And this has been another episode of developer's journey. We will see each other next week, bye. All right, this is Tim from a different time and space with a few comments to make. First, get the most of these developer's journey by subscribing to the podcast with the app of your choice, and get the new episodes automagically, right when the air. The podcast is available on all major platforms. Then, visit our website to find the show notes with all the links mentioned by our guests, the advices they gave us, their book, references and so on. And while you're there, use the comments to continue the discussion with our guests or with me, or reach out on Twitter or LinkedIn. Then a big big THANK YOU to the generous Patreon donors that help me pay the hosting bills. If you have a few coins to spare, please consider a small monthly donation. Every pledge, however small counts. Finally, please do someone a favor, tell them about the show today and help them on their journey.
 
 </p>

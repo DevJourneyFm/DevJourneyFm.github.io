@@ -1,261 +1,261 @@
-<p><b>Lara Martin  0:00</b></br>  
+<p><b>Lara Martin  0:00</b><br/>  
 Google announced that flutter is here, this new thing. And I said, You know what? I'm gonna try it now. I took a course that they had. And I was like, Huh, this is very fast. And I realized that it was quite addictive, but in the sense of, I didn't have a lot of time waiting times between doing a UI tweak chain small change and seeing the result. There was no waiting time. So it was like all the time trying to do things compared to to Android development, where you do as much change. you deploy your weight, in a way, and then you see it, and then you have to go back and change it.
 
-</p><p><b>Tim Bourguignon  0:54</b></br>  
+</p><p><b>Tim Bourguignon  0:54</b><br/>  
 Hello, and welcome to developer's journey. The podcast shining a light on developers lives from all over the world. My name is Tim Bourguignon, and today I receive Lara Martin. Lara is a flutter Google Developer Expert and Android Developer, based in Berlin Germany. She has been involved with the community since she started programming, sharing knowledge online, giving talks worldwide, and finally becoming a GDE a Google Developer expert. Her dream is to make apps more accessible for everyone. When she is not attending a tech meetup, you will find her playing video games or with her dog Lily. Lara, welcome to the journey.
 
-</p><p><b>Lara Martin  1:34</b></br>  
+</p><p><b>Lara Martin  1:34</b><br/>  
 Hello, thank you. Thank you for having me.
 
-</p><p><b>Tim Bourguignon  1:37</b></br>  
+</p><p><b>Tim Bourguignon  1:37</b><br/>  
 It's my pleasure. You're not attending too many meetups right now you
 
-</p><p><b>Lara Martin  1:41</b></br>  
+</p><p><b>Lara Martin  1:41</b><br/>  
 know, sadly not. We been attending a couple already like online Later I will attend another one.
 
-</p><p><b>Tim Bourguignon  1:49</b></br>  
+</p><p><b>Tim Bourguignon  1:49</b><br/>  
 Still attending a lot of meetups with online No, not
 
-</p><p><b>Lara Martin  1:51</b></br>  
+</p><p><b>Lara Martin  1:51</b><br/>  
 a lot but still attending more than I
 
 you know, because now they are going online and That office opens up to more opportunities. So
 
-</p><p><b>Tim Bourguignon  2:04</b></br>  
+</p><p><b>Tim Bourguignon  2:04</b><br/>  
 absolutely. It's It's exciting. I think it's a it's a lot of time, but it's exciting.
 
-</p><p><b>Lara Martin  2:08</b></br>  
+</p><p><b>Lara Martin  2:08</b><br/>  
 Yeah, at least we we get some time to learn something and not think of the current situation. So that's a good thing.
 
-</p><p><b>Tim Bourguignon  2:18</b></br>  
+</p><p><b>Tim Bourguignon  2:18</b><br/>  
 That is true. So let's go back to your journey. Your journey didn't start with Android did it? Do you mean the tech journey? Yes, of course. We can talk about your whole journey. You came from Spain, I think so. There must be a travel journey in there as well.
 
-</p><p><b>Lara Martin  2:32</b></br>  
+</p><p><b>Lara Martin  2:32</b><br/>  
 So the thing is that though I don't have a background in tech guys studied biology back in Spain. Once a finished, I moved to Germany because my den boyfriend had found a job in in Berlin, and he was a developer. And so I didn't have a job and and I moved with him. I was learning German, everything was fine. We were in our 20s and this Learning new plays getting to learn new cultures language. But I also wanted to learn more on what my boyfriend was doing at work. Like I was curious to know what his day looked like, as a developer. One day, I started asking questions like, what do you do? Which kind of meetings do you have? Can you show me some code? And there was one day when he suggested to, to take an online course? Because I was very curious. So I did that. And I started doing courses like learning basic programming, with Python, nothing fancy. What's a variable what is string? Very, very, very basic. And that's how I started with check. Yeah, so learning the very basics in my free time when I didn't have a job. From my studies, that's how I started.
 
-</p><p><b>Tim Bourguignon  4:02</b></br>  
+</p><p><b>Tim Bourguignon  4:02</b><br/>  
 How was it you to start learning what your boyfriend was doing professionally? How was the relation or did the relationship between you to change or evolve at that point,
 
-</p><p><b>Lara Martin  4:12</b></br>  
+</p><p><b>Lara Martin  4:12</b><br/>  
 it didn't change until some years later. He for sure tried to help me out sometimes when I got stuck, but mainly not like teaching me things, but being kind of the coach and trying to help me think about the problems like, okay, focus on the problem you have, what do you have to do? Okay, let's try to write a comment on what you want to do. And you try to do it. Right. And he was helping me with the way I was trying to solve things. I guess. It brought us closer as well. But as well, we were alone in in a new country. So everything was different. But the thing is that as long as As I was learning online, and he was also tinkering and learning new things, things more advanced, of course for him. And, and that was really nice, like both getting some time to learn new things and Tinker. That was I was really, really nice.
 
-</p><p><b>Tim Bourguignon  5:17</b></br>  
+</p><p><b>Tim Bourguignon  5:17</b><br/>  
 I would figure it would be interesting. My wife is, I wouldn't say non technical but not interested in programming at all. So I cannot really relate to this, but though I'm trying to protect myself, that would be interesting.
 
-</p><p><b>Lara Martin  5:30</b></br>  
+</p><p><b>Lara Martin  5:30</b><br/>  
 But he also wasn't interested. I was interested in some things, but I didn't know what exactly. I was interested in computers and do more things more efficiently. I was just curious and I tried out I had fun and continue doing.
 
-</p><p><b>Tim Bourguignon  5:47</b></br>  
+</p><p><b>Tim Bourguignon  5:47</b><br/>  
 You remember, at which point, you felt that it could become more than just tinkering and low in E learning online and maybe become a job
 
-</p><p><b>Lara Martin  5:58</b></br>  
+</p><p><b>Lara Martin  5:58</b><br/>  
 I do. So I can explain a little bit how that went until that point before. So after I started learning this Bing courses on Python, I reached a point where I didn't know how to continue. I didn't have any kind of project to continue learning. I learned the basics and create objects and but I didn't have a real project and things to work on. So I get thinking, what should I do? At least in my culture in in Spain, it's expected from you that if you learn if you study something in university, you have to work on that, you know, that's your thing. So for me, everything was like, I need to do something related to biology. So it was a very difficult moment for me like being abroad. No, no job, depending on my boyfriend. I studied biology, but I don't like it and I'm liking a lot per minute. was the first time I saw something like I could, I need to do something. And that was very difficult. And one day I figure out, I can kind of do a something like programming, last biology all together and I found a master's degree that was online in in in Spain. It was a master's degree in biotechnology. So everything was looking fine. And I did that I started that, which took two years in Soto, the fifth year really nice, but mainly doing things on on the terminal with bash, very basic. I'm doing a lot of math with this language called R. But it was also fun. And then the second year was awful. It was all statistics like nothing related. What I wanted to do like nothing priming, like, there was nothing a light. And by the, at the end of the master's degree, I had to present a project with statistics. And what I did is like a website that took some data, biological data and present it graphics and showed graphics, and I was proud of what I built. And by the end of that I was searching for a job. And I applied to one places that that is deficient, I still don't know how to pronounce it. Physically what to do with statistics, it was the only thing I could go find. And during the interview, they were asking me about test servers running blood I was like, but I just followed the experiment how it was I just, but I'm so proud of the website dungeon, don't you see? And they were only interested in the test and I was interested in the part they built. And the interview went awful. Well, when that finished, I realized that I'm interested in building the thing. I'm not interested in the statistics part. You know, I don't care about the, by the math Spark, I want to build things. That was the day I said, I need to do something in tech. That's doesn't have to be related to biology. That was a day. And I still remember. Yeah, how awful that call was. I can't imagine. But I'm happy that I saw it. That for me was like, this is a you know, finally, I know what I want to do. I just needed to find exactly the missing piece.
 
-</p><p><b>Tim Bourguignon  9:44</b></br>  
+</p><p><b>Tim Bourguignon  9:44</b><br/>  
 That makes sense. So how did you change your your job thorough searching algorithm, so that you don't end up in this in the statistical corner or audiology corner and you end up building things? Yeah,
 
-</p><p><b>Lara Martin  10:00</b></br>  
+</p><p><b>Lara Martin  10:00</b><br/>  
 so that was, that was also hard. And I'm happy that back then at that point my partner was looking for for his job. He was looking for someone to do quality assurance to be a tester. And that's how I basically learned about this role. He explained to me What's his role about and showed me a platform where you could do that online. Like I didn't apply for that role in the place he was working on. Working out, but I thought that maybe I could do that in the future. But first I try. I wanted to try it. I started doing manual testing on websites online. And that's how I learned about this cases and tech six, test execution, writing bug reports. That stuff. And that gave me a little bit of experience. And that's how I started looking for a job. A real job on site in Berlin, as a QA. It took me months. But it was it was my first job. You know, without background in tech and the first job in Germany, that's always difficult to find right after the first one. But that was how it happened. It took months of course, to find it, but
 
-</p><p><b>Tim Bourguignon  11:31</b></br>  
+</p><p><b>Tim Bourguignon  11:31</b><br/>  
 I did it. Can you can you tell us more why it took months,
 
-</p><p><b>Lara Martin  11:34</b></br>  
+</p><p><b>Lara Martin  11:34</b><br/>  
 it's very difficult to find positions, open positions for those kind of roles. At least that was the case in when I was searching for those back in 2015. I did a bunch of interviews. And those were my first interviews, of course, first interviews in English, some in German, and wow, that was a really, really huge achievement just by being there. It was achieved an achievement for me. So yeah, I mean, it's like looking for a job. I will say there's a high demand for QA. And it's difficult to find positions. And you can find them. But of course, there's a lot of people applying for those. So because there are no, let's say, certifications requirements, in general, there aren't some but in general, you don't require to have a degree for example. So in general is more difficult to find a job on that.
 
-</p><p><b>Tim Bourguignon  12:39</b></br>  
+</p><p><b>Tim Bourguignon  12:39</b><br/>  
 Did you do something special to stand out in the crowd?
 
-</p><p><b>Lara Martin  12:42</b></br>  
+</p><p><b>Lara Martin  12:42</b><br/>  
 Not really. I present myself the same way to everyone and I will I brought up like, I printed a page of my my stats on that website where I was being a QA online. I printed like It says, I had done so many desk cases back reports, blah, blah, blah, to show like, hey, I've been working on something similar so I, you know, I look myself for for a way to get the experience the first hand experience and I'm willing to do this job that's all I did. The same for everyone by the place when I got it, I got the job for me just look the same. Like I got the same kind of interview as everyone. But then I learned from a an ex colleague that after my interview, my interviewer, my boss back then was very excited about all the all the online courses I took that I stated on my CV, so it's not like I did something different, but this person really found fun really, really Really amazing that I did this, this courses and I was very curious about tech and brought me in general
 
-</p><p><b>Tim Bourguignon  14:07</b></br>  
+</p><p><b>Tim Bourguignon  14:07</b><br/>  
 that that makes sense. That's when saints that that's a sign that somebody is very motivated and self learner and able to to be a bit an entrepreneur in their lives. I as a recruiter, I would value that as well.
 
-</p><p><b>Lara Martin  14:22</b></br>  
+</p><p><b>Lara Martin  14:22</b><br/>  
 Yeah, yeah. myself I'm, I'm sometimes also looking at CVS, not as serious, but when I get already people applying arioso value that like if they're curious about other things. No. Yeah, I totally relate. But as I said, it's not like I did something different. It's just, I guess, the luck I had.
 
-</p><p><b>Tim Bourguignon  14:49</b></br>  
+</p><p><b>Tim Bourguignon  14:49</b><br/>  
 So this was your first job as a QA engineer. Yeah. Take us through the journey from your first day plus QA to coming back to the business. builder role as well as developer that you are today.
 
-</p><p><b>Lara Martin  15:03</b></br>  
+</p><p><b>Lara Martin  15:03</b><br/>  
 While I was applying as QA, I was also learning some times, priming in general, random things like a bit of web web development, which I didn't like myself. I didn't see myself doing that professionally. But funnily enough, that the first day where I started my job as QA, I went to a meetup where they were doing a study jump, they started a study group to learn Android for free to learn the basics. It was first, the same day when I began working as QA. And that day when I did my first line, sir, I saw the first lines in Android. I was like, This is cool. And I'm basically just Get going every two weeks. It was every two weeks and very slow. But that was what made me see that there was something in there that I really, really enjoyed. I didn't mention that before. But my first job askew I was in, in a mobile team. So I was working with Android and iOS developers. I was testing both platforms. So I was learning lots of things, you know, how they worked, and I was learning the QA part as well. And, and then on my free time, I was attending this meetups to learn Android and then the weekend I continued learning Android and candy I fell into these mobile live balamand industry
 
 and I'm in love with that.
 
-</p><p><b>Tim Bourguignon  16:59</b></br>  
+</p><p><b>Tim Bourguignon  16:59</b><br/>  
 It sounds Like you had the perfect observation spot, it's we're a bit on the side observing developers on one side and then getting your hands dirty on the other side and not having pressure to to deliver. But being able to, to really observe and see how this all works out on your own time. Yeah, that is really cool. So wait, when did you manage to finally write code for living? Hmm.
 
-</p><p><b>Lara Martin  17:28</b></br>  
+</p><p><b>Lara Martin  17:28</b><br/>  
 So it took me a year. And amongst more or less, since I started this QA, I, I learned for the whole year non stop in the beginning slower because it was how the study group was going. But then, after summer, I started learning a lot online, Android only. At some point, I told my manager. I really like this, doing Android development and I see myself doing that in the Future. And I said that, you know, like, everyone knows that people in QA usually don't stay long time. Because it's a Manuel testing is not very well paid. And sometimes people are looking for continuing growing in their careers and maybe they move to automation, maybe they move to other parts of development. But normally, people don't stay in manual testing for a long time. So I was I was very open, and my manager was like, I will try to support you. And of course, months went by, nothing happened. I continue learning by myself online. I took a certification as well, from from Google and saying like You know, I, I did the certification. And I got a also like an interview online with someone who was asking me questions. So it's like, they say, I have the knowledge. And when I finished that I asked my manager again. And he said, yeah, we will try to make it happen. And so you can switch roles here in the team. But some weeks went by I didn't see anything moving. So I tweeted, like, I'm looking for a job. An internship in Android, blah, blah. And somehow that helps paid up. Thanks. My company. I someone saw it and they were like, ooh, Lana is looking for a job. So yeah, basically they said, Okay, let's let's try to speed up. Look at For a replacement for you as QA, so you can move to Android. And that was when we had this conversation was, was one year after I started this toy. And then we it took us two months to find someone, I think, two months, almost three months. And during this time I did some, you know, 50%, Android sometimes paired with someone trying to attend. Yeah, and then I switched to full time.
 
-</p><p><b>Tim Bourguignon  20:32</b></br>  
+</p><p><b>Tim Bourguignon  20:32</b><br/>  
 That's interesting. That would have been my question as well. How will your boss reacted to the tweet?
 
-</p><p><b>Lara Martin  20:40</b></br>  
+</p><p><b>Lara Martin  20:40</b><br/>  
 The thing is that during that year,
 
 my boss moved to another department. So I had another one. It was my ex boss who was following me on Twitter, the one that hired me as a QA and say, Oh, yeah, I really like that. She's learning all this stuff. So that will One is the one that saw that tweet and said to others like she's looking for a job you're gonna lose for her this summer. So, yeah, I think I'm happy that I tweeted that.
 
-</p><p><b>Tim Bourguignon  21:15</b></br>  
+</p><p><b>Tim Bourguignon  21:15</b><br/>  
 Yeah, I, I would be very doing this. But that's an interesting thought for pressurizing a little bit.
 
-</p><p><b>Lara Martin  21:21</b></br>  
+</p><p><b>Lara Martin  21:21</b><br/>  
 I did it. And I got a late to for a an internship and I had the interviews and then they told me they will get back to me like, in a couple of months because it was an agency where they were looking for they needed to close a contract first. And I had to reject that. I had to drop out from the process because of my work or frame me switching roles. And since I already knew how the product worked, I knew My team more or less because the team was changing a lot. I decided to stay and that it was better to stay and do the switch there. So yeah, I think Indian tweeting that helped me.
 
-</p><p><b>Tim Bourguignon  22:18</b></br>  
+</p><p><b>Tim Bourguignon  22:18</b><br/>  
 Okay, so you started in this team? Can you take us to the to the point where you started with flutter? Maybe?
 
-</p><p><b>Lara Martin  22:25</b></br>  
+</p><p><b>Lara Martin  22:25</b><br/>  
 Oh, yeah. So, wow. Um, as as you said in the beginning, I do attend some meetups and conferences, and there was destock. In one conference I attended in I think, my duty my first year as an Android Dev, I attended my first small Android conference. And there there was not Android relate only but Google technologies and there was Just talk about flutter. And it was very, it was a year and a half ago. Now when before flutter came out stable and stuff. So it was very in the beginnings. And I started working life and how fast things were deployed and running on a on an emulator on a on a 409 emulator on a laptop. And me as working as Android developer, I'm used to wait a lot. So seen that with flutter everything was so fast, was like instant love, like, come on. I need to learn this. I need to try it out. Um, but yeah, as we're, we're all busy. So I decided to not try it out for some time and took months until Google announced that flutter is here, this new thing. And I said, You know what, I'm gonna try it now. They said, This official. This is the thing. I'm gonna try it now. And, and I did. I took a course that they had. And I was like, Huh, this is very fast. And I realized that it was quite addictive, but in the sense of, I didn't have a lot of time waiting times between doing a UI, tweak, change, small change and seeing the result. There was no waiting time. So it was like all the time trying to do things compared to to Android development, where you do a small change. you deploy your weight, in a way and then you see it And then you have to go back and change it nowadays is better, for sure. But then back then I mean, just three years ago, two years ago, it was very, very slow.
 
-</p><p><b>Tim Bourguignon  25:13</b></br>  
+</p><p><b>Tim Bourguignon  25:13</b><br/>  
 Sorry ages ago.
 
-</p><p><b>Lara Martin  25:16</b></br>  
+</p><p><b>Lara Martin  25:16</b><br/>  
 So it will be more or less as summer 2007 1818 when I did the course, and I love it. And I was working on the company that would you like to host meetups. And I convinced some of my team members to to create a study group, the same thing I did with Android when I when I was learning, but with flutter, and that's something we did together and we learn together. We basically were doing this study group learning two weeks prior or To the meetup day, and ditching people, you know, learning all together. I was really written Nice. Yeah, that was how I got into flutter.
 
-</p><p><b>Tim Bourguignon  26:15</b></br>  
+</p><p><b>Tim Bourguignon  26:15</b><br/>  
 What influence Did it have on your day to day job? Still doing Android? For for paycheck?
 
-</p><p><b>Lara Martin  26:21</b></br>  
+</p><p><b>Lara Martin  26:21</b><br/>  
 Yeah, that's a very good question. That's some, I often asked myself, like, how can I benefit from that? You know, because I really, I would love to, to work on on flutter apps, for sure, professionally, like getting paid, I mean, but what it helped me is to, to, to learn other frameworks to see that there are other options to do the same things, and that both were several options are invalid that there is no one option at all, and And
 
 I'm learning.
 
 For example, I'm part of a the ecosystem committee where I'm learning how to assess if a package has a good quality, for example, and I'm also learning lots from speaking, public speaking as well. It's, it's it just, I really, really like learning. And I'm aware of that, like, very addicted to learning. And I know that I cannot learn everything. But yeah, I would love to, to incorporate flutter even more in my daily job. No one nowadays. It's very difficult. There's no way to use it in my daily job. Fortunately. But yeah, I hope in the future I can for sure.
 
-</p><p><b>Tim Bourguignon  28:07</b></br>  
+</p><p><b>Tim Bourguignon  28:07</b><br/>  
 Use it. Oh, you said you're a Google Developer expert. Can you define this? This, this terminology of what it is and then how you become a GD?
 
-</p><p><b>Lara Martin  28:16</b></br>  
+</p><p><b>Lara Martin  28:16</b><br/>  
 Yeah, sure. So the Google Developer experts is a program that Google has where, basically, it's for people from the community that represent some technologies, people that are recognized by giving talks or having knowledge on certain technologies. You will see that there. Google Developer experts on web technologies in Android in actions on Google, Firebase, Google Play. It's Google technologies is is a way of somehow Recognizing the work that developers are doing, or people from technology are doing for that specific technology and helping them out as well with traveling, because while they are speaking, they are creating content law. We are not getting paid. We are not working for Google. But we do get some support from them sometimes for for traveling to conferences. And it's a way for them to recognize the work that people are doing for those technologies. And, yeah, that I think that would be Braley is someone from marketing from the GD prom will want to kill me. Because of the way I'm explaining it. That's how I see it.
 
-</p><p><b>Tim Bourguignon  29:59</b></br>  
+</p><p><b>Tim Bourguignon  29:59</b><br/>  
 The doorway, nobody's got Listen. Okay, I'm more in the Microsoft side. So I know the MVP program, the most valuable professional. I think that's, that's the the same thing on the Google side.
 
-</p><p><b>Lara Martin  30:12</b></br>  
+</p><p><b>Lara Martin  30:12</b><br/>  
 Yeah, it sounds like I recently learned while I saw the term MVP, and I was searching like, what's this term? Like? Why? yourself and BP or this title and BP where it's coming from but it's Yeah.
 
-</p><p><b>Tim Bourguignon  30:29</b></br>  
+</p><p><b>Tim Bourguignon  30:29</b><br/>  
 Okay. And then if it's the same, then then I know what it is. I
 
-</p><p><b>Lara Martin  30:32</b></br>  
+</p><p><b>Lara Martin  30:32</b><br/>  
 don't know how how it works on Microsoft, by hearing that Google Display that they have is based in recommendations. I don't think there's a way you can apply. Someone has to recommend you. So yeah,
 
-</p><p><b>Tim Bourguignon  30:52</b></br>  
+</p><p><b>Tim Bourguignon  30:52</b><br/>  
 that's the same
 
-</p><p><b>Lara Martin  30:53</b></br>  
+</p><p><b>Lara Martin  30:53</b><br/>  
 here and knows the the how's the community moving and who's getting known in the community? in certain regions of the world, and yeah, and then you go through a process, some interviews, community interview, then a technical interview. And I think that was it. Then you have a I had a discussion on also the product and that was it.
 
-</p><p><b>Tim Bourguignon  31:23</b></br>  
+</p><p><b>Tim Bourguignon  31:23</b><br/>  
 Then you get a pet, you get a pat on the back and say welcome to the whole GDP family and continue doing what you were doing before nothing changes.
 
-</p><p><b>Lara Martin  31:32</b></br>  
+</p><p><b>Lara Martin  31:32</b><br/>  
 Yeah.
 
 difficult to know if I was in or not, when I had the call, then this conversation the final one. I remember that it was in person because turns out that my interviewer was coming for a conference to Berlin and I went there and I finished that My Hassan also was in the conference and, and he asked me how did it go? And I was like, I don't know. Well, like I didn't see anything negative, but I don't know what's the answer, but the answer was yes. Yeah.
 
-</p><p><b>Tim Bourguignon  32:16</b></br>  
+</p><p><b>Tim Bourguignon  32:16</b><br/>  
 Congratulation. What is Was it a surprise for you to be nominated for this?
 
-</p><p><b>Lara Martin  32:21</b></br>  
+</p><p><b>Lara Martin  32:21</b><br/>  
 Um, yes.
 
 Very surprising because I just started doing things in Florida with some months before that, and I didn't think I had the experience like public speaking and engagements. Enough for for that. And for me, it was very surprising to learn that, yes, what you're doing is what we expect from people like we don't expect you to be like, every week doing talks and stuff like you're doing lots you know, But and it was it was very surprising for me.
 
-</p><p><b>Tim Bourguignon  33:04</b></br>  
+</p><p><b>Tim Bourguignon  33:04</b><br/>  
 Yeah. Do you know who, who nominated you? And you can you can understand why this person did this at that point.
 
-</p><p><b>Lara Martin  33:14</b></br>  
+</p><p><b>Lara Martin  33:14</b><br/>  
 Yes, yes. And yes. And they were trying to also find more women and, and that's also one of the things why I push myself to apply. I really don't like to call myself an expert. I will not do that ever, or call myself some titles. By when I applied was because of I went to the website and I saw it was mostly men, and I didn't feel like I represented myself. And I felt, you know, they only had I don't remember how many but it was like maybe three women along have 15 men, let's say So knowing that they wanted to nominate me and, and seeing that I thought, you know what I'm going to try. Because of in the past already, when I was not sure if I wanted to move to technology, if I will be able to work as a developer, I also found stories from other women and people from non technical backgrounds, very inspiring, like people that move to development positions. Those are very inspiring for me. So I thought maybe if I do this in a fight, get it. I can inspire someone in one day.
 
 Yeah, so that's one of the reasons I did it. Yeah.
 
-</p><p><b>Tim Bourguignon  34:47</b></br>  
+</p><p><b>Tim Bourguignon  34:47</b><br/>  
 That was really cool. And yes, representation is very important. Yes, it's very, very important. And I'm trying to, to find the statistics on the site, but I'm not going to be able to do it that fast.
 
-</p><p><b>Lara Martin  35:00</b></br>  
+</p><p><b>Lara Martin  35:00</b><br/>  
 Yeah I don't know how big the the GTX kiddies group for flutter are we are quite a lot of people see representation is quite low but we we got a bunch of people on lately from smaller countries and that's a good good thing as well
 
-</p><p><b>Tim Bourguignon  35:26</b></br>  
+</p><p><b>Tim Bourguignon  35:26</b><br/>  
 how did you come to public speaking you spoke a little bit about this the study group Was this your introduction to public speaking
 
-</p><p><b>Lara Martin  35:35</b></br>  
+</p><p><b>Lara Martin  35:35</b><br/>  
 so actually by the end of the the study group I had to present the app it because we all had to build a it's really small app to show like, what we learn and I was so nervous I Ah, I really dealt with anxiety And panic attacks just by thinking of public speaking. Yeah, and just by having to do that, like five minutes in front of a group of 10 people within within half meant now it was 1520 people that I knew, but still, for me was a very, very hard thing to do. But I did it. And the thing is that I also earned like a voucher to do an online course and continue learning programming on Android. That was the first thing I did, like, let's say public speaking. present my nice Chinese small app in front of 20 people. And then yeah, I didn't do any public speaking until a year and a half. Later, less than that when we did the study group on flutter. That was very funny. I didn't want to speak in front of the people. I wasn't being I wasn't the instructor. One of my colleagues wanted to be the instructor. And that was fine. We were three people will say, to do it, you want to do it fine.
 
 That person took vacation
 
 and cannot attend the two first sessions. So that means that me with the other colleagues, I also didn't want to do public speaking had to be in front of those people. And do the class. So I would say that that was the first time I had to do public speaking for sure. Like the first meetup day we had, like 50 Sorry. I didn't want to do that. So you can imagine how hard it was for both of us, my colleague and me. And, yeah, a lot of sweat and a lot of stress that day for sure. And but we had to do it again the following week. And we liked it. It was very stressful. But we learned a lot and we enjoyed it. So we did it six weeks in total. I didn't. I wasn't the instructor for the six weeks, but I did it I think three times in the end, and I didn't want to speak in front of people. And I guess that plus, getting to talk in front of people at work, and my team like, you know, I was learning to get more confident and working on that and working on that. Yeah, I guess that was What pushed me basically?
 
-</p><p><b>Tim Bourguignon  39:03</b></br>  
+</p><p><b>Tim Bourguignon  39:03</b><br/>  
 That was the gateway drug. And now you're hooked. And you cannot stop.
 
-</p><p><b>Lara Martin  39:07</b></br>  
+</p><p><b>Lara Martin  39:07</b><br/>  
 Yeah.
 
 Yes.
 
 But yeah, but the thing is, I didn't want to do that. I was but I was sharing like, yeah, we are doing this study group and commonly with us, and suddenly we don't have instructors. So I was like, now what? We have to do it. We promise people to do it. We will do it. So yeah, but I'm very happy. I did it. I've been learning lots from public speaking. improving my English as well. Communication. It's been it's been awesome.
 
-</p><p><b>Tim Bourguignon  39:44</b></br>  
+</p><p><b>Tim Bourguignon  39:44</b><br/>  
 That's really cool. Where do you see your journey going?
 
-</p><p><b>Lara Martin  39:46</b></br>  
+</p><p><b>Lara Martin  39:46</b><br/>  
 Wow. Yeah, very, very difficult question. Um, so right now, I'm still not at the senior level. It's very early for me. I'm still like in the mid level thing range. And for sure in my in my mind is the only thing I have is I want to work remotely You know, that's that's my goal. So what I'm working on is to into getting more independent as developer and not depend on seniors like being gay by being alone and being the solo developer in my chain. That's that's my goal. And I guess the only thing I can think of for my future as developer and my life in general is what can remotely I don't know if that means freelancing, maybe, maybe not. My husband is freelancer, and he loves that I'm, I'm not sure about having to look for projects and stuff. So maybe it's not for me, but for sure I would like to work remotely and
 
-</p><p><b>Tim Bourguignon  41:08</b></br>  
+</p><p><b>Tim Bourguignon  41:08</b><br/>  
 are you able to experiment this? Right now was the the lockdown due to the Coronavirus?
 
-</p><p><b>Lara Martin  41:14</b></br>  
+</p><p><b>Lara Martin  41:14</b><br/>  
 Yeah.
 
 Yeah, sadly now we are forced on to do that. On one part, I think I can feel more relieved that I can work remotely completely. And I'm very, very happy that I'm able to do my own work remotely, and I don't need to be on site. So I'm very happy on that. Very happy that I did the switch. And I have a job a stable job, you know, and I can pay the bills I'm for sure very, very happy about that. But I'm, I've been doing remote work, sometimes once a week since the last few years. As a QA as well, by the end of my journey as QA I was also doing once a week sometimes remote work, working from home, and and I really, really enjoy it. I don't have to commute this almost one hour, you know, every day. And I don't have to, I guess be outside my bubble and talk to people all the time. But I really enjoyed remote working and I have a good setup at work as well. At home as well. Good monitor, keyboard, chair, desk, you know, very, very happy.
 
-</p><p><b>Tim Bourguignon  42:46</b></br>  
+</p><p><b>Tim Bourguignon  42:46</b><br/>  
 Yeah. It sounds like it certainly sounds like okay, so we we looked into the future. So, looking back, if you had to give one advice to a person that maybe like you was Swiss, starting there, completely different direction than it and then we're thinking, hey, maybe it or coding or QA or this where maybe this this, this is for me, what would be your advice for such a person?
 
-</p><p><b>Lara Martin  43:12</b></br>  
+</p><p><b>Lara Martin  43:12</b><br/>  
 I will say, you have to find allies, you have to find someone that supports your ideas. I learned that when there are troubles like switching careers and stuff, and when you want to do things that not everyone understands, it's better to not explain everything to everyone. I didn't explain my my parents or my close friends that I was learning Android for example. I just mentioned it like it is a hobby, but I didn't mention that. That was something I wanted to professionally. So I I focused on learning I didn't have a lot of questions coming to me like, how is your word search going or your learning. So I was focused only on what I wanted to do. And I had my ally I had my, my super my has one understood what I wanted to do. And he supported me by taking care of cooking, get taken care of cleaning, you know, so I spend lots of time and hours and hours and hours learning in my free time, evenings and weekends. And that's what I would like to to convey. You don't have to explain everything to everyone you follow what you you know, people say for your dreams. So it's kind of like that, like if you fail, you want to learn something, change your query or something that doesn't make you happy. You can do it you don't have to follow the costumes you know the whatever is seen normal in your culture, family and environment but you have to have some support someone that then is there for you and understands you know,
 
-</p><p><b>Tim Bourguignon  45:24</b></br>  
+</p><p><b>Tim Bourguignon  45:24</b><br/>  
 your your husband seems like the perfect person to do this for you.
 
-</p><p><b>Lara Martin  45:28</b></br>  
+</p><p><b>Lara Martin  45:28</b><br/>  
 Yeah, yeah, I was like a he was Yes.
 
-</p><p><b>Tim Bourguignon  45:32</b></br>  
+</p><p><b>Tim Bourguignon  45:32</b><br/>  
 Awesome. Awesome.
 
-</p><p><b>Lara Martin  45:33</b></br>  
+</p><p><b>Lara Martin  45:33</b><br/>  
 Yes.
 
-</p><p><b>Tim Bourguignon  45:35</b></br>  
+</p><p><b>Tim Bourguignon  45:35</b><br/>  
 Um love Where could people continue the discussion with you?
 
-</p><p><b>Lara Martin  45:38</b></br>  
+</p><p><b>Lara Martin  45:38</b><br/>  
 Um, so they can find me for sure on Twitter. With the handle at laddie key, and and maybe Yeah, mainly on on on trader Frasier there I have some links to just things we are doing like The podcasts that we have. We also have a link to the website with sketch notes on tech that we also do. Yeah, you can find everything there. Again, for sure.
 
-</p><p><b>Tim Bourguignon  46:16</b></br>  
+</p><p><b>Tim Bourguignon  46:16</b><br/>  
 I will add everything to the shownotes so people you just have to scroll down and click. Do you have any any remote meetups organized in the next weeks?
 
-</p><p><b>Lara Martin  46:25</b></br>  
+</p><p><b>Lara Martin  46:25</b><br/>  
 Um, I didn't organize anything I'm not organizer but I do I sign up to two one, which is today. Okay, Android meetup local in Berlin that I I didn't attend physically for four months now. Sadly so hopefully I can join in an hour or so.
 
-</p><p><b>Tim Bourguignon  46:50</b></br>  
+</p><p><b>Tim Bourguignon  46:50</b><br/>  
 Then I'm gonna leave you to it so that you get some break before going there and and can join in refreshed and with with with energy for the evening. It's been a blast listening to your to your journey. Thank you very much for sharing it with us.
 
-</p><p><b>Lara Martin  47:06</b></br>  
+</p><p><b>Lara Martin  47:06</b><br/>  
 Yeah, thank you. Thank you so much for for inviting me. It's been very, very fun. Yeah, I really, really enjoyed podcast. I listened to your podcast for for the last month. And it's been so refreshing to listen to different stories and different people with different backgrounds, different different life stories, baths. And yeah, thank you for inviting me.
 
-</p><p><b>Tim Bourguignon  47:31</b></br>  
+</p><p><b>Tim Bourguignon  47:31</b><br/>  
 Thank you as well. Thank you for the feedback. 
 
-</p><p><b>Lara Martin  47:32</b></br>  
+</p><p><b>Lara Martin  47:32</b><br/>  
 That's that's thrilling to hear. Thank you. Thank you. 
 
-</p><p><b>Tim Bourguignon  47:36</b></br>  
+</p><p><b>Tim Bourguignon  47:36</b><br/>  
 And this has been another episode of developer's journey. We will see each other next week, bye. All right, this is Tim from a different time and space with a few comments to make. First, get the most of these developer's journey by subscribing to the podcast with the app of your choice, and get the new episodes automagically, right when the air. The podcast is available on all major platforms. Then, visit our website to find the show notes with all the links mentioned by our guests, the advices they gave us, their book, references and so on. And while you're there, use the comments to continue the discussion with our guests or with me, or reach out on Twitter or LinkedIn. Then a big big THANK YOU to the generous Patreon donors that help me pay the hosting bills. If you have a few coins to spare, please consider a small monthly donation. Every pledge, however small counts. Finally, please do someone a favor, tell them about the show today and help them on their journey.
 
 </p>

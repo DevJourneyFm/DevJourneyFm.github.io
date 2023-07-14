@@ -1,76 +1,76 @@
-</p><p><b>Ines Montani  0:00</b></br>  
+</p><p><b>Ines Montani  0:00</b><br/>  
 He was like, hey, how would you feel about building a visualizer for syntax. So if you have like a sentence, different words have different types. Something is a verb, something is a noun, and then they connected to each other something is the subject something. So the object and a different levels of complexity of this and the computer can nowadays quite reliably predict these types of things. And even back then could train a system to do this quite well. So he wanted to have a more modern way of visualizing that you type in a sentence and it shows you all the words and how they connect. I remember that when he when he explained this to me outside, of course, I totally understood the concept because, you know, I did linguistics, and it was something I was interested in, but it did sound really boring. And I was like, Man, you know, I like I have a job of work. I don't know if I can be bothered like spending any time on this really like, it sounds a bit lame. Which is funny because this visualize it's still around, it's still exists, and it's probably one of our most popular visualizers and also what many people think of when they hear spacey, but my first reaction to this was like eeeerk.
 
-</p><p><b>Tim Bourguignon  1:05</b></br>  
+</p><p><b>Tim Bourguignon  1:05</b><br/>  
 Hello, and welcome to developer's journey, the podcast, bringing you the makings of stories of successful software developers to help you on your upcoming journey. My name is Tim Bourguignon. And on this episode 122, I receive Ines Montani. Ines is a developer specializing in tools for AI and NLP, that's natural language processing technology. She is the co founder of Explosion and a core developer of the open source libraries, Spacy and Prodigy. Is that how you say it spacey? spacey? 
 
-</p><p><b>Ines Montani  1:36</b></br>  
+</p><p><b>Ines Montani  1:36</b><br/>  
 Yes, exactly, we sometimes get that we sometimes get the question. And some people are a bit confused about it. But like it's space for whitespace because it initially started off as a tokenizer base. So a tool for segmenting text into words. And the C y is stands for siphon is kind of a dialect of Python with C extensions. 
 
-</p><p><b>Tim Bourguignon  1:57</b></br>  
+</p><p><b>Tim Bourguignon  1:57</b><br/>  
 And there you're showing your colors already. Well, now that you spoke already, I'm officially inviting you and say "Hey, welcome to the show".
 
-</p><p><b>Ines Montani  2:08</b></br>  
+</p><p><b>Ines Montani  2:08</b><br/>  
 Hey, thanks for having me.
 
-</p><p><b>Tim Bourguignon  2:11</b></br>  
+</p><p><b>Tim Bourguignon  2:11</b><br/>  
 It's my very pleasure. So as usual, the show exists to help the listeners understand what your story looked like before there was heightened and spicy and pungent explosions. And imagine how to shape their own future. So let's go back to your beginning, shall we? Okay, where would you place the start of your tech journey?
 
-</p><p><b>Ines Montani  2:30</b></br>  
+</p><p><b>Ines Montani  2:30</b><br/>  
 I mean, I would probably say, well, it was quite early. And it was when we got our first computer, which would have been, I guess, in the late 90s. So my parents were never that tech savvy or like, you know, into like modern technology, but they were quite kind of curious. And I think my dad had a colleague who had like a spare computer. So he was like, Okay, why not? We might as well get into that. And I was really into it immediately. And it was it was one of those one of these big boxy machines with Windows 3.1, something like that. And I discovered first discovered paint, and later word. And so I was always into writing things, designing things, making things. And so that's that's kind of how I first started using the computer. I made my own magazines. I made my own newspapers, I wrote down stories about my stuffed animals. Which actually, way before that I would record on like a tape recorder. I at some point, when I was going through my stuff at my parents house, I found these tapes where it's literally like five year old me narrating these stories about my stuffed animals. And the things the stories they were up to and yeah, it had like, I don't know, like 10 volumes or something, which is I mean it cassette that's like, what, 30 minutes on each side.
 
-</p><p><b>Tim Bourguignon  3:49</b></br>  
+</p><p><b>Tim Bourguignon  3:49</b><br/>  
 Sounds about right. Yeah, so
 
-</p><p><b>Ines Montani  3:50</b></br>  
+</p><p><b>Ines Montani  3:50</b><br/>  
 I must have spent like quite a long time.
 
-</p><p><b>Tim Bourguignon  3:55</b></br>  
+</p><p><b>Tim Bourguignon  3:55</b><br/>  
 Did you still have
 
-</p><p><b>Ines Montani  3:55</b></br>  
+</p><p><b>Ines Montani  3:55</b><br/>  
 them? I think my parents would say maybe I have them here. I'm not sure what. I think they still exist. I just wouldn't I don't have a device anymore to play them. Oh, that's you can find on
 
-</p><p><b>Tim Bourguignon  4:03</b></br>  
+</p><p><b>Tim Bourguignon  4:03</b><br/>  
 eBay and stuff. Yeah. But yeah. Stick to them, stick to them. You're gonna have a good good laugh and a couple years.
 
-</p><p><b>Ines Montani  4:10</b></br>  
+</p><p><b>Ines Montani  4:10</b><br/>  
 Maybe it was a bit creepy. Like hearing not only hearing yourself is creepy on its own, but like hearing yourself as a child is sort of weird. But yeah, so that's that's kind of what I was doing as a child apparently.
 
-</p><p><b>Tim Bourguignon  4:23</b></br>  
+</p><p><b>Tim Bourguignon  4:23</b><br/>  
 So you were a very creative person without the computer already.
 
-</p><p><b>Ines Montani  4:27</b></br>  
+</p><p><b>Ines Montani  4:27</b><br/>  
 Yeah, I think so. Yeah. Yeah, that was definitely more of what I was into. And then you know, the computer kind of enhanced that because it gave me more like options and more things to do. And yeah, there were these these children's like word programs. I forgot. I forgot the name, our creative writer and what else was this? That is weird character mascot. And it was basically sort of like Microsoft Word and PowerPoint but mainly designed for children. And like I hate that I can't remember the exact name of these tools anymore, but like that's that's what I was playing with. I made like my own newspapers and magazines and stuff and printed them out. And like, I don't know how interested my family really was in this, but like
 
-</p><p><b>Tim Bourguignon  5:10</b></br>  
+</p><p><b>Tim Bourguignon  5:10</b><br/>  
 I wish you could find some.
 
-</p><p><b>Ines Montani  5:13</b></br>  
+</p><p><b>Ines Montani  5:13</b><br/>  
 We all lost in like some old hard drive. Yeah,
 
-</p><p><b>Tim Bourguignon  5:17</b></br>  
+</p><p><b>Tim Bourguignon  5:17</b><br/>  
 we're floppy disk.
 
-</p><p><b>Ines Montani  5:18</b></br>  
+</p><p><b>Ines Montani  5:18</b><br/>  
 Probably actually a floppy disk. Yes.
 
-</p><p><b>Tim Bourguignon  5:22</b></br>  
+</p><p><b>Tim Bourguignon  5:22</b><br/>  
 Yeah. You never figure out what you what you find. I found some CDs. And it's not floppies anymore, but some CDs at home a few months ago. And just looking to there and see what the heck is all this thing? in there, if you spend enough time, then you find some gems, and you find some very interesting stuff.
 
-</p><p><b>Ines Montani  5:42</b></br>  
+</p><p><b>Ines Montani  5:42</b><br/>  
 Yeah, yeah. So I should really go go hunting again for that stuff. But yeah,
 
-</p><p><b>Ines Montani  5:45</b></br>  
+</p><p><b>Ines Montani  5:45</b><br/>  
 yeah.
 
-</p><p><b>Ines Montani  5:47</b></br>  
+</p><p><b>Ines Montani  5:47</b><br/>  
 Yeah. So that was, that was I would say the beginning. And eventually, I ended up using Microsoft Word. And then I still remember at some point, I figured out that work, let you export these pages and magazines, or whatever I did there as an HTML file. And then, as part of our like, internet provider, we had like, some web space, and I was like, Oh, we can upload this thing. And it had this horrible like, long domain with like, my dad's name in it, right? Because that's how that's the domains they gave you from, like, your old school like it to that provider. But it was there. And so I had a website. And I was like, super excited about this. And I think I even I made like a print magazine that then pointed people to my website and email address. So and then I distributed that among my family and friends. Um, but I think they would I was I would, they weren't as interested in this as I was. But yeah, that's that that was super cool. And that was really like, Whoa, I can make something and put it on the internet and other people can look at it.
 
-</p><p><b>Tim Bourguignon  6:49</b></br>  
+</p><p><b>Tim Bourguignon  6:49</b><br/>  
 So At which point, did you decide that this was a career choice as any other and decided that that might be might be your future?
 
-</p><p><b>Ines Montani  6:57</b></br>  
+</p><p><b>Ines Montani  6:57</b><br/>  
 I mean, actually, never really, which is funny, because it was my hobby as a teenager, like I was an indoor teenager. And eventually, through the whole, like website, stuff, you know, was back in the day where you could just right click, look at the source. See how our website was built. And actually just copy paste stuff. Nowadays, that's obviously much more difficult, like getting into like web development that way, but back then it's like, cool, just look at the HTML. So I made my first websites I eventually discovered PHP, to handle actually, even before that, before WordPress, there was like this static blogging thing called gray matter, which basically, sort of CGI script that just generated your HTML blog posts. so carefree, we've come full circle, again, where we're building websites. Exactly. That's that way again. But yeah, that's how I figured all of these things out. I had like my blog, and I discovered this whole online community of young teenagers, mostly girls who were into the same stuff, which was like, really amazing. So there was this online community with girls my age, so like, 1213, upwards, who were into making websites, designing Photoshop, doing stuff. Yeah, from all over Germany, on this on these online message boards, and everyone had their website, we would like redesign them once a month, with like, really cool styles. And, yeah, there was always something to know, even from today's standards. For today's standards, I would say they would so many of these girls had like really amazing skills. And a lot of them were really good. And people often think like, oh, he was just like young boys on the internet. But this was like a space that was entirely won by girls like me. And there were there were a lot of them, I looked up to who had like these amazing websites. And so I wanted to know more about it. And at some point, I figured out, you know how to build these things. I figured out PHP, so you could have like these really cool blog, dynamic blog layouts. I vote like some tutorials, so other people could make up these layouts overall about my life, which wasn't even that interesting, probably on the scale of things. But But yeah, that's that's how I pretty much spent my teenage years front of the computer, making websites and doing stuff, but like, interestingly enough, I mean, I thought about it like, sure. It's kind of the natural. Next move of like, Okay, what am I going to do with my life? What am I going to study, oh, I can do something with computers. But I didn't end up doing that. And now it in hindsight, looking back, I think a big part of that was that I just never felt like I was a real developer. I don't know the so computer science thing. I don't know. I didn't fit into that idea out of it. And I probably didn't. And I also felt like I was very young, like I was 17 when I did the sort of German equivalent of like a levels. And so I was done with school. I wanted to do something. I felt like I already have my passion. To prove myself a lot being like a young, and I just instinctively I kind of probably thought Look, if I go into that now had I, I would just have to, like prove myself even more I wouldn't fit in. It's just not what I'm what I'm actually doing what I'm interested in. So I chose against going into computer science or any more classic computer career. And I ended up doing Communication and Media signs with with linguistics, or the kind of combined subject that was communication science and Media Studies and linguistics. And so that's I initially wanted to study somewhere cooler than Bonn, which is near Cologne, like I wanted to go to Berlin or even Munich that this subject was like in high demand. And even though I had really good grades, I didn't qualify anywhere else. So I was like, I don't I don't know what else to do with my life. So I'll just go to university and study that. So. And that's also kind of, I would say, how I first learned about computational linguistics, which I had just never thought about. So linguistics was always something I was kind of familiar with. But like, I don't know, this idea of having a computer, do stuff with language did come up, but even, even by the time I graduated, I would have never thought that this is something I would be actually doing as my main career. Like I would if you had told me that, like, how many years ago? I don't know.
 
 10 I would have been like, What? Oh, but yeah, so I just I just sort of did university because I didn't know what else to do. A was I was, you know, I was very young, I was very eager, I wanted to do shit. Like, I was like, Hey, I'm finally I'm going to do adult things, you know, I'm not going to be in school anymore. I'm going to be independent, and not this. This, I guess, maybe have a naive German idea of academic life. You know, it's because there's also there's such a German tradition in like, eu free spirits and academia. And so I really thought it'd be like, you know, you'd be thinking about stuff and writing and doing all these things. And it's my like, it was a first year of Bachelor master in Germany, which, you know, when they kind of tried to standardize it, and as part of that, it kind of became voiced in school, at least from my perception. You know, in school I wrote like essays in university, I did multiple choice exams, with like, mandatory attendance. And I felt I don't spend I don't know half a year on like, we recapping shit we already did in school, where everyone in school told you like, oh, what do you need this for? Well, wait until you get to university. And I'm like, No, because now I have to sit through having a recap again, even though it's barely relevant. And I have mandatory attendance so I can't even fucking stay home.
@@ -79,168 +79,168 @@ So I was I was incredibly disappointed disillusion. Like, I was like, What is th
 
 of people are like, Professor, Doctor, Doctor, which to most people I know, is like ridiculous. Except, like, okay, one PhD. Yeah. That's pretty impressive. Two PhDs that's sort of worse than mine. But no, Germans are like, Doctor Doctor, doctor. Great. So yeah, whatever. But it's also it's not like I'm in it for the like, prestige. But I yeah, I after my after my bachelor's, I was like, bachelor's, I was like, okay, Fuck this. I can't wait. I actually on the last day of uni, I took like a kind of car share type arrangement paid someone to drive me to Berlin. And I moved to Berlin on that same day, which happened to be carnival. So the city was all like, blocked. And it was this whole ordeal to like, move, but I was like, fuck it. I'm out of here. And then I moved to LA. And then I worked. I did still did my I think I still did my thesis and stuff here in Berlin. But like, I just kind of hang out here had friends here. I started working here in retail. So it's not like I was doing something specifically in my field. Actually, my first it was my first student job, which is working for lush cosmetics. So it's like, it's this place with a bath bombs. I don't know if you've ever seen this store before. It's called lush, not familiar when you walk through like an inner city, and you have this very intense smell of like soap and bath bombs. And that's usually a lot and that's the, you go into the store, and then they have all these colorful, like, stuffing, then you immediately have someone come up to you being like, hey, do you want to see this glitters? So that's, that's the job I did, as a student to make money on actually, it's like, it helped me a lot to become more in terms of like, self confidence, and also just also learning to I know approach people and learning how to sell because a lot of it is yeah, you are selling shit. And you know, a lot of the strategy about like, oh, how you know, about bombas fundamentally something most people don't need. So everything is sort of a luxury. It's like cool things people want to have. But like, you know, if you're showing people, the things and you you're selling people, these products, and there's actually a lot of very subtle stuff. I've picked up about selling things and doing business by like working in retail. So yeah, I did. I kept doing that for a while. And then I moved on.
 
-</p><p><b>Tim Bourguignon  19:22</b></br>  
+</p><p><b>Tim Bourguignon  19:22</b><br/>  
 Did you have the feeling you needed to create your own business?
 
-</p><p><b>Ines Montani  19:25</b></br>  
+</p><p><b>Ines Montani  19:25</b><br/>  
 It's definitely something that probably felt natural to me or that I thought about, especially after I realized like, oh, okay, you know, I can, um, you know, do these kinds of things I can I understand how all of this fits together. But I also have to say, you know, when I was in my early 20s, I had had more of this, this idea that it's it's not about success. It's not about ambitions, like for a while I was much more nihilistic in that in the kind of ideas that I had, you know, I was like, okay, so I try. I spend a lot of time trying to find happiness, like not not it's not even in an esoteric way, but like Still, I was like, Oh, well, how can I just be happy and like, you know, do something I like and and i don't care about success or career and whatever. So for a long time, it's just something that didn't cross my mind because I felt like, Oh, that's not something I would want. But that's not not how I imagined my life to be. So, Hmm, yeah. And that, and so in my I would say, I think it was, yeah, I guess in my early 20s, when I was in Italy, and then I was done with my university, I was, I ended up working in media, actually, because I had, like friends, I had, I've always had many friends who worked in like creative jobs. And somehow, I heard that there was this position opening up for a magazine or media company that were actually producing in English language magazine, at the time, a cultural magazine. So that was pretty cool. And I knew some people who work there. So I applied for the job. And I ended up working there for a couple of years. And I ended up leading, like the marketing and sales team, and doing in advertising sales, which was sort of something that, you know, felt did feel natural to me and something that I was good at. And, you know, the media angle was also something, you know, that worked for me. But yeah, that was, that was my job. And I did, I did some web development on the site, just because it was something I could do. So I did like websites for friends or people I knew. And that kind of stuff. For a while I kind of dropped out a bit. And it wasn't getting, I didn't keep up with the latest trends on the latest developments. So I kind of, you know, I mean, there was this whole, for example, when CSS three became a thing, like, you know, Sunday with, you know, HTML and CSS, you could do so many more things that you couldn't do before. And that was, I felt, I remember rediscovering that and was like, wow, I remember all these hacks we came up with as teenagers to make like rounded corners on things with like a table. Yeah. And now you actually have syntax for that. Whoo, cool. And, and then that's how that sort of got back into web development again. And but yeah, it was always something I did on the side. And when I then left that job, I was like, Okay, I can be self employed and kind of do a bit of everything. I did a bunch of social media work. For people, I did do a bunch of web development work for people. But I wanted to do a lot of like around work, which I guess maybe is the first time that I realized that this is sort of one of the skills I have as well that I can just, it sounds a bit weird, but I can just do lots of things. Like there's a combination of things that I can that don't necessarily aren't necessarily a skill set that belongs together, but that I can do. And so I can fill one role, doing many different things that I'm somewhat good at. This is very hard to describe, because it's not like there's a job title for it. But
 
-</p><p><b>Tim Bourguignon  22:46</b></br>  
+</p><p><b>Tim Bourguignon  22:46</b><br/>  
 that that did work for me. It kind of always does. That that's my feeling is, at least for so many interviews, is people who get some kind of success in a career quite often managed to bring two or three different fields together, that at first sight absolutely don't belong together. Yeah. But they managed to, to personify this, this combination, and they become successful at this. Yeah. I'd be curious, which, which fields do you bring together with Windows?
 
-</p><p><b>Ines Montani  23:18</b></br>  
+</p><p><b>Ines Montani  23:18</b><br/>  
 I mean, late later for, you know, for the job I'm doing now watch how it all came together. I do think, you know, one part of it is definitely the more product II angle, which you know, ties into my sales background, but also ties into the web development background, like just, you know, but please, into making something a well rounded product. And that's at least something that's quite relevant to my work now, but also the very technical side of it, because especially as I kept working on this more, I realized, okay, I it does, you know, I'm quite good at picking up a lot of these things. And I'm, I'm quite a decent programmer. So that works. And then. Yeah, I would say, though, like, I think definitely, that's how I also have started in working in NLP. And working in machine learning was by sort of tying that technology in with, for example, my web development background. And that's actually that is the first project I ever did like on when I started working on spacey. So, spacey was initially started by my co founder, Matt, he's originally from Australia. He actually he did the very classic academic works, like, you know, undergrad in linguistics, then computer science, computer science PhD, you know, working as an academic, so like the really pretty classic idea. And he eventually decided to leave academia. He always says it was at the point when he had to start writing grant proposals and doing all the stuff he didn't want to do. So yeah, so he's like not also, he saw companies starting to use the research code he wrote as part of like, Because PhD and stuff, and it's like, well, there's clearly a niche here because research code is not something your company should be using in production. But they will be interested in doing that. So it was like, Well, I can write you something better that's actually have usable in production. And so that's how the idea of spacey started as like a library that's not focused on research, but actually on bringing those ideas and things that work into production, when it comes to analyzing stuff about text and language. So he ended up leaving academia took some time off, started writing this open source library. And we actually met shortly after that. In Berlin, he was he was over in Berlin for a few months. And it was we actually, most people wouldn't believe that because, you know, we quite like similar in the stuff we're working on and what we do, and but we met socially, completely randomly, because we had, like, we knew some people in common. And we met like, at like, a bar, basically. Or club. I mean, I guess you can, you know, they're different. They're different levels of the story of like, Oh, this is, this is the level of like, Oh, we I mean, I guess we met at the club in Berlin. And then there's this, you know, much higher level, which like, well, we met kind of socially. But yeah, I mean, is a club we met, we met just randomly met and started talking about, oh, what do you do? Oh, what do you do? Oh, I do like, you know, this kind of NLP stuff. And I'm like, Oh, cool. I did like, you know, linguistics. And that sounds interesting. And, and we were just talking about linguistics. And so that's, that's how we first you know, started talking about stuff. And he actually asked me, hey, since you do funding, development and stuff, and Mike, also for over some that period of time, I was freelancing, and I was kind of really getting back into building proper web apps and build, you know, building modern web apps. That's kind of what I was sort of teaching myself by just like spending lots of time doing it. And he was okay, how would you feel about building a visualizer for syntax, so basically, you know, which if you have like a sentence, different words have different types, something is a verb, something is a noun, and then they have they connected to each other. So you know, something's the subject, something's the object. And a different levels of complexity of this and the computer can, at least playing nowadays quite reliably predict these types of things. And even back then, a computer was pretty good at, you know, you could train a system to do this quite well. And so he wanted to have a more modern way of visualizing that you type in a sentence, and it shows you all the words and how they're connected. And I remember that when he when he explained this to me outside, of course, I totally understood the concept, because, you know, I did linguistics, and there was something I was interested in. But it did sound really boring. And I was like, you know, I like I haven't, I have a job of work. I don't know if I can be bothered like spending any time on this really, like, it sounds a bit lame. Which is funny, because this visualize it's still around, it's still exists. And it's probably one of our most popular visualizers. And also what many people think of when they hear spacey and it's definitely a thing. But I my first reaction to this was like, kind of boring. So
 
-</p><p><b>Tim Bourguignon  28:09</b></br>  
+</p><p><b>Tim Bourguignon  28:09</b><br/>  
 can be boring, but useful.
 
-</p><p><b>Ines Montani  28:11</b></br>  
+</p><p><b>Ines Montani  28:11</b><br/>  
 Yeah, yeah. But yeah, but I'm like, do I want to spend time on this? I don't know. But I did. I did, I did end up doing it, obviously. And that is sort of how I started to realize, oh, there's actually a lot of potential. And there's also a lot of potential to rethink the way people use these technologies. And also from, you know, the user experience point of view, because after all, you know, what we were working on, and what spacey is, is a developer tool. So developers are using it to build stuff. And all our users are developers for our commercial products. Our customers are developers. So that's what we're doing. And I didn't realize that. Okay, there's, you know, there's a lot that can be innovated here. There's a lot of, you know, there are a lot of missing pieces. There's a lot that can be done. And I think that's how I made it how I yeah, initially got interested in the field. And then yeah, very shortly after that, I started working on spacey and also around the time I was getting into NLP, that's also really when I started learning Python, or just sort of working with Python. Like, that's kind of my, like, I wouldn't call any of the things I did learning because it's not like I ever sit down and learn anything. I would say it's actually one of the things I'm quite bad at, just to sit down and say, Hey, I am learning a thing. I can do things and pick something up along the way. And support something for something that works for something. It doesn't but like yeah, that's, yeah, I'm really bad at focusing and learning a new thing.
 
-</p><p><b>Tim Bourguignon  29:39</b></br>  
+</p><p><b>Tim Bourguignon  29:39</b><br/>  
 Oh, if I can put it another way, it sounds more like you need an itch to scratch and you will learn what you need along the way.
 
-</p><p><b>Ines Montani  29:46</b></br>  
+</p><p><b>Ines Montani  29:46</b><br/>  
 Yeah, exactly like I need or some project or something. It needs to have a point. And in some ways, that's good because I do feel like it's often Of course it's for most people is most more effective to learn that way. But it's it can also be sort of a weakness because if I do have to do learning something, that's something that, you know, I struggle with because I am impatient. I can't just like, read a book. And after and you know, at the end of it, I know all the things in the book and can do them, like, I need, I always, I always need to come up with a project. And it needs to make sense to me in my head. But, but yeah, luckily, I was always always able to do that, because there was always something to do. And that's kind of how I, yeah, how I started working with Python, for example,
 
-</p><p><b>Tim Bourguignon  30:30</b></br>  
+</p><p><b>Tim Bourguignon  30:30</b><br/>  
 there are two things that I still cannot completely match. You were saying you were more in focus on the front end and doing visualization of things. And when I hear or read your bio, now, it feels like deep AI, math and abstract modeling. And so how does the the bridge between the two looks like,
 
-</p><p><b>Ines Montani  30:53</b></br>  
+</p><p><b>Ines Montani  30:53</b><br/>  
 I mean, it's true that I like I started coming into this from the front end angle, because also that was, that was two, I would say, and I'm not unique, but that was one thing I was bringing to the whole thing into the whole project that like, you know, wasn't so common, you know, they were not so many people in the space who kind of understood, like, the machine learning side of things, but also, you know, could build like a web app or something. So that's an you know, so in the beginning, that was kind of my thing, what I bought into that, but like, it's, you know, sure, if you start once you start working on these things, you know, also that I mean, the linguistics side of stuff, how you, you know, how you build the software around it, it all kind of ties, it all kind of comes together, like naturally, you know, you start doing like, all the other things as well. So it's like, you know, my, I would say, my day to day work, or the programming work or development work that I do is a much focused on Python, software development, and also, you know, developer tooling to develop experience around it. And of course, just building, you know, building the software
 
-</p><p><b>Tim Bourguignon  31:59</b></br>  
+</p><p><b>Tim Bourguignon  31:59</b><br/>  
 that we publish. You mentioned the variability already. And what are the the effect of having developers as customers?
 
-</p><p><b>Ines Montani  32:10</b></br>  
+</p><p><b>Ines Montani  32:10</b><br/>  
 Oh, I mean, developers, as customers are great, because they kind of like you. So you're, like, have a different level. It's a conscious strategy we chose when, you know, so we like an open source company. And of course, the first question people might ask is like, Well, how do you make money? Or how do you make money with like an open source library, because spacey is free, open source, it will be always be free and open source. It's a very popular library, and we have lots of people using it. But you know, having lots of users doesn't pay your bills, and doesn't make you any money. So our approach was always to say, look, we, we don't like this kind of typical software model, where you monetize the help, and the consulting around it, like we did, we did consulting very early on to, you know, make get some money in for a couple of months. But that was never our main way of like, structuring our company, because it's, it actually puts you in a weird position as you know, a company or service provider, because on one hand, you want to make it easy for people to use your software, because that's how you get customers. But if it's too easy, it people will need your help. Like, nobody will hire you for consulting, if it's really easy to use your software, and your Doc's are great, and there's nothing they need help with. But on the other hand, if you don't provide all of that, then people might not want to use your software, because it's badly documented and hard to use, and they won't give you money either. So I've always thought, maybe in some areas that weren't that business model works. But for our feel for what we're doing, it was always like now we want to prioritize, like making it easy for people to use our software, having great documentation, having it all public, and having this intertwined with like our business interests. It's just, it just kind of the user is worse off at the end, always. And that's bad. So we're like, okay, we're not doing that. So we're like, well, we need, you know, what we want to do is we want to basically have products and we want to be able to offer things that people who like our open source software would probably be interested in to because they're adding something to the experience, not in a way that is like, Oh, it's a plugin, but more like, hey, we've shown you with our open source software that, you know, we can clearly build good software. And if you like our software, he has some other software. So that's how we started with our first commercial tool, which is called prodigy, which is not exactly open source, but it still kind of functions pretty much like an open source tool, but it's a commercial product that you can buy. And you can run it like any other Python library, and it's an annotation tool that helps you create training data for machine learning models, because, you know, it's one thing you use a library for NLP and machine learning, but machine learning is always cold and data And the data is the part that actually really programs, how your system is going to work because that's what it learns from. So that's kind of the core of your application. And, you know, if you're serious about doing machine learning and training models, then you probably also be interested in having better developer tooling around data annotation and creating your data and running experiments and iterating on your data. Because, you know, you iterate on your code, you need to iterate on your data. So that's how prodigy was born. And that's also why, you know, our main product targets. This means it's targeted at developers and our customers, our developers and our users, our developers. So that's very nice. Because you can also, I think, our goal has always been to provide tools that are useful for developers be useful for us as developers, but also other developers, and they have a different design choices, I would say you make as a software developer, building tools for developers, because developers want to develop, that's like, fundamentally, developers want to develop and developers are going to develop, and,
 
 you know, you, you don't give people people want something that's simple and works. But people don't just want to press a button. People want tools. People want stuff that makes sense and is extensible and that you can work with and actually program with. And so, you know, that meant, you know, we don't just have to provide people with an app where they can click buttons, we can build an app that lets you script workflows using Python, which is the language that developers, at least, you know, to developers using our tools already familiar with. If something goes wrong, you can say, Hey, you know, here's a fix everything, you know, everything's easy to manipulate. Because it's, you know, nobody has to contact our support and wait for like a week for like a support. Yeah, no, no, this is difficult. Like, Oh, thanks for contacting us. We forwarded your request to our engineering team, and you will hear back in like a week. It's like, now we can be like, hey, yep, can you like just run this? So log, log this, or try this and other print statement here? And oh, here's a quick fix. person's like, Oh, great. Now I can keep working. Also, that really sort of interests align better. It's like a developer, what does the developer want to do? Develop, you don't want to spend hours in a meeting. And you know, you just want to get stuff done. And so that's a satisfying for someone developing software for other people to get stuff done.
 
-</p><p><b>Tim Bourguignon  37:32</b></br>  
+</p><p><b>Tim Bourguignon  37:32</b><br/>  
 And one thing I'm oza Oh, is a fascinating new curious about is dog feeding, is when you're developing software for developers, you are probably tempted to use it yourself. But when you're doing big data and, and machine learning, etc. What do you apply, such as software onto DFO? Do you have a special project that you've been running secretly in the company to try things? Or how do you handle this?
 
-</p><p><b>Ines Montani  38:02</b></br>  
+</p><p><b>Ines Montani  38:02</b><br/>  
 Oh, this is this is a super interesting question. Actually, it is something we think about a lot, because we we are very aware of this. And we're always like, well, we need to make sure we are actively active users of our own software, which is not always the case naturally. Because Yeah, what we spend our time on is building the software and prodigy in some way help there because it integrates very tightly with spacey. So for developing that we actually ended up becoming more power users of spacey on like a very different level. Because, you know, we were building a tool that like integrates with it. We also do run like a lot of experiments internally, but like, we've definitely Also, we're currently working on a new version of spacey, and, you know, up, you're building new features, trying things out. And as part of that, of course, we started building a lot of tutorials, example, projects and things. So that was definitely incredibly helpful to really just use our own tooling from a user perspective, and just see, oh, what goes wrong? what's confusing? Oh, I should have better error handling here. I should have you know, the way this works is super confusing. I've made this mistake like several times. So this is not a good API. And also having having other people join our team and seeing them get started. That's always you know, everyone brings in a different perspective. And you know, having other people on the team use the software but also being in a position where they can work on it and improve it is also definitely helpful. You said that the Matt who co created the company with you and and wasn't was from the academia and the two are surrounded with PhDs. Do I interpret this right that you're still pulling from research and in this in this movement of bringing research to the industry? Um, yeah, I mean, that's in some way. That is how it works. Like a lot of the advancements I would say, in that space especially do come from Research. But the question then is, well, how what is what is, you know, those are all very specific papers that are published very specific models that get trained very specific systems that people come up with for a specific tasks that you can then you know, you you build like a system, and then you can evaluate it on a benchmark, and then you can see what results you're getting. And of course, sometimes someone finds a new approach that gets much better results. And then the question is, well, how well does this generalize? For example, can we use that for other problems? how practical is this? Is this something you know, that people can actually use in, you know, their production workflows? What are the problems here? What are, you know, the limitations. The objectives are also very, very different for a researcher versus, you know, someone working in industry solving some problem that's very specific to their company. Because the thing is, but I think some people often forget is that the biggest value is in the stuff that is quite specific. Like, if something you know, if you can just download a solution of the internet, for that, you know, solves your problem. And that makes your problem a lot less valuable. But the most interesting things that people want to find out from text are obviously the ones that are incredibly specific to something they're doing something they want to analyze something, you know, they want to understand better. And for that, the question is, well, how can we take some of these new ideas, new concepts, new systems, new models, and how can we maybe make them usable for people to solve problems that are incredibly specific and very custom, and provide them other tools around it, that let them train their own models,
 
-</p><p><b>Tim Bourguignon  41:54</b></br>  
+</p><p><b>Tim Bourguignon  41:54</b><br/>  
 to really, you know, build a solution for what they're doing? That's then kind of a difficult walk between offering a product, open source that is, with big air quotes for the masses, solve problems that many people have, and solve them in the open, and on the other hand, find a niche where there's a big problem, and probably some money is hatched, and solve that niche problem.
 
-</p><p><b>Ines Montani  42:18</b></br>  
+</p><p><b>Ines Montani  42:18</b><br/>  
 Yeah, I mean, I think from our perspective, at least, it's Developer Tools is that doing Developer Tools is kind of a great position to have, because we, you know, we have, we're not solving, you know, like solving, we're not offering tools for a specific market segment, or models that are trained specifically for some, some, you know, domain or whatever. We're saying, Hey, we're giving you tools that you can use to train these types of systems and to build these systems. And so that's, and that's very good, because we have users from all kinds of areas, of course, in, you know, finance, healthcare, legal, biomedical. But also, what I find especially interesting is there are a lot of new people entering the field from very different domains, bringing in their expertise, and bringing in the problems they want to solve. And then picking up the tools along the way, like, for example, digital humanities, and social science and stuff like that. They're lots of developers there maybe started out just researching something and wanting to analyze text. And then they The good thing here is they have the questions they want to ask, and they have the reasoning about what they're working on. Rather than, you know, bringing the machine learning and trying to find a problem, which often doesn't really end well. Many people try to do that. But it's like I've seen what I've seen is definitely much more effective if you if you have the problem and you have the insight you can pick up the technology technology is quite generic. But yeah,
 
-</p><p><b>Tim Bourguignon  43:58</b></br>  
+</p><p><b>Tim Bourguignon  43:58</b><br/>  
 but what's what's the saying? When you have a hammer in your hand everything looks like a nail.
 
-</p><p><b>Ines Montani  44:02</b></br>  
+</p><p><b>Ines Montani  44:02</b><br/>  
 Oh, that's it? It's so it's so funny. You mentioned this a guy like I didn't want to bring this up because I literally recorded the podcast interview like I don't know a week or two a goal for a podcast done by weights and biases, which is a cool tool for experiment tracking and so on. And we also talked about the exact same thing and I could not think of this saying and I was like there's some saying in English with like a nail hammer. And we talked we ended up talking about this for a while and in bolo is no this came up again somehow and I was like, I'm not gonna say the nail and hammer thing because if someone listens to that, who was also listening to my other podcast, people people already think I'm always talking about the same stuff, which I guess it's fair because like, I mean, I am just doing the same stuff. Yeah,
 
-</p><p><b>Tim Bourguignon  44:46</b></br>  
+</p><p><b>Tim Bourguignon  44:46</b><br/>  
 even try me. You didn't try me before.
 
-</p><p><b>Ines Montani  44:52</b></br>  
+</p><p><b>Ines Montani  44:52</b><br/>  
 Finally, I because I did not end up looking. I didn't look up that saying. So I still didn't know the saying until you brought it up. So you actually Yeah, there you go.
 
 Wait, what was it again? So you when you have a hammer in your
 
-</p><p><b>Tim Bourguignon  45:05</b></br>  
+</p><p><b>Tim Bourguignon  45:05</b><br/>  
 hand, everything looks like a nail. Yeah, I think something like okay, yeah, yeah with it says the French will live in Germany Yeah. Yeah.
 
-</p><p><b>Ines Montani  45:18</b></br>  
+</p><p><b>Ines Montani  45:18</b><br/>  
 Yeah, but basically the idea is you don't don't come in with a hammer and looking for nails. You want to be Yeah, you, you you have the nails there and you know a lot about the nails? And then I don't know, you could just you could find a hammer
 
-</p><p><b>Tim Bourguignon  45:31</b></br>  
+</p><p><b>Tim Bourguignon  45:31</b><br/>  
 or something else.
 
-</p><p><b>Ines Montani  45:33</b></br>  
+</p><p><b>Ines Montani  45:33</b><br/>  
 Yeah, whatever.
 
-</p><p><b>Tim Bourguignon  45:35</b></br>  
+</p><p><b>Tim Bourguignon  45:35</b><br/>  
 But something that will solve your problem and not enough.
 
-</p><p><b>Ines Montani  45:37</b></br>  
+</p><p><b>Ines Montani  45:37</b><br/>  
 Why do you actually want to get these nails in them? Do you just want to put up a paper put up a painting or something? You want to put something up on the wall? Like that? Yeah, it's actually this is it's a great metaphor. It's a bit abstract, but it's like, what do you really what do you really want to achieve that you're like, Oh, I want to, you know, I want to get these nails into the wall. But that's like, that's very seldom the point, just like actually how machine learning itself is based on the point. The point is, you want to do something. And it's like, oh, you're like, I have this new, huge flat screen TV that I want to put up on my wall. So I want to get this one nail in. And it's like, well, are you sure you actually want to use the single nail for that? That's probably bad. Have you considered using the different technique to achieve your end goal of like putting up that flat screen TV? Actually, this is an amazing metaphor. I'm so glad this came up. Keep using this.
 
-</p><p><b>Tim Bourguignon  46:28</b></br>  
+</p><p><b>Tim Bourguignon  46:28</b><br/>  
 Awesome. What one more thing because before we have, before times runs out, you mentioned digital humanities, or there's some some fields that you recently discovered where language processing is helping or bringing things to a different level. And that you're kind of discovering and, and being passionate, but very interesting.
 
-</p><p><b>Ines Montani  46:52</b></br>  
+</p><p><b>Ines Montani  46:52</b><br/>  
 Um, I'm trying to think because there are some fields that are definitely where I'm like, surprised by like, the technology being used and where I'm learning things. But I wouldn't necessarily say all this is something I find to be interesting, I'm passionate about, like, oil drilling, for example, I've learned a lot of random things about oil drilling, because people want to analyze stuff about oil drilling, which I never thought about. But a lot of in reality, a lot of the high value use cases are things that are fundamentally not necessarily incredibly exciting. Not everyone's analyzing, like, ooh, super deep stuff, people are like, Oh, I have these really boring reports here from 20 years of like, our manufacturing processes, that someone scanned, and then the machine tried to pass off the PDFs. And now I'm trying to find out common patterns about why this particular machine died over the past 10 years. And it's, you know, the impact of that is, is great, that's like, you know, that makes a huge difference. But it's not the stuff that you like, Whoa, please tell me more.
 
-</p><p><b>Tim Bourguignon  48:01</b></br>  
+</p><p><b>Tim Bourguignon  48:01</b><br/>  
 By the way, the tone in your voice was telling already.
 
-</p><p><b>Ines Montani  48:08</b></br>  
+</p><p><b>Ines Montani  48:08</b><br/>  
 You having the data, like for example, actually, obviously, digital humanities, or the social sciences, our use cases that are quite interesting. There's like some, you know, a lot of nonprofit type work. That's pretty cool. A lot of work involving, you know, analyzing discourse on like, the internet, because, you know, text is available there. Like this is also, you know, health care use cases, like, especially the ones where, yeah, people didn't come in with a hammer and are like, I'm gonna solve COVID with machine learning and AI. But I'm more like, Okay, what can we, you know, really analyze or do here? Like, that's, that's certainly interesting.
 
-</p><p><b>Tim Bourguignon  48:47</b></br>  
+</p><p><b>Tim Bourguignon  48:47</b><br/>  
 Do you see one particular field? How do ryzen that's, that's coming up, and that could become something but we don't know yet.
 
-</p><p><b>Ines Montani  48:57</b></br>  
+</p><p><b>Ines Montani  48:57</b><br/>  
 Oh, I mean, I don't know. Because ultimately, I mean, it's all about the text we produce, right? Like, there's so much text humans produce. And it's, I would say, I don't know if there's some domain or some area where like, we are going to be discovering that like, we can do stuff with text, I feel like we would have you know, done this by now. Like, there's no mystery around like the text that's there. It's more about like, Okay, what, you know, what, what can we do? What's, what's practical, what's viable what like, finally works now that maybe 10 years ago didn't and just, I don't know, just seeing like all the technology used much more commonly in like any kind of business just like computers have made their way into like most. Most industries, and most fields are like, you know, Microsoft Word, and typing text into the computer is like kind of the standard way of how people write stuff. Invite documents and write to people via emails. That's like, pretty normal now and so everyone has text. And so ultimately, we want to do stuff for that text and find out more about that text. And so I think, yeah,
 
-</p><p><b>Tim Bourguignon  50:15</b></br>  
+</p><p><b>Tim Bourguignon  50:15</b><br/>  
 there was this, this AI a couple of weeks ago, the generated text.
 
-</p><p><b>Ines Montani  50:19</b></br>  
+</p><p><b>Ines Montani  50:19</b><br/>  
 Oh, do you mean GPT? Three?
 
-</p><p><b>Tim Bourguignon  50:21</b></br>  
+</p><p><b>Tim Bourguignon  50:21</b><br/>  
 GB? Three, yes, that does that, would that fall into the language processing? Or would it be out of it,
 
-</p><p><b>Ines Montani  50:27</b></br>  
+</p><p><b>Ines Montani  50:27</b><br/>  
 it's, it's,
 
-</p><p><b>Ines Montani  50:28</b></br>  
+</p><p><b>Ines Montani  50:28</b><br/>  
 you know, it's the same field, I would say, you know, some people kind of look at this all under the umbrella of natural language processing, although I would say the processing is much more about like extracting stuff from text. Whereas, you know, generating text, text is more natural language generation. But under the hood, of course, the sort of text techniques used and the concept there is quite similar. And also the way this system works is something that you can also take advantage of in other areas, like, for example, that the main idea there in the text generation, what makes it you know, it's a, it's quite impressive, considering, you know, it just by learned from Mike tons of text, and it produces like me, and I'm pretty impressive results. But the underlying idea here is that we would be trying to teach a computer or teach a system something about language by asking you to predict the next word, or the next words, given the previous words. Basically, in a nutshell, that's like the base simple, like concept behind this. And that's, you know, that is something that, okay, was developed in research, and turned out, wow, that works really well, because there was always kind of the bottleneck, like, there's more to understanding language than just like the words, there's a lot of context about culture, the language itself and the world that you need to know to actually be able to interpret text correctly. And teaching a computer about that was always really difficult, like, on you all, you always have to teach it, teach it based on so much text, and so many resources. And that was that was like, you know, a tricky, and it was very tricky to generalize that part, like, you know, to reuse
 
 that sort of information
 
 across different things that you're trained, like, the one one metaphor, I think I've used before is, imagine, you know, you getting, you're getting a new employee, you're, you know, you're fully ready to teach them stuff about, you know, the work and what they're going to do, but you're not going to raise them from birth, and you're not going to teach them the language that you're speaking, you know, that's like, that's a super creepy idea in general, but it's like, you know, you want to have someone showing up who understands the language and the world, and who's like an adult, and then you want to teach them a bit about a specific thing you're doing. And that's kind of that's kind of similar idea. And that's what people have been trying to do for a long time. For NLP, for example, like, how can we just train something, and we use all this knowledge that is there in the text about the world. And so as it has turned out, we can actually kind of do that by training a system to predict the next word, or next words, given the context. And so then that the results that will the thing that we train based on that we can use for all kinds of other things. So we that can also help if we use that to initialize another system that we're training on something much more specific, like, oh, what are these texts about, or what people I mentioned in the text or whatever else, that actually works really well. And the results we get are much, much better than if we just start from scratch, or with something a bit much more abstract, or much less, like, you know, contextual. So that's sort of the advancement there. And that's what's like, quite exciting, and what has meant that like a lot of things that weren't easily possible, a couple of years ago, and now, actually fybel and I feel like we're currently in a phase where, you know, we're still looking at, like, oh, how can we use this most efficiently? what really works best? Is it worth it using one of these huge models that are like, I don't know, gigabytes, terabytes, whatever, with billions of parameters, or, you know, is that the route we want to go always there may be, you know, a better compromise that actually makes it, you know, more usable in a real world industry context. And that's actually that's interesting. They also kind of part of what we've, you know, been working on over the past, like, couple of months, I would say, to really take some of these ideas and also about, you know, what already works in NLP, what, you know, different tech, new techniques, old, very old, established techniques, how can we, you know, make this really usable and practical with a great developer experience and give that to people in a way that's also fast and efficient and extensible that people can program with? And that people can train for their own use cases. And that's kind of what we're doing for the next version of spacey for example, which is I've been thinking about a lot recently because I've actually been writing lots of code again, every day for it as part of the process. So, and yeah, that's also something we're hoping to release quite soon. I knew this fascinating to listen to
 
-</p><p><b>Tim Bourguignon  55:14</b></br>  
+</p><p><b>Tim Bourguignon  55:14</b><br/>  
 you. Since the since natural language processing technologies I've gone such a long way in in the last years, um, the way you came at, it cannot be the standard for someone starting nowadays. So what would be your advice? If someone were to start today, dipping their toes into NLP with what would be the advice you would give? I mean,
 
-</p><p><b>Ines Montani  55:38</b></br>  
+</p><p><b>Ines Montani  55:38</b><br/>  
 typically, I mean, by standard, my standard response to like, these advice, questions is always that, how, you know, I hate giving advice advice is like terrible, and it's sort of the worst, because what I'm going to, like, What can I tell people like? And you know, I think my experience is not representative at all. There's so many factors to it, there's privilege, there's like a lot that you have to consider. So I you know, I couldn't even realistically tell people how to, you know, get into that career, because it's way too specific. But, I mean, so maybe, you know, some, some part of my advice would in fact, be don't listen to, like, random advice that random people like come up with on the internet or on podcasts, because it might not be relevant to your situation at all.
 
-</p><p><b>Tim Bourguignon  56:27</b></br>  
+</p><p><b>Tim Bourguignon  56:27</b><br/>  
 I've had such an answer a couple times already. I love it.
 
 Sorry. Thanks. Anyway,
 
 I guess that's that's an advice in itself.
 
-</p><p><b>Ines Montani  56:36</b></br>  
+</p><p><b>Ines Montani  56:36</b><br/>  
 So you often feel like, oh, maybe I should just like, I don't know, sit down and come up with some generic bullshit advice. I think of like, having it be so like, authentic and
 
 believe in yourself, and follow your dreams.
 
 I gotta say that with this fake face, and it's like trust that the universe is going to bless you with prosperity, the New York coming back to you
 
-</p><p><b>Tim Bourguignon  57:01</b></br>  
+</p><p><b>Tim Bourguignon  57:01</b><br/>  
 on the hill ism. And
 
-</p><p><b>Ines Montani  57:03</b></br>  
+</p><p><b>Ines Montani  57:03</b><br/>  
 not stepping into that I was never into that I kind of got lost. No, it is it's basically cringe. But like, Yeah, no, I'm not. I'm not. I'm not gonna go there.
 
-</p><p><b>Tim Bourguignon  57:13</b></br>  
+</p><p><b>Tim Bourguignon  57:13</b><br/>  
 Oh, it let's take the as I said, it is don't listen to advices. And make your own path, make your own choices and new question your motives and old things you said, I'm awesome. Thank you very much. So, um, we're could the listener, the listeners, continue discussion with you, if you wanted to,
 
-</p><p><b>Ines Montani  57:31</b></br>  
+</p><p><b>Ines Montani  57:31</b><br/>  
 I think the easiest platform is on Twitter, we can probably share my handle in the description. It's very easy. It's literally my name, but with an underscore before it because I couldn't get the other. But hey, I got my first name on GitHub. So I am enas on GitHub, which is great. But that's but it's not really a platform you Yeah, you should use to talk to me because it's like GitHub, right? So Twitter is definitely my social network of choice. And if
 
-</p><p><b>Tim Bourguignon  57:59</b></br>  
+</p><p><b>Tim Bourguignon  57:59</b><br/>  
 anything timely or not that you want to plug in
 
-</p><p><b>Ines Montani  58:02</b></br>  
+</p><p><b>Ines Montani  58:02</b><br/>  
 both. So definitely keep an eye on spacey. We have like we've built a lot of cool new stuff. That's very interesting. And even if you know, you've only you haven't really done much with NLP before, but like you're a developer, and you're curious, I hope that like spacey makes it easy to also get started with things. And we have an interactive online course that you can take to kind of, you know, learn the basics. So it's definitely it's both very powerful for people, you know, working solving real life problems in industry. But I would say it's also quite beginner friendly. So I think that's that's the main thing to check out that like we also working on other stuff, which we post on our social media accounts. This prodigy if you interested in labeling data and creating training data for machine learning models. We also making some fun videos on YouTube. I mean, I'm not sure I would call them fun specifically, but like I I have I have typically have fun making them.
 
 Yeah, and we put a lot of
 
 love and effort into them. So yeah, if you want to watch me talk at the camera.
 
-</p><p><b>Tim Bourguignon  59:13</b></br>  
+</p><p><b>Tim Bourguignon  59:13</b><br/>  
 We'll do and we'll add all those links in the show notes. Obviously, it is Thank you very much. Thanks. 
 
 And this has been another episode of developer's journey. We will see each other next week, bye. All right, this is Tim from a different time and space with a few comments to make. First, get the most of these developer's journey by subscribing to the podcast with the app of your choice, and get the new episodes automagically, right when the air. The podcast is available on all major platforms. Then, visit our website to find the show notes with all the links mentioned by our guests, the advices they gave us, their book, references and so on. And while you're there, use the comments to continue the discussion with our guests or with me, or reach out on Twitter or LinkedIn. Then a big big THANK YOU to the generous Patreon donors that help me pay the hosting bills. If you have a few coins to spare, please consider a small monthly donation. Every pledge, however small counts. Finally, please do someone a favor, tell them about the show today and help them on their journey.

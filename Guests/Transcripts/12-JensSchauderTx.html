@@ -1,7 +1,7 @@
-<p><b>Tim Bourguignon  0:00</b></br>  
+<p><b>Tim Bourguignon  0:00</b><br/>  
 This is developer's journey. My name is Tim Bourguignon. Thanks for joining.
 
-</p><p><b>Jens Schauder  0:10</b></br>  
+</p><p><b>Jens Schauder  0:10</b><br/>  
 And we're live. I have with me tonight. Yes, because it's nice. inshallah. Hi, it's nice to have you finally on the line, it's been a heck of a quest to get you on there. Google Hangouts didn't want to play with us. We're finally back on Skype. And, and so far, so good. It's working. Yeah. Finally, um, you're, you're a very special guest, because you were on the program already once. But nobody beside me and a few other people got to hear you. I recorded a Vertol long and very interesting interview with you. And one of your mentees, Thomas, it was all in German. And since I decided to post the the podcast on in English, this will not end up on air. But it was very interesting discussion about mentoring. At one point, we'll have to get this back somewhere another. But tonight, I wanted to speak to you about something else. Last time we saw each other was at the first campus. The conference. My company is is organizing every year. And you tell the talk about j unit five, isn't it? Yeah, it was called gene IDs, lambdas, or something like this. The original title was j unit lambda, the next generation. And but when I actually did the talk, I changed the title to the J unit five, because that's what the project did. They started out with a named j unit lambda. And, but for some time now, it's named j unit five. So it's the next version of j unit, obviously. Nope. Um, so I went in there, not just because you are presenting, but also because I was interested in the topic as well. Okay, so also yen's is gonna show us how j unit is working. And there I learned something very interesting. Besides lambdas in Java, which are coming quite late, in comparison to C sharp, yeah, that's a mandatory bashing. Um, so I learned that that's you're actually kind of participating in the project, which was, which was an interesting cliffhanger for me. So you're doing open source, you're doing not just open source on your project, but project from somebody else? Yes, but only very, very little. I mean, I basically do do no coding at all in j unit five, with a single exception of one pull request that we might talk about later when we talk about deep breath. But I try to help j unit five, because for me, J unit is what I think not just for me, J unit is the possibly most important Java library that exists. Basically, everybody is using it. And if if you're not using it as a Java developer directly, you are at least using some library, which was inspired by J unit. And yeah, and I think j unit needed the next version of J, unit four was already quite old. And as you realize, Java has lambdas now. So there are some cool things you can do with lambdas. And which are really, really nice for a test framework. So how I participate in j unit five is really mainly by doing this talk and on binary various occasions, and doing marketing for j unit, as I'm doing right now, again, so this is actually working on an open source project. If you otter Yes, it is. And that is really cool. That's exactly the kind of things I want to put out there is that whatever you're doing, when you're speaking of others, and promoting it, and bringing people bringing the attention from other people on it, it's already doing open source. And that's, that's really great. And so, yeah, you said you had one pull request accepted. Exactly. Um, yeah, I was the point where really participate or actively do the coding and an open source project is my own open source project de graph. And it's a library to check for cyclic dependencies between packages, something that I consider really important not to have the cyclic dependencies. And
 
 I was about to ask.
@@ -12,10 +12,10 @@ Hmm, that's great. That's great.
 
 Yeah, some of your code will be a
 
-</p><p><b>Tim Bourguignon  6:34</b></br>  
+</p><p><b>Tim Bourguignon  6:34</b><br/>  
 nurturing future generation of coders on j unit five, that's great. Yeah, and this is one of the this special features of de gras, right? That's you can write tests that check your cyclic dependencies,
 
-</p><p><b>Jens Schauder  6:52</b></br>  
+</p><p><b>Jens Schauder  6:52</b><br/>  
 exactly that list.
 
 There are basically two ways or two things that DRF can do for you. It can check for cyclic dependencies and actually fall for other dependencies that you don't want to have in your code as well. And the problem with this is, there are many libraries that can do that for you. But once you found that you have a cyclic dependency, it can be really difficult to get rid of it on a similar situation, which was actually the situation which triggered the original development of the graph is, if you have a huge package, and you want to split it apart from just looking at the source code, it can be really difficult to see, like what parts of this package makes sense to move out of that package together in a new package. And so what the graph does as well is giving you a graphical representation of your dependencies. So you have the classes with arrows between them for dependencies, and these classes are in boxes, which represent the packages. And packages, again, can themselves be inside boxes, which are things that I call slices, because I didn't find a better name. Um, slides can be something like a technical layer, like everybody does, UI domain logic assistance, something like that. All which I think is way more important. Something like business module. So the not very inspiring example is you have customers and you have orders and you want to have them in separate modules. And if you structure your code, at least somewhat reasonable. These module names appear in your package name. And with the graph, you can use that package name to basically identify pieces that go in one module. And then the graph checks that also on this module slides level, the dependencies are cycle free.
@@ -32,31 +32,31 @@ And that was the birth of a graph.
 
 Okay, that would have been my next question is how did you get the license rights? And after writing this for you, they work but you say that you rewrote it from scratch? Yeah, I rewrote it from scratch. I actually use a different programming language. It's written in Scala. Basically just because I wanted to learn more Scala back then. And yeah, and also the the original version, which gave me the idea had dependencies on the on the project itself. There was some some design design decisions that were okay for that project but not okay for for library
 
-</p><p><b>Tim Bourguignon  14:43</b></br>  
+</p><p><b>Tim Bourguignon  14:43</b><br/>  
 says the experienced architect know
 
-</p><p><b>Tim Bourguignon  14:46</b></br>  
+</p><p><b>Tim Bourguignon  14:46</b><br/>  
 exactly
 
-</p><p><b>Jens Schauder  14:49</b></br>  
+</p><p><b>Jens Schauder  14:49</b><br/>  
 what to do. Did you decide to put it on GitHub and make it open source? Well, the question is really, why not? arm I wrote this tool basically for myself. Um, but of course, it is really cool if you create something, and somebody else is using that. And especially if they then come back and say, like, Hey, this is cool that that helped. Um, and they're really not much I was to lose. The only reason not do that would have been if I would try to sell the graph in some way. But there is no way I can put as much time in it, that it would be worth selling. So if you look at the graph and look at what is doing, and sit down for buyer know, depending on your speed, couple of days or maybe a couple of weeks, you probably can recreate it. And there are already commercial tools that do stuff like this. So there was really no reason not to do that. So all I had to do was do you through this awful process on deciding for license? And, yeah, and put it on GitHub? I mean, I want to have the someplace to store the source code anyway. And I don't know if at that time, even things like it pocket existed where you could have private repositories, but there really wasn't a point to make it private. And then you probably have complex reports now. Yeah, I don't know how many, maybe it doesn't have to.
 
-</p><p><b>Tim Bourguignon  16:53</b></br>  
+</p><p><b>Tim Bourguignon  16:53</b><br/>  
 And the same in the same on Bitbucket.
 
-</p><p><b>Jens Schauder  16:57</b></br>  
+</p><p><b>Jens Schauder  16:57</b><br/>  
 Actually, now on Bitbucket, I have exactly two. There's one. They are private repositories like for Bitbucket, if I want to have a private repository. So there's one thing I'm working on, which is a little game, which is supposed to be a game for developers. So whenever we'll play this game, we'll have to write code and play against other players against the server. And if one of the players would know how the server works exactly, beforehand, he would get an advantage. So I don't want that. So that's why that is in a private repository. And the end, the repository is a workshop I'm preparing, which is actually mine, I think, for my employer. So it should really be in a repository of two systems that well, a company's getting a repository there that they can access from everywhere.
 
-</p><p><b>Tim Bourguignon  18:07</b></br>  
+</p><p><b>Tim Bourguignon  18:07</b><br/>  
 Yeah, I understand.
 
-</p><p><b>Tim Bourguignon  18:11</b></br>  
+</p><p><b>Tim Bourguignon  18:11</b><br/>  
 You know, this is gonna be public. Right?
 
-</p><p><b>Tim Bourguignon  18:13</b></br>  
+</p><p><b>Tim Bourguignon  18:13</b><br/>  
 Yeah.
 
-</p><p><b>Jens Schauder  18:17</b></br>  
+</p><p><b>Jens Schauder  18:17</b><br/>  
 Um, you said, um, you get a few, a few comments from people using it. Did you get a pull request? Did you get design questions to get some feature requests? Um, I got feature requests. Yeah, that's, that's, that's the great ones. Although that's also the stuff that creates a lot of work that I don't get done currently. Um, and feedback is really, there's a huge range. I mean, GitHub has this little thing where you can start libraries,
 
 basically liking them.
@@ -67,10 +67,10 @@ often questions how to get it working.
 
 I guess usability is not the absolute strength of de Grasse. There are things that you can do wrong and probably dygraf doesn't really give you that much help. So they as in many cases, I look at these things and can very directly tell people what went wrong. So but it's I can understand that It's hard. If you're not familiar with how the graph works, um, this is one thing I get quite some kind of feedback for. And then yes, feature requests. There's one one big thing I really want to do. Just I don't find the time for it. The graph currently can't ignore dependencies. So graph is, I think it's pretty great for your projects. But if you have an existing project, and if I do talk about de graph, sometimes people tell me, yeah, to give that a try. And I want to see if I have cycles in my project, and I basically tell them all the time, for that you don't need the graph, you have cycles in your project. If you have a non trivial project, and he never checked for dependency cycles, he will have some it's basically a given. But if you have a large project, you will have a lot of cycles. And it won't be easy to get rid of them. And it's actually debatable if it makes sense to get rid of all the cycles in an existing project. I think it's worth it's worth the extra effort to avoid them. But getting rid of them if they are many. I'm actually not that sure. But then if you want to still want to use D graph to write tests, you need a way to basically say, okay, no, I have a dependency from here to there. And that is really stupid, but just ignores for the analysis. And, yeah, there are some other changes I want to do in the little DSL that you use for writing tests, and it just takes forever, because I can't find the time for work on it for more like, half an hour in one go. And I can relate that, I can really do that. Um, if you if you were to summarize what you got out of it, um, let's put in a writing D graph and putting in open source and participating in open source? And
 
-</p><p><b>Tim Bourguignon  22:16</b></br>  
+</p><p><b>Tim Bourguignon  22:16</b><br/>  
 what have you gotten out of it?
 
-</p><p><b>Jens Schauder  22:19</b></br>  
+</p><p><b>Jens Schauder  22:19</b><br/>  
 I'm even from a tiny library like dtrf, I learned lots. Like how hard it is to keep a library compatible with its previous versions. Um, that's something I, the official version of the graph is currently I think, zero point 13? Or is it 0.1 point three, I don't even know the number. The important part is, it's a zero version. So I'm basically telling everybody, if I think I messed something up in the API, I will break it without any warning. which shouldn't be a problem for anybody, because normally you write one single test project with this library. And if you have to rewrite that that shouldn't take you longer than 15 minutes. But if you just start imagining what kind of work it is, to keep bigger libraries, something like even j unit, which isn't that big as well. kompatibel between the versions.
 
 That's
@@ -93,18 +93,18 @@ them the class configuration.
 
 And this kind of stuff basically depends on almost everything in your project. But both of these kinds of things have one thing in common, it's hard to find a proper name for them, because they, they don't. They aren't part of some kind of business module. So I see it in many cases that have done so myself, that people put these two things in the same package. And which obviously, immediately creates dependency cycles. So you'll see them with the graph. And then you look at them and with a little thought yet to realize what's going on, and then split them apart. Or you need three repo three packages. So come on, misc and maybe the German zoster. Yes, yeah.
 
-</p><p><b>Tim Bourguignon  26:23</b></br>  
+</p><p><b>Tim Bourguignon  26:23</b><br/>  
 Yeah, exactly.
 
-</p><p><b>Jens Schauder  26:25</b></br>  
+</p><p><b>Jens Schauder  26:25</b><br/>  
 Just to be sure. Um, did you write a talk about this? That would be a great talk. So I'm about what I learned when Yes. No, I didn't forget. forensics. forensics, after so many projects. You opened up, I wrote a talk about these anti patterns. Yeah, I have. Okay. I think I did that that helps couples at least once? I think so.
 
 Could be, I was not much into Java.
 
-</p><p><b>Tim Bourguignon  26:58</b></br>  
+</p><p><b>Tim Bourguignon  26:58</b><br/>  
 I'll link it to the to the show notes. If you if you send me the links. If you ever, if you ever diversion somewhere.
 
-</p><p><b>Jens Schauder  27:06</b></br>  
+</p><p><b>Jens Schauder  27:06</b><br/>  
 Online somewhere?
 
 I don't know, I have to look. Maybe a little? Let me know, let me know. Um, I have one more question. And you give a funny definition of the architect or what was was what the architect was for you when you started this job. So the guy that is looking after dependencies after order, technical layer is modules, etc. What would be your definition now, what wasn't intended as a definition, it was just one task or one, one aspect of architecture, and structuring the codes or making sure that code is structured in a useful way.
@@ -115,32 +115,32 @@ Architecture for me is I don't know from from whom I stole that definition. Stef
 
 emergence architecture? Yes.
 
-</p><p><b>Tim Bourguignon  30:12</b></br>  
+</p><p><b>Tim Bourguignon  30:12</b><br/>  
 Can we speak about emergent architecture if
 
-</p><p><b>Tim Bourguignon  30:16</b></br>  
+</p><p><b>Tim Bourguignon  30:16</b><br/>  
 the
 
-</p><p><b>Jens Schauder  30:18</b></br>  
+</p><p><b>Jens Schauder  30:18</b><br/>  
 getting some decisions wrong could kill your project?
 
 Absolutely. Um, and I mean, Uncle Bob also also describes how this relates you, if you do architecture, you have to make these decisions. And they are, I know three ways how these decisions come along. Sometimes in the very, very early stages of a project, somebody makes these decisions, which is really, if you think about it, a stupid thing to do, because the very, very early stages of a project is exactly the stage when you have the fewest knowledge about the things that affect the decision, although the correct decision. And the other way, which is probably equally stupid, is when the decision just happens by accident. Just somebody wants to stall, I still there.
 
-</p><p><b>Tim Bourguignon  31:34</b></br>  
+</p><p><b>Tim Bourguignon  31:34</b><br/>  
 This is where I lost
 
-</p><p><b>Tim Bourguignon  31:35</b></br>  
+</p><p><b>Tim Bourguignon  31:35</b><br/>  
 skins. While
 
-</p><p><b>Jens Schauder  31:42</b></br>  
+</p><p><b>Jens Schauder  31:42</b><br/>  
 we were talking about emerging architecture, I came in I know where you're going, you told me about, about making decisions very early, like, probably choosing to go on the host. Like my actual, my current client. And then you wanted if you wanted to go on decisions don't happen by accident. Yeah, they are the decisions that happen by accident or just happen by whatever needs, right now the decision or things you need it. And you basically end up with random decisions, which can work out if you have competent developers that have kind of a good instinct of what to choose. And your requirements aren't that special. Um, but that is basically relying on luck. And the way in my strict opinion, it really should be, is you should push the decision actively back as far as possible, in order to learn as much as possible about the problem that you have to solve, before you actually make a decision that hopefully solves your problems. And I really like the example, Robert C. Martin gives for that. He writes about, I think it's fitness to basically a testing tool, based on a wiki. And they early on thought like they need a database to store all the data of the wiki. And But then, when they thought a for now we need that. So let's create a database. They said, No, actually, we don't, we just want to write some tests, we can just create an interface, which looks like the interface that we eventually will have against the database, and use that to write our tests. And provide basically a testing stub that stores just stuff in a in a hash map or something. And this went on and on. And they ended up never actually using a database. And just eventually wrote an implementation for this interface to store stuff in flat files, which was completely sufficient, and much easier. And if you if you think about setting up such a tool, it's much easier to find a directory where you can put some files instead of actually installing a database and making sure it has the right version and has all the tables in it. And so I think that's really good architectural decision not to have a database. But in the very beginning, he looked like they would need a database. This information you can only learn in the project. And actually, what I also like about this by pushing back these kind of decisions, very often I mean, creating an interface, and just creating the interface, like you need it for the rest of the application. Without thinking too much about how it is implemented. I've seen it in many projects the other way round, from the very beginning. These decisions are made and very popular choice in my surroundings are on, let's use a relational database and use hibernate, or JPA. to interface with that, which in some cases, because this was so clearly made in the very early phases of the project. So everybody knew we are going to use this technology that this technology ended up all over the place. Actually, the UI creating hibernate criteria objects, which then allow us to create, it was kind of nice, it just was very direct, but caused a lot of problems, when we wanted to do something which we couldn't directly map to have an H criteria.
 
 If we would have started with an interface, we would have a clean separation, and still could have used hibernates for a lot of stuff, but then could have the option that we didn't have in that instance, at least not in an easy way to use something completely different for certain things that hibernate can do you with very good. And so you get basically an abstraction layer on on very important places, because we are talking about architecture decisions. So these are important decisions. So it's a great to have an interface there, where you can, if you find out that you took the wrong decision that you can actually change stuff about it
 
-</p><p><b>Tim Bourguignon  37:18</b></br>  
+</p><p><b>Tim Bourguignon  37:18</b><br/>  
 to be flexible,
 
-</p><p><b>Jens Schauder  37:19</b></br>  
+</p><p><b>Jens Schauder  37:19</b><br/>  
 and testable. And all the benefits of having an interface in the right position. Is this where you would encourage newcomers to to enquire and start learning, if they want to go solely into architecture or if they are coding but interested in architecture, when you come as an architecture don't really go together that? Well. Um, I think if you come up, I think about people that are new to software development, or at least new to software development in enterprise session. Well, world and why I think everybody should understand the decisions, my see very few newcomers that actually can participate in these discussions. And contributing rules. Of course, there are exceptions. And of course, there are also new comer in the sense of the new comm architecture, the aspiring architects who is currently maybe a solid developer and wants to become an architect. And yes, I think
 
 this kind of stuff,
@@ -155,16 +155,16 @@ Even if you experienced but
 
 never use the no SQL database, I'm sure that you will find some surprises, and not all of them will be pleasant.
 
-</p><p><b>Tim Bourguignon  40:29</b></br>  
+</p><p><b>Tim Bourguignon  40:29</b><br/>  
 It's like the circular dependencies, you will find some?
 
-</p><p><b>Jens Schauder  40:32</b></br>  
+</p><p><b>Jens Schauder  40:32</b><br/>  
 Yes, exactly.
 
-</p><p><b>Tim Bourguignon  40:35</b></br>  
+</p><p><b>Tim Bourguignon  40:35</b><br/>  
 Well, great, great. We completely exploded timebox. But yeah, I noticed. That's great discussion anyway. And is there anything you would like to to end on something you want to plug? Are you speaking somewhere in the near future? You want to make some some advertisement about that?
 
-</p><p><b>Jens Schauder  40:55</b></br>  
+</p><p><b>Jens Schauder  40:55</b><br/>  
 I think the next talk
 
 that is actually accepted is the Java phone lot. And in Hanover, so if anybody's listening to this, and is more in the northern part of Germany, definitely should check out that conference will happen for the second time. And, actually, yes, there's one more thing we really did briefly about it. The thing about open source, which is that it is one of the main topics we talked about, and you mentioned, or I mentioned, that like one or two dozen repositories, I think it's really good idea to just get stuff out there. You You basically never know when something sticks. I have a lot of my repositories of just stupid experiments that I started, I tried something. And sometimes it ended before anything came out of it at all. Sometimes it ended with basically a proof of concepts. I have repositories that consists of a single class, which are actually used. And if you I think the the mistake many people make they they think really hard and they think, well, this is not worth putting out there. And that's it doesn't cost anything to put it out there. It's like, a couple of minutes to set up repository, push your code,
@@ -175,20 +175,20 @@ Apache as a as a nice idea for license I think, um, and that's it. And maybe som
 
 Yeah, we can repeat that maybe with Steven.
 
-</p><p><b>Tim Bourguignon  44:22</b></br>  
+</p><p><b>Tim Bourguignon  44:22</b><br/>  
 Yeah. If he's okay with English this time. That's
 
-</p><p><b>Jens Schauder  44:25</b></br>  
+</p><p><b>Jens Schauder  44:25</b><br/>  
 I'm sure. Yes.
 
 So we'll have to schedule that. Okay.
 
 All right. Thank you very much. You're welcome.
 
-</p><p><b>Tim Bourguignon  44:38</b></br>  
+</p><p><b>Tim Bourguignon  44:38</b><br/>  
 And there goes another d'etre to
 
-</p><p><b>Tim Bourguignon  44:42</b></br>  
+</p><p><b>Tim Bourguignon  44:42</b><br/>  
 help the project by rating podcast on iTunes or Stitcher and send me your comments and suggestions of the guests to invite I eat them for breakfast, I mean, comments of the guest. Um, but anyhow, until next time, till Long enough
 
 </p>
