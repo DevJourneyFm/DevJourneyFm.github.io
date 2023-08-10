@@ -21,3 +21,10 @@ social:
     - https://github.com/timothep
 theme: jekyll-theme-dinky
 repository: DevJourneyFm/DevJourneyFm.github.io
+
+defaults:
+  -
+    scope:
+      path:            "Guests/Transcripts/Regex_Format.md"
+    values:
+      sitemap:         false
