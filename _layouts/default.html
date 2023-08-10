@@ -15,6 +15,14 @@
     <meta property="og:image" content="/Img/logo_small.png" /> 
     <link href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap" rel="stylesheet">
     {% seo %}
+    {%- seo title=false -%}
+    <title>
+        {% if page.title-tag %}
+        {{ page.title-tag }}
+        {% else %}
+        {{ page.title }} | {{ site.title }}
+        {% endif %}
+    </title>
 </head>
 
 <body style="font-family: 'Inconsolata', monospace;">

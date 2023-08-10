@@ -25,9 +25,9 @@ repository: DevJourneyFm/DevJourneyFm.github.io
 defaults:
   -
     scope:
-      path:            "Guests/Transcripts/Regex_Format.md"
+      path: "Guests/Transcripts/Regex_Format.md"
     values:
-      sitemap:         false
+      sitemap: false
   -
     scope:
       path: ""
