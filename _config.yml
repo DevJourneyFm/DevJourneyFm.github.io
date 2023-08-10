@@ -28,3 +28,9 @@ defaults:
       path:            "Guests/Transcripts/Regex_Format.md"
     values:
       sitemap:         false
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
+      title: "DevJourney Podcast"
