@@ -42,7 +42,7 @@ print("Creating pages for Guest: " + sys.argv[2])
 GUEST_PAGE = """---
 layout: default
 comments: true
-title: "#NUMBER FIRSTNAME LASTNAME"
+title: "#NUMBER FIRSTNAME LASTNAME's Software Developer's Journey interview"
 description: "#TITLE_WITHOUT_HASH"
 ---
 <h1>#TITLE_WITHOUT_HASH</h1>
