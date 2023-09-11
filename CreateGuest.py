@@ -25,7 +25,7 @@ def CreateFile(pagecontent, args):
     # FileFormat Number_FirstNameLastNameTx.html"
     pathTx = dir_path + "//Guests//Transcripts//" + number + "-" + nameWOSpaces + "Tx.html"
     htmlTxFile = open(pathTx, 'w', encoding='utf-8')
-    htmlTxFile.write("<span></span>")
+    htmlTxFile.write("<p></p>")
     htmlTxFile.close()
 
 def overwriteFile(path, content):
