@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/png" sizes="32x32" href="https://devjourney.info/Img/favicon-32x32.png">
     <link rel="apple-touch-icon" href="https://devjourney.info/Img/favicon-32x32.png" />
+    <link rel="alternate" type="application/rss+xml" title="RSS Feed for Software Developers Journey" href="https://feeds.buzzsprout.com/190346.rss" />
     <meta name="twitter:image" content="https://devjourney.info/Img/logo_small.png" />
     <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
     <!--[if lt IE 9]>
@@ -41,12 +42,11 @@
 
             <nav class="site_nav">
                 <ul class="hamburger_list">
-                    <li class="btn"><a class="btn" href="/episodes.html">Episodes</a></li>
-                    <li class="btn"><a class="btn" href="/subscribe.html">Subscribe</a></li>
-                    <li class="btn"><a class="btn" href="/buy-devjourney-swag.html">Swag</a></li>
-                    <li class="btn"><a class="btn" href="/meet-the-host.html">Meet the Host</a></li>
-                    <li class="btn"><a class="btn" href="/donate.html">Support us</a></li>
-                    <li class="btn"><a class="btn" href="/community.html">Slack Community</a></li>
+                    <li class="btn"><a class="btn" href="/episodes.html">🗂️ Episodes</a></li>
+                    <li class="btn"><a class="btn" href="/subscribe.html">📒 Subscribe</a></li>
+                    <li class="btn"><a class="btn" href="/meet-the-host.html">👨‍🦲 Meet the Host</a></li>
+                    <li class="btn"><a class="btn" href="/donate.html">😘 Support us</a></li>
+                    <!--<li class="btn"><a class="btn" href="/community.html">💬 Slack Community</a></li>-->
                 </ul>
             </nav>
 
@@ -64,16 +64,16 @@
     <script src="{{ "/assets/js/scale.fix.js " | relative_url }}"></script>
     <script>
         var hamburger = document.querySelector(".hamburg");
-        var hamburger_menu = document.querySelector(".hamburger_menu");
+        var site_nav = document.querySelector(".site_nav");
         hamburger.onclick = function () {
            this.classList.toggle ("checked");
-           hamburger_menu.classList.toggle("checked");
+           site_nav.classList.toggle("checked");
         }
     </script>
     <script>
         window.onload = function() {
             if (document.documentElement.clientWidth >= 960) {
-                hamburger_menu.classList.toggle("checked");
+                site_nav.classList.toggle("checked");
         }}
      </script>
 </body>
