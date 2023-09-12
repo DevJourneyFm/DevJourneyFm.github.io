@@ -111,7 +111,7 @@ emboldenedTitle = title.replace(guestname, "<b>" + guestname + "</b>")
 
 SLUG_TO_REPLACE = SLUG_TO_REPLACE.replace("TITLE_WITHOUT_HASH", number + " " + emboldenedTitle)
 
-content = loadIndex("index.html")
+content = loadIndex("episodes.html")
 content = content.replace(SLUG_TO_FIND, SLUG_TO_REPLACE)
 
-overwriteFile("index.html", content)
+overwriteFile("episodes.html", content)
