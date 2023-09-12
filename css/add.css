@@ -95,14 +95,14 @@ ul.hamburger_list{
     color: black;
  }
 
-.hamburger_menu{
+.site_nav{
     text-align: center;
     display: none;
     margin-left: auto; margin-right: auto;
     margin-top: 10px; margin-bottom: 10px;
 }
 
-.hamburger_menu.checked {
+.site_nav.checked {
     display:inline-block;
 }
 
