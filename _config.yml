@@ -6,6 +6,7 @@ image: https://devjourney.info/Img/logo.png
 author: Tim Bourguignon
 url: https://devjourney.info
 show_downloads: false
+abstract: "The Software Developers Journey podcast is an inspirational show for software developers. Every week, a successful software engineer shares their journey and tells us what they learned."
 plugins:
   - jekyll-sitemap
   - jekyll-seo-tag

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://devjourney.info/Img/favicon-32x32.png">
+    <link rel="apple-touch-icon" href="https://devjourney.info/Img/favicon-32x32.png" />
+    <link rel="alternate" type="application/rss+xml" title="RSS Feed for Software Developers Journey" href="https://feeds.buzzsprout.com/190346.rss" />
+    <meta name="twitter:image" content="https://devjourney.info/Img/logo_small.png" />
+    <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+    <meta property="og:image" content="/Img/logo_small.png" /> 
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap" rel="stylesheet">
+    {% seo title=false %}
+
+    <title>
+        {{ page.title }}
+    </title>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "PodcastEpisode",
+        "@id": {{ site.title | jsonify }},
+        "abstract": {{ site.abstract | jsonify }},
+        "datePublished": "2023-09-14",
+        "description": "Tejas placed the start of his journey when he discovered HTML. We then followed the story of his childhood, juggling between a life-threatening medical disease called hemophilia and surfing his desire to understand how things work. Our discussion then centered itself on learning and how it slowly became the core of his work, his business, and his life.",
+        "episodeNumber": "270",
+        "genre": "Podcast",
+        "keywords": "Tejas Kumar, Public Speaking, DevRel, Learning",
+        "name": {{ page.title | jsonify }},
+        "url": "{{ site.url }}{{ page.url }}"
+    }
+    </script>
+</head>
+
+<body style="font-family: 'Inconsolata', monospace;">
+    <div class="wrapper">
+        <header>
+            <link href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap" rel="stylesheet">
+            <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.5.0/css/all.min.css" />
+            <link href="/css/add.css" rel="stylesheet"> {% if site.logo %}
+            <a href="https://devjourney.info"><img src="/Img/BigLogoSmallText.png" alt="Logo" style="border: none;" /></a>
+            {% endif %}
+
+            <p class="title">Software Developers Journey Podcast</p>
+
+            <p style="text-align: justify; text-justify: inter-word;">
+            </p>
+
+            <span>
+                <i class="fa fa-bars hamburg"></i>
+            </span>
+
+            <nav class="site_nav">
+                <ul class="hamburger_list">
+                    <li class="btn"><a class="btn" href="/episodes.html">🗂️ Episodes</a></li>
+                    <li class="btn"><a class="btn" href="/subscribe.html">📒 Subscribe</a></li>
+                    <li class="btn"><a class="btn" href="/meet-the-host.html">👨‍🦲 Meet the Host</a></li>
+                    <li class="btn"><a class="btn" href="/donate.html">😘 Support us</a></li>
+                    <!--<li class="btn"><a class="btn" href="/community.html">💬 Slack Community</a></li>-->
+                </ul>
+            </nav>
+
+        </header>
+        <section class="content">
+
+            {{ content }}
+
+        </section>
+        <footer>
+            <p>Copyright 2023</br>
+                <a href="https://www.timbourguignon.fr">Tim Bourguignon</a></p>
+        </footer>
+    </div>
+    <script src="{{ "/assets/js/scale.fix.js " | relative_url }}"></script>
+    <script>
+        var hamburger = document.querySelector(".hamburg");
+        var site_nav = document.querySelector(".site_nav");
+        hamburger.onclick = function () {
+           this.classList.toggle ("checked");
+           site_nav.classList.toggle("checked");
+        }
+    </script>
+    <script>
+        window.onload = function() {
+            if (document.documentElement.clientWidth >= 960) {
+                site_nav.classList.toggle("checked");
+        }}
+     </script>
+</body>
+
+</html>
