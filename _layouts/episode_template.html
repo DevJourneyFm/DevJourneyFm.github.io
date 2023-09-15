@@ -27,11 +27,11 @@
         "@type": "PodcastEpisode",
         "@id": {{ site.title | jsonify }},
         "abstract": {{ site.abstract | jsonify }},
-        "datePublished": "2023-09-14",
-        "description": "Tejas placed the start of his journey when he discovered HTML. We then followed the story of his childhood, juggling between a life-threatening medical disease called hemophilia and surfing his desire to understand how things work. Our discussion then centered itself on learning and how it slowly became the core of his work, his business, and his life.",
-        "episodeNumber": "270",
+        "datePublished": {{ page.datePublished | jsonify }},
+        "description": {{ page.description | jsonify }},
+        "episodeNumber": {{ page.episodeNumber | jsonify }},
         "genre": "Podcast",
-        "keywords": "Tejas Kumar, Public Speaking, DevRel, Learning",
+        "keywords": {{ page.keywords | jsonify }},
         "name": {{ page.title | jsonify }},
         "url": "{{ site.url }}{{ page.url }}"
     }
